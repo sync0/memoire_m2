@@ -160,7 +160,7 @@ Aux lecteurs lointains.
 # Correctly typeset lists, etc. with itemize environment 
 #+LATEX_HEADER: \usepackage{enumitem}
 # Beautify the page with nice typographic symbols 
-# #+LATEX_HEADER: \usepackage{adforn}
+#+LATEX_HEADER: \usepackage{adforn}
 # #+LATEX_HEADER: \usepackage[object=vectorian]{pgfornament}
 # Correctly typeset floats
 #+LATEX_HEADER: \usepackage{float}
@@ -229,9 +229,6 @@ Aux lecteurs lointains.
 #+LATEX_HEADER: \usetocstyle{nopagecolumn}
 # Delete "Part" to TOC entry.
 #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\protect\scshape\lowercase{#1}\hspace{1em}}{#2}}
-# #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\thepart}{#2}}
-# #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{#2}}
-# #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\partname}{#2}}
 # Add "Part" to TOC entry.
 # #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\partname\nobreakspace #1}{#2}}
 *** Figures
@@ -240,14 +237,9 @@ Aux lecteurs lointains.
 *** Part
 # Customize fonts used in Part 
 #+LATEX_HEADER: \addtokomafont{part}{\scshape\huge\lowercase}
-# #+LATEX_HEADER: \addtokomafont{partnumber}{\bfseries\lowercase}
-# Remove the part number from headings
- # #+LATEX_HEADER:\renewcommand*{\thepart}{}
 # # Remove the part numbering from part pages
 #+LATEX_HEADER: \renewcommand*{\partformat}{\partname}
 *** Chapter 
-# Customize fonts used in Chapter 
-# \renewcommand*{\chapterheadstartvskip}{\vskip-10pt}
 # Center chapter 
 # #+LATEX_HEADER:\renewcommand{\raggedchapter}{\centering}
 #+LATEX_HEADER: \addtokomafont{chapter}{\scshape\LARGE\lowercase}
@@ -255,10 +247,6 @@ Aux lecteurs lointains.
 #+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter} 
 # Remove the numbers from chapter title pages
 #+LATEX_HEADER:\renewcommand*{\thechapter}{}
-# Remove the chapter number from headings
- # #+LATEX_HEADER:\renewcommand*{\chapterformat}{\chaptername}
- # #+LATEX_HEADER:\renewcommand*{\chapterformat}{\chaptername}
- # #+LATEX_HEADER:\renewcommand*{\chapterformat}{\mbox{\chapappifchapterprefix{\nobreakspace} \autodot\IfUsePrefixLine{}{\enskip}}}
 *** Section
 # Customize fonts used in Section
 #+LATEX_HEADER: \addtokomafont{section}{\scshape\Large\lowercase}
