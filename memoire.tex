@@ -1,0 +1,156 @@
+% Intended LaTeX compiler: pdflatex
+\documentclass[paper=A5,portrait,twoside=true,twocolumn=false,headinclude=true,footinclude=true,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,headings=normal,headings=twolinechapter,open=right,chapterprefix=false]{scrbook}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{url}
+\usepackage{soul}
+\usepackage{polyglossia}
+\setmainlanguage{french}
+\setotherlanguages{italian,spanish,english}
+\usepackage[french=guillemets,thresholdtype=words,threshold=3]{csquotes}
+\MakeAutoQuote{«}{»}
+\AtBeginEnvironment{quote}{\itshape}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{centernot}
+\usepackage{hyperref}
+\hypersetup{colorlinks,urlcolor=blue,linkcolor=red,citecolor=red,filecolor=black}
+\usepackage{booktabs}
+\usepackage[french]{fmtcount}
+\fmtcountsetoptions{french=france}
+\usepackage[singlespacing]{setspace}
+\usepackage[super]{nth}
+\usepackage{microtype}
+\microtypecontext{kerning=french}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\graphicspath{ {/home/sync0/Dropbox/projects/paris_1/} }
+\usepackage{lipsum}
+\usepackage{xunicode}
+\usepackage{fontspec}
+\usepackage{xltxtra}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,SmallCapsFeatures={LetterSpace=4,Ligatures=NoCommon}]{Linux Libertine O}
+\setsansfont[Mapping=tex-text]{Linux Biolinum O}
+\setmonofont[Mapping=tex-text]{Courier New}
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\automark[chapter]{part}
+\lehead{\headmark}
+\rohead{\headmark}
+\ofoot*{\thepage}
+\renewcommand\partmarkformat{}
+\AfterTOCHead{\singlespacing}
+\setkomafont{disposition}{\normalfont\normalcolor}
+\setkomafont{labelinglabel}{\normalfont\bfseries}
+\setkomafont{minisec}{\large\bfseries}
+\usepackage[tocindentauto,tocgraduated]{tocstyle}
+\usetocstyle{nopagecolumn}
+\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\protect\scshape\lowercase{#1}\hspace{1em}}{#2}}
+\addtokomafont{part}{\scshape\huge\lowercase}
+\renewcommand*{\partformat}{\partname}
+\addtokomafont{chapter}{\scshape\LARGE\lowercase}
+\RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter}
+\renewcommand*{\thechapter}{}
+\addtokomafont{section}{\scshape\Large\lowercase}
+\addtokomafont{subsection}{\large\bfseries}
+\addtokomafont{subsubsection}{\large\itshape}
+\renewcommand*\labelitemi{\adforn{33}}
+\renewcommand*\labelitemii{\adforn{73}}
+\renewcommand*\labelitemiii{\adforn{73}}
+\renewcommand*\labelitemiv{\adforn{73}}
+\setcounter{secnumdepth}{\sectionnumdepth}
+\setcounter{tocdepth}{2}
+\recalctypearea
+\author{Carlos Alberto Rivera Carreño}
+\date{}
+\title{}
+\hypersetup{
+ pdfauthor={Carlos Alberto Rivera Carreño},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.1 (Org mode 9.1.13)}, 
+ pdflang={Frenchb}}
+\begin{document}
+
+\begin{titlepage}
+ \centering
+ \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
+ \vspace{4\baselineskip}
+ {\Huge Titre magnifique \par}
+ {\Large Sous-titre magnifique \par}
+\vspace*{\fill}
+ {\Large Mémoire de \textsc{m2} \par}
+ \vspace{2\baselineskip}
+ {\large Par: \par}
+ {\large \textsc{carlos alberto rivera carreño}\par}
+ \vspace{1\baselineskip}
+ {\large Directeur de thèse: \par}
+ {\large \textsc{john eccentric doe}\par}
+\end{titlepage}
+
+\vspace*{\fill}
+\noindent
+\includegraphics[height=1.5cm]{agpl3.png}\par
+\vspace{1\baselineskip}
+\begin{english}
+This text is free: you can redistribute it and/or modify it
+under the terms of the \textsc{gnu} General Public License as published by
+the Free Software Foundation, either version 3 of the License or any later
+version.
+
+This text is distributed in the hope that it will be useful, but \textbf{without
+any warranty}; without even the implied warranty of \textbf{merchantability or 
+fitness for a particular purpose}. See the \textsc{gnu} General 
+Public License for more details.
+
+You should have received a copy of the \textsc{gnu} General Public License along
+with this text. If not, see \url{http://www.gnu.org/licenses/}.
+
+\vspace{1\baselineskip}
+\noindent
+Copyright \textcopyright \textsc{sync0} 2018. 
+\end{english}
+
+\thispagestyle{empty}
+\newpage 
+\vspace*{\fill}
+\begin{FlushRight}
+\itshape
+Aux lecteurs lointains. 
+\end{FlushRight}
+\vspace*{\fill}
+
+\thispagestyle{empty}
+\newpage 
+\tableofcontents
+
+\thispagestyle{empty}
+\newpage 
+\frontmatter
+\pagestyle{plain}
+\chapter{Remerciements} 
+
+\lipsum
+\chapter{Préface} 
+
+\lipsum
+\mainmatter
+\pagestyle{scrheadings}
+\part{La vérité économique}
+\label{sec:org3a47a25}
+\chapter{Marx et Ricardo}
+\label{sec:org3507315}
+\lipsum
+\part{La vérité juridique}
+\label{sec:orge17d5d8}
+\chapter{Marx et Ricardo}
+\label{sec:orge067786}
+\lipsum
+\end{document}

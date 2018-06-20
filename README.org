@@ -1,0 +1,207 @@
+* Description
+Ce ficher décrit une planification provisoire de la routine quotidienne. Il consiste de cinq parties:
+1. Aujourd'hui:
+   - Ce sont les tâches à accomplir aujourd'hui.
+2. Tâches universitaires:
+   - Ce sont les tâches à accomplir pour l'université.
+3. Budget de temps:
+   - C'est une planification provisoire du temps à niveau quotidien, hebdomadaire, et mensuel.
+4. La guide de l'étudiant:
+   - C'est une petite guide avec quelques conseils pour étudier plus effectivement dans les sessions d'études.
+5. Les desseins:
+   - C'est une liste des vœux pour permettre de les planifier et les accomplir. 
+* Aujourd'hui :daily: 
+** Tâches :daily:
+1. [/] Questions économiques contemporaines
+   - [ ]  Étudier les fiches
+   - [ ]  Lire Karl Marx, Critique of the Gotha Programme
+2. [/] Sociologie économique
+   - [ ] Étudier les fiches
+   - [ ] Textes
+     - [ ]  Viviana Zelizer
+     - [ ] Granovetter Mark
+     - [ ] Max Weber
+     - [ ] Isabelle Kalinowski
+     - [ ] Nicolas Guilhot
+     - [ ] Pierre Bourdieu
+     - [ ] Bertrand Réau
+       - [ ] Actes de la recherche 2009, La jeunesse du club
+         - [ ]  Résumer les trajectoires sociales du membres
+         - [ ] Expliquer les conditions sociales qui ont permit l'apparition du club mediteranné.
+         - [ ] En quoi l'articulation entre le monde du sport et de la
+           presse et une certaine culture cosmopolite a permit la
+           creation du club de vacances?
+         - [ ]  Une idée nexiste pas sans publique, quels sont les
+           characteristiques des premiers adhérents du club et pourquoi
+           ils ont été séduits par la formule proposé.
+     - [ ] Denord, Lagneau, Thine
+   - [ ] Étudier la correction faite en classe
+   - [ ] Étudier le cours complet d'un ancien étudiant
+3. [ ] Duolingo Italien
+** Indications
+  - Le matin, faire une liste des tâches à accomplir. À la nuit, fixer las dates des choses à faire le lendemain:
+  - [ ] Les cours.
+  - [ ] Nettoyage.
+  - [ ] Temps d'étude.
+  - [ ] Temps Proustian. 
+  - [ ] Temps des autres projets académiques. 
+* Tâches universitaires :daily: 
+1. [/] Sociologie du travail
+2. [/] Questions économiques contemporaines
+   - [ ]  Étudier les fiches
+   - [ ]  Lire Karl Marx, Critique of the Gotha Programme
+3. [/] Sociologie économique
+   - [ ] Étudier les fiches
+   - [ ] Textes
+     - [ ]  Viviana Zelizer
+     - [ ] Granovetter Mark
+     - [ ] Max Weber
+     - [ ] Isabelle Kalinowski
+     - [ ] Nicolas Guilhot
+     - [ ] Pierre Bourdieu
+     - [ ] Bertrand Réau
+       - [ ] Actes de la recherche 2009, La jeunesse du club
+         - [ ]  Résumer les trajectoires sociales du membres
+         - [ ] Expliquer les conditions sociales qui ont permit l'apparition du club mediteranné.
+         - [ ] En quoi l'articulation entre le monde du sport et de la
+           presse et une certaine culture cosmopolite a permit la
+           creation du club de vacances?
+         - [ ]  Une idée nexiste pas sans publique, quels sont les
+           characteristiques des premiers adhérents du club et pourquoi
+           ils ont été séduits par la formule proposé.
+     - [ ] Denord, Lagneau, Thine
+   - [ ] Étudier la correction faite en classe
+   - [ ] Étudier le cours complet d'un ancien étudiant
+4. [1/3] Techniques quantitatives 
+   - [ ]  Préparer la feuille avec les formules
+   - [X] Étudier l'examen de 2017
+   - [ ] Étudier l'examen de 2015
+* Budget de temps
+** Quotidien :daily:
+*** Aujourd'hui 
+| Catégorie      | Utilisation quotidienne | Allocation quotidienne | Non alloué | Total restant |
+|----------------+-------------------------+------------------------+------------+---------------|
+| Sommeil        |                       3 |                      7 |       4.00 |               |
+| Café           |                    0.25 |                    0.5 |       0.25 |               |
+| Cuisine        |                     0.5 |                      1 |       0.50 |               |
+| Hygiène        |                       1 |                    1.5 |       0.50 |               |
+| Italien        |                     0.5 |                      2 |       1.50 |               |
+| Lire           |                       0 |                      1 |       1.00 |               |
+| .emacs         |                    0.25 |                   0.25 |       0.00 |               |
+| Révisions      |                       1 |                      3 |       2.00 |               |
+| Planification  |                     0.5 |                    0.5 |       0.00 |               |
+| Transportation |                       0 |                      2 |       2.00 |               |
+|----------------+-------------------------+------------------------+------------+---------------|
+| Total          |                    7.00 |                  18.75 |      11.75 |         17.00 |
+| Pourcentage    |                   29.17 |                  69.79 |      40.62 |         70.83 |
+#+TBLFM: @2$4..@>>>$4=$3-$2;%.2f::@>>$2..@>>$>>=vsum(@2..@-1);%.2f::@>>$>=(24)-(@>>$2);%.2f::@>$2..@>$>=((@-1)/24)*100;%.2f
+*** Lendemain
+| Catégorie     | Utilisation quotidienne | Allocation quotidienne | Non alloué | Total hebdomadaire | Total restant |
+|---------------+-------------------------+------------------------+------------+--------------------+---------------|
+| Sommeil       |                       7 |                      7 |       4.00 |              49.00 |               |
+| Café          |                    0.25 |                    0.5 |       0.25 |               3.50 |               |
+| Cuisine       |                     0.5 |                      1 |       0.50 |               7.00 |               |
+| Hygiène       |                       1.5 |                    1.5 |       0.50 |              10.50 |               |
+| Italien       |                     0.5 |                      2 |       1.50 |              14.00 |               |
+| Lire          |                       0 |                      1 |       1.00 |               7.00 |               |
+| .emacs        |                    0.0 |                   0.25 |       0.00 |               1.75 |               |
+| Révisions     |                       6 |                      3 |       2.00 |              21.00 |               |
+| Planification |                     0.5 |                    0.5 |       0.00 |               3.50 |               |
+|---------------+-------------------------+------------------------+------------+--------------------+---------------|
+| Total         |                    7.00 |                  16.75 |       9.75 |             117.25 |         17.00 |
+#+TBLFM: @2$4..@>>$4=$3-$2;%.2f::@2$5..@>>$5=($-2)*7;%.2f::@>$2..@>$>>=vsum(@2..@-1);%.2f::@>$>=(24)-(@>$2);%.2f
+*** Formulas
+ - @3$4..@>>$4=$3-$2;U::@3$5..@>>$5=7*$3;U::@>$2=@-1+@-2;U:
+ - :@>$<<..@>$>=3:
+ - vsum(@<<<$0):
+** Hebdomadaire :weekly:
+| Catégorie                    | Utilisation hebdomadaire | Allocation hebdomadaire | Non alloué | Total restant |
+|------------------------------+-------------------------+------------------------+------------+---------------|
+| Sommeil                      |                       3 |                      7 |       4.00 |               |
+| Café                         |                    0.25 |                    0.5 |       0.25 |               |
+| Cuisine                      |                     0.5 |                      1 |       0.50 |               |
+| Hygiène                      |                       1 |                    1.5 |       0.50 |               |
+| Italien                      |                     0.5 |                      2 |       1.50 |               |
+| Lire                         |                       0 |                      1 |       1.00 |               |
+| .emacs                       |                    0.25 |                   0.25 |       0.00 |               |
+| Révisions                    |                       1 |                      3 |       2.00 |               |
+| Planification                |                     0.5 |                    0.5 |       0.00 |               |
+| Transportation |                         |                        |            |               |
+| Planification   hebdomadaire |                       0 |                      1 |       1.00 |               |
+| Famille et Amis              |                         |                     15 |      15.00 |               |
+| Chores                       |                         |                      6 |       6.00 |               |
+| Études                       |                         |                     23 |      23.00 |               |
+| Cours                        |                         |                     22 |      22.00 |               |
+|------------------------------+-------------------------+------------------------+------------+---------------|
+| Total                        |                    7.00 |                  83.75 |      76.75 |        161.00 |
+| Pourcentage                  |                    4.17 |                  49.55 |      45.39 |         95.83 |
+#+TBLFM: @2$4..@>>>$4=$3-$2;%.2f::@>>$2..@>>$>>=vsum(@2..@-1);%.2f::@>>$>=(24*7)-(@>>$2);%.2f::@>$2..@>$>=((@-1)/24*7)*100;%.2f
+** Mensuel
+* La guide de l'étudiant 
+** Planification session d'études                                    :daily:
+- Indications générales:
+  - [ ] Réviser cette liste avant chaque session d'études.
+  - [ ] Se débarrasser des distractions sur le bureau.
+  - [ ] Fixer la date des révisions hebdomadaires.
+  - Répartir les sessions d'études en intervalles de 30 minutes avec une pause de 5 minutes.
+  - Étudier au même temps chaque jour.
+  - Réviser les notes pendant le transport.
+  - Juste avant la classe, réviser encore les notes.
+- Tâches:
+  - [ ] Écrire les tâches à accomplir pour chaque session.
+  - [ ] Inclure la date d'échéance.
+  - [ ] Cochez les tâches terminées. 
+** Planification hebdomadaire                                      :weekly:
+ - [ ] Réviser cette liste chaque semaine.
+ - [ ] Fixer la date des obligations:
+   - [ ] Reports.
+   - [ ] Examens.
+   - [ ] Lectures.
+   - [ ] Présentations.
+   - [ ] Rendez-vous.
+ - [ ] Établir un horaire hebdomadaire:
+   - [ ] Fixer un temps spécifique pour planifier.
+   - [ ] Sport (au moins 1 heure par jour). 
+   - [ ] Méditer.
+   - [ ] Rencontrer des amis.
+** Planification semestrielle                                    :semestrial:
+ - [ ] Rédiger un calendrier de l'année scolaire, et fixer la date des obligations:
+   - [ ] Reports.
+   - [ ] Examens.
+   - [ ] Vacations.
+   - [ ] Lectures.
+   - [ ] Présentations.
+   - [ ] Rendez-vous.
+* Les desseins 
+** Le court terme 
+- [ ] Étudier chaque jour 30-60 min d'Italien.
+- [ ] Lire un peu d'un livre chaque jour:
+  - [ ] Lire /Les métamorphoses de la question sociale/ de Robert Castel.
+- [ ] Écrire un journal chaque jour.
+** La longue durée 
+*** Numérique
+- [ ] Apprendre à coder en /elisp/.
+- [ ] Apprendre à coder en /python/.
+*** Langues étrangères
+- [ ] Apprendre Allemand. 
+- [ ] Apprendre Japonais. 
+- [ ] Améliorer mon Coréean. 
+*** Science
+- [ ] Apprendre /real analysis/.
+- [ ] Apprendre physique classique.
+*** Bouquins
+- [ ] Lire les œuvres complètes de Michel Foucault.
+  - [ ] Lire la biographie de ...
+  - [ ] Lire /Les mots et les choses/.
+  - [ ] Lire /Sécurité, territoire, population/.
+- [ ] Lire le livre d'Alain Supiot.
+- [ ] Lire les œuvres complètes de Desrosières.
+- [ ] Lire les œuvres complètes de Philip Mirowski.
+* Einstellungen :noexport:ARCHIVE:
+** Einführung
+ #+TITLE: M1: Planification 1er semestre 
+#+LANGUAGE: fr
+#+TAGS: vocabulary(v) noexport export
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+STARTUP: noindent hidestars overview logdrawer
