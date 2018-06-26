@@ -25,6 +25,7 @@
  {\large Directeur de thèse: \par}
  {\large \textsc{john eccentric doe}\par}
 \end{titlepage}
+
 # \clearpage
 \vspace*{\fill}
 \noindent
@@ -50,6 +51,7 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \end{english}
 # \clearpage 
 \thispagestyle{empty}
+
 \newpage 
 \vspace*{\fill}
 \begin{FlushRight}
@@ -59,10 +61,12 @@ Aux lecteurs lointains.
 \vspace*{\fill}
 # \clearpage 
 \thispagestyle{empty}
+
 \newpage 
 \tableofcontents
 # \clearpage 
 \thispagestyle{empty}
+
 \newpage 
 \frontmatter
 \pagestyle{plain}
@@ -73,6 +77,7 @@ Aux lecteurs lointains.
 \chapter{Préface} 
 # \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 \lipsum
+
 \mainmatter
 \pagestyle{scrheadings}
 * La vérité économique  
@@ -180,6 +185,8 @@ Aux lecteurs lointains.
 # Insert dummy lipsum text (typesetting aid) 
 #+LATEX_HEADER: \usepackage{lipsum}
 *** Editing
+# Add useful macros for copyediting 
+# #+LATEX_HEADER: \usepackage[xcolor=red, markup=default]{changes}
 # Add margin TODO notes.
 #+LATEX_HEADER: \usepackage[textsize=scriptsize, linecolor=soothing_green, backgroundcolor=soothing_green]{todonotes}
 ** Fonts
@@ -221,7 +228,7 @@ Aux lecteurs lointains.
 # Change font settings of minisec titles
 #+LATEX_HEADER: \setkomafont{minisec}{\large\bfseries}
 # Change font settings of page numbers
-# #+LATEX_HEADER: \addtokomafont{pagenumber}{\bfseries}
+# #+LATEX_HEADER: \addtokomafont{pagenumber}{\sffamily}
 *** Table of Contents
 # Customize fonts used in the table of contents
 # #+LATEX_HEADER: \renewcommand*\contentsname{table des matières}
@@ -249,19 +256,17 @@ Aux lecteurs lointains.
 # # Remove the part numbering from part pages
 #+LATEX_HEADER: \renewcommand*{\partformat}{\partname}
 *** Chapter 
-# Customize fonts used in Chapter 
+# Customize fonts used in Chapter
+#+LATEX_HEADER: \addtokomafont{chapter}{\scshape\LARGE\lowercase}
 # \renewcommand*{\chapterheadstartvskip}{\vskip-10pt}
 # Center chapter 
 # #+LATEX_HEADER:\renewcommand{\raggedchapter}{\centering}
-#+LATEX_HEADER: \addtokomafont{chapter}{\scshape\LARGE\lowercase}
 # Increase vertical space between chapter and text body.
 #+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter} 
 # Remove the numbers from chapter title pages
 #+LATEX_HEADER:\renewcommand*{\thechapter}{}
 # Remove the chapter number from headings
  # #+LATEX_HEADER:\renewcommand*{\chapterformat}{\chaptername}
- # #+LATEX_HEADER:\renewcommand*{\chapterformat}{\chaptername}
- # #+LATEX_HEADER:\renewcommand*{\chapterformat}{\mbox{\chapappifchapterprefix{\nobreakspace} \autodot\IfUsePrefixLine{}{\enskip}}}
 *** Section
 # Customize fonts used in Section
 #+LATEX_HEADER: \addtokomafont{section}{\scshape\Large\lowercase}
@@ -283,6 +288,7 @@ Aux lecteurs lointains.
  #+LATEX_HEADER:\renewcommand*\labelitemiv{\adforn{73}}
  # reduce the indent of "itemize" items 
 # #+LATEX_HEADER:\setlist[itemize]{leftmargin=*}
+*** Colors
 # Define color to use in TODO notes. 
 #+LATEX_HEADER: \definecolor{soothing_green}{HTML}{E1F7DB}
 ** Etc
