@@ -189,7 +189,8 @@ Aux lecteurs lointains.
 # Use Linux Libertine font.
 #+LATEX_HEADER:\setmainfont[Mapping=tex-text,Numbers=OldStyle,SmallCapsFeatures={LetterSpace=4,Ligatures=NoCommon}]{Linux Libertine O}
 #+LATEX_HEADER:\setsansfont[Mapping=tex-text]{Linux Biolinum O}
-#+LATEX_HEADER:\setmonofont[Mapping=tex-text]{Courier New}
+#+LATEX_HEADER:\setmonofont[Mapping=tex-text]{Liberation Mono}
+# #+LATEX_HEADER:\setmonofont[Mapping=tex-text]{Courier New}
 ** Page Design
 # Customize page desing 
 # Remove headings from Chapter pages

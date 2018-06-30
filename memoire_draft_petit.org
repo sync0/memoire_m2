@@ -60,7 +60,7 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \vspace*{\fill}
 \begin{FlushRight}
 \itshape
-To Rafael Correa Delgado, who, as president of the Republic of Ecuador, showed us that things could be different and that Latin America is not condemned to a hundred years of solitude.  
+Aux lecteurs lointains. 
 \end{FlushRight}
 \vspace*{\fill}
 # \clearpage 
@@ -103,7 +103,7 @@ To Rafael Correa Delgado, who, as president of the Republic of Ecuador, showed u
 #+OPTIONS: LaTeX:t d:nil pri:t p:t inline:nil tags:nil todo:nil 
 # Use KOMA script classes instead of LaTeX's defaults
 #+LATEX_CLASS: scrbook
-#+LATEX_CLASS_OPTIONS: [paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=normal,headings=twolinechapter,open=right,chapterprefix=false,headsepline=true]
+#+LATEX_CLASS_OPTIONS: [paper=A5,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,headings=normal,headings=twolinechapter,open=right,chapterprefix=false,headsepline=true]
 # Custom section to choose latex export engine (XeTeX). Can't believe this
 # feature does not exist by default. Check Emacs' configuration for the relevant configurations
 #+LATEX_CMD: xelatex
@@ -207,8 +207,7 @@ To Rafael Correa Delgado, who, as president of the Republic of Ecuador, showed u
 # Use Linux Libertine font.
 #+LATEX_HEADER:\setmainfont[Mapping=tex-text,Numbers=OldStyle,SmallCapsFeatures={LetterSpace=4,Ligatures=NoCommon}]{Linux Libertine O}
 #+LATEX_HEADER:\setsansfont[Mapping=tex-text]{Linux Biolinum O}
-#+LATEX_HEADER:\setmonofont[Mapping=tex-text]{Liberation Mono}
-# #+LATEX_HEADER:\setmonofont[Mapping=tex-text]{Courier New}
+#+LATEX_HEADER:\setmonofont[Mapping=tex-text]{Courier New}
 ** Page Design
 # Customize page desing 
 # Remove headings from Chapter pages
@@ -248,6 +247,7 @@ To Rafael Correa Delgado, who, as president of the Republic of Ecuador, showed u
 # #+LATEX_HEADER: \addtokomafont{pagenumber}{\sffamily}
 # Change font settings page head & foot.
 #+LATEX_HEADER: \addtokomafont{pageheadfoot}{\bfseries\sffamily\upshape}
+# #+LATEX_HEADER: \addtokomafont{pageheadfoot}{\small\bfseries\sffamily\upshape}
 *** Table of Contents
 # Customize fonts used in the table of contents
 # #+LATEX_HEADER: \renewcommand*\contentsname{table des matières}
