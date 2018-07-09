@@ -30,7 +30,7 @@ This thesis has been produced using LaTeX; I have used the KOMA Script class
 Only non-proprietary fonts were used: The main font is Linux Libertine,
 alongside Linux Biolinum and Liberation Mono.
 * Copyright
-[[~/Dropbox/projects/paris_1/agpl3.png]]
+[[./images/agpl3.png]]
 
 Files that I have authored are all released under the terms of the GNU
 General Public License as published by the Free Software Foundation, either
@@ -44,65 +44,68 @@ more details.
 Please, visit the following website for the full text of the License.
 https://www.gnu.org/licenses/agpl-3.0.en.html
 
-Copyright SYNC0 2018.
+Copyright SYNCHRO0 2018.
 * Planning
-** Readings
-*** 無 Come si fa una tesi de laurea                                          :vacances:
-- [ ] Chapter 1. 
-- [ ] Chapter 2.
-- [ ] Chapter 3.
-- [ ] Chapter 4.
-- [ ] Chapter 5.
-- [ ] Chapter 6.
-- [ ] Chapter 7.
-- [ ] Chapter 8.
-- [ ] Chapter 9.
-- [ ] Chapter 10.
-- [ ] Chapter 11.
-- [ ] Chapter 12.
-*** 無 Douze lecons sur l'histoire                                            :memoire:
-- [ ] Chapter 1. 
-- [ ] Chapter 2.
-- [ ] Chapter 3.
-- [ ] Chapter 4.
-- [ ] Chapter 5.
-- [ ] Chapter 6.
-- [ ] Chapter 7.
-- [ ] Chapter 8.
-- [ ] Chapter 9.
-- [ ] Chapter 10.
-- [ ] Chapter 11.
-- [ ] Chapter 12.
-*** 無 Scienza e storia                                                       :memoire:
-- [ ] Chapter 1. 
-- [ ] Chapter 2.
-- [ ] Chapter 3.
-- [ ] Chapter 4.
-- [ ] Chapter 5.
-- [ ] Chapter 6.
-- [ ] Chapter 7.
-- [ ] Chapter 8.
-- [ ] Chapter 9.
-- [ ] Chapter 10.
-- [ ] Chapter 11.
-- [ ] Chapter 12.
-*** 待 [#A] Art de la thèse                                                   :vacances:
-- [ ] Chapter 1. 
-- [ ] Chapter 2.
-- [ ] Chapter 3.
-- [ ] Chapter 4.
-- [ ] Chapter 5.
-- [ ] Chapter 6.
-- [ ] Chapter 7.
-- [ ] Chapter 8.
-- [ ] Chapter 9.
-- [ ] Chapter 10.
-- [ ] Chapter 11.
-- [ ] Chapter 12.
-** Research
-*** Problématique I
-*** Problématique II
-** Writing  
+** Première moment 
+:PROPERTIES:
+:DURATION: 2 à 3.5 mois.
+:END:
+*** Choix du sujet  
+:NOTES:
+Avec problématique provisoire, en relation avec le directeur de thèse. 
+:END:
+**** Questions du départ. 
+*** Élaboration du sujet 
+:NOTES:
+Premier débroussaillage/dégrossissage.
+:END:
+**** Note d'intention.
+**** Ébauche de la problématique  
+:NOTES:
+Organisée autour d'une question principale.
+:END:
+** Deuxième moment 
+:PROPERTIES:
+:DURATION: Environ 15 mois.
+:END:
+*** Formulation de la /Problématique I/ et du /Plan de travail/
+**** Problématique I.
+**** Plan de travail.
+**** Discussion avec  le directeur de thèse et accord sur l'orientation générale.
+*** Travail de recherche 
+- [ ] Sur les livres.
+- [ ] Sur les matériaux.
+- [ ] Sur le terrain.
+*** Travail de recherche 
+- [ ] Sur le matériel accumulé et dans la tête. 
+** Troisième moment 
+:PROPERTIES:
+:DURATION: Environ 3 mois.
+:END:
+** Quatrième moment 
+:PROPERTIES:
+:DURATION: Environ 9 mois.
+:END:
+** Cinquième moment 
+:PROPERTIES:
+:DURATION: 2 à 3.5 mois.
+:END:
+** Sixième moment 
+:PROPERTIES:
+:DURATION: 
+:END:
+* Readings
+** 無 Come si fa una tesi de laurea                                            :vacances:
+** 無 Douze lecons sur l'histoire                                              :memoire:
+** 無 Scienza e storia                                                         :memoire:
+** 待 [#A] Art  de la thèse                                                    :vacances:
+*** Chapitre 1
+*** Chapitre 2
+*** Chapitre 3
+* Research
+** Problématique I
+** Problématique II
+* Writing  
 *** Introduction
 *** Body
 *** Conclusion

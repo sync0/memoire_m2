@@ -58,10 +58,16 @@ Copyright \textcopyright \textsc{sync0} 2018.
 
 \newpage 
 \vspace*{\fill}
+# \begin{FlushRight}
+
+The proper aim is to try and reconstruct society on such a basis that poverty will be impossible. And the altruistic virtues have really prevented the carrying out of this aim. Just as the worst slave-owners were those who were kind to their slaves, and so prevented the horror of the system being realised by those who suffered from it, and understood by those who contemplated it, so, in the present state of things in England, the people who do most harm are the people who try to do most good \ldots
+
+\vspace{1\baselineskip}
+
 \begin{FlushRight}
-\itshape
-To Rafael Correa Delgado, who, as president of the Republic of Ecuador, showed us that things could be different and that Latin America is not condemned to a hundred years of solitude.  
+Oscar Wilde, \textit{The Soul of Man Under Socialism}
 \end{FlushRight}
+
 \vspace*{\fill}
 # \clearpage 
 \thispagestyle{empty}
@@ -84,26 +90,46 @@ To Rafael Correa Delgado, who, as president of the Republic of Ecuador, showed u
 
 \mainmatter
 \pagestyle{scrheadings}
-* La vérité économique  
-** Marx et Ricardo
-\lipsum
-*** Marx et Ricardo et Smith
-\lipsum
-* La vérité juridique  
-** Marx et Ricardo
-\lipsum
-*** Marx et Ricardo et Smith
-\lipsum
+* Préparation  
+** Problématique I
+- [ ] Question principale.
+  - Points nodaux. 
+- [ ] Questions secondaires.
+  - Ampleur et interrelations.
+  - Moyens et méthodes.
+  - Sources mobilisées. 
+** Plan de travail
+* Recherche
+** Travail de recherche préparatoire 
+ :NOTES:
+ - [ ] Préparer fiches e notes avec références.
+ - [ ] Amender la Problématique I. 
+ :END:
+** Travail de recherche 
+ :NOTES:
+ - [ ] Fiches d'idées. 
+ - [ ] Projets d'idée de force.
+ - [ ] Projets de plan.
+ :END:
+ - [ ] Sur le matériel accumulé et dans la tête. 
+* Rédaction 
+** Projet de Problématique II
+** Projet du Plan de rédaction
+** Première ébauche de rédaction, ou rédaction d'un article
+** Problématique II
+** Plan de rédaction
+** Première rédaction.
+** Rédaction définitive.
 * Settings                                   :noexport:ARCHIVE:
 #+STARTUP: noindent showstars logdrawer showeverything
 ** LaTeX Export Settings
 # Choose which language to use for typesetting org settings.
-#+LANGUAGE: fr
+#+LANGUAGE: en
 #+OPTIONS: \n:nil ::t |:t ^:t f:t *:t ':t pro:nil H:5 timestamp:nil date:nil toc:nil
 #+OPTIONS: LaTeX:t d:nil pri:t p:t inline:nil tags:nil todo:nil 
 # Use KOMA script classes instead of LaTeX's defaults
 #+LATEX_CLASS: scrbook
-#+LATEX_CLASS_OPTIONS: [paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=normal,headings=twolinechapter,open=right,chapterprefix=false,headsepline=true]
+#+LATEX_CLASS_OPTIONS: [paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=normal,headings=twolinechapter,open=right,chapterprefix=false,headsepline=false]
 # Custom section to choose latex export engine (XeTeX). Can't believe this
 # feature does not exist by default. Check Emacs' configuration for the relevant configurations
 #+LATEX_CMD: xelatex
@@ -114,9 +140,9 @@ To Rafael Correa Delgado, who, as president of the Republic of Ecuador, showed u
 *** Languages
  #+LATEX_HEADER: \usepackage{polyglossia} 
 # Choose typesetting language 
- #+LATEX_HEADER: \setmainlanguage{french} 
+ #+LATEX_HEADER: \setmainlanguage{english} 
 # Choose secondary typesetting languages
- #+LATEX_HEADER: \setotherlanguages{italian,spanish,english} 
+ #+LATEX_HEADER: \setotherlanguages{italian,spanish,french} 
 # Configure typesetting of Chinese, Japanese, and Korean
  # #+LATEX_HEADER: \usepackage{xeCJK}
 # Choose font to typeset Korean 
@@ -156,16 +182,16 @@ To Rafael Correa Delgado, who, as president of the Republic of Ecuador, showed u
 # Improves typesetting of urls.
 # #+LATEX_HEADER: \usepackage{url}
 # Adds macros to typeset 1^st 2^nd, etc. in different languages
-#+LATEX_HEADER: \usepackage[french]{fmtcount} 
-#+LATEX_HEADER: \fmtcountsetoptions{french=france}
+#+LATEX_HEADER: \usepackage[english]{fmtcount} 
+# #+LATEX_HEADER: \fmtcountsetoptions{french=france}
 # Typeset according to selection of single space, double space, etc. 
- #+LATEX_HEADER: \usepackage[singlespacing]{setspace}
+ #+LATEX_HEADER: \usepackage[doublespacing]{setspace}
 # Kinda same as fmtcount but less flexible
  #+LATEX_HEADER: \usepackage[super]{nth}
 # Glorious typesetting of microtypographic details
 #+LATEX_HEADER: \usepackage{microtype}
 # Choose language specific microtype settings
-#+LATEX_HEADER: \microtypecontext{kerning=french}
+# #+LATEX_HEADER: \microtypecontext{kerning=french}
 # Correctly typeset ragged text
 #+LATEX_HEADER: \usepackage{ragged2e}
 # Prevent widows (danggling lines at the top or bottom of pages)
@@ -173,7 +199,7 @@ To Rafael Correa Delgado, who, as president of the Republic of Ecuador, showed u
 # Correctly typeset lists, etc. with itemize environment 
 #+LATEX_HEADER: \usepackage{enumitem}
 # Beautify the page with nice typographic symbols 
-# #+LATEX_HEADER: \usepackage{adforn}
+#+LATEX_HEADER: \usepackage{adforn}
 # #+LATEX_HEADER: \usepackage[object=vectorian]{pgfornament}
 # Correctly typeset floats
 #+LATEX_HEADER: \usepackage{float}
@@ -258,6 +284,8 @@ To Rafael Correa Delgado, who, as president of the Republic of Ecuador, showed u
 # #+LATEX_HEADER: \addtokomafont{sectionentry}{\itshape}
 #+LATEX_HEADER: \usepackage[tocindentauto,tocgraduated]{tocstyle}
 #+LATEX_HEADER: \usetocstyle{nopagecolumn}
+# Have a two-column table of contents. 
+#+LATEX_HEADER: \unsettoc{toc}{onecolumn}
 # Delete "Part" to TOC entry.
 # #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\scshape\sffamily\lowercase{#2}}}
 #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\protect\sffamily\Large\scshape\lowercase{#1}\hspace{1em}}{#2}}
@@ -277,7 +305,8 @@ To Rafael Correa Delgado, who, as president of the Republic of Ecuador, showed u
 # Remove the part number from headings
  # #+LATEX_HEADER:\renewcommand*{\thepart}{}
 # # Remove the part numbering from part pages
-#+LATEX_HEADER: \renewcommand*{\partformat}{\partname}
+#+LATEX_HEADER: \renewcommand*{\partformat}{}
+# #+LATEX_HEADER: \renewcommand*{\partformat}{\partname}
 *** Chapter 
 # Customize fonts used in Chapter
 #+LATEX_HEADER: \addtokomafont{chapter}{\bfseries\sffamily\Huge}

@@ -1,12 +1,12 @@
 % Intended LaTeX compiler: pdflatex
-\documentclass[paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=normal,headings=twolinechapter,open=right,chapterprefix=false,headsepline=true]{scrbook}
+\documentclass[paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=normal,headings=twolinechapter,open=right,chapterprefix=false,headsepline=false]{scrbook}
 \usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{url}
 \usepackage{soul}
 \usepackage{polyglossia}
-\setmainlanguage{french}
-\setotherlanguages{italian,spanish,english}
+\setmainlanguage{english}
+\setotherlanguages{italian,spanish,french}
 \usepackage[french=guillemets,thresholdtype=words,threshold=3]{csquotes}
 \MakeAutoQuote{«}{»}
 \AtBeginEnvironment{quote}{\itshape}
@@ -17,14 +17,13 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks,urlcolor=blue,linkcolor=red,citecolor=red,filecolor=black}
 \usepackage{booktabs}
-\usepackage[french]{fmtcount}
-\fmtcountsetoptions{french=france}
-\usepackage[singlespacing]{setspace}
+\usepackage[english]{fmtcount}
+\usepackage[doublespacing]{setspace}
 \usepackage[super]{nth}
 \usepackage{microtype}
-\microtypecontext{kerning=french}
 \usepackage{ragged2e}
 \usepackage{enumitem}
+\usepackage{adforn}
 \usepackage{float}
 \usepackage{xcolor}
 \usepackage{graphicx}
@@ -55,9 +54,10 @@
 \addtokomafont{chapterentry}{\sffamily\large}
 \usepackage[tocindentauto,tocgraduated]{tocstyle}
 \usetocstyle{nopagecolumn}
+\unsettoc{toc}{onecolumn}
 \renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\protect\sffamily\Large\scshape\lowercase{#1}\hspace{1em}}{#2}}
 \addtokomafont{part}{\scshape\sffamily\Huge\lowercase}
-\renewcommand*{\partformat}{\partname}
+\renewcommand*{\partformat}{}
 \addtokomafont{chapter}{\bfseries\sffamily\Huge}
 \renewcommand{\raggedchapter}{\centering}
 \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter}
@@ -81,7 +81,7 @@
  pdfkeywords={},
  pdfsubject={},
  pdfcreator={Emacs 26.1 (Org mode 9.1.13)}, 
- pdflang={Frenchb}}
+ pdflang={English}}
 \begin{document}
 
 \begin{titlepage}
@@ -131,10 +131,15 @@ Copyright \textcopyright \textsc{sync0} 2018.
 
 \newpage 
 \vspace*{\fill}
+
+The proper aim is to try and reconstruct society on such a basis that poverty will be impossible. And the altruistic virtues have really prevented the carrying out of this aim. Just as the worst slave-owners were those who were kind to their slaves, and so prevented the horror of the system being realised by those who suffered from it, and understood by those who contemplated it, so, in the present state of things in England, the people who do most harm are the people who try to do most good \ldots
+
+\vspace{1\baselineskip}
+
 \begin{FlushRight}
-\itshape
-To Rafael Correa Delgado, who, as president of the Republic of Ecuador, showed us that things could be different and that Latin America is not condemned to a hundred years of solitude.  
+Oscar Wilde, \textit{The Soul of Man Under Socialism}
 \end{FlushRight}
+
 \vspace*{\fill}
 
 \thispagestyle{empty}
@@ -156,20 +161,47 @@ To Rafael Correa Delgado, who, as president of the Republic of Ecuador, showed u
 
 \mainmatter
 \pagestyle{scrheadings}
-\part{La vérité économique}
-\label{sec:org8bf1db2}
-\chapter{Marx et Ricardo}
-\label{sec:org53c2424}
-\lipsum
-\section{Marx et Ricardo et Smith}
-\label{sec:org07ce1b8}
-\lipsum
-\part{La vérité juridique}
-\label{sec:org56c6ca1}
-\chapter{Marx et Ricardo}
-\label{sec:org011aa06}
-\lipsum
-\section{Marx et Ricardo et Smith}
-\label{sec:org8fcc4ca}
-\lipsum
+\part{Préparation}
+\label{sec:org9bd7b63}
+\chapter{Problématique I}
+\label{sec:orgd0bad97}
+\begin{itemize}
+\item[{$\square$}] Question principale.
+\begin{itemize}
+\item Points nodaux.
+\end{itemize}
+\item[{$\square$}] Questions secondaires.
+\begin{itemize}
+\item Ampleur et interrelations.
+\item Moyens et méthodes.
+\item Sources mobilisées.
+\end{itemize}
+\end{itemize}
+\chapter{Plan de travail}
+\label{sec:org2f6cdcc}
+\part{Recherche}
+\label{sec:org08d4bd3}
+\chapter{Travail de recherche préparatoire}
+\label{sec:orge5e0aad}
+\chapter{Travail de recherche}
+\label{sec:orgc071241}
+\begin{itemize}
+\item[{$\square$}] Sur le matériel accumulé et dans la tête.
+\end{itemize}
+\part{Rédaction}
+\label{sec:orgc238240}
+\chapter{Projet de Problématique II}
+\label{sec:org143b951}
+\chapter{Projet du Plan de rédaction}
+\label{sec:orgeca151d}
+\chapter{Première ébauche de rédaction, ou rédaction d'un article}
+\label{sec:org47167f6}
+\chapter{Problématique II}
+\label{sec:org91befbc}
+\chapter{Plan de rédaction}
+\label{sec:orge5ef626}
+\chapter{Première rédaction.}
+\label{sec:org089abfc}
+\chapter{Rédaction définitive.}
+\label{sec:org9272f96}
 \end{document}
