@@ -1,0 +1,613 @@
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#   GNU General Public License for more details.
+
+#   You should have received a copy of the GNU General Public License
+#   along with this program. If not, see <http://www.gnu.org/licenses/>.
+\begin{titlepage}
+ \centering
+ \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
+ \vspace{4\baselineskip}
+ {\Huge Forschungsnotizen\par}
+ {\LARGE \textsc{mii} $\cdot$ \textsc{i}\par}
+ \vspace{4\baselineskip}
+ {\Large \textsc{sync0}\par}
+ \vfill
+\end{titlepage}
+
+\vspace*{\fill}
+\noindent
+\includegraphics[height=1.5cm]{agpl3.png}\par
+\vspace{1\baselineskip}
+\begin{english}
+This text is free: you can redistribute it and/or modify it
+under the terms of the \textsc{gnu} General Public License as published by
+the Free Software Foundation, either version 3 of the License or any later
+version.
+
+This text is distributed in the hope that it will be useful, but \textbf{without
+any warranty}; without even the implied warranty of \textbf{merchantability or 
+fitness for a particular purpose}. See the \textsc{gnu} General 
+Public License for more details.
+
+You should have received a copy of the \textsc{gnu} General Public License along
+with this text. If not, see \url{http://www.gnu.org/licenses/}.
+
+\vspace{1\baselineskip}
+\noindent
+Copyright \textcopyright \textsc{sync0} 2018. 
+\end{english}
+# \clearpage 
+\thispagestyle{empty}
+
+\newpage
+\tableofcontents 
+\pagestyle{empty}
+
+\newpage
+\pagestyle{scrheadings}
+* Première moment
+** \ordinalnum{1} Week 
+*** 17/09/2018 
+*** 18/09/2018 
+*** 19/09/2018 
+*** 20/09/2018 
+*** 21/09/2018 
+*** 22/09/2018 
+*** 23/09/2018 
+** \ordinalnum{2} Week 
+*** 24/09/2018 
+*** 25/09/2018 
+*** 26/09/2018 
+*** 27/09/2018 
+*** 28/09/2018 
+*** 29/09/2018 
+*** 30/09/2018 
+** \ordinalnum{3} Week 
+*** 01/10/2018 
+*** 02/10/2018 
+*** 03/10/2018 
+*** 04/10/2018 
+*** 05/10/2018 
+*** 06/10/2018 
+*** 07/10/2018 
+** \ordinalnum{4} Week 
+*** 08/10/2018 
+*** 09/10/2018 
+*** 10/10/2018 
+*** 11/10/2018 
+*** 12/10/2018 
+*** 13/10/2018 
+*** 14/10/2018 
+* Deuxième moment
+** \ordinalnum{5} Week 
+*** 15/10/2018 
+*** 16/10/2018 
+*** 17/10/2018 
+*** 18/10/2018 
+*** 19/10/2018 
+*** 20/10/2018 
+*** 21/10/2018 
+** \ordinalnum{6} Week 
+*** 22/10/2018 
+*** 23/10/2018 
+*** 24/10/2018 
+*** 25/10/2018 
+*** 26/10/2018 
+*** 27/10/2018  
+*** 28/10/2018 
+** \ordinalnum{7} Week - Toussaint 
+*** 29/10/2018 
+*** 30/10/2018 
+*** 31/10/2018 
+*** 01/11/2018 
+*** 02/11/2018 
+*** 03/11/2018 
+*** 04/11/2018 
+** \ordinalnum{8} Week 
+*** 05/11/2018 
+*** 06/11/2018 
+*** 07/11/2018 
+*** 08/11/2018 
+*** 09/11/2018 
+*** 10/11/2018 
+*** 11/11/2018 
+** \ordinalnum{9} Week 
+*** 12/11/2018 
+*** 13/11/2018 
+*** 14/11/2018 
+*** 15/11/2018 
+*** 16/11/2018 
+*** 17/11/2018 
+*** 18/11/2018 
+** \ordinalnum{10} Week 
+*** 19/11/2018 
+*** 20/11/2018 
+*** 21/11/2018 
+*** 22/11/2018 
+*** 23/11/2018 
+*** 24/11/2018 
+*** 25/11/2018 
+** \ordinalnum{11} Week 
+*** 26/11/2018 
+*** 27/11/2018 
+*** 28/11/2018 
+*** 29/11/2018 
+*** 30/11/2018 
+*** 01/12/2018 
+*** 02/12/2018 
+** \ordinalnum{12} Week 
+*** 03/12/2018 
+*** 04/12/2018 
+*** 05/12/2018 
+*** 06/12/2018 
+*** 07/12/2018 
+*** 08/12/2018 
+*** 09/12/2018 
+** \ordinalnum{13} Week 
+*** 10/12/2018 
+*** 11/12/2018 
+*** 12/12/2018 
+*** 13/12/2018 
+*** 14/12/2018 
+*** 15/12/2018 
+*** 16/12/2018 
+** \ordinalnum{14} Week 
+*** 17/12/2018 
+*** 18/12/2018 
+*** 19/12/2018 
+*** 20/12/2018 
+*** 21/12/2018 
+*** 22/12/2018 
+*** 23/12/2018 
+* Troisième moment
+** \ordinalnum{15} Week - Noël 
+*** 24/12/2018 
+*** 25/12/2018 
+*** 26/12/2018 
+*** 27/12/2018 
+*** 28/12/2018 
+*** 29/12/2018 
+*** 30/12/2018 
+** \ordinalnum{16} Week - Noël 
+*** 31/12/2018 
+*** 01/01/2019 
+*** 02/01/2019 
+*** 03/01/2019 
+*** 04/01/2019 
+*** 05/01/2019 
+*** 06/01/2019 
+** \ordinalnum{17} Week 
+*** 07/01/2019 
+*** 08/01/2019 
+*** 09/01/2019 
+*** 10/01/2019 
+*** 11/01/2019 
+*** 12/01/2019 
+*** 13/01/2019 
+** \ordinalnum{18} Week 
+*** 14/01/2019 
+*** 15/01/2019 
+*** 16/01/2019 
+*** 17/01/2019 
+*** 18/01/2019 
+*** 19/01/2019 
+*** 20/01/2019 
+** \ordinalnum{19} Week 
+*** 21/01/2019 
+*** 22/01/2019 
+*** 23/01/2019 
+*** 24/01/2019 
+*** 25/01/2019 
+*** 26/01/2019 
+*** 27/01/2019 
+** \ordinalnum{20} Week 
+*** 28/01/2019 
+*** 29/01/2019 
+*** 30/01/2019 
+*** 31/01/2019 
+*** 01/02/2019 
+*** 02/02/2019 
+*** 03/02/2019 
+** \ordinalnum{21} Week 
+*** 04/02/2019 
+*** 05/02/2019 
+*** 06/02/2019 
+*** 07/02/2019 
+*** 08/02/2019 
+*** 09/02/2019 
+*** 10/02/2019 
+** \ordinalnum{22} Week 
+*** 11/02/2019 
+*** 12/02/2019 
+*** 13/02/2019 
+*** 14/02/2019 
+*** 15/02/2019 
+*** 16/02/2019 
+*** 17/02/2019 
+** \ordinalnum{23} Week 
+*** 18/02/2019 
+*** 19/02/2019 
+*** 20/02/2019 
+*** 21/02/2019 
+*** 22/02/2019 
+*** 23/02/2019 
+*** 24/02/2019 
+* Quatrième moment
+** \ordinalnum{24} Week 
+*** 25/02/2019 
+*** 26/02/2019 
+*** 27/02/2019 
+*** 28/02/2019 
+*** 01/03/2019 
+*** 02/03/2019 
+*** 03/03/2019 
+** \ordinalnum{25} Week - Hiver
+*** 04/03/2019 
+*** 05/03/2019 
+*** 06/03/2019 
+*** 07/03/2019 
+*** 08/03/2019 
+*** 09/03/2019 
+*** 10/03/2019 
+** \ordinalnum{26} Week 
+*** 11/03/2019 
+*** 12/03/2019 
+*** 13/03/2019 
+*** 14/03/2019 
+*** 15/03/2019 
+*** 16/03/2019 
+*** 17/03/2019 
+** \ordinalnum{27} Week 
+*** 18/03/2019 
+*** 19/03/2019 
+*** 20/03/2019 
+*** 21/03/2019 
+*** 22/03/2019 
+*** 23/03/2019 
+*** 24/03/2019 
+** \ordinalnum{28} Week 
+*** 25/03/2019 
+*** 26/03/2019 
+*** 27/03/2019 
+*** 28/03/2019 
+*** 29/03/2019 
+*** 30/03/2019 
+*** 31/03/2019 
+** \ordinalnum{29} Week 
+*** 01/04/2019 
+*** 02/04/2019 
+*** 03/04/2019 
+*** 04/04/2019 
+*** 05/04/2019 
+*** 06/04/2019 
+*** 07/04/2019 
+** \ordinalnum{30} Week 
+*** 08/04/2019 
+*** 09/04/2019 
+*** 10/04/2019 
+*** 11/04/2019 
+*** 12/04/2019 
+*** 13/04/2019 
+*** 14/04/2019 
+** \ordinalnum{31} Week 
+*** 15/04/2019 
+*** 16/04/2019 
+*** 17/04/2019 
+*** 18/04/2019 
+*** 19/04/2019 
+*** 20/04/2019 
+*** 21/04/2019 
+** \ordinalnum{32} Week 
+*** 22/04/2019 
+*** 23/04/2019 
+*** 24/04/2019 
+*** 25/04/2019 
+*** 26/04/2019 
+*** 27/04/2019 
+*** 28/04/2019 
+* Cinquième moment
+** \ordinalnum{33} Week 
+*** 29/04/2019 
+*** 30/04/2019 
+*** 01/05/2019 
+*** 02/05/2019 
+*** 03/05/2019 
+*** 04/05/2019 
+*** 05/05/2019 
+** \ordinalnum{34} Week 
+*** 06/05/2019 
+*** 07/05/2019 
+*** 08/05/2019 
+*** 09/05/2019 
+*** 10/05/2019 
+*** 11/05/2019 
+*** 12/05/2019 
+* Sixième moment
+** \ordinalnum{35} Week 
+*** 12/05/2019 
+*** 13/05/2019 
+*** 14/05/2019 
+*** 15/05/2019 
+*** 16/05/2019 
+*** 17/05/2019 
+*** 18/05/2019 
+*** 19/05/2019 
+* Settings                                   :noexport:ARCHIVE:
+#+STARTUP: noindent showstars logdrawer showeverything
+** LaTeX Export Settings
+# Choose which language to use for typesetting org settings
+#+LANGUAGE: en
+#+OPTIONS: \n:nil ::t |:t ^:t f:t *:t ':t pro:nil H:5 timestamp:nil date:nil toc:nil
+#+OPTIONS: LaTeX:t d:nil pri:t p:t inline:nil tags:nil todo:nil 
+# Use KOMA script classes instead of LaTeX's defaults
+#+LATEX_CLASS: scrbook
+#+LATEX_CLASS_OPTIONS: [paper=A4,portrait,twoside=true,twocolumn=true,headinclude=true,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,headings=big,headings=twolinechapter,open=right,chapterprefix=false,numbers=noendperiod,parskip=full,headsepline=false]
+# Custom section to choose latex export engine (XeTeX). Can't believe this
+# feature does not exist by default. Check Emacs' configuration for the relevant configurations
+#+LATEX_CMD: xelatex
+#+EXPORT_SELECT_TAGS: export
+# Create tag to allow for non-exportable org sub-trees (useful for keeping notes) 
+#+EXPORT_EXCLUDE_TAGS: noexport
+** LaTeX Packages
+*** Languages
+ #+LATEX_HEADER: \usepackage{polyglossia} 
+# Choose typesetting language 
+ #+LATEX_HEADER: \setmainlanguage{english} 
+# Choose secondary typesetting languages
+ #+LATEX_HEADER: \setotherlanguages{french} 
+# Configure typesetting of Chinese, Japanese, and Korean
+ #+LATEX_HEADER: \usepackage{xeCJK}
+# Choose font to typeset Korean 
+ #+LATEX_HEADER: \setCJKmainfont{Baekmuk Batang}
+*** Csquotes
+# Choose threshold for turning an in-text quote into a block quote
+ #+LATEX_HEADER: \usepackage[french=guillemets,thresholdtype=words,threshold=3]{csquotes}
+# #+LATEX_HEADER: \SetBlockThreshold{1}
+# #+LATEX_HEADER: \MakeOuterQuote{"}
+# Automatically treat » as a csquote macro
+#+LATEX_HEADER: \MakeAutoQuote{«}{»}
+# #+LATEX_HEADER: \MakeBlockQuote{<}{|}{>}
+# #+LATEX_HEADER: \SetCiteCommand{\parencite}
+# Italicize all quotes
+#+LATEX_HEADER:\AtBeginEnvironment{quote}{\itshape}
+*** Biblatex
+# Set up bibliography management through biblatex
+# #+LATEX_HEADER: \usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=true]{biblatex}
+# Choose bibliography file
+# #+LATEX_HEADER: \addbibresource{~/Documents/mendeley/library.bib}
+*** Ams
+# Necessary settings for typesetting math, symbols, and formulae
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amsthm}
+#+LATEX_HEADER: \usepackage{amssymb}
+# Easily cross out symbols and arrows with \centernot command
+#+LATEX_HEADER: \usepackage{centernot}
+*** Hyperref
+# Add hyperlinks wihin the document (sections, table of contents, etc.)
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \hypersetup{colorlinks,urlcolor=blue,linkcolor=red,citecolor=red,filecolor=black}
+*** Typography
+# Prevent ugly typesetting when using two-column setup
+ #+LATEX_HEADER: \usepackage{balance}
+# Improves typesetting of tables
+ #+LATEX_HEADER: \usepackage{booktabs}
+# Adds macros to typeset 1^st 2^nd, etc. in different languages
+#+LATEX_HEADER: \usepackage[english]{fmtcount} 
+# #+LATEX_HEADER: \fmtcountsetoptions{french=france}
+# Typeset according to selection of single space, double space, etc. 
+ #+LATEX_HEADER: \usepackage[singlespacing]{setspace}
+# Kinda same as fmtcount but less flexible
+ #+LATEX_HEADER: \usepackage[super]{nth}
+# Glorious typesetting of microtypographic details
+#+LATEX_HEADER: \usepackage{microtype}
+# Choose language specific microtype settings
+# #+LATEX_HEADER: \microtypecontext{kerning=french}
+# Correctly typeset ragged text
+#+LATEX_HEADER: \usepackage{ragged2e}
+# Prevent widows (danggling lines at the top or bottom of pages)
+#+LATEX_HEADER: \usepackage[all]{nowidow}
+# Correctly typeset lists, etc. with itemize environment 
+#+LATEX_HEADER: \usepackage{enumitem}
+# Beautify the page with nice typographic symbols 
+#+LATEX_HEADER: \usepackage{adforn}
+# #+LATEX_HEADER: \usepackage[object=vectorian]{pgfornament}
+# Correctly typeset floats
+#+LATEX_HEADER: \usepackage{float}
+*** Graphicx
+# Add color to documents
+#+LATEX_HEADER: \usepackage{xcolor}
+# Allow colored tables
+# #+LATEX_HEADER: \usepackage{colortbl}
+# Add graphics to documents
+ #+LATEX_HEADER: \usepackage{graphicx}
+# Choose graphics' folder
+ #+LATEX_HEADER: \graphicspath{ {/home/sync0/Dropbox/projects/paris_1/} }
+# Allow footnotes in tables 
+# #+LATEX_HEADER: \usepackage{tablefootnote}
+# Correctly color code blocks
+# #+LATEX_HEADER: \usepackage{minted}
+# Insert dummy text (typesetting aid) 
+#+LATEX_HEADER: \usepackage{lipsum}
+*** TiKz
+# Add simple graphics in latex
+# #+LATEX_HEADER:\usepackage{tikz}
+# #+LATEX_HEADER:\usetikzlibrary{calc,trees,positioning,arrows,chains,shapes.geometric,decorations.pathreplacing,decorations.pathmorphing,shapes,matrix,shapes.symbols}
+# #+LATEX_HEADER:\tikzset{>=stealth',punktchain/.style={rectangle,rounded corners,draw=black, very thick,text width=10em,minimum height=3em,text centered,on chain},line/.style={draw, thick, <-},element/.style={tape,top color=white,bottom color=blue!50!black!60!,minimum width=8em,draw=blue!40!black!90, very thick,text width=10em,minimum height=3.5em,text centered,on chain},every join/.style={->, thick,shorten >=1pt},decoration={brace},tuborg/.style={decorate},tubnode/.style={midway, right=2pt},}
+*** Editing
+# Add useful macros for copyediting 
+# #+LATEX_HEADER: \usepackage[xcolor=red, markup=default]{changes}
+# Add margin TODO notes.
+#+LATEX_HEADER: \usepackage[textsize=scriptsize, linecolor=soothing_green, backgroundcolor=soothing_green]{todonotes}
+** Fonts
+# Set up XeTeX
+#+LATEX_HEADER: \usepackage{xunicode}
+#+LATEX_HEADER: \usepackage{fontspec}
+#+LATEX_HEADER: \usepackage{xltxtra}
+# Adjust all used fonts to the same x-height.
+#+LATEX_HEADER: \defaultfontfeatures{Scale=MatchLowercase}
+# Use Linux Libertine font.
+#+LATEX_HEADER:\setmainfont[Mapping=tex-text,Numbers=OldStyle,SmallCapsFeatures={LetterSpace=4,Ligatures=NoCommon}]{Linux Libertine O}
+#+LATEX_HEADER:\setsansfont[Mapping=tex-text]{Linux Biolinum O}
+#+LATEX_HEADER:\setmonofont[Mapping=tex-text]{Courier New}
+** Page Design
+# Customize page desing 
+# Remove headings from Chapter pages
+# #+LATEX_HEADER:\renewcommand*{\chapterpagestyle}{plain}
+# Remove numbering from Part pages
+# #+LATEX_HEADER:\renewcommand*{\partpagestyle}{empty}
+#+LATEX_HEADER:\usepackage{scrlayer-scrpage}
+#+LATEX_HEADER:\pagestyle{scrheadings}
+#+LATEX_HEADER:\clearscrheadfoot
+# Automatically add Chapter as heading 
+#+LATEX_HEADER:\automark[chapter]{part}
+# Center headings 
+#+LATEX_HEADER:\cehead{\headmark} 
+#+LATEX_HEADER:\cohead{\headmark} 
+# Put headings in the outermost part of the page
+# #+LATEX_HEADER:\lehead{\headmark} 
+# #+LATEX_HEADER:\rohead{\headmark} 
+# Put numbers in the outermost part of the page
+#+LATEX_HEADER:\lehead{\thepage} 
+#+LATEX_HEADER:\rohead{\thepage} 
+# Add numbering in the outer footer (margin) of pages
+# #+LATEX_HEADER:\ofoot*{\thepage} 
+# Remove annoying "First Part" from headings 
+#+LATEX_HEADER:\renewcommand\partmarkformat{}
+** Typographic settings
+# Add different spacing for things after table of contents
+#+LATEX_HEADER: \AfterTOCHead{\singlespacing}
+# Set default settings for document font
+#+LATEX_HEADER: \setkomafont{disposition}{\normalfont\normalcolor}
+# Change font settings of labeling environment
+#+LATEX_HEADER: \setkomafont{labelinglabel}{\normalfont\bfseries}
+# Change font settings of minisec titles
+#+LATEX_HEADER: \setkomafont{minisec}{\usekomafont{subsection}}
+# #+LATEX_HEADER: \setkomafont{minisec}{\large\bfseries}
+# Change font settings of page numbers
+# #+LATEX_HEADER: \addtokomafont{pagenumber}{\bfseries}
+# Change font settings page head & foot.
+#+LATEX_HEADER: \addtokomafont{pageheadfoot}{\bfseries\sffamily\upshape}
+*** Title Page
+# Customize fonts used in the title page
+##+LATEX_HEADER: \addtokomafont{subject}{\scshape\lowercase}
+##+LATEX_HEADER: \addtokomafont{author}{\scshape\lowercase}
+##+LATEX_HEADER: \addtokomafont{date}{\normalsize}
+##+LATEX_HEADER: \addtokomafont{subtitle}{\itshape}
+##+LATEX_HEADER: \addtokomafont{dedication}{\itshape}
+*** Table of Contents
+# Customize fonts used in the table of contents
+# #+LATEX_HEADER: \renewcommand*\contentsname{table des matières}
+# #+LATEX_HEADER: \addtokomafont{partentry}{\scshape\lowercase}
+#+LATEX_HEADER: \addtokomafont{chapterentry}{\sffamily\large}
+# #+LATEX_HEADER: \addtokomafont{sectionentry}{\itshape}
+#+LATEX_HEADER: \usepackage[tocindentauto,tocgraduated]{tocstyle}
+#+LATEX_HEADER: \usetocstyle{nopagecolumn}
+# Have a two-column table of contents. 
+#+LATEX_HEADER: \unsettoc{toc}{onecolumn}
+# Delete "Part" to TOC entry.
+#+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\scshape\sffamily\lowercase{#2}}}
+# #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\protect\Large\sffamily\scshape\lowercase{#1}\hspace{1em}}{\large\scshape\sffamily\lowercase{#2}}}
+# #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\protect\scshape\lowercase{#2}}}
+*** Figures
+# #+LATEX_HEADER: \addtokomafont{caption}{\normalsize}
+# #+LATEX_HEADER: \addtokomafont{captionlabel}{\bfseries}
+*** Part
+# Customize fonts used in Part.
+#+LATEX_HEADER: \addtokomafont{part}{\scshape\sffamily\Huge\lowercase}
+# #+LATEX_HEADER: \addtokomafont{partnumber}{\bfseries\lowercase}
+# Remove the part number from headings.
+ # #+LATEX_HEADER:\renewcommand*{\thepart}{}
+# # Remove the part prefix from part pages.
+#+LATEX_HEADER: \renewcommand*{\partformat}{}
+*** Chapter 
+# Customize fonts used in Chapter
+#+LATEX_HEADER: \addtokomafont{chapter}{\bfseries\sffamily\Huge}
+# #+LATEX_HEADER: \addtokomafont{chapter}{\scshape\sffamily\Huge\lowercase}
+# \renewcommand*{\chapterheadstartvskip}{\vskip-10pt}
+# Center chapter 
+#+LATEX_HEADER:\renewcommand{\raggedchapter}{\centering}
+# Increase vertical space between chapter and text body.
+#+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter} 
+# Remove the numbers from chapter title pages
+# #+LATEX_HEADER:\renewcommand*{\thechapter}{}
+*** Section
+# Customize fonts used in Section
+#+LATEX_HEADER: \addtokomafont{section}{\scshape\sffamily\LARGE\lowercase}
+# #+LATEX_HEADER: \addtokomafont{section}{\scshape\sffamily\huge\lowercase}
+# Remove the numbers from chapter title pages
+# #+LATEX_HEADER:\renewcommand*{\thesection}{}
+*** Subsection
+# Customize fonts used in Subsection
+# #+LATEX_HEADER: \addtokomafont{subsection}{\bfseries}
+#+LATEX_HEADER: \addtokomafont{subsection}{\sffamily\Large}
+# #+LATEX_HEADER: \addtokomafont{subsection}{\scshape\sffamily\LARGE\lowercase}
+*** Subsubsection
+# Customize fonts used in Subsubsection
+#+LATEX_HEADER: \addtokomafont{subsubsection}{\scshape\sffamily\Large\lowercase}
+*** Code blocks
+# Customize fonts used in code blocks (requires minted package)
+# #+LATEX_HEADER:\usemintedstyle{borland}
+# #+LATEX_HEADER:\lstset{language=SAS,breaklines=true,basicstyle=\ttfamily\bfseries,columns=fixed,keepspaces=true,identifierstyle=\color{blue}\ttfamily,keywordstyle=\color{cyan}\ttfamily,stringstyle=\color{purple}\ttfamily,commentstyle=\color{green}\ttfamily} 
+** User-defined elements
+*** Summaries
+# Crete environment for adding summaries in italics
+ #+LATEX_HEADER:\newenvironment{summary}{\begin{addmargin}{3em}\itshape}{\end{addmargin}} 
+*** Itemize symbols
+ # Replace adforn's typographic symbols for itemize items
+ #+LATEX_HEADER:\renewcommand*\labelitemi{\adforn{33}}
+ #+LATEX_HEADER:\renewcommand*\labelitemii{\adforn{73}}
+ #+LATEX_HEADER:\renewcommand*\labelitemiii{\adforn{73}}
+ #+LATEX_HEADER:\renewcommand*\labelitemiv{\adforn{73}}
+ # reduce the indent of "itemize" items 
+ # #+LATEX_HEADER:\setlist[itemize]{leftmargin=*}
+*** Margin notes
+ # Create command for quickly adding margin notes (requires correctly
+ # setting of margins)
+ #+LATEX_HEADER:\newcommand{\annotation}[1]{\marginpar{\small\itshape #1}}
+*** Dictum
+# Customize KOMA script's dictum environment
+#+LATEX_HEADER: \renewcommand*{\dictumwidth}{.8\textwidth}
+#+LATEX_HEADER: \renewcommand*{\raggeddictum}{\centering}
+#+LATEX_HEADER: \renewcommand*{\raggeddictumtext}{\centering}
+#+LATEX_HEADER: \addtokomafont{dictum}{\large\rmfamily}
+*** Colors
+# Nice color to add to hyperlinks
+#+LATEX_HEADER:\definecolor{bibleblue}{HTML}{00339a}
+# Define color for table cells
+ # #+LATEX_HEADER: \definecolor{Gray}{gray}{0.9}
+# Define color for table cells
+ # #+LATEX_HEADER: \definecolor{LightCyan}{rgb}{0.88,1,1}
+# Set row color for tables
+ # #+LATEX_HEADER: \rowcolors{1}{Gray}{}
+# Define color to use in TODO notes. 
+#+LATEX_HEADER: \definecolor{soothing_green}{HTML}{E1F7DB}
+*** LaTeX theorems
+# This is something I use for adding figure or table interpretations 
+#+LATEX_HEADER:\theoremstyle{definition}
+#+LATEX_HEADER:\newtheorem{lecture}{Lecture}
+#+LATEX_HEADER:\newtheorem*{lecture*}{Lecture}
+#+LATEX_HEADER:\newtheorem{problem}{Problème}
+#+LATEX_HEADER:\newtheorem*{problem*}{Problème}
+#+LATEX_HEADER:\newtheorem{interpretation}{Interpretation}
+#+LATEX_HEADER:\newtheorem*{interpretation*}{Interpretation}
+** Etc
+# Set limits for numbering (parts, chapters, sections, etc.)
+#+LATEX_HEADER: \setcounter{secnumdepth}{\partnumdepth}
+# Set limits for table of contents entries.
+#+LATEX_HEADER: \setcounter{tocdepth}{1}
+# Recalculate type area based on new settings (required for corectly
+# spacing two-column pages)
+#+LATEX_HEADER: \recalctypearea
+# Change spacing of itemize environment items
+# #+LATEX_HEADER: \setlist[1]{itemsep=\parskip}
+# Add extra margin space (for adding margin notes)
+# #+LATEX_HEADER: \setlength{\marginparwidth}{3\marginparwidth}
+# Set separation between columns for two-column pages
+#+LATEX_HEADER: \setlength{\columnsep}{1cm}

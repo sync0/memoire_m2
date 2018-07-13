@@ -60,6 +60,11 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \vspace*{\fill}
 # \begin{FlushRight}
 
+
+\begin{spanish}
+Despierta la conciencia popular para volverse grito.
+\end{spanish}
+
 The proper aim is to try and reconstruct society on such a basis that poverty will be impossible. And the altruistic virtues have really prevented the carrying out of this aim. Just as the worst slave-owners were those who were kind to their slaves, and so prevented the horror of the system being realised by those who suffered from it, and understood by those who contemplated it, so, in the present state of things in England, the people who do most harm are the people who try to do most good \ldots
 
 \vspace{1\baselineskip}
@@ -80,30 +85,72 @@ Oscar Wilde, \textit{The Soul of Man Under Socialism}
 \newpage 
 \frontmatter
 \pagestyle{plain}
-\chapter{Remerciements} 
+\chapter{Acknowledgements} 
 # \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 # \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 \lipsum
-\chapter{Préface} 
+
+\chapter{Preface} 
 # \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
+
+Even when applying different techniques of interpretation to texts, I have
+tried to understand how the circumstances of their production could inform
+their interpretation. Even just for the sake of consistency, shouldn't I
+apply the same standard to this Master's thesis? Shouldn't I provide the
+reader with the tools, the context, etc. that informed this research?
+
+Pace Barthes, the author of these words is very alive. Knowing the tragedy
+of my country, one might ask me: Why do I wield the pen, as the Colombian
+fields bleed? Why not wield the sword? Or, perhaps, why not wield both?
+This text was written, certainly, to satisfy an earthly requirement: to
+obtain a Master's degree. But beyond that, what is the interest of writing
+for me?
+
+Although this thesis is not a political pamphlet, it is grounded in
+political perplexities. To the recule of the state, who not only does not
+want to fund nor organize vast sections of economic activities, my
+generations witnesses a strange mix of ``innovation'',
+``entrepreneurship'', and . If the political Left, of my parent's
+generation had an iron faith in the working class and the peasants to
+change society, today's politically dissafected youth has all hopes in
+private enterprise to solve the evils of the world.
+
+As Oscar Wilde once remarked, ``it is easier to have sympathy with
+suffering, than it is to have sympathy with thought''. Even thought,
+
+
+As much as this document is intended to an academic audience, it is also
+intended to them and to my father: This is the beginning of a lifelong
+attempt to explain /¿Cómo fue que se jodio el país?/ 
+
+\blockcquote{Alvarez2013}{The designation of the NPE [Nobel Prize in Economics] yesterday teaches us again the richness of economic theory, capable of producing  alternative points of view, and the risk that it represents to a society that does not know whom to follow. The power of this discipline is unusual, but just as it creates irrational exuberance, it also explains our own irrational behavior.}
+
+ 
+
 \lipsum
 
 \mainmatter
 \pagestyle{scrheadings}
-* Préparation  
-** Problématique I
-- [ ] Question principale.
-  - Points nodaux. 
-- [ ] Questions secondaires.
-  - Ampleur et interrelations.
-  - Moyens et méthodes.
-  - Sources mobilisées. 
-** Plan de travail
-* Recherche
+* Preparation
+** Framework I
+*** Question principale
+**** Points nodaux
+*** Questions secondaires
+**** Ampleur et interrelations
+**** Moyens et méthodes
+**** Sources mobilisées
+** Work Plan
+*** Organisation de la recherche
+*** Méthodologie
+- [ ] Mots-clés.
+- [ ] Tour des débats.
+- [ ] Lignes de clivage.
+- [ ] Axes de réflexion.
+* Research
 ** Travail de recherche préparatoire 
  :NOTES:
  - [ ] Préparer fiches e notes avec références.
- - [ ] Amender la Problématique I. 
+ - [ ] Amender la Framework I. 
  :END:
 ** Travail de recherche 
  :NOTES:
@@ -112,11 +159,11 @@ Oscar Wilde, \textit{The Soul of Man Under Socialism}
  - [ ] Projets de plan.
  :END:
  - [ ] Sur le matériel accumulé et dans la tête. 
-* Rédaction 
-** Projet de Problématique II
+* Writing 
+** Projet de Framework II
 ** Projet du Plan de rédaction
 ** Première ébauche de rédaction, ou rédaction d'un article
-** Problématique II
+** Framework II
 ** Plan de rédaction
 ** Première rédaction.
 ** Rédaction définitive.
@@ -129,7 +176,7 @@ Oscar Wilde, \textit{The Soul of Man Under Socialism}
 #+OPTIONS: LaTeX:t d:nil pri:t p:t inline:nil tags:nil todo:nil 
 # Use KOMA script classes instead of LaTeX's defaults
 #+LATEX_CLASS: scrbook
-#+LATEX_CLASS_OPTIONS: [paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=normal,headings=twolinechapter,open=right,chapterprefix=false,headsepline=false]
+#+LATEX_CLASS_OPTIONS: [paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=normal,headings=twolinechapter,open=right,chapterprefix=false,headsepline=false,parskip=full]
 # Custom section to choose latex export engine (XeTeX). Can't believe this
 # feature does not exist by default. Check Emacs' configuration for the relevant configurations
 #+LATEX_CMD: xelatex
@@ -160,9 +207,9 @@ Oscar Wilde, \textit{The Soul of Man Under Socialism}
 #+LATEX_HEADER:\AtBeginEnvironment{quote}{\itshape}
 *** Biblatex
 # Set up bibliography management through biblatex
-# #+LATEX_HEADER: \usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=true]{biblatex}
+#+LATEX_HEADER: \usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=true]{biblatex}
 # Choose bibliography file
-# #+LATEX_HEADER: \addbibresource{~/Documents/mendeley/library.bib}
+#+LATEX_HEADER: \addbibresource{~/Documents/mendeley/library.bib}
 *** Ams
 # Necessary settings for typesetting math, symbols, and formulae
 #+LATEX_HEADER: \usepackage{amsmath}
@@ -185,7 +232,8 @@ Oscar Wilde, \textit{The Soul of Man Under Socialism}
 #+LATEX_HEADER: \usepackage[english]{fmtcount} 
 # #+LATEX_HEADER: \fmtcountsetoptions{french=france}
 # Typeset according to selection of single space, double space, etc. 
- #+LATEX_HEADER: \usepackage[doublespacing]{setspace}
+ #+LATEX_HEADER: \usepackage[singlespacing]{setspace}
+ # #+LATEX_HEADER: \usepackage[doublespacing]{setspace}
 # Kinda same as fmtcount but less flexible
  #+LATEX_HEADER: \usepackage[super]{nth}
 # Glorious typesetting of microtypographic details

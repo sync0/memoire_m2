@@ -17,19 +17,7 @@ Debate. Perhaps, I will write more on Lippmann than on Dewey because of the
 former's (unintended) role in the /Colloque Walter Lippmann./
 ** Methodology
 Undecided.
-* Design  
-** Typography
-I have used Emac's Org mode to plan, draft, and write the thesis. If the
-source code interests you, visit the ~org~ files. The ~tex~ files are the
-product of the org exporter; I don't deal with them directly. 
-
-The difference between both files with the suffix /draft/ is that 
-This thesis has been produced using LaTeX; I have used the KOMA Script class
-~scrbook~.
-*** Fonts
-Only non-proprietary fonts were used: The main font is Linux Libertine,
-alongside Linux Biolinum and Liberation Mono.
-* Copyright
+** Copyright
 [[./images/agpl3.png]]
 
 Files that I have authored are all released under the terms of the GNU
@@ -44,71 +32,272 @@ more details.
 Please, visit the following website for the full text of the License.
 https://www.gnu.org/licenses/agpl-3.0.en.html
 
-Copyright SYNCHRO0 2018.
-* Planning
-** Première moment 
+Copyright © SYNC0 2018.
+* Tools  
+** Text Editor
+I used Emacs' Org mode to plan, draft, and write the thesis. If the
+source code interests you, visit the ~org~ files. 
+
+Using the org exporter, I exported the ~org~ files into ~LaTeX~, and then into pdfs.
+** Bibliography Management
+I used Mendeley to maintain a bibliography file called ~master.bib~. 
+** Typography
+I used LaTeX's KOMA Script class ~scrbook~.
+*** Fonts
+I only used non-proprietary fonts: The main font is Linux Libertine,
+alongside Linux Biolinum and Liberation Mono.
+* Organization 
+This section tracks the progress of my Master's thesis; it is not intended
+to provide general advise on writing a thesis. 
+
+I have used these books to write the contents of this section: 
+- Zinsser, William, /On Writing Well: The Classic Guide to Writing Nonfiction/.
+- Beaud, Michel, /L'art de la these./
+ 
+I believe that reading these books provides enough tools to master with the
+"technical" part of the ordeal. Read them before starting to research; they
+can prevent squandering days and months chasing after false starts and
+/hors-sujets/.
+
+All credit goes to these authors. I have merely adapted their advice to
+prepare my thesis.
+** File Structure
+I have organized all work (planing, research, and writing) in these files:
+*** ~todo.org~
+This file is a collection of task lists used for planning and scheduling.
+It follows this structure (the "stages" are explained [[file:README.org::Preparation][here]]): 
+
+#+BEGIN_EXAMPLE
+* Thesis 
+** Stage I 
+** Stage II
+** Stage III
+** Stage IV
+** Stage V
+** Stage VI
+** Sources
+* Tasks 
+** Contacts
+** Personal
+** Work
+** Studies
+** Chores
+** Computer
+** Shopping
+...
+* Questions
+* Ideas
+#+END_EXAMPLE
+
+Under the heading ~Thesis~, I keep this table to prevent falling behind
+deadlines. The estimations are taken from Beaud's /L'art de la thèse./
+
+| *Stage* | *Task*                          | *Spent* | *Remaining* | *Estimated* |
+|-------+-------------------------------+-------+-----------+-----------|
+| *I*     | *Preparations & Due Diligence*  |       |         2 |         2 |
+|       | Choice of subject-matter      |       |         0 |           |
+|-------+-------------------------------+-------+-----------+-----------|
+|       | *First Sifting*                 |       |         2 |         2 |
+|-------+-------------------------------+-------+-----------+-----------|
+| *II*    | Framework I & Work Plan       |       |        16 |        16 |
+|       | *Research*                      |       |         0 |           |
+| *III*   | Framework II & Redaction Plan |       |         0 |           |
+| *IV*    | *Writing*                       |       |         0 |           |
+|-------+-------------------------------+-------+-----------+-----------|
+|       | First Version                 |       |         8 |         8 |
+|       | *Editing & Rewriting*           |       |         0 |           |
+|       | Penultimate Version           |       |         0 |           |
+|-------+-------------------------------+-------+-----------+-----------|
+| *V*     | *Fine Tuning*                   |       |         1 |         1 |
+|       | Last Version                  |       |         0 |           |
+|-------+-------------------------------+-------+-----------+-----------|
+|       | *Print*                         |       |         1 |         1 |
+|       | Available Copies              |       |         0 |           |
+|-------+-------------------------------+-------+-----------+-----------|
+|       | *Due Diligence for Defense*     |       |         1 |         1 |
+| *VI*    | Defense                       |       |         0 |           |
+|-------+-------------------------------+-------+-----------+-----------|
+|       | Total (weeks)                 |  0.00 |     31.00 |     31.00 |
+|       | Total       (months)          |  0.00 |      7.75 |      7.75 |
+
+Since the table is coded with Emacs' ~org-mode~, this code snippet will
+make it interactive:
+
+#+BEGIN_EXAMPLE
+ #+TBLFM: @>>$3..@>>$>=vsum(@2..@-2);%.2f::@>$3..@>$>=(vsum(@2..@-2))/4;%.2f::@<<$>>..@>>>$>>=$>-$>>>;%.0f::
+#+END_EXAMPLE
+
+Just type the number of weeks spent in each stage under the ~Spent~ column,
+and the rest will adjust to display the remaining weeks and months. 
+
+The estimations are good enough for the French system, in which a M2
+Master's thesis should be prepared in one year. 
+
+This file is not included in the repository because it contains personal
+information.
+*** ~master.org~
+This file (not included in the repository) contains all my research notes;
+it follows this structure:
+
+#+BEGIN_EXAMPLE
+
+* Slobodian, Quinn                                         :lecture:Slobodian:
+:ORIGIN:
+A tweet by Prof. Peter Boettke, https://twitter.com/PeterBoettke/status/1013909054081634304.
+:END:
 :PROPERTIES:
-:DURATION: 2 à 3.5 mois.
+:ADDED: [2018-07-04]
 :END:
-*** Choix du sujet  
-:NOTES:
-Avec problématique provisoire, en relation avec le directeur de thèse. 
+** Globalists: The End of Empire and the Birth of Neoliberalism
+:ORIGIN:
+A tweet by Peter Boettke, https://twitter.com/PeterBoettke/status/1013909054081634304.
 :END:
-**** Questions du départ. 
-*** Élaboration du sujet 
-:NOTES:
-Premier débroussaillage/dégrossissage.
-:END:
-**** Note d'intention.
-**** Ébauche de la problématique  
-:NOTES:
-Organisée autour d'une question principale.
-:END:
-** Deuxième moment 
 :PROPERTIES:
-:DURATION: Environ 15 mois.
+:YEAR:
+:JOURNAL:
+:VOLUME:
+:ISSUE:
+:PAGES:
+:ADDED: [2018-07-04]
+:TRACE: [[file:~/Dropbox/org/master.org::*Slobodian,%20Quinn][Slobodian, Quinn]]
 :END:
-*** Formulation de la /Problématique I/ et du /Plan de travail/
-**** Problématique I.
-**** Plan de travail.
-**** Discussion avec  le directeur de thèse et accord sur l'orientation générale.
-*** Travail de recherche 
-- [ ] Sur les livres.
-- [ ] Sur les matériaux.
-- [ ] Sur le terrain.
-*** Travail de recherche 
+
+#+END_EXAMPLE
+
+First level headings are the authors, and second level headings are the
+texts (books, journal artciles, webpages, etc.). 
+
+I use the ~:lecture:~ tag with ~org-mode~'s custom agenda commands, so I add it
+to all first level headings.
+
+Most entries are produced automatically with [[https://github.com/jkitchin/org-ref][org-ref]] and ~master.bib~ (a
+bibliography file, maintained with [[https://www.mendeley.com/download-desktop/][Mendeley]], not included in this
+repository).
+
+Please look at my [[https://github.com/sync0/sync0_laptop_config/blob/master/.emacs.d/init.org][Emacs' configuration]] for details. And, please excuse the
+chaos therein; I am not a proficient coder.
+*** ~README.org~
+This file is what you are reading now. It introduces the contents of the
+~git~ repository where my Master's thesis rests. 
+*** ~memoire.org~
+This file is the final version of my Master's thesis; it is the source that
+produces the pdf. 
+
+I used this file only for preparing what would be the final version of the
+thesis, i.e., the writing stage. For all other notes and drafts, l used the
+~memoire_draft.org~.
+*** ~memoire_draft.org~
+This file contains most of the planning notes, research notes, preparatory
+notes, and drafts.
+
+Since I use ~git~ for version control, I could dispense with the list of
+files titled draft 1, draft 2, /ad nauseam/. Instead, I tagged certain
+commits as "drafts". 
+** 無 Preparation
+I have clustered the steps to complete the Master's thesis in six stages.
+*** Stage I
+**** Choice of Subject-matter
+- [ ] First sifting through the material. 
+***** First Questions
+What are you trying to answer?
+***** Intention
+What's the purpose of writing about this subject-matter?
+***** Draft of the Outline
+- [ ] Redact a provisional outline (check with the thesis adviser).
+ 
+The Outline must be organized around a main question.
+*** Stage II 
+**** Formulate the /Outline I/ and the /Work Plan/
+***** 無 Outline I
+The /Outline I/ helps organize and carry out the research. It consists of:
+- [ ] Main question.
+  - Nodal points. 
+- [ ] Secondary questions.
+  - Scope and interrelations.
+  - Means and methods.
+  - Sources.
+***** 無 Work Plan
+The /Work Plan/ serves to identify the different themes and questions that
+should orient the research.
+
+Note: Neither the /Outline I/ nor the /Work Plan/ is the outline of the thesis'
+first draft; both are used to structure the research and take preparatory
+notes.
+****** Methodology
+- [ ] Keywords.
+- [ ] Debates around the research question.
+- [ ] Axes de réflexion.
+***** 無 Discuss with the Thesis Adviser on the Discussion avec le directeur de thèse et accord sur l'orientation générale.
+- [ ] Présentations des éléments aux directeur de thèse. 
+- [ ] Présentations des éléments aux lecteurs. 
+**** 無 Travail de recherche préparatoire 
+:NOTES:
+- [ ] Préparer fiches e notes avec références.
+- [ ] Amender la Problématique I. 
+:END:
+**** 無 Travail de recherche 
+:NOTES:
+- [ ] Fiches d'idées. 
+- [ ] Projets d'idée de force.
+- [ ] Projets de plan.
+:END:
 - [ ] Sur le matériel accumulé et dans la tête. 
-** Troisième moment 
-:PROPERTIES:
-:DURATION: Environ 3 mois.
-:END:
-** Quatrième moment 
-:PROPERTIES:
-:DURATION: Environ 9 mois.
-:END:
-** Cinquième moment 
-:PROPERTIES:
-:DURATION: 2 à 3.5 mois.
-:END:
-** Sixième moment 
-:PROPERTIES:
-:DURATION: 
-:END:
-* Readings
-** 無 Come si fa una tesi de laurea                                            :vacances:
-** 無 Douze lecons sur l'histoire                                              :memoire:
-** 無 Scienza e storia                                                         :memoire:
-** 待 [#A] Art  de la thèse                                                    :vacances:
-*** Chapitre 1
-*** Chapitre 2
-*** Chapitre 3
-* Research
-** Problématique I
-** Problématique II
-* Writing  
-*** Introduction
-*** Body
-*** Conclusion
+*** 無 Stage III 
+**** 無 Première formulation de la /Problématique II/ et du /Plan de rédaction/
+***** Projet de Problématique II.
+***** Projet du Plan de rédaction. 
+***** Préparation de la rédaction (formatage des documents e choix des fonctions).
+***** Discussion avec le directeur de thèse.
+***** Première ébauche de rédaction, ou rédaction d'un article. 
+**** Travaux complémentaires 
+*** 無 Stage IV 
+**** Formulation définitive de la Problématique II et du plan de rédaction
+***** Problématique II.
+***** Plan de rédaction. 
+***** Discussion avec le directeur de thèse et accord sur l'ensemble.
+***** Première rédaction.
+****** Lectures par des lecteurs extérieurs, notamment par le directeur de recherche.
+****** Correction et réécriture. 
+***** Rédaction définitive.
+****** Relecture et corrections (version presque définitive).
+*** 無 Stage V
+**** Agreement of Thesis Adviser for Defense (Jury)
+**** Fine Tuning
+**** Priting
+**** Due Diligence for Defense
+*** 無 Stage VI 
+**** Defense
+** Sources
+I divided the readings into two categories: read and unread.
+
+Using org mode's priorities, I adopted the following codes:
+- ~#A~: To read first. A must read.
+- ~#B~: To read because of the importance of the author or what he/she represents.
+- ~#C~: Choose whether to read based on the progress of the thesis.
+- ~none~: Choose whether to read if there remains any time.
+*** Unread
+**** [#B] Supiot, 2012, La gouvernance par les nombres                                               
+[[file:master.org::La gouvernance par les nombres]]
+**** Hughes, 1958, Consciousness and Society: The Reorientation of European Social Thought, 1890-1930
+**** Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
+**** Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
+**** Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
+**** Miller, 1955, Toward a general theory for the behavioral sciences
+**** Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
+**** Cohen-Cole, 2009, The Creative American: Cold War salons, social science, and the cure for modern society. 
+**** Imhotep, 
+**** Vicedo, 2012, Cold War emotions: The war over human nature
+**** [#A] Heyck, 2005, Herbert Simon: The Bounds of Reason in Modern America
+**** [#A] Heyck, 2015, Age of System: Understanding the development of modern social science
+**** Heyck, 2005, Mind and Network
+**** Heyck, 1999, Georges Miller, language, and the computer metaphor of mind
+**** Backhouse, 2010, The unsocial social science: Economics and Neighboring Disciplines Since 1945
+**** [#B] Dupuy, 2005, Aux origines des sciences cognitives 
+**** Chomsky, 1998, The Cold War & the University: Toward an Intellectual History of the Postwar Years 
+*** Read 
+* Planning
+** Outline I
+** Outline II
 * Settings                                                                      :noexport:ARCHIVE:
 #+STARTUP: indent hidestars contents logdrawer
  #+TITLE: Master 2 Thesis

@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: pdflatex
-\documentclass[paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=normal,headings=twolinechapter,open=right,chapterprefix=false,headsepline=false]{scrbook}
+\documentclass[paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=normal,headings=twolinechapter,open=right,chapterprefix=false,headsepline=false,parskip=full]{scrbook}
 \usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{url}
@@ -10,6 +10,8 @@
 \usepackage[french=guillemets,thresholdtype=words,threshold=3]{csquotes}
 \MakeAutoQuote{«}{»}
 \AtBeginEnvironment{quote}{\itshape}
+\usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=true]{biblatex}
+\addbibresource{~/Documents/mendeley/library.bib}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
@@ -18,7 +20,7 @@
 \hypersetup{colorlinks,urlcolor=blue,linkcolor=red,citecolor=red,filecolor=black}
 \usepackage{booktabs}
 \usepackage[english]{fmtcount}
-\usepackage[doublespacing]{setspace}
+\usepackage[singlespacing]{setspace}
 \usepackage[super]{nth}
 \usepackage{microtype}
 \usepackage{ragged2e}
@@ -132,6 +134,11 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \newpage 
 \vspace*{\fill}
 
+
+\begin{spanish}
+Despierta la conciencia popular para volverse grito.
+\end{spanish}
+
 The proper aim is to try and reconstruct society on such a basis that poverty will be impossible. And the altruistic virtues have really prevented the carrying out of this aim. Just as the worst slave-owners were those who were kind to their slaves, and so prevented the horror of the system being realised by those who suffered from it, and understood by those who contemplated it, so, in the present state of things in England, the people who do most harm are the people who try to do most good \ldots
 
 \vspace{1\baselineskip}
@@ -152,56 +159,101 @@ Oscar Wilde, \textit{The Soul of Man Under Socialism}
 \newpage 
 \frontmatter
 \pagestyle{plain}
-\chapter{Remerciements} 
+\chapter{Acknowledgements} 
 
 \lipsum
-\chapter{Préface} 
+
+\chapter{Preface} 
+
+Even when applying different techniques of interpretation to texts, I have
+tried to understand how the circumstances of their production could inform
+their interpretation. Even just for the sake of consistency, shouldn't I
+apply the same standard to this Master's thesis? Shouldn't I provide the
+reader with the tools, the context, etc. that informed this research?
+
+Pace Barthes, the author of these words is very alive. Knowing the tragedy
+of my country, one might ask me: Why do I wield the pen, as the Colombian
+fields bleed? Why not wield the sword? Or, perhaps, why not wield both?
+This text was written, certainly, to satisfy an earthly requirement: to
+obtain a Master's degree. But beyond that, what is the interest of writing
+for me?
+
+Although this thesis is not a political pamphlet, it is grounded in
+political perplexities. To the recule of the state, who not only does not
+want to fund nor organize vast sections of economic activities, my
+generations witnesses a strange mix of ``innovation'',
+``entrepreneurship'', and . If the political Left, of my parent's
+generation had an iron faith in the working class and the peasants to
+change society, today's politically dissafected youth has all hopes in
+private enterprise to solve the evils of the world.
+
+As Oscar Wilde once remarked, ``it is easier to have sympathy with
+suffering, than it is to have sympathy with thought''. Even thought,
+
+
+As much as this document is intended to an academic audience, it is also
+intended to them and to my father: This is the beginning of a lifelong
+attempt to explain \emph{¿Cómo fue que se jodio el país?} 
+
+\blockcquote{Alvarez2013}{The designation of the NPE [Nobel Prize in Economics] yesterday teaches us again the richness of economic theory, capable of producing  alternative points of view, and the risk that it represents to a society that does not know whom to follow. The power of this discipline is unusual, but just as it creates irrational exuberance, it also explains our own irrational behavior.}
+
+
 
 \lipsum
 
 \mainmatter
 \pagestyle{scrheadings}
 \part{Préparation}
-\label{sec:org9bd7b63}
+\label{sec:org448fab4}
 \chapter{Problématique I}
-\label{sec:orgd0bad97}
-\begin{itemize}
-\item[{$\square$}] Question principale.
-\begin{itemize}
-\item Points nodaux.
-\end{itemize}
-\item[{$\square$}] Questions secondaires.
-\begin{itemize}
-\item Ampleur et interrelations.
-\item Moyens et méthodes.
-\item Sources mobilisées.
-\end{itemize}
-\end{itemize}
+\label{sec:org56587f5}
+\section{Question principale}
+\label{sec:orgc3f558e}
+\subsection{Points nodaux}
+\label{sec:org6202cae}
+\section{Questions secondaires}
+\label{sec:orga50b751}
+\subsection{Ampleur et interrelations}
+\label{sec:org7a3e424}
+\subsection{Moyens et méthodes}
+\label{sec:org43f9647}
+\subsection{Sources mobilisées}
+\label{sec:org2193cf1}
 \chapter{Plan de travail}
-\label{sec:org2f6cdcc}
+\label{sec:org1001922}
+\section{Organisation de la recherche}
+\label{sec:orgc4cc988}
+\section{Méthodologie}
+\label{sec:org47f32f3}
+\begin{itemize}
+\item[{$\square$}] Mots-clés.
+\item[{$\square$}] Tour des débats.
+\item[{$\square$}] Lignes de clivage.
+\item[{$\square$}] Axes de réflexion.
+\end{itemize}
 \part{Recherche}
-\label{sec:org08d4bd3}
+\label{sec:org9a1ddb7}
 \chapter{Travail de recherche préparatoire}
-\label{sec:orge5e0aad}
+\label{sec:orgc049a7f}
 \chapter{Travail de recherche}
-\label{sec:orgc071241}
+\label{sec:org02e558c}
 \begin{itemize}
 \item[{$\square$}] Sur le matériel accumulé et dans la tête.
 \end{itemize}
 \part{Rédaction}
-\label{sec:orgc238240}
+\label{sec:org6e7c825}
 \chapter{Projet de Problématique II}
-\label{sec:org143b951}
+\label{sec:orga332b24}
 \chapter{Projet du Plan de rédaction}
-\label{sec:orgeca151d}
+\label{sec:org41bfc86}
 \chapter{Première ébauche de rédaction, ou rédaction d'un article}
-\label{sec:org47167f6}
+\label{sec:orgd293b19}
 \chapter{Problématique II}
-\label{sec:org91befbc}
+\label{sec:org0166d38}
 \chapter{Plan de rédaction}
-\label{sec:orge5ef626}
+\label{sec:org1f297b9}
 \chapter{Première rédaction.}
-\label{sec:org089abfc}
+\label{sec:org5ea489b}
 \chapter{Rédaction définitive.}
-\label{sec:org9272f96}
+\label{sec:orgd3ba3df}
 \end{document}
