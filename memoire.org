@@ -28,7 +28,7 @@
 # \clearpage
 \vspace*{\fill}
 \noindent
-\includegraphics[height=1.5cm]{agpl3.png}\par
+\includegraphics[height=1.5cm]{gpl3.png}\par
 \vspace{1\baselineskip}
 \begin{english}
 This text is free: you can redistribute it and/or modify it
@@ -83,6 +83,9 @@ Aux lecteurs lointains.
 \lipsum
 * Settings                                   :noexport:ARCHIVE:
 #+STARTUP: noindent showstars logdrawer showeverything
+# Local Variables:
+# eval: (orwell-mode) 
+# End:
 ** LaTeX Export Settings
 # Choose which language to use for typesetting org settings.
 #+LANGUAGE: fr

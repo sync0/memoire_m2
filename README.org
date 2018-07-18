@@ -18,7 +18,7 @@ former's (unintended) role in the /Colloque Walter Lippmann./
 ** Methodology
 Undecided.
 ** Copyright
-[[./images/agpl3.png]]
+[[./images/gpl3.png]]
 
 Files that I have authored are all released under the terms of the GNU
 General Public License as published by the Free Software Foundation, either
@@ -30,7 +30,7 @@ or fitness for a particular purpose*. See the GNU General Public License for
 more details.
 
 Please, visit the following website for the full text of the License.
-https://www.gnu.org/licenses/agpl-3.0.en.html
+https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Copyright © SYNC0 2018.
 * Tools  
@@ -46,7 +46,7 @@ I used LaTeX's KOMA Script class ~scrbook~.
 *** Fonts
 I only used non-proprietary fonts: The main font is Linux Libertine,
 alongside Linux Biolinum and Liberation Mono.
-* Organization 
+* File Structure 
 This section tracks the progress of my Master's thesis; it is not intended
 to provide general advise on writing a thesis. 
 
@@ -61,10 +61,10 @@ can prevent squandering days and months chasing after false starts and
 
 All credit goes to these authors. I have merely adapted their advice to
 prepare my thesis.
-** File Structure
+
 I have organized all work (planing, research, and writing) in these files:
 *** ~todo.org~
-This file is a collection of task lists used for planning and scheduling.
+This file (not included in the repository) is a collection of task lists used for planning and scheduling.
 It follows this structure (the "stages" are explained [[file:README.org::Preparation][here]]): 
 
 #+BEGIN_EXAMPLE
@@ -90,7 +90,9 @@ It follows this structure (the "stages" are explained [[file:README.org::Prepara
 #+END_EXAMPLE
 
 Under the heading ~Thesis~, I keep this table to prevent falling behind
-deadlines. The estimations are taken from Beaud's /L'art de la thèse./
+deadlines. The estimations are taken from Beaud's /L'art de la these/; they
+are good enough for the French system, in which a M2 Master's thesis should
+be prepared in one year.
 
 | *Stage* | *Task*                          | *Spent* | *Remaining* | *Estimated* |
 |-------+-------------------------------+-------+-----------+-----------|
@@ -99,9 +101,9 @@ deadlines. The estimations are taken from Beaud's /L'art de la thèse./
 |-------+-------------------------------+-------+-----------+-----------|
 |       | *First Sifting*                 |       |         2 |         2 |
 |-------+-------------------------------+-------+-----------+-----------|
-| *II*    | Framework I & Work Plan       |       |        16 |        16 |
+| *II*    | Framework & Research Plan |       |        16 |        16 |
 |       | *Research*                      |       |         0 |           |
-| *III*   | Framework II & Redaction Plan |       |         0 |           |
+| *III*   | Outline  & Writing Plan |       |         0 |           |
 | *IV*    | *Writing*                       |       |         0 |           |
 |-------+-------------------------------+-------+-----------+-----------|
 |       | First Version                 |       |         8 |         8 |
@@ -111,7 +113,7 @@ deadlines. The estimations are taken from Beaud's /L'art de la thèse./
 | *V*     | *Fine Tuning*                   |       |         1 |         1 |
 |       | Last Version                  |       |         0 |           |
 |-------+-------------------------------+-------+-----------+-----------|
-|       | *Print*                         |       |         1 |         1 |
+|       | *Printing*                      |       |         1 |         1 |
 |       | Available Copies              |       |         0 |           |
 |-------+-------------------------------+-------+-----------+-----------|
 |       | *Due Diligence for Defense*     |       |         1 |         1 |
@@ -128,16 +130,11 @@ make it interactive:
 #+END_EXAMPLE
 
 Just type the number of weeks spent in each stage under the ~Spent~ column,
-and the rest will adjust to display the remaining weeks and months. 
+and the rest will adjust (with ~C-c C-c~) to display the remaining weeks and months. 
 
-The estimations are good enough for the French system, in which a M2
-Master's thesis should be prepared in one year. 
-
-This file is not included in the repository because it contains personal
-information.
 *** ~master.org~
-This file (not included in the repository) contains all my research notes;
-it follows this structure:
+This file (not included in the repository) contains my specific research notes per
+author per text; it follows this structure:
 
 #+BEGIN_EXAMPLE
 
@@ -180,121 +177,282 @@ chaos therein; I am not a proficient coder.
 This file is what you are reading now. It introduces the contents of the
 ~git~ repository where my Master's thesis rests. 
 *** ~memoire.org~
-This file is the final version of my Master's thesis; it is the source that
-produces the pdf. 
+This file is the final version of my Master's thesis; it is the source code
+that produces the pdf.
 
-I used this file only for preparing what would be the final version of the
+I only used this file to prepare what would be the final version of the
 thesis, i.e., the writing stage. For all other notes and drafts, l used the
 ~memoire_draft.org~.
 *** ~memoire_draft.org~
-This file contains most of the planning notes, research notes, preparatory
-notes, and drafts.
+This file contains most of the preparatory notes, and drafts.
 
 Since I use ~git~ for version control, I could dispense with the list of
 files titled draft 1, draft 2, /ad nauseam/. Instead, I tagged certain
 commits as "drafts". 
-** 無 Preparation
-I have clustered the steps to complete the Master's thesis in six stages.
-*** Stage I
-**** Choice of Subject-matter
-- [ ] First sifting through the material. 
-***** First Questions
-What are you trying to answer?
-***** Intention
-What's the purpose of writing about this subject-matter?
-***** Draft of the Outline
-- [ ] Redact a provisional outline (check with the thesis adviser).
- 
-The Outline must be organized around a main question.
-*** Stage II 
-**** Formulate the /Outline I/ and the /Work Plan/
-***** 無 Outline I
-The /Outline I/ helps organize and carry out the research. It consists of:
-- [ ] Main question.
-  - Nodal points. 
-- [ ] Secondary questions.
-  - Scope and interrelations.
-  - Means and methods.
-  - Sources.
-***** 無 Work Plan
-The /Work Plan/ serves to identify the different themes and questions that
-should orient the research.
+*** ~notes.org~
+This file is a "travel log" to track the development of the thesis and
+preserve all disparate ideas that occur to me. Most research notes are
+stored herein.  
 
-Note: Neither the /Outline I/ nor the /Work Plan/ is the outline of the thesis'
-first draft; both are used to structure the research and take preparatory
-notes.
-****** Methodology
-- [ ] Keywords.
-- [ ] Debates around the research question.
-- [ ] Axes de réflexion.
-***** 無 Discuss with the Thesis Adviser on the Discussion avec le directeur de thèse et accord sur l'orientation générale.
-- [ ] Présentations des éléments aux directeur de thèse. 
-- [ ] Présentations des éléments aux lecteurs. 
-**** 無 Travail de recherche préparatoire 
-:NOTES:
-- [ ] Préparer fiches e notes avec références.
-- [ ] Amender la Problématique I. 
-:END:
-**** 無 Travail de recherche 
-:NOTES:
-- [ ] Fiches d'idées. 
-- [ ] Projets d'idée de force.
-- [ ] Projets de plan.
-:END:
-- [ ] Sur le matériel accumulé et dans la tête. 
-*** 無 Stage III 
-**** 無 Première formulation de la /Problématique II/ et du /Plan de rédaction/
-***** Projet de Problématique II.
-***** Projet du Plan de rédaction. 
-***** Préparation de la rédaction (formatage des documents e choix des fonctions).
-***** Discussion avec le directeur de thèse.
-***** Première ébauche de rédaction, ou rédaction d'un article. 
-**** Travaux complémentaires 
-*** 無 Stage IV 
-**** Formulation définitive de la Problématique II et du plan de rédaction
-***** Problématique II.
-***** Plan de rédaction. 
-***** Discussion avec le directeur de thèse et accord sur l'ensemble.
-***** Première rédaction.
-****** Lectures par des lecteurs extérieurs, notamment par le directeur de recherche.
-****** Correction et réécriture. 
-***** Rédaction définitive.
-****** Relecture et corrections (version presque définitive).
-*** 無 Stage V
-**** Agreement of Thesis Adviser for Defense (Jury)
-**** Fine Tuning
-**** Priting
-**** Due Diligence for Defense
-*** 無 Stage VI 
-**** Defense
-** Sources
+I was inspired to create this file by a chapter of Bernard Lahire's
+/Tableaux de famille: Heurs et malheurs scolaires en milieux populaires/ that
+discussed the importance of writing as a reflexive activity. I believe it
+is important to constantly write down one's thoughts to imbue the
+text---that ineffable entity---with personality. Writing without
+personality (i.e., most writing) is not worth reading. And, writing that is
+not worth reading is absolutely demoralizing.
+* 無 Stages to Complete this Master's Thesis
+I have clustered the steps to complete the Master's thesis in six stages.
+** Stage I
+*** Choice of Subject-matter
+Meditate these two questions: What are you trying to answer? What's the
+purpose of writing about this subject-matter?
+
+- [ ] Choose the subject-matter.
+*** First Sifting
+Identify how many texts (one, two, a thousand?) there are to read on the subject.
+
+To quickly identify the key texts, peruse and cross check the
+bibliographies of those texts that catch your attention. If a text is cited
+several times therein, it is an important text. After identifying a long
+list of texts, prioritize their reading. For this thesis, I have adopted
+the hierarchy explained in the section Readings.
+
+When approaching a text, don't read everything, and don't read as a
+machine. 
+
+  - [ ] Identify the key texts---those to be read and analyzed as
+    soon as possible because of their direct relation to the subject-matter.
+  - [ ] Identify the key authors---those to be read, heard, or consulted with.
+** Stage II 
+*** Draft of the Framework
+For convenience's sake, I call /Framework/ the group consisting of the main
+question, the nodal points, the secondary questions, the research
+hypotheses, the scope and interrelations, the methodology, and the sources.
+The Framework is a compass to guide the research; it will prevent sailing
+astray into ancillary topics.
+
+For now, we define a provisional Framework consisting of the main question,
+the research hypotheses, and the methodology. 
+
+The heart of the Framework is the Main Question---the guiding light to
+research and (later) writing. This is the /most/ important aspect of the
+thesis work. Working out a sloppy question is akin to pursuing a mirage in
+the desert. The only way to discriminate good questions from sloppy
+questions is by reading about methodology in your own field and perhaps
+some philosophy of science.
+
+Remember to restrain that impulse to delve into every debate around the
+Main Question in the thesis. This is both wasteful and impossible.
+
+We check with the thesis adviser to incorporate his comments and criticism
+into the Framework.
+
+(I couldn't find a good translation for /axes d'interpretation/, but I had to
+include it as an essential part of the methodology: This term refers to the
+theoretical perspective---the lens, the angle of attack---used to appraise
+the Main Question. Spend some time thinking about this matter. Despite the
+American belief on the possibility of simply /stating the facts/, serious
+academic work should be aware of its own methodology, its limits, its
+context. Should I be right, a sizable portion of what passes for academic
+writing would be denounced for its laziness and redundancy. Finding out the
+degree to which this evil afflicts your academic department is left to you,
+oh reader, as an exercise.)
+
+- [ ] Write the Draft of the Framework:
+  - [ ] Main Question.
+  - [ ]Scope and interrelations.
+    - [ ] Nodal points. 
+  - [ ] Research hypotheses.
+  - [ ] Methodology.
+    - [ ] Debates & controversies around the main question.
+    - [ ] Axes d'interpretation.
+- [ ] Before proceeding, check the provisional Framework with the thesis
+  adviser.
+*** Framework 
+Incorporating the thesis adviser's comments, define a complete Framework:
+  - [ ] Main Question.
+    - [ ] Secondary questions.
+  - [ ]Scope and interrelations.
+    - [ ] Nodal points. 
+  - [ ] Research hypotheses.
+  - [ ] Methodology.
+    - [ ] Debates & controversies around the main question.
+    - [ ] Axes d'interpretation.
+  - [ ] Sources.
+    - [ ] Update list of key texts.
+    - [ ] Update list of key authors.
+*** Research Plan
+The /Research Plan/ serves to identify the different themes and questions that
+should orient the research. 
+
+Do not confuse the /Research Plan/ with the /Writing Plan/. The former is a guide
+to research, whereas the latter is a guide to writing. In other words, the
+Research Plan is not supposed to constitute the skeleton of the thesis' first
+draft. 
+
+Discuss with the thesis adviser on the general orientation, and present
+him/her with the Framework and the Research Plan. Do likewise with a group of
+selected readers.
+
+In /L'art de la these/, Michel Beaud recommends finding a consistent group of
+readers to comment and criticize the thesis work at different stages.
+Following his advise, I have searched for a knowledgeable reader (in the
+subject-matter of the thesis) and an unknowledgeable but /good writer/
+reader. The former should focus (tell him/her explicitly to do so) on content, the
+latter on style and logic (of the argumentation). 
+
+- [ ] Present the thesis adviser with the Framework and the Research Plan.
+- [ ] Present the selected readers with the Framework and the Research Plan.
+*** Research 
+This is the time for the Final Sifting. Be absolutely careful with this
+stage---lack of diligence could result in missing a key text or a key
+author. Don't waste precious time reading mediocre books; some expound the
+same argument but better. The only thing worse than finding about a key
+text while writing the first draft of the thesis, is being told about it
+during the defense jury. Do /not/ let that happen!
+
+The same advice for the First Sifting applies: When approaching a text,
+don't read everything, and don't read as a machine.
+
+Since time is scarce, when choosing whether to read a text, ask yourself:
+Does this text provide any robust argument to address the main question?
+Does it clarify or complement the question somehow?
+
+Read carefully, and take copious notes.
+
+I stored all research notes in ~master.org~, ~notes.org~ and ~memoire_draft.org~. 
+
+Notes about specific authors and texts are in ~master.org~. Notes about
+specific sections (Framework, Research Plan, Outline, Writing Plan, Drafts,
+etc.) are in ~memoire_draft.org~. Thoughts, inspiring ideas, meditations, and
+questions (i.e., most notes) are in ~notes.org~.
+
+- [ ] Final Sifting:
+  - [ ] Update list of key texts.
+  - [ ] Update list of key authors.
+- [ ] If necessary, update any component of the Framework, based on your
+  findings.
+** Stage III 
+*** Draft of the Outline.
+(Instead of /Framework/ and /Outline/, Beaud uses the terms /Problematique I/ and
+/Problematique II/. I found his formulation confusing; thus, I oppose the
+Framework and Research Plan to the Outline and Writing Plan to discriminate
+between two different stages in the preparation of the thesis. Although I
+could have used the term Framework II for the Outline, I thought Outline
+better reflects its function to organize the text of the first draft of the
+thesis. Unfortunately, the term Outline is potentially confusing because it
+alludes to the venerable ~I: Introduction~, ~II: Body~, ~III: Conclusion~ schema
+of high school English composition classes. This is /not/ what is meant. In
+fact, do yourself a favor and forget that puerile schema. Or better, use it
+sparingly for the plug-and-chug canned writing of the academic profession's
+due diligence (exams, research proposals, etc).)
+
+The Outline is the group consisting of the Main Question, the Directing
+Idea, and the Argument (around the directing idea); it is a compass to
+writing the first draft of the thesis. 
+
+The Directing Idea is the one-line response to the Main Question; it should
+structure the Argument. 
+
+The Argument is the set of logical steps that respond to the Main
+Question. 
+
+By this advanced stage, it is normal to have witnessed the evolution of the
+Main Question based on the results of the research. After all, it is
+pretentious to think it possible to foresee /a priori/ the findings of
+research. Should this be false, at least in the social sciences, most
+research would be tautological.
+
+- [ ] Write the Draft of the Outline:
+  - [ ] Update the Main Question.
+  - [ ] Directing idea. 
+  - [ ] Argument.
+*** Draft of  Writing Plan. 
+The Writing Plan structures the Argument into parts, chapters, sections,
+subsections, etc. You must provide provisional titles to these structural
+elements---they constitute the skeleton of the first draft of the thesis.
+
+I repeat: the Research Plan is /not/ the Writing Plan; the former addresses
+you, the researcher, while the latter addresses the audience. Therefore,
+the Writing Plan should be produced thinking about an angle of attack that
+captivates the interest of the reader and convinces him/her that the
+Argument is right. Wielding the Directing Idea as a torch, you should guide
+the reader throughout the structural elements, each with their own Main
+Idea. After lighting up all the Main Ideas in the structural elements, the
+reader should see the light---the answer to the Main Question.
+
+- [ ] Draft of the Writing Plan.
+- [ ] Discuss these elements with the thesis adviser.
+- [ ] Discuss these elements with the selected readers.
+*** Additional Research
+I hesitate to place this stage in this position, but sometimes it is
+necessary. Should anybody (thesis adviser, selected readers) point out any
+major holes in the Argument, this is the stage to paper over them. 
+
+But this is /not/ the time to rebuild the house from the foundations. Should
+that be the case, you have been sloppy with the Final Sifting. Pray to
+Saint Thomas Aquinas (or your favorite deity), take a walk in the park, and
+tinker with the Directing Idea. If kicking didn't work so far, try
+punching. 
+*** Draft of the First Draft of the Thesis.
+This preparatory text identifies the best structural elements to mount over
+the Argument of the thesis.
+- [ ] Draft of the First Draft of the Thesis.
+** 無 Stage IV 
+*** Outline and Writing Plan
+After discussing with the thesis adviser and selected readers on the draft
+of the Outline and the Draft of the Writing Plan, incorporate their
+comments into the final version of these elements. 
+- [ ] Write the Outline.
+- [ ] Write the Writing Plan.
+*** First Draft of the Thesis 
+Now is the time to begin writing the First Draft of the Thesis. 
+
+- [ ] Discuss the First Draft with the thesis adviser.
+- [ ] Discuss the First Draft with the selected readers.
+- [ ] Correct and rewrite the First Draft. 
+*** Last Draft of the Thesis 
+- [ ] Discuss the Last Draft with the thesis adviser.
+- [ ] Discuss the Last Draft with the selected readers.
+- [ ] Correct and rewrite the Last Draft. 
+*** Final Version of the Thesis 
+** 無 Stage V
+*** Agreement of Thesis Adviser for Defense (Jury)
+*** Fine Tuning
+- [ ] Correct the Final Version. 
+*** Printing
+*** Due Diligence for Defense
+** Stage VI 
+*** Defense
+* Readings
 I divided the readings into two categories: read and unread.
 
 Using org mode's priorities, I adopted the following codes:
-- ~#A~: To read first. A must read.
-- ~#B~: To read because of the importance of the author or what he/she represents.
-- ~#C~: Choose whether to read based on the progress of the thesis.
-- ~none~: Choose whether to read if there remains any time.
-*** Unread
-**** [#B] Supiot, 2012, La gouvernance par les nombres                                               
+- ~#A~: Key text: A must read.
+- ~#B~: Important text: Read this because of the importance of the author or what he/she represents.
+- ~#C~: Ancillary text: Choose whether to read this based on the progress of the thesis.
+- ~none~: Boundary text: Choose whether to read this if there remains any time.
+** Unread
+*** [#B] Supiot, 2012, La gouvernance par les nombres                                               
 [[file:master.org::La gouvernance par les nombres]]
-**** Hughes, 1958, Consciousness and Society: The Reorientation of European Social Thought, 1890-1930
-**** Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
-**** Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
-**** Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
-**** Miller, 1955, Toward a general theory for the behavioral sciences
-**** Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
-**** Cohen-Cole, 2009, The Creative American: Cold War salons, social science, and the cure for modern society. 
-**** Imhotep, 
-**** Vicedo, 2012, Cold War emotions: The war over human nature
-**** [#A] Heyck, 2005, Herbert Simon: The Bounds of Reason in Modern America
-**** [#A] Heyck, 2015, Age of System: Understanding the development of modern social science
-**** Heyck, 2005, Mind and Network
-**** Heyck, 1999, Georges Miller, language, and the computer metaphor of mind
-**** Backhouse, 2010, The unsocial social science: Economics and Neighboring Disciplines Since 1945
-**** [#B] Dupuy, 2005, Aux origines des sciences cognitives 
-**** Chomsky, 1998, The Cold War & the University: Toward an Intellectual History of the Postwar Years 
-*** Read 
+*** Hughes, 1958, Consciousness and Society: The Reorientation of European Social Thought, 1890-1930
+*** Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
+*** Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
+*** Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
+*** Miller, 1955, Toward a general theory for the behavioral sciences
+*** Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
+*** Cohen-Cole, 2009, The Creative American: Cold War salons, social science, and the cure for modern society. 
+*** Imhotep, 
+*** Vicedo, 2012, Cold War emotions: The war over human nature
+*** [#A] Heyck, 2005, Herbert Simon: The Bounds of Reason in Modern America
+*** [#A] Heyck, 2015, Age of System: Understanding the development of modern social science
+*** Heyck, 2005, Mind and Network
+*** Heyck, 1999, Georges Miller, language, and the computer metaphor of mind
+*** Backhouse, 2010, The unsocial social science: Economics and Neighboring Disciplines Since 1945
+*** [#B] Dupuy, 2005, Aux origines des sciences cognitives 
+*** Chomsky, 1998, The Cold War & the University: Toward an Intellectual History of the Postwar Years 
+** Read 
 * Planning
 ** Outline I
 ** Outline II
@@ -304,3 +462,6 @@ Using org mode's priorities, I adopted the following codes:
 #+LANGUAGE: en
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
+# Local Variables:
+# eval: (orwell-mode) 
+# End:
