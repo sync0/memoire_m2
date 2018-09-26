@@ -93,7 +93,7 @@ Aux lecteurs lointains.
 #+OPTIONS: LaTeX:t d:nil pri:t p:t inline:nil tags:nil todo:nil 
 # Use KOMA script classes instead of LaTeX's defaults
 #+LATEX_CLASS: scrbook
-#+LATEX_CLASS_OPTIONS: [paper=A5,portrait,twoside=true,twocolumn=false,headinclude=true,footinclude=true,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,headings=normal,headings=twolinechapter,open=right,chapterprefix=false]
+#+LATEX_CLASS_OPTIONS: [draft=true, paper=A5,portrait,twoside=true,twocolumn=false,headinclude=true,footinclude=true,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,headings=normal,headings=twolinechapter,open=right,chapterprefix=false]
 # Custom section to choose latex export engine (XeTeX). Can't believe this
 # feature does not exist by default. Check Emacs' configuration for the relevant configurations
 #+LATEX_CMD: xelatex

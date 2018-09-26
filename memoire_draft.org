@@ -14,9 +14,9 @@
  \centering
  \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
  \vspace{4\baselineskip}
- {\Huge Titre magnifique \par}
+ {\Huge The Liberal Democratic Governing Machine \par}
  \vspace{1\baselineskip}
- {\Large Sous-titre magnifique \par}
+ {\Large The Rationality of Governance and the Governance of Irrationality in Post-War American Economics \par}
 \vspace*{\fill}
  {\Large Mémoire de \textsc{m2} \par}
  \vspace{2\baselineskip}
@@ -131,45 +131,104 @@ attempt to explain /¿Cómo fue que se jodio el país?/
 
 \mainmatter
 \pagestyle{scrheadings}
-* Notes
+* Sources                                                                       :noexport:
+** Unread
+*** [#B] Supiot, 2012, La gouvernance par les nombres
+[[file:master.org::La gouvernance par les nombres]]
+*** Hughes, 1958, Consciousness and Society: The Reorientation of European Social Thought, 1890-1930
+*** Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
+*** Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
+*** [#B] Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
+*** Miller, 1955, Toward a general theory for the behavioral sciences
+*** Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
+*** Cohen-Cole, 2009, The Creative American: Cold War salons, social science, and the cure for modern society.
+*** Imhotep,
+*** Vicedo, 2012, Cold War emotions: The war over human nature
+*** [#A] Heyck, 2005, Herbert Simon: The Bounds of Reason in Modern America
+*** [#A] Heyck, 2015, Age of System: Understanding the development of modern social science
+*** Heyck, 2005, Mind and Network
+*** Heyck, 1999, Georges Miller, language, and the computer metaphor of mind
+*** Backhouse, 2010, The unsocial social science: Economics and Neighboring Disciplines Since 1945
+*** [#B] Dupuy, 2005, Aux origines des sciences cognitives
+*** Chomsky, 1998, The Cold War & the University: Toward an Intellectual History of the Postwar Years
+*** Mikulark, 1966, ``Cybernetics and Marxism-Leninism'' in The Social Impact of Cybernetics, ed. Charles Dechert
+*** [#C] Israel, 2004, Meccanicismo
+*** [#B] Edwards, 1996, The Closed World: Computers and the Politics of Discourse in Cold War America
+** Read
+* Notes                                                                         :noexport:
 The history of the relation between rationality and governance in 20th century american
 ecomics. 
-* Preparation
-** Framework I
-*** Question principale
-**** Points nodaux
-*** Questions secondaires
-**** Ampleur et interrelations
-**** Moyens et méthodes
-**** Sources mobilisées
-** Work Plan
-*** Organisation de la recherche
-*** Méthodologie
-- [ ] Mots-clés.
-- [ ] Tour des débats.
-- [ ] Lignes de clivage.
-- [ ] Axes de réflexion.
+* Preparatory Research
+** Choice of Subject-matter
+
+** First Sifting
+- [ ] Key texts.
+- [ ] Key authors.
+** Draft: Framework
+- [ ] Main question.
+- [ ] Scope and interrelations.
+- [ ] Research hypotheses.
+- [ ] Methodology.
+ - [ ] Keywords.
+ - [ ] Debates & controversies.
+ - [ ] Axes d'interpretation.
+- [ ] Check with adviser.
 * Research
-** Travail de recherche préparatoire 
- :NOTES:
- - [ ] Préparer fiches e notes avec références.
- - [ ] Amender la Framework I. 
- :END:
-** Travail de recherche 
- :NOTES:
- - [ ] Fiches d'idées. 
- - [ ] Projets d'idée de force.
- - [ ] Projets de plan.
- :END:
- - [ ] Sur le matériel accumulé et dans la tête. 
+** Framework
+- [ ] Main question.
+- [ ] Secondary questions.
+- [ ] Scope and interrelations.
+- [ ] Research hypotheses.
+- [ ] Methodology.
+ - [ ] Keywords.
+ - [ ] Debates & controversies.
+ - [ ] Axes d'interpretation.
+- [ ] Sources.
+ - [ ] Update list of key texts.
+ - [ ] Update list of key authors.
+** Research Plan
+- [ ] Check with adviser.
+- [ ] Check with selected readers.
+- [ ] Update the Framework.
+** Research
+- [ ] Final Sifting.
+ - [ ] Update list of key texts.
+ - [ ] Update list of key authors.
+- [ ] If necessary, update any component of the Framework.
+* Preparatory Writing 
+** Draft: Outline
+- [ ] Update Main Question.
+- [ ] Write the Directing Idea.
+- [ ] Write the Argument.
+** Draft: Writing Plan
+- [ ] Check with thesis adviser.
+** Additional Research
 * Writing 
-** Projet de Framework II
-** Projet du Plan de rédaction
-** Première ébauche de rédaction, ou rédaction d'un article
-** Framework II
-** Plan de rédaction
-** Première rédaction.
-** Rédaction définitive.
+** Exploratory Draft: Thesis
+- [ ] Check with thesis adviser.
+** Outline
+- [ ] Check with thesis adviser.
+- [ ] Check with selected readers.
+** Writing Plan
+- [ ] Check with thesis adviser.
+- [ ] Check with selected readers.
+- [ ] Classification of documents.
+** First Draft: Thesis
+- [ ] Check with thesis adviser.
+- [ ] Check with selected readers.
+- [ ] Rewriting including their comments.
+** Last Draft: Thesis
+- [ ] Revise each introduction and conclusion.
+- [ ] Revise the general introduction and the general conclusion.
+- [ ] Check with thesis adviser.
+- [ ] Check with selected readers.
+- [ ] Rewriting including their comments.
+** Final Version Thesis
+- [ ] Check for orthographic and typographic errors.
+- [ ] Check for mood & consistency.
+- [ ] Check with thesis adviser.
+- [ ] Check with selected readers.
+
 * Settings                                   :noexport:ARCHIVE:
 #+STARTUP: noindent showstars logdrawer showeverything
 # Local Variables:
@@ -182,7 +241,7 @@ ecomics.
 #+OPTIONS: LaTeX:t d:nil pri:t p:t inline:nil tags:nil todo:nil 
 # Use KOMA script classes instead of LaTeX's defaults
 #+LATEX_CLASS: scrbook
-#+LATEX_CLASS_OPTIONS: [paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=normal,headings=twolinechapter,open=right,chapterprefix=false,headsepline=false,parskip=full]
+#+LATEX_CLASS_OPTIONS: [draft=true, paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=big,headings=twolinechapter,open=right,chapterprefix=false,headsepline=false,parskip=full]
 # Custom section to choose latex export engine (XeTeX). Can't believe this
 # feature does not exist by default. Check Emacs' configuration for the relevant configurations
 #+LATEX_CMD: xelatex
@@ -265,7 +324,7 @@ ecomics.
 # Add graphics to documents
  #+LATEX_HEADER: \usepackage{graphicx}
 # Choose graphics' folder
- #+LATEX_HEADER: \graphicspath{ {/home/sync0/Dropbox/projects/paris_1/} }
+ #+LATEX_HEADER: \graphicspath{ {/home/sync0/Dropbox/paris_1/} }
 # Allow footnotes in tables 
 # #+LATEX_HEADER: \usepackage{tablefootnote}
 # Correctly color code blocks
@@ -273,8 +332,6 @@ ecomics.
 # Insert dummy lipsum text (typesetting aid) 
 #+LATEX_HEADER: \usepackage{lipsum}
 *** Editing
-# Add useful macros for copyediting 
-# #+LATEX_HEADER: \usepackage[xcolor=red, markup=default]{changes}
 # Add margin TODO notes.
 #+LATEX_HEADER: \usepackage[textsize=scriptsize, linecolor=soothing_green, backgroundcolor=soothing_green]{todonotes}
 ** Fonts
@@ -287,14 +344,13 @@ ecomics.
 # Use Linux Libertine font.
 #+LATEX_HEADER:\setmainfont[Mapping=tex-text,Numbers=OldStyle,SmallCapsFeatures={LetterSpace=4,Ligatures=NoCommon}]{Linux Libertine O}
 #+LATEX_HEADER:\setsansfont[Mapping=tex-text]{Linux Biolinum O}
-#+LATEX_HEADER:\setmonofont[Mapping=tex-text]{Liberation Mono}
-# #+LATEX_HEADER:\setmonofont[Mapping=tex-text]{Courier New}
+#+LATEX_HEADER:\setmonofont[Mapping=tex-text]{Inconsolata}
+# Define a font family to use in the title.
+#+LATEX_HEADER:\newfontfamily\titlefamily[Scale=2]{Linux Biolinum O}
+# Define a bigger face size than \Huge to use in the part and chapter titles.
+#+LATEX_HEADER:\newcommand\HUGE{\fontsize{30}{30}\selectfont}
 ** Page Design
 # Customize page desing 
-# Remove headings from Chapter pages
-# #+LATEX_HEADER:\renewcommand*{\chapterpagestyle}{plain}
-# Remove numbering from Part pages
-# #+LATEX_HEADER:\renewcommand*{\partpagestyle}{empty}
 #+LATEX_HEADER:\usepackage{scrlayer-scrpage}
 #+LATEX_HEADER:\pagestyle{scrheadings}
 #+LATEX_HEADER:\clearscrheadfoot
@@ -311,7 +367,6 @@ ecomics.
 #+LATEX_HEADER:\rohead{\thepage} 
 # Add numbering in the outer footer (margin) of pages
 # #+LATEX_HEADER:\ofoot*{\thepage} 
-# #+LATEX_HEADER:\ofoot*{\pagemark} 
 # Remove annoying "First Part" from headings 
 #+LATEX_HEADER:\renewcommand\partmarkformat{}
 ** Typographic settings
@@ -328,14 +383,39 @@ ecomics.
 # #+LATEX_HEADER: \addtokomafont{pagenumber}{\sffamily}
 # Change font settings page head & foot.
 #+LATEX_HEADER: \addtokomafont{pageheadfoot}{\bfseries\sffamily\upshape}
+*** Figures
+#+LATEX_HEADER: \addtokomafont{caption}{\small}
+#+LATEX_HEADER: \addtokomafont{captionlabel}{\bfseries}
+*** Part
+# Customize fonts used in Part 
+#+LATEX_HEADER: \addtokomafont{part}{\HUGE\scshape\sffamily\lowercase}
+# # Remove the part numbering from part pages
+#+LATEX_HEADER: \renewcommand*{\partformat}{}
+*** Chapter 
+# Customize fonts used in Chapter
+#+LATEX_HEADER: \addtokomafont{chapter}{\HUGE\scshape\sffamily\lowercase}
+# Center chapter 
+#+LATEX_HEADER:\renewcommand{\raggedchapter}{\centering}
+# Increase vertical space between chapter and text body.
+# A bug arises when \RedeclareSectionCommand appears before package
+# tocbasic or tocstyle
+#+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter} 
+*** Section
+# Customize fonts used in Section
+#+LATEX_HEADER: \addtokomafont{section}{\huge\scshape\sffamily\setstretch{0.7}\lowercase}
+*** Subsection
+# Customize fonts used in Subsection
+#+LATEX_HEADER: \addtokomafont{subsection}{\sffamily\Large}
+*** Subsubsection
+# Customize fonts used in Subsubsection
+#+LATEX_HEADER: \addtokomafont{subsubsection}{\scshape\sffamily\Large\lowercase}
 *** Table of Contents
 # Customize fonts used in the table of contents
 # #+LATEX_HEADER: \renewcommand*\contentsname{table des matières}
 # #+LATEX_HEADER: \addtokomafont{partentry}{\scshape\lowercase}
-#+LATEX_HEADER: \addtokomafont{chapterentry}{\sffamily\large}
+#+LATEX_HEADER: \addtokomafont{chapterentry}{\normalsize\sffamily\bfseries}
 # #+LATEX_HEADER: \addtokomafont{chapterentry}{\scshape\sffamily\large\lowercase}
 # #+LATEX_HEADER: \addtokomafont{chapterentry}{\bfseries}
-# #+LATEX_HEADER: \addtokomafont{sectionentry}{\itshape}
 #+LATEX_HEADER: \usepackage[tocindentauto,tocgraduated]{tocstyle}
 #+LATEX_HEADER: \usetocstyle{nopagecolumn}
 # Have a two-column table of contents. 
@@ -348,45 +428,6 @@ ecomics.
 # #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\partname}{#2}}
 # Add "Part" to TOC entry.
 # #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\partname\nobreakspace #1}{#2}}
-*** Figures
-# #+LATEX_HEADER: \addtokomafont{caption}{\normalsize}
-# #+LATEX_HEADER: \addtokomafont{captionlabel}{\bfseries}
-*** Part
-# Customize fonts used in Part 
-#+LATEX_HEADER: \addtokomafont{part}{\scshape\sffamily\Huge\lowercase}
-# #+LATEX_HEADER: \addtokomafont{part}{\scshape\huge\lowercase}
-# #+LATEX_HEADER: \addtokomafont{partnumber}{\bfseries\lowercase}
-# Remove the part number from headings
- # #+LATEX_HEADER:\renewcommand*{\thepart}{}
-# # Remove the part numbering from part pages
-#+LATEX_HEADER: \renewcommand*{\partformat}{}
-# #+LATEX_HEADER: \renewcommand*{\partformat}{\partname}
-*** Chapter 
-# Customize fonts used in Chapter
-#+LATEX_HEADER: \addtokomafont{chapter}{\bfseries\sffamily\Huge}
-# #+LATEX_HEADER: \addtokomafont{chapter}{\scshape\sffamily\Huge\lowercase}
-# #+LATEX_HEADER: \addtokomafont{chapter}{\scshape\LARGE\lowercase}
-# \renewcommand*{\chapterheadstartvskip}{\vskip-10pt}
-# Center chapter 
-#+LATEX_HEADER:\renewcommand{\raggedchapter}{\centering}
-# Increase vertical space between chapter and text body.
-#+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter} 
-# Remove the numbers from chapter title pages
-# #+LATEX_HEADER:\renewcommand*{\thechapter}{}
-# Remove the chapter number from headings
- # #+LATEX_HEADER:\renewcommand*{\chapterformat}{\chaptername}
-*** Section
-# Customize fonts used in Section
-#+LATEX_HEADER: \addtokomafont{section}{\scshape\sffamily\huge\lowercase}
-# #+LATEX_HEADER: \addtokomafont{section}{\scshape\Large\lowercase}
-*** Subsection
-# Customize fonts used in Subsection
-#+LATEX_HEADER: \addtokomafont{subsection}{\scshape\sffamily\LARGE\lowercase}
-# #+LATEX_HEADER: \addtokomafont{subsection}{\large\bfseries}
-*** Subsubsection
-# Customize fonts used in Subsubsection
-#+LATEX_HEADER: \addtokomafont{subsubsection}{\sffamily\Large}
-# #+LATEX_HEADER: \addtokomafont{subsubsection}{\large\itshape}
 ** User-defined elements
 *** Summaries
 # Crete environment for adding summaries in italics
