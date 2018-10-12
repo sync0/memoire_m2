@@ -133,31 +133,35 @@ attempt to explain /¿Cómo fue que se jodio el país?/
 \pagestyle{scrheadings}
 * Sources                                                                       :noexport:
 ** Unread
-*** [#B] Supiot, 2012, La gouvernance par les nombres
+*** Supiot, 2012, La gouvernance par les nombres
 [[file:master.org::La gouvernance par les nombres]]
 *** Hughes, 1958, Consciousness and Society: The Reorientation of European Social Thought, 1890-1930
 *** Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
 *** Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
-*** [#B] Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
+*** Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
 *** Miller, 1955, Toward a general theory for the behavioral sciences
 *** Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
 *** Cohen-Cole, 2009, The Creative American: Cold War salons, social science, and the cure for modern society.
 *** Imhotep,
 *** Vicedo, 2012, Cold War emotions: The war over human nature
-*** [#A] Heyck, 2005, Herbert Simon: The Bounds of Reason in Modern America
-*** [#A] Heyck, 2015, Age of System: Understanding the development of modern social science
+*** Heyck, 2005, Herbert Simon: The Bounds of Reason in Modern America
+*** Heyck, 2015, Age of System: Understanding the development of modern social science
 *** Heyck, 2005, Mind and Network
 *** Heyck, 1999, Georges Miller, language, and the computer metaphor of mind
 *** Backhouse, 2010, The unsocial social science: Economics and Neighboring Disciplines Since 1945
-*** [#B] Dupuy, 2005, Aux origines des sciences cognitives
+*** Dupuy, 2005, Aux origines des sciences cognitives
 *** Chomsky, 1998, The Cold War & the University: Toward an Intellectual History of the Postwar Years
 *** Mikulark, 1966, ``Cybernetics and Marxism-Leninism'' in The Social Impact of Cybernetics, ed. Charles Dechert
-*** [#C] Israel, 2004, Meccanicismo
-*** [#B] Edwards, 1996, The Closed World: Computers and the Politics of Discourse in Cold War America
+*** Israel, 2004, Meccanicismo
+*** Edwards, 1996, The Closed World: Computers and the Politics of Discourse in Cold War America
 ** Read
 * Notes                                                                         :noexport:
 The history of the relation between rationality and governance in 20th century american
 ecomics. 
+
+There is very little interest in discussoins of methodology of science, it
+seem due to the hegemony of instrumentalist or operationalist view of the
+progress of science. 
 * Preparatory Research
 ** Choice of Subject-matter
 
