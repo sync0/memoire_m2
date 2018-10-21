@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: pdflatex
-\documentclass[paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=big,headings=twolinechapter,open=right,chapterprefix=false,headsepline=false,parskip=full]{scrbook}
+\documentclass[draft=false, paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=big,headings=twolinechapter,open=right,chapterprefix=false,headsepline=false,parskip=full]{scrbook}
 \usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{url}
@@ -38,7 +38,9 @@
 \defaultfontfeatures{Scale=MatchLowercase}
 \setmainfont[Mapping=tex-text,Numbers=OldStyle,SmallCapsFeatures={LetterSpace=4,Ligatures=NoCommon}]{Linux Libertine O}
 \setsansfont[Mapping=tex-text]{Linux Biolinum O}
-\setmonofont[Mapping=tex-text]{Liberation Mono}
+\setmonofont[Mapping=tex-text]{Inconsolata}
+\newfontfamily\titlefamily[Scale=2]{Linux Biolinum O}
+\newcommand\HUGE{\fontsize{30}{30}\selectfont}
 \usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
 \clearscrheadfoot
@@ -53,19 +55,21 @@
 \setkomafont{labelinglabel}{\normalfont\bfseries}
 \setkomafont{minisec}{\usekomafont{subsection}}
 \addtokomafont{pageheadfoot}{\bfseries\sffamily\upshape}
-\addtokomafont{chapterentry}{\sffamily\large}
+\addtokomafont{caption}{\small}
+\addtokomafont{captionlabel}{\bfseries}
+\addtokomafont{part}{\HUGE\scshape\sffamily\lowercase}
+\renewcommand*{\partformat}{}
+\addtokomafont{chapter}{\HUGE\scshape\sffamily\lowercase}
+\renewcommand{\raggedchapter}{\centering}
+\RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter}
+\addtokomafont{section}{\huge\scshape\sffamily\setstretch{0.7}\lowercase}
+\addtokomafont{subsection}{\sffamily\Large}
+\addtokomafont{subsubsection}{\scshape\sffamily\Large\lowercase}
+\addtokomafont{chapterentry}{\normalsize\sffamily\bfseries}
 \usepackage[tocindentauto,tocgraduated]{tocstyle}
 \usetocstyle{nopagecolumn}
 \unsettoc{toc}{onecolumn}
 \renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\protect\sffamily\Large\scshape\lowercase{#1}\hspace{1em}}{#2}}
-\addtokomafont{part}{\scshape\sffamily\Huge\lowercase}
-\renewcommand*{\partformat}{}
-\addtokomafont{chapter}{\scshape\sffamily\Huge\lowercase}
-\renewcommand{\raggedchapter}{\centering}
-\RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter}
-\addtokomafont{section}{\scshape\sffamily\huge\lowercase}
-\addtokomafont{subsection}{\scshape\sffamily\LARGE\lowercase}
-\addtokomafont{subsubsection}{\sffamily\Large}
 \renewcommand*\labelitemi{\adforn{33}}
 \renewcommand*\labelitemii{\adforn{73}}
 \renewcommand*\labelitemiii{\adforn{73}}
@@ -74,6 +78,7 @@
 \setcounter{secnumdepth}{\partnumdepth}
 \setcounter{tocdepth}{2}
 \recalctypearea
+\setlength{\marginparwidth}{2\marginparwidth}
 \author{Carlos Alberto Rivera Carreño}
 \date{}
 \title{}
@@ -82,13 +87,13 @@
  pdftitle={},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 26.1 (Org mode 9.1.13)}, 
+ pdfcreator={Emacs 26.1 (Org mode 9.1.14)}, 
  pdflang={English}}
 \begin{document}
 
 \begin{titlepage}
  \centering
- \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
+% \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
  \vspace{4\baselineskip}
  {\Huge The Liberal Democratic Governing Machine \par}
  \vspace{1\baselineskip}
@@ -100,27 +105,26 @@
  {\large \textsc{carlos alberto rivera carreño}\par}
  \vspace{1\baselineskip}
  {\large Directeur de thèse: \par}
- {\large \textsc{john eccentric doe}\par}
+ {\large \textsc{jean françois lenfant}\par}
 \end{titlepage}
+
+\pagestyle{empty}
 
 \vspace*{\fill}
 \noindent
 \includegraphics[height=1.5cm]{gpl3.png}\par
 \vspace{1\baselineskip}
 \begin{english}
-\noindent
 This text is free: you can redistribute it and/or modify it
 under the terms of the \textsc{gnu} General Public License as published by
 the Free Software Foundation, either version 3 of the License or any later
-version. \\
+version.
 
-\noindent
 This text is distributed in the hope that it will be useful, but \textbf{without
 any warranty}; without even the implied warranty of \textbf{merchantability or 
 fitness for a particular purpose}. See the \textsc{gnu} General 
-Public License for more details. \\
+Public License for more details.
 
-\noindent
 You should have received a copy of the \textsc{gnu} General Public License along
 with this text. If not, see \url{http://www.gnu.org/licenses/}.
 
@@ -128,8 +132,6 @@ with this text. If not, see \url{http://www.gnu.org/licenses/}.
 \noindent
 Copyright \textcopyright \textsc{sync0} 2018. 
 \end{english}
-
-\thispagestyle{empty}
 
 \newpage 
 \vspace*{\fill}
@@ -139,24 +141,11 @@ Copyright \textcopyright \textsc{sync0} 2018.
 Despierta la conciencia popular para volverse grito.
 \end{spanish}
 
-The proper aim is to try and reconstruct society on such a basis that poverty will be impossible. And the altruistic virtues have really prevented the carrying out of this aim. Just as the worst slave-owners were those who were kind to their slaves, and so prevented the horror of the system being realised by those who suffered from it, and understood by those who contemplated it, so, in the present state of things in England, the people who do most harm are the people who try to do most good \ldots
-
-\vspace{1\baselineskip}
-
-\begin{FlushRight}
-Oscar Wilde, \textit{The Soul of Man Under Socialism}
-\end{FlushRight}
-
 \vspace*{\fill}
 
-\thispagestyle{empty}
+\newpage
+\tableofcontents 
 
-\newpage 
-\tableofcontents
-
-\thispagestyle{empty}
-
-\newpage 
 \frontmatter
 \pagestyle{plain}
 \chapter{Acknowledgements} 
@@ -190,74 +179,79 @@ private enterprise to solve the evils of the world.
 As Oscar Wilde once remarked, ``it is easier to have sympathy with
 suffering, than it is to have sympathy with thought''. Even thought,
 
-
 As much as this document is intended to an academic audience, it is also
 intended to them and to my father: This is the beginning of a lifelong
 attempt to explain \emph{¿Cómo fue que se jodio el país?} 
 
 \blockcquote{Alvarez2013}{The designation of the NPE [Nobel Prize in Economics] yesterday teaches us again the richness of economic theory, capable of producing  alternative points of view, and the risk that it represents to a society that does not know whom to follow. The power of this discipline is unusual, but just as it creates irrational exuberance, it also explains our own irrational behavior.}
 
-
-
-\lipsum
+Should they be right, this article is wrong. 
 
 \mainmatter
 \pagestyle{scrheadings}
-\part{Notes}
-\label{sec:org9c99d49}
-The history of the relation between rationality and governance in 20th century american
-ecomics. 
-\part{Preparation}
-\label{sec:org0a915c7}
-\chapter{Framework I}
-\label{sec:org3020783}
-\section{Question principale}
-\label{sec:org6d5db64}
-\subsection{Points nodaux}
-\label{sec:org59d6333}
-\section{Questions secondaires}
-\label{sec:org177628a}
-\subsection{Ampleur et interrelations}
-\label{sec:org1a30270}
-\subsection{Moyens et méthodes}
-\label{sec:org8378bdd}
-\subsection{Sources mobilisées}
-\label{sec:org6cd2895}
-\chapter{Work Plan}
-\label{sec:org83ca968}
-\section{Organisation de la recherche}
-\label{sec:org2b82d6f}
-\section{Méthodologie}
-\label{sec:org731153c}
+\part{Preparatory Research}
+\label{sec:orgd226ba9}
+\chapter{First Sifting}
+\label{sec:org45c564c}
+   \begin{labeling}[~]{Subject-matter} 
+\item[Subject-matter] Lorem ipsum dolor sit amet
+\end{labeling}
+\section{Key text}
+\label{sec:org740b6eb}
 \begin{itemize}
-\item[{$\square$}] Mots-clés.
-\item[{$\square$}] Tour des débats.
-\item[{$\square$}] Lignes de clivage.
-\item[{$\square$}] Axes de réflexion.
+\item[{$\square$}] Supiot, 2012, La gouvernance par les nombres
+\item[{$\square$}] Hughes, 1958, Consciousness and Society: The Reorientation of European Social Thought, 1890-1930
+\item[{$\square$}] Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
+\item[{$\square$}] Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
+\item[{$\square$}] Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
+\item[{$\square$}] Miller, 1955, Toward a general theory for the behavioral sciences
+\item[{$\square$}] Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
+\item[{$\square$}] Cohen-Cole, 2009, The Creative American: Cold War salons, social science, and the cure for modern society.
+\item[{$\square$}] Imhotep,
+\item[{$\square$}] Vicedo, 2012, Cold War emotions: The war over human nature
+\item[{$\square$}] Heyck, 2005, Herbert Simon: The Bounds of Reason in Modern America
+\item[{$\square$}] Heyck, 2015, Age of System: Understanding the development of modern social science
+\item[{$\square$}] Heyck, 2005, Mind and Network
+\item[{$\square$}] Heyck, 1999, Georges Miller, language, and the computer metaphor of mind
+\item[{$\square$}] Backhouse, 2010, The unsocial social science: Economics and Neighboring Disciplines Since 1945
+\item[{$\square$}] Dupuy, 2005, Aux origines des sciences cognitives
+\item[{$\square$}] Chomsky, 1998, The Cold War \& the University: Toward an Intellectual History of the Postwar Years
+\item[{$\square$}] Mikulark, 1966, ``Cybernetics and Marxism-Leninism'' in The Social Impact of Cybernetics, ed. Charles Dechert
+\item[{$\square$}] Israel, 2004, Meccanicismo
+\item[{$\square$}] Edwards, 1996, The Closed World: Computers and the Politics of Discourse in Cold War America
 \end{itemize}
-\part{Research}
-\label{sec:orgd9ccaf5}
-\chapter{Travail de recherche préparatoire}
-\label{sec:orgc3551f8}
-\chapter{Travail de recherche}
-\label{sec:org7a441cc}
-\begin{itemize}
-\item[{$\square$}] Sur le matériel accumulé et dans la tête.
-\end{itemize}
-\part{Writing}
-\label{sec:org0215341}
-\chapter{Projet de Framework II}
-\label{sec:orgf723b8b}
-\chapter{Projet du Plan de rédaction}
-\label{sec:org2f0f3a4}
-\chapter{Première ébauche de rédaction, ou rédaction d'un article}
-\label{sec:org6c69db7}
-\chapter{Framework II}
-\label{sec:org80f34fb}
-\chapter{Plan de rédaction}
-\label{sec:org50f1853}
-\chapter{Première rédaction.}
-\label{sec:orgc9fbc46}
-\chapter{Rédaction définitive.}
-\label{sec:org7776910}
+\section{Important Text}
+\label{sec:org7ff9ed3}
+\lipsum
+\section{Ancillary Text}
+\label{sec:org844e8e6}
+\lipsum
+\section{Boundary Text}
+\label{sec:org2e31d00}
+\lipsum
+\chapter{Draft: Framework}
+\label{sec:org04c5b38}
+\section{Main question}
+\label{sec:org915ac53}
+\lipsum
+\section{Scope and interrelations}
+\label{sec:orgde53074}
+\lipsum
+\section{Research hypotheses.}
+\label{sec:orga52351c}
+\lipsum
+\section{Methodology}
+\label{sec:orga38df6e}
+\lipsum
+\section{Keywords}
+\label{sec:org89b21a8}
+\lipsum
+\section{Debates \& Controversies}
+\label{sec:org6eef574}
+\lipsum
+\section{Axes d'interpretation}
+\label{sec:orgcb71fed}
+\lipsum
+\section{Bibliography}
+\label{sec:org3e8b9c3}
 \end{document}

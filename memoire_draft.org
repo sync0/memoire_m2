@@ -12,7 +12,7 @@
 #   along with this program. If not, see <http://www.gnu.org/licenses/>.
 \begin{titlepage}
  \centering
- \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
+% \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
  \vspace{4\baselineskip}
  {\Huge The Liberal Democratic Governing Machine \par}
  \vspace{1\baselineskip}
@@ -24,28 +24,26 @@
  {\large \textsc{carlos alberto rivera carreño}\par}
  \vspace{1\baselineskip}
  {\large Directeur de thèse: \par}
- {\large \textsc{john eccentric doe}\par}
+ {\large \textsc{jean françois lenfant}\par}
 \end{titlepage}
 
-# \clearpage
+\pagestyle{empty}
+
 \vspace*{\fill}
 \noindent
 \includegraphics[height=1.5cm]{gpl3.png}\par
 \vspace{1\baselineskip}
 \begin{english}
-\noindent
 This text is free: you can redistribute it and/or modify it
 under the terms of the \textsc{gnu} General Public License as published by
 the Free Software Foundation, either version 3 of the License or any later
-version. \\
+version.
 
-\noindent
 This text is distributed in the hope that it will be useful, but \textbf{without
 any warranty}; without even the implied warranty of \textbf{merchantability or 
 fitness for a particular purpose}. See the \textsc{gnu} General 
-Public License for more details. \\
+Public License for more details.
 
-\noindent
 You should have received a copy of the \textsc{gnu} General Public License along
 with this text. If not, see \url{http://www.gnu.org/licenses/}.
 
@@ -53,8 +51,6 @@ with this text. If not, see \url{http://www.gnu.org/licenses/}.
 \noindent
 Copyright \textcopyright \textsc{sync0} 2018. 
 \end{english}
-# \clearpage 
-\thispagestyle{empty}
 
 \newpage 
 \vspace*{\fill}
@@ -65,24 +61,11 @@ Copyright \textcopyright \textsc{sync0} 2018.
 Despierta la conciencia popular para volverse grito.
 \end{spanish}
 
-The proper aim is to try and reconstruct society on such a basis that poverty will be impossible. And the altruistic virtues have really prevented the carrying out of this aim. Just as the worst slave-owners were those who were kind to their slaves, and so prevented the horror of the system being realised by those who suffered from it, and understood by those who contemplated it, so, in the present state of things in England, the people who do most harm are the people who try to do most good \ldots
-
-\vspace{1\baselineskip}
-
-\begin{FlushRight}
-Oscar Wilde, \textit{The Soul of Man Under Socialism}
-\end{FlushRight}
-
 \vspace*{\fill}
-# \clearpage 
-\thispagestyle{empty}
 
-\newpage 
-\tableofcontents
-# \clearpage 
-\thispagestyle{empty}
+\newpage
+\tableofcontents 
 
-\newpage 
 \frontmatter
 \pagestyle{plain}
 \chapter{Acknowledgements} 
@@ -118,43 +101,16 @@ private enterprise to solve the evils of the world.
 As Oscar Wilde once remarked, ``it is easier to have sympathy with
 suffering, than it is to have sympathy with thought''. Even thought,
 
-
 As much as this document is intended to an academic audience, it is also
 intended to them and to my father: This is the beginning of a lifelong
 attempt to explain /¿Cómo fue que se jodio el país?/ 
 
 \blockcquote{Alvarez2013}{The designation of the NPE [Nobel Prize in Economics] yesterday teaches us again the richness of economic theory, capable of producing  alternative points of view, and the risk that it represents to a society that does not know whom to follow. The power of this discipline is unusual, but just as it creates irrational exuberance, it also explains our own irrational behavior.}
 
- 
-
-\lipsum
+Should they be right, this article is wrong. 
 
 \mainmatter
 \pagestyle{scrheadings}
-* Sources                                                                       :noexport:
-** Unread
-*** Supiot, 2012, La gouvernance par les nombres
-[[file:master.org::La gouvernance par les nombres]]
-*** Hughes, 1958, Consciousness and Society: The Reorientation of European Social Thought, 1890-1930
-*** Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
-*** Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
-*** Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
-*** Miller, 1955, Toward a general theory for the behavioral sciences
-*** Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
-*** Cohen-Cole, 2009, The Creative American: Cold War salons, social science, and the cure for modern society.
-*** Imhotep,
-*** Vicedo, 2012, Cold War emotions: The war over human nature
-*** Heyck, 2005, Herbert Simon: The Bounds of Reason in Modern America
-*** Heyck, 2015, Age of System: Understanding the development of modern social science
-*** Heyck, 2005, Mind and Network
-*** Heyck, 1999, Georges Miller, language, and the computer metaphor of mind
-*** Backhouse, 2010, The unsocial social science: Economics and Neighboring Disciplines Since 1945
-*** Dupuy, 2005, Aux origines des sciences cognitives
-*** Chomsky, 1998, The Cold War & the University: Toward an Intellectual History of the Postwar Years
-*** Mikulark, 1966, ``Cybernetics and Marxism-Leninism'' in The Social Impact of Cybernetics, ed. Charles Dechert
-*** Israel, 2004, Meccanicismo
-*** Edwards, 1996, The Closed World: Computers and the Politics of Discourse in Cold War America
-** Read
 * Notes                                                                         :noexport:
 The history of the relation between rationality and governance in 20th century american
 ecomics. 
@@ -163,21 +119,61 @@ There is very little interest in discussoins of methodology of science, it
 seem due to the hegemony of instrumentalist or operationalist view of the
 progress of science. 
 * Preparatory Research
-** Choice of Subject-matter
-
-** First Sifting
-- [ ] Key texts.
-- [ ] Key authors.
-** Draft: Framework
-- [ ] Main question.
-- [ ] Scope and interrelations.
-- [ ] Research hypotheses.
-- [ ] Methodology.
- - [ ] Keywords.
- - [ ] Debates & controversies.
- - [ ] Axes d'interpretation.
-- [ ] Check with adviser.
-* Research
+** 無 First Sifting
+:PROPERTIES:
+:CATEGORY: 1stSifting
+:END:
+   \begin{labeling}[~]{Subject-matter} 
+\item[Subject-matter] Lorem ipsum dolor sit amet
+\end{labeling}
+*** 無 Key text
+- [ ] Supiot, 2012, La gouvernance par les nombres
+- [ ] Hughes, 1958, Consciousness and Society: The Reorientation of European Social Thought, 1890-1930
+- [ ] Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
+- [ ] Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
+- [ ] Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
+- [ ] Miller, 1955, Toward a general theory for the behavioral sciences
+- [ ] Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
+- [ ] Cohen-Cole, 2009, The Creative American: Cold War salons, social science, and the cure for modern society.
+- [ ] Imhotep,
+- [ ] Vicedo, 2012, Cold War emotions: The war over human nature
+- [ ] Heyck, 2005, Herbert Simon: The Bounds of Reason in Modern America
+- [ ] Heyck, 2015, Age of System: Understanding the development of modern social science
+- [ ] Heyck, 2005, Mind and Network
+- [ ] Heyck, 1999, Georges Miller, language, and the computer metaphor of mind
+- [ ] Backhouse, 2010, The unsocial social science: Economics and Neighboring Disciplines Since 1945
+- [ ] Dupuy, 2005, Aux origines des sciences cognitives
+- [ ] Chomsky, 1998, The Cold War & the University: Toward an Intellectual History of the Postwar Years
+- [ ] Mikulark, 1966, ``Cybernetics and Marxism-Leninism'' in The Social Impact of Cybernetics, ed. Charles Dechert
+- [ ] Israel, 2004, Meccanicismo
+- [ ] Edwards, 1996, The Closed World: Computers and the Politics of Discourse in Cold War America
+***  無 Important Text
+\lipsum
+*** 無 Ancillary Text
+\lipsum
+*** 無 Boundary Text
+\lipsum
+** 無 Draft: Framework
+:PROPERTIES:
+:CATEGORY: D-Framework   
+:END:
+*** 無 Main question 
+\lipsum
+*** 無 Scope and interrelations
+\lipsum
+*** 無 Research hypotheses.
+\lipsum
+*** 無 Methodology
+\lipsum
+*** 無 Keywords
+\lipsum
+*** 無 Debates & Controversies
+\lipsum
+*** 無 Axes d'interpretation
+\lipsum
+*** 無 Bibliography 
+# \printbibliography[heading=none]
+* 取 Research
 ** Framework
 - [ ] Main question.
 - [ ] Secondary questions.
@@ -199,7 +195,7 @@ progress of science.
  - [ ] Update list of key texts.
  - [ ] Update list of key authors.
 - [ ] If necessary, update any component of the Framework.
-* Preparatory Writing 
+* 取 Preparatory Writing 
 ** Draft: Outline
 - [ ] Update Main Question.
 - [ ] Write the Directing Idea.
@@ -207,7 +203,7 @@ progress of science.
 ** Draft: Writing Plan
 - [ ] Check with thesis adviser.
 ** Additional Research
-* Writing 
+* 取 Writing 
 ** Exploratory Draft: Thesis
 - [ ] Check with thesis adviser.
 ** Outline
@@ -245,7 +241,7 @@ progress of science.
 #+OPTIONS: LaTeX:t d:nil pri:t p:t inline:nil tags:nil todo:nil 
 # Use KOMA script classes instead of LaTeX's defaults
 #+LATEX_CLASS: scrbook
-#+LATEX_CLASS_OPTIONS: [draft=true, paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=big,headings=twolinechapter,open=right,chapterprefix=false,headsepline=false,parskip=full]
+#+LATEX_CLASS_OPTIONS: [draft=false, paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=big,headings=twolinechapter,open=right,chapterprefix=false,headsepline=false,parskip=full]
 # Custom section to choose latex export engine (XeTeX). Can't believe this
 # feature does not exist by default. Check Emacs' configuration for the relevant configurations
 #+LATEX_CMD: xelatex
@@ -458,4 +454,4 @@ progress of science.
 # Change spacing of itemize environment items
 # #+LATEX_HEADER: \setlist[1]{itemsep=\parskip}
 # Add extra margin space (for adding margin notes)
-# #+LATEX_HEADER: \setlength{\marginparwidth}{2\marginparwidth}
+#+LATEX_HEADER: \setlength{\marginparwidth}{2\marginparwidth}

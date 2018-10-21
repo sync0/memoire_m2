@@ -1,12 +1,14 @@
 % Intended LaTeX compiler: pdflatex
-\documentclass[paper=A5,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,headings=normal,headings=twolinechapter,open=right,chapterprefix=false,headsepline=true]{scrbook}
+\documentclass[paper=B6,portrait,twoside=true,twocolumn=false,headinclude=true,footinclude=false,fontsize=12,BCOR=10mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,headings=normal,headings=twolinechapter,open=right,toc=graduated,chapterprefix=false,numbers=endperiod,parskip=half+]{scrbook}
 \usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{url}
 \usepackage{soul}
 \usepackage{polyglossia}
 \setmainlanguage{french}
-\setotherlanguages{italian,spanish,english}
+\setotherlanguages{english,spanish}
+\usepackage{xeCJK}
+\setCJKmainfont{Baekmuk Batang}
 \usepackage[french=guillemets,thresholdtype=words,threshold=3]{csquotes}
 \MakeAutoQuote{«}{»}
 \AtBeginEnvironment{quote}{\itshape}
@@ -24,11 +26,13 @@
 \usepackage{microtype}
 \microtypecontext{kerning=french}
 \usepackage{ragged2e}
+\usepackage[all]{nowidow}
 \usepackage{enumitem}
+\usepackage{adforn}
 \usepackage{float}
 \usepackage{xcolor}
 \usepackage{graphicx}
-\graphicspath{ {/home/sync0/Dropbox/projects/paris_1/} }
+\graphicspath{ {/home/sync0/Dropbox/paris_1/} }
 \usepackage{lipsum}
 \usepackage[textsize=scriptsize, linecolor=soothing_green, backgroundcolor=soothing_green]{todonotes}
 \usepackage{xunicode}
@@ -37,40 +41,54 @@
 \defaultfontfeatures{Scale=MatchLowercase}
 \setmainfont[Mapping=tex-text,Numbers=OldStyle,SmallCapsFeatures={LetterSpace=4,Ligatures=NoCommon}]{Linux Libertine O}
 \setsansfont[Mapping=tex-text]{Linux Biolinum O}
-\setmonofont[Mapping=tex-text]{Courier New}
+\setmonofont[Mapping=tex-text]{Inconsolata}
+\newfontfamily\titlefamily[Scale=1.5]{Linux Biolinum O}
+\newcommand\HUGE{\fontsize{30}{30}\selectfont}
 \usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
 \clearscrheadfoot
 \automark[chapter]{part}
-\cehead{\headmark}
-\cohead{\headmark}
-\lehead{\thepage}
-\rohead{\thepage}
+\chead{\headmark}
+\ohead{\thepage}
 \renewcommand\partmarkformat{}
 \AfterTOCHead{\singlespacing}
 \setkomafont{disposition}{\normalfont\normalcolor}
 \setkomafont{labelinglabel}{\normalfont\bfseries}
 \setkomafont{minisec}{\usekomafont{subsection}}
-\addtokomafont{pageheadfoot}{\bfseries\sffamily\upshape}
-\addtokomafont{chapterentry}{\sffamily\large}
-\usepackage[tocindentauto,tocgraduated]{tocstyle}
-\usetocstyle{nopagecolumn}
-\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\protect\sffamily\Large\scshape\lowercase{#1}\hspace{1em}}{#2}}
-\addtokomafont{part}{\scshape\sffamily\Huge\lowercase}
+\addtokomafont{pageheadfoot}{\sffamily\upshape}
+\addtokomafont{caption}{\small}
+\addtokomafont{captionlabel}{\bfseries}
+\addtokomafont{part}{\HUGE\scshape\sffamily\lowercase}
 \renewcommand*{\partformat}{\partname}
-\addtokomafont{chapter}{\bfseries\sffamily\Huge}
-\renewcommand{\raggedchapter}{\centering}
+\addtokomafont{chapter}{\huge\scshape\bfseries\sffamily\lowercase}
 \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter}
-\addtokomafont{section}{\scshape\sffamily\huge\lowercase}
-\addtokomafont{subsection}{\scshape\sffamily\LARGE\lowercase}
-\addtokomafont{subsubsection}{\sffamily\Large}
+\addtokomafont{section}{\LARGE\scshape\sffamily\lowercase}
+\addtokomafont{subsection}{\large\sffamily\bfseries}
+\addtokomafont{subsubsection}{\large\sffamily\itshape}
+\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\scshape\sffamily\lowercase{#2}}}
+\addtokomafont{chapterentry}{\normalsize\sffamily\bfseries}
+\usepackage[tocflat,tocindentauto]{tocstyle}
+\usetocstyle{nopagecolumn}
+\unsettoc{toc}{onecolumn}
 \renewcommand*\labelitemi{\adforn{33}}
 \renewcommand*\labelitemii{\adforn{73}}
 \renewcommand*\labelitemiii{\adforn{73}}
 \renewcommand*\labelitemiv{\adforn{73}}
+\renewcommand*{\dictumwidth}{.8\textwidth}
+\renewcommand*{\raggeddictum}{\centering}
+\renewcommand*{\raggeddictumtext}{\centering}
+\addtokomafont{dictum}{\large\rmfamily}
+\definecolor{bibleblue}{HTML}{00339a}
 \definecolor{soothing_green}{HTML}{E1F7DB}
+\theoremstyle{definition}
+\newtheorem{lecture}{Lecture}
+\newtheorem*{lecture*}{Lecture}
+\newtheorem{problem}{Problème}
+\newtheorem*{problem*}{Problème}
+\newtheorem{interpretation}{Interpretation}
+\newtheorem*{interpretation*}{Interpretation}
 \setcounter{secnumdepth}{\partnumdepth}
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 \recalctypearea
 \author{Carlos Alberto Rivera Carreño}
 \date{}
@@ -80,17 +98,17 @@
  pdftitle={},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 26.1 (Org mode 9.1.13)}, 
+ pdfcreator={Emacs 26.1 (Org mode 9.1.14)}, 
  pdflang={Frenchb}}
 \begin{document}
 
 \begin{titlepage}
  \centering
- \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
+% \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
  \vspace{4\baselineskip}
- {\Huge Titre magnifique \par}
+ {\Huge The Liberal Democratic Governing Machine \par}
  \vspace{1\baselineskip}
- {\Large Sous-titre magnifique \par}
+ {\Large The Rationality of Governance and the Governance of Irrationality in Post-War American Economics \par}
 \vspace*{\fill}
  {\Large Mémoire de \textsc{m2} \par}
  \vspace{2\baselineskip}
@@ -98,27 +116,26 @@
  {\large \textsc{carlos alberto rivera carreño}\par}
  \vspace{1\baselineskip}
  {\large Directeur de thèse: \par}
- {\large \textsc{john eccentric doe}\par}
+ {\large \textsc{jean françois lenfant}\par}
 \end{titlepage}
+
+\pagestyle{empty}
 
 \vspace*{\fill}
 \noindent
-\includegraphics[height=1.5cm]{agpl3.png}\par
+\includegraphics[height=1.5cm]{gpl3.png}\par
 \vspace{1\baselineskip}
 \begin{english}
-\noindent
 This text is free: you can redistribute it and/or modify it
 under the terms of the \textsc{gnu} General Public License as published by
 the Free Software Foundation, either version 3 of the License or any later
-version. \\
+version.
 
-\noindent
 This text is distributed in the hope that it will be useful, but \textbf{without
 any warranty}; without even the implied warranty of \textbf{merchantability or 
 fitness for a particular purpose}. See the \textsc{gnu} General 
-Public License for more details. \\
+Public License for more details.
 
-\noindent
 You should have received a copy of the \textsc{gnu} General Public License along
 with this text. If not, see \url{http://www.gnu.org/licenses/}.
 
@@ -127,49 +144,125 @@ with this text. If not, see \url{http://www.gnu.org/licenses/}.
 Copyright \textcopyright \textsc{sync0} 2018. 
 \end{english}
 
-\thispagestyle{empty}
-
 \newpage 
 \vspace*{\fill}
-\begin{FlushRight}
-\itshape
-Aux lecteurs lointains. 
-\end{FlushRight}
+
+
+\begin{spanish}
+Despierta la conciencia popular para volverse grito.
+\end{spanish}
+
 \vspace*{\fill}
 
-\thispagestyle{empty}
+\newpage
+\tableofcontents 
 
-\newpage 
-\tableofcontents
-
-\thispagestyle{empty}
-
-\newpage 
 \frontmatter
 \pagestyle{plain}
-\chapter{Remerciements} 
+\chapter{Acknowledgements} 
 
 \lipsum
-\chapter{Préface} 
 
-\lipsum
+\chapter{Preface} 
+
+Even when applying different techniques of interpretation to texts, I have
+tried to understand how the circumstances of their production could inform
+their interpretation. Even just for the sake of consistency, shouldn't I
+apply the same standard to this Master's thesis? Shouldn't I provide the
+reader with the tools, the context, etc. that informed this research?
+
+Pace Barthes, the author of these words is very alive. Knowing the tragedy
+of my country, one might ask me: Why do I wield the pen, as the Colombian
+fields bleed? Why not wield the sword? Or, perhaps, why not wield both?
+This text was written, certainly, to satisfy an earthly requirement: to
+obtain a Master's degree. But beyond that, what is the interest of writing
+for me?
+
+Although this thesis is not a political pamphlet, it is grounded in
+political perplexities. To the recule of the state, who not only does not
+want to fund nor organize vast sections of economic activities, my
+generations witnesses a strange mix of ``innovation'',
+``entrepreneurship'', and . If the political Left, of my parent's
+generation had an iron faith in the working class and the peasants to
+change society, today's politically dissafected youth has all hopes in
+private enterprise to solve the evils of the world.
+
+As Oscar Wilde once remarked, ``it is easier to have sympathy with
+suffering, than it is to have sympathy with thought''. Even thought,
+
+As much as this document is intended to an academic audience, it is also
+intended to them and to my father: This is the beginning of a lifelong
+attempt to explain \emph{¿Cómo fue que se jodio el país?} 
+
+\blockcquote{Alvarez2013}{The designation of the NPE [Nobel Prize in Economics] yesterday teaches us again the richness of economic theory, capable of producing  alternative points of view, and the risk that it represents to a society that does not know whom to follow. The power of this discipline is unusual, but just as it creates irrational exuberance, it also explains our own irrational behavior.}
+
+Should they be right, this article is wrong. 
 
 \mainmatter
 \pagestyle{scrheadings}
-\part{La vérité économique}
-\label{sec:org6381d62}
-\chapter{Marx et Ricardo}
-\label{sec:org35205e5}
+\part{Preparatory Research}
+\label{sec:orgbdbf277}
+\chapter{First Sifting}
+\label{sec:org8c4c0cd}
+   \begin{labeling}[~]{Subject-matter} 
+\item[Subject-matter] Lorem ipsum dolor sit amet
+\end{labeling}
+\section{Key text}
+\label{sec:orgb4ddc28}
+\begin{itemize}
+\item[{$\square$}] Supiot, 2012, La gouvernance par les nombres
+\item[{$\square$}] Hughes, 1958, Consciousness and Society: The Reorientation of European Social Thought, 1890-1930
+\item[{$\square$}] Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
+\item[{$\square$}] Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
+\item[{$\square$}] Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
+\item[{$\square$}] Miller, 1955, Toward a general theory for the behavioral sciences
+\item[{$\square$}] Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
+\item[{$\square$}] Cohen-Cole, 2009, The Creative American: Cold War salons, social science, and the cure for modern society.
+\item[{$\square$}] Imhotep,
+\item[{$\square$}] Vicedo, 2012, Cold War emotions: The war over human nature
+\item[{$\square$}] Heyck, 2005, Herbert Simon: The Bounds of Reason in Modern America
+\item[{$\square$}] Heyck, 2015, Age of System: Understanding the development of modern social science
+\item[{$\square$}] Heyck, 2005, Mind and Network
+\item[{$\square$}] Heyck, 1999, Georges Miller, language, and the computer metaphor of mind
+\item[{$\square$}] Backhouse, 2010, The unsocial social science: Economics and Neighboring Disciplines Since 1945
+\item[{$\square$}] Dupuy, 2005, Aux origines des sciences cognitives
+\item[{$\square$}] Chomsky, 1998, The Cold War \& the University: Toward an Intellectual History of the Postwar Years
+\item[{$\square$}] Mikulark, 1966, ``Cybernetics and Marxism-Leninism'' in The Social Impact of Cybernetics, ed. Charles Dechert
+\item[{$\square$}] Israel, 2004, Meccanicismo
+\item[{$\square$}] Edwards, 1996, The Closed World: Computers and the Politics of Discourse in Cold War America
+\end{itemize}
+\section{Important Text}
+\label{sec:org90db3cc}
 \lipsum
-\section{Marx et Ricardo et Smith}
-\label{sec:orge2738a7}
+\section{Ancillary Text}
+\label{sec:orgdd2c2e5}
 \lipsum
-\part{La vérité juridique}
-\label{sec:orgd9d118f}
-\chapter{Marx et Ricardo}
-\label{sec:org4484aef}
+\section{Boundary Text}
+\label{sec:org6e9e93d}
 \lipsum
-\section{Marx et Ricardo et Smith}
-\label{sec:orgd33e55a}
+\chapter{Draft: Framework}
+\label{sec:org9c0c74c}
+\section{Main question}
+\label{sec:orgc7e306b}
 \lipsum
+\section{Scope and interrelations}
+\label{sec:orge6a3f33}
+\lipsum
+\section{Research hypotheses.}
+\label{sec:org6353d6e}
+\lipsum
+\section{Methodology}
+\label{sec:org259ddda}
+\lipsum
+\section{Keywords}
+\label{sec:orgfc681d3}
+\lipsum
+\section{Debates \& Controversies}
+\label{sec:orgbad6469}
+\lipsum
+\section{Axes d'interpretation}
+\label{sec:org5659612}
+\lipsum
+\section{Bibliography}
+\label{sec:org20b2ca2}
 \end{document}
