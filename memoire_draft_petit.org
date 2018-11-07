@@ -1107,39 +1107,107 @@ progress of science.
 :PROPERTIES:
 :CATEGORY: D-Framework   
 :END:
-*** 完 Main question 
-This thesis will study the influence of the brain-computer metaphor in
-Herbert Simon's concept of rationality. 
-*** 完 Thesis Outline 
-**** Introduction: What to Make of Metaphors in Economics?
-This section will introduce the topic of metaphors in economics. 
-****  The Genealogy of the Brain Computer Metaphor in Simon's Work.
-**** The Influence of the Brain-Computer Metaphor in Simon's Concept of Rationality.
+*** 無 Main question 
+In this thesis, I will study the genealogy of Simon's ideas on the computer
+and computation, and their importance for his views on automation. 
+*** 無 Motivation
+The motivation for this thesis is a deep feeling that there is something
+wrong with today's society and that given that economics plays such an
+important cultural role in mediating people's understanding of the nature
+of political problems, it is necessary to understand what is wrong with
+economics to understand what is wrong with society at large. 
+
+Given this, I am interested in the context in which economic ideas
+originate; I am interested in the interactions between economic ideas,
+ideas in other sciences, utopian political ideas, and wider "pop-culture"
+understandings and receptions of those ideas.
+
+In today's society, in which the future utopia is construed as the
+apotheosis of technological revolution---and /not/ political revolution---,
+and in which the utopian discourse of trans-humanism joins corporate
+discourses on innovation and neoliberal panegyrics on entrepreneurship, we
+can see a relation between a certain conception of politics and the place
+and role that machines will play there, and in getting us there.
+
+In the case of economics, following the intellectual debacle of the 2008
+global financial crisis, in which those economists who gleefully took 
+refuge in baroque mathematics were scorned for the empiric irrelevance of
+their theories, behavioral economics was presented as an alternative
+version to mainstream economics that would finally present a more realistic
+version of economics, by integrating certain ideas from Psychology, to
+better understand economic problems, or more simply, reality.  
+
+The reason for writing a thesis on Henry Simon is /not/ to write another
+thesis on bounded rationality. Rather, the reason for focusing on Simon is
+because he was one of the first economists to embrace the postwar cyborg
+sciences, and because he played a key role in the foundation of the field
+of artificial intelligence. Given that artificial intelligence presents
+itself as the next holy grail of science in our generation, I think that it
+is worth to study Simon, due to the foundational role he played.
+
+Particularly, I am interested in Simon because he was more /cyborg/ than
+other postwar economists. Even though the economists close to the Cowles
+Commission embraced certain aspects of the cyborg sciences, such as a
+version of Game Theory, they were more conservative in their willingness to
+question to the Walrasian model, to which Simon wasn't attached. 
+
+In the end, Simon distanced himself from mainstream economics, to build a
+project of the sciences of the artificial, in which new modes of organizing
+society were envisioned based on his theories on artificial intelligence. 
+
+I believe that one aspect worth discussing of Simon is an ontological
+understanding of his idea of nature, society, the human, and the artificial. 
+Being a cyborg, these domains blur in his work, and I believe this has
+important consequences for his vision of organization, and its political
+and economic consequences. 
+
+Since one of the important aspects of his vision is his idea of the
+computer, this thesis will explore Simon's vision of the computer. Thus the
+title of the thesis: The computer in the thought of Henry Simon.
+
+The idea is to project this thesis into a Ph.D dissertation around the
+theme of the governing machine: the automation of political decision making
+and the delegation of all political responsibility to machines.
+
+ I am interested in
+the wider cultural influence of the ideas of economists.
+
+Particularly, today's futuristic utopias, in which technological change,
+but not political change, is wished seem to me to be very problematic. c
+
+Generally speaking, I am interested in ideas; specially, in the way that
+people come to understand and define their political utopias, and their
+definitions of nature and society.  
+
+Roughly speaking, with this thesis, I expect to understand better the
+épistémè of our time.
+
+*** 無 Thesis Outline 
+**** Introduction
+In the introduction, I will discuss the importance of economic metaphors 
+**** Chapter 1: What is the importance of the computer for economic theory?
+I will discuss the importance of the computer for economic theory in the
+twentieth century, specially in the work of Simon. 
+****  Chapter 2: The genealogy of Computer (Metaphor) in Simon's Work
+In this chapter, I will trace the genealogy of the computer concept in
+Simon's work, and how it evolved. 
+**** Chapter 3: The influence of the computer for Simon's thought on automation 
+In this chapter, I will discuss the influence of the computer concept in
+Simon's work, particularly in its relation with Simon's ideas on
+automation.
 **** Conclusion
-*** 無 Scope and interrelations
-\lipsum
 *** 無 Research hypotheses.
 \lipsum
 *** 無 Methodology
-\lipsum
-*** 無 Keywords
-\lipsum
-*** 無 Debates & Controversies
+I would like to write a history of ideas in the style of Philip Mirowski. 
+*** 取 Debates & Controversies
 \lipsum
 *** 無 Axes d'interpretation
 \lipsum
-*** 無 Bibliography 
-# \defbibnote{introduction}{Cette section contient des g\'enéralités concernant la littérature épique médiévale et particulièrement la chanson de geste.}
-
-# \defbibnote{postscriptum}{On se rapportera également aux sections concernant le contexte historique de la littérature épique}
-
-# \printbibliography[keyword={brain,social science, computer, cold war}, title={Littérature épique : généralités}, prenote=introduction, postnote=postscriptum]
-
-# \printbibliography[keyword=Brain, keyword=Computers]
-# \lipsum
-I have separated the bibliography according to the big themes of the
-thesis. 
-
+*** 完 Bibliography 
+This is a thematic bibliography organized around keywords. To facilitate
+reading, the booktitles are highlighted in blue. 
+ 
 \nocite{*}
 **** The Brain
 \printbibliography[heading=none,keyword=memoire,keyword=brain]
@@ -1251,9 +1319,12 @@ thesis.
 #+LATEX_HEADER: \usepackage[backend=biber,style=authoryear,arxiv=false,doi=false,isbn=false,url=false]{biblatex}
 # #+LATEX_HEADER: \usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=true]{biblatex}
 # Color the title in the bibliography
-# #+LATEX_HEADER: \DeclareFieldFormat{title}{\color{Grey}\mkbibemph{#1}}
+# #+LATEX_HEADER: \DeclareFieldFormat{title}{\color{darkblue}\mkbibemph{#1}}
+#+LATEX_HEADER: \DeclareFieldFormat{booktitle}{\color{blue}\mkbibemph{#1}}
+#+LATEX_HEADER: \DeclareFieldFormat{title}{\color{blue}\mkbibemph{#1}}
+# #+LATEX_HEADER: \DeclareFieldFormat{title}{\color{darkblue}\mkbibemph{#1}}
 # Color those entries in the bibliography that are books 
-#+LATEX_HEADER:\AtEveryBibitem{\ifentrytype{book}{\color{blue}}{}}
+# #+LATEX_HEADER:\AtEveryBibitem{\ifentrytype{book}{\color{blue}}{}}
 # Choose bibliography file
 #+LATEX_HEADER: \addbibresource{~/Documents/mendeley/library.bib}
 *** Ams
@@ -1409,7 +1480,7 @@ thesis.
 # Remove dots after section title.
 #+LATEX_HEADER: \usetocstyle{nopagecolumn}
 # Have a two-column table of contents. 
-#+LATEX_HEADER: \unsettoc{toc}{onecolumn}
+# #+LATEX_HEADER: \unsettoc{toc}{onecolumn}
 *** Code blocks
 # Customize fonts used in code blocks (requires minted package)
 # #+LATEX_HEADER:\usemintedstyle{borland}

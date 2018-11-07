@@ -10,7 +10,9 @@
 \usepackage[french=guillemets,thresholdtype=words,threshold=3]{csquotes}
 \MakeAutoQuote{«}{»}
 \AtBeginEnvironment{quote}{\itshape}
-\usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=true]{biblatex}
+\usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=false]{biblatex}
+\DeclareFieldFormat{booktitle}{\color{blue}\mkbibemph{#1}}
+\DeclareFieldFormat{title}{\color{blue}\mkbibemph{#1}}
 \addbibresource{~/Documents/mendeley/library.bib}
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -54,7 +56,7 @@
 \setkomafont{disposition}{\normalfont\normalcolor}
 \setkomafont{labelinglabel}{\normalfont\bfseries}
 \setkomafont{minisec}{\usekomafont{subsection}}
-\addtokomafont{pageheadfoot}{\bfseries\sffamily\upshape}
+\addtokomafont{pageheadfoot}{\sffamily\upshape}
 \addtokomafont{caption}{\small}
 \addtokomafont{captionlabel}{\bfseries}
 \addtokomafont{part}{\HUGE\scshape\sffamily\lowercase}
@@ -68,7 +70,6 @@
 \addtokomafont{chapterentry}{\normalsize\sffamily\bfseries}
 \usepackage[tocindentauto,tocgraduated]{tocstyle}
 \usetocstyle{nopagecolumn}
-\unsettoc{toc}{onecolumn}
 \renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\protect\sffamily\Large\scshape\lowercase{#1}\hspace{1em}}{#2}}
 \renewcommand*\labelitemi{\adforn{33}}
 \renewcommand*\labelitemii{\adforn{73}}
@@ -95,21 +96,36 @@
  \centering
 % \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
  \vspace{4\baselineskip}
- {\Huge The Liberal Democratic Governing Machine \par}
- \vspace{1\baselineskip}
- {\Large The Rationality of Governance and the Governance of Irrationality in Post-War American Economics \par}
-\vspace*{\fill}
- {\Large Mémoire de \textsc{m2} \par}
+\begin{french}
+ {\Large Université Paris I Panthéon Sorbonne \par}
+ {\Large \textsc{ufr} 02 : Sciences économiques  \par}
+ {\large Master 2 : Économie et sciences humaines \par}
+ {\large 2019 \par}
+\end{french}
  \vspace{2\baselineskip}
- {\large Par: \par}
+ {\huge The Automata \& the Engineer \par}
+ {\Large Herbert Simon's Quest for the Governing Machine \par}
+\vspace*{\fill}
+\begin{french}
+ {\large Présenté et sountenu par : \par}
+\end{french}
  {\large \textsc{carlos alberto rivera carreño}\par}
  \vspace{1\baselineskip}
- {\large Directeur de thèse: \par}
- {\large \textsc{jean françois lenfant}\par}
+\begin{french}
+ {\large Directeur de mémoire : \par}
+\end{french}
+ {\large \textsc{jean sébastien lenfant}\par}
 \end{titlepage}
 
 \pagestyle{empty}
 
+\begin{french}
+L'Université Paris 1 Panthéon Sorbonne n'entend donner aucune approbation,
+ni désapprobation aux opinions émises dans ce mémoire ; elle doivent être
+considérées comme propres à leur auteur. 
+\end{french}
+
+\newpage
 \vspace*{\fill}
 \noindent
 \includegraphics[height=1.5cm]{gpl3.png}\par
@@ -134,14 +150,12 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \end{english}
 
 \newpage 
-\vspace*{\fill}
 
-
+\begin{FlushRight}
 \begin{spanish}
-Despierta la conciencia popular para volverse grito.
+\textit{Para una lectora lejana.}
 \end{spanish}
-
-\vspace*{\fill}
+\end{FlushRight}
 
 \newpage
 \tableofcontents 
@@ -183,75 +197,163 @@ As much as this document is intended to an academic audience, it is also
 intended to them and to my father: This is the beginning of a lifelong
 attempt to explain \emph{¿Cómo fue que se jodio el país?} 
 
-\blockcquote{Alvarez2013}{The designation of the NPE [Nobel Prize in Economics] yesterday teaches us again the richness of economic theory, capable of producing  alternative points of view, and the risk that it represents to a society that does not know whom to follow. The power of this discipline is unusual, but just as it creates irrational exuberance, it also explains our own irrational behavior.}
-
 Should they be right, this article is wrong. 
 
 \mainmatter
 \pagestyle{scrheadings}
 \part{Preparatory Research}
-\label{sec:orgd226ba9}
-\chapter{First Sifting}
-\label{sec:org45c564c}
-   \begin{labeling}[~]{Subject-matter} 
-\item[Subject-matter] Lorem ipsum dolor sit amet
-\end{labeling}
-\section{Key text}
-\label{sec:org740b6eb}
-\begin{itemize}
-\item[{$\square$}] Supiot, 2012, La gouvernance par les nombres
-\item[{$\square$}] Hughes, 1958, Consciousness and Society: The Reorientation of European Social Thought, 1890-1930
-\item[{$\square$}] Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
-\item[{$\square$}] Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
-\item[{$\square$}] Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
-\item[{$\square$}] Miller, 1955, Toward a general theory for the behavioral sciences
-\item[{$\square$}] Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
-\item[{$\square$}] Cohen-Cole, 2009, The Creative American: Cold War salons, social science, and the cure for modern society.
-\item[{$\square$}] Imhotep,
-\item[{$\square$}] Vicedo, 2012, Cold War emotions: The war over human nature
-\item[{$\square$}] Heyck, 2005, Herbert Simon: The Bounds of Reason in Modern America
-\item[{$\square$}] Heyck, 2015, Age of System: Understanding the development of modern social science
-\item[{$\square$}] Heyck, 2005, Mind and Network
-\item[{$\square$}] Heyck, 1999, Georges Miller, language, and the computer metaphor of mind
-\item[{$\square$}] Backhouse, 2010, The unsocial social science: Economics and Neighboring Disciplines Since 1945
-\item[{$\square$}] Dupuy, 2005, Aux origines des sciences cognitives
-\item[{$\square$}] Chomsky, 1998, The Cold War \& the University: Toward an Intellectual History of the Postwar Years
-\item[{$\square$}] Mikulark, 1966, ``Cybernetics and Marxism-Leninism'' in The Social Impact of Cybernetics, ed. Charles Dechert
-\item[{$\square$}] Israel, 2004, Meccanicismo
-\item[{$\square$}] Edwards, 1996, The Closed World: Computers and the Politics of Discourse in Cold War America
-\end{itemize}
-\section{Important Text}
-\label{sec:org7ff9ed3}
-\lipsum
-\section{Ancillary Text}
-\label{sec:org844e8e6}
-\lipsum
-\section{Boundary Text}
-\label{sec:org2e31d00}
-\lipsum
+\label{sec:org189a66c}
 \chapter{Draft: Framework}
-\label{sec:org04c5b38}
+\label{sec:orge777747}
 \section{Main question}
-\label{sec:org915ac53}
-\lipsum
-\section{Scope and interrelations}
-\label{sec:orgde53074}
-\lipsum
-\section{Research hypotheses.}
-\label{sec:orga52351c}
-\lipsum
+\label{sec:orge61f8be}
+In this thesis, I will trace the genealogy of Simon's ideas on the computer
+and computation to discuss their influence for his views on automation
+of decision making. 
+\section{Motivation}
+\label{sec:orge5bd378}
+The motivation for this thesis is a deep feeling that there is something
+wrong with today's society and that given that economics plays such an
+important cultural role in mediating people's understanding of the nature
+of political problems, it is necessary to understand what is wrong with
+economics to understand what is wrong with society at large. 
+
+Given this, I am interested in the context in which economic ideas
+originate; I am interested in the interactions between economic ideas,
+ideas in other sciences, utopian political ideas, and wider ``pop-culture''
+understandings and receptions of those ideas.
+
+In today's society, in which the future utopia is construed as the
+apotheosis of technological revolution---and \emph{not} political revolution---,
+and in which the utopian discourse of trans-humanism joins corporate
+discourses on innovation and neoliberal panegyrics on entrepreneurship, we
+can see a relation between a certain conception of politics and the place
+and role that machines will play there, and in getting us there.
+
+In the case of economics, following the intellectual debacle of the 2008
+global financial crisis, in which those economists who gleefully took 
+refuge in baroque mathematics were scorned for the empiric irrelevance of
+their theories, behavioral economics was presented as an alternative
+version to mainstream economics that would finally present a more realistic
+version of economics, by integrating certain ideas from Psychology, to
+better understand economic problems, or more simply, reality.  
+
+The reason for writing a thesis on Henry Simon is \emph{not} to write another
+thesis on bounded rationality. Rather, the reason for focusing on Simon is
+because he was one of the first economists to embrace the postwar cyborg
+sciences, and because he played a key role in the foundation of the field
+of artificial intelligence. Given that artificial intelligence presents
+itself as the next holy grail of science in our generation, I think that it
+is worth to study Simon, due to the foundational role he played.
+
+Particularly, I am interested in Simon because he was more \emph{cyborg} than
+other postwar economists. Even though the economists close to the Cowles
+Commission embraced certain aspects of the cyborg sciences, such as a
+version of Game Theory, they were more conservative in their willingness to
+question to the Walrasian model, to which Simon wasn't attached. 
+
+In the end, Simon distanced himself from mainstream economics, to build a
+project of the sciences of the artificial, in which new modes of organizing
+society were envisioned based on his theories on artificial intelligence. 
+
+I believe that one aspect worth discussing of Simon is an ontological
+understanding of his idea of nature, society, the human, and the artificial. 
+Being a cyborg, these domains blur in his work, and I believe this has
+important consequences for his vision of organization, and its political
+and economic consequences. 
+
+Since one of the important aspects of his vision is his idea of the
+computer, this thesis will explore Simon's vision of the computer. Thus the
+title of the thesis: The computer in the thought of Henry Simon.
+
+The idea is to project this thesis into a Ph.D dissertation around the
+theme of the governing machine: the automation of political decision making
+and the delegation of all political responsibility to machines.
+
+ I am interested in
+the wider cultural influence of the ideas of economists.
+
+Particularly, today's futuristic utopias, in which technological change,
+but not political change, is wished seem to me to be very problematic. c
+
+Generally speaking, I am interested in ideas; specially, in the way that
+people come to understand and define their political utopias, and their
+definitions of nature and society.  
+
+Roughly speaking, with this thesis, I expect to understand better the
+épistémè of our time.
+
+\section{Thesis Outline}
+\label{sec:org7345118}
+The thesis will have the following outline:
+
+\begin{itemize}
+\item Introduction
+\item Chapter 1:
+\begin{itemize}
+\item Section 1
+\item Section 2
+\end{itemize}
+\item Chapter 2:
+\begin{itemize}
+\item Section 1
+\item Section 2
+\end{itemize}
+\item Conclusion
+\end{itemize}
+
+Next, I will discuss the content of each of these parts. 
+\subsection{Introduction (15-20 pages)}
+\label{sec:org4c58124}
+In the introduction, I will discuss the importance of economic metaphors
+\subsection{The importance of the computer in economic though? (15-20)}
+\label{sec:org37d4521}
+I will discuss the importance of the computer for economic theory, specially in the work of Simon. 
+
+I might being by discussing Jevons's inspiration in the work of Charles
+Babbage.
+\subsubsection{The genealogy of Computer (Metaphor) in Simon's Work}
+\label{sec:orgb04a3e9}
+In this chapter, I will trace the genealogy of the computer concept in
+Simon's work, and how it evolved. 
+\subsubsection{Section 2}
+\label{sec:org634d4de}
+\subsection{The influence of the computer for Simon's thought on automation (15-20)}
+\label{sec:orgdf6be8b}
+In this chapter, I will discuss the influence of the computer concept in
+Simon's work, particularly in its relation with Simon's ideas on
+automation.
+\subsubsection{Section 1}
+\label{sec:orge4f28e8}
+\subsubsection{Section 2}
+\label{sec:org40508e6}
+\subsection{Conclusion (10-15)}
+\label{sec:orga613438}
 \section{Methodology}
-\label{sec:orga38df6e}
-\lipsum
-\section{Keywords}
-\label{sec:org89b21a8}
-\lipsum
-\section{Debates \& Controversies}
-\label{sec:org6eef574}
-\lipsum
-\section{Axes d'interpretation}
-\label{sec:orgcb71fed}
-\lipsum
+\label{sec:org625faa6}
+I would like to write a history of ideas in the style of Philip Mirowski. 
 \section{Bibliography}
-\label{sec:org3e8b9c3}
+\label{sec:org37e55d9}
+This is a thematic bibliography organized around keywords. To facilitate
+reading, the book titles are highlighted in blue. 
+
+\nocite{*}
+\subsection{The Brain}
+\label{sec:org57c41fc}
+\printbibliography[heading=none,keyword=memoire,keyword=brain]
+\subsection{The Cold War}
+\label{sec:orge1e5205}
+\printbibliography[heading=none,keyword=memoire,keyword=cold-war,notkeyword=brain]
+\subsection{The Computer}
+\label{sec:orgc34a5a2}
+\printbibliography[heading=none,keyword=memoire,keyword=computer,notkeyword=brain,notkeyword=cold-war]
+\subsection{Metaphors}
+\label{sec:org1d03fa9}
+\printbibliography[heading=none,keyword=memoire,keyword=metaphors,notkeyword=brain,notkeyword=cold-war,notkeyword=computer,notkeyword=cyborg]
+\subsection{Herbert Simon}
+\label{sec:org5aa9b3e}
+\printbibliography[heading=none,keyword=memoire,keyword=herbert-simon,notkeyword=brain,notkeyword=cold-war,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors]
+\subsection{The Social Sciences}
+\label{sec:orgf0eef57}
+\printbibliography[heading=none,keyword=memoire,keyword=social-science,notkeyword=brain,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors,notkeyword=herbert-simon,notkeyword=cold-war]
 \end{document}

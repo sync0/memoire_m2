@@ -14,21 +14,36 @@
  \centering
 % \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
  \vspace{4\baselineskip}
- {\Huge The Liberal Democratic Governing Machine \par}
- \vspace{1\baselineskip}
- {\Large The Rationality of Governance and the Governance of Irrationality in Post-War American Economics \par}
-\vspace*{\fill}
- {\Large Mémoire de \textsc{m2} \par}
+\begin{french}
+ {\Large Université Paris I Panthéon Sorbonne \par}
+ {\Large \textsc{ufr} 02 : Sciences économiques  \par}
+ {\large Master 2 : Économie et sciences humaines \par}
+ {\large 2019 \par}
+\end{french}
  \vspace{2\baselineskip}
- {\large Par: \par}
+ {\huge The Automata \& the Engineer \par}
+ {\Large Herbert Simon's Quest for the Governing Machine \par}
+\vspace*{\fill}
+\begin{french}
+ {\large Présenté et sountenu par : \par}
+\end{french}
  {\large \textsc{carlos alberto rivera carreño}\par}
  \vspace{1\baselineskip}
- {\large Directeur de thèse: \par}
- {\large \textsc{jean françois lenfant}\par}
+\begin{french}
+ {\large Directeur de mémoire : \par}
+\end{french}
+ {\large \textsc{jean sébastien lenfant}\par}
 \end{titlepage}
 
 \pagestyle{empty}
 
+\begin{french}
+L'Université Paris 1 Panthéon Sorbonne n'entend donner aucune approbation,
+ni désapprobation aux opinions émises dans ce mémoire ; elle doivent être
+considérées comme propres à leur auteur. 
+\end{french}
+
+\newpage
 \vspace*{\fill}
 \noindent
 \includegraphics[height=1.5cm]{gpl3.png}\par
@@ -53,15 +68,12 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \end{english}
 
 \newpage 
-\vspace*{\fill}
-# \begin{FlushRight}
-
-
+# \vspace*{\fill}
+\begin{FlushRight}
 \begin{spanish}
-Despierta la conciencia popular para volverse grito.
+\textit{Para una lectora lejana.}
 \end{spanish}
-
-\vspace*{\fill}
+\end{FlushRight}
 
 \newpage
 \tableofcontents 
@@ -69,7 +81,6 @@ Despierta la conciencia popular para volverse grito.
 \frontmatter
 \pagestyle{plain}
 \chapter{Acknowledgements} 
-# \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 # \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 \lipsum
 
@@ -105,74 +116,1141 @@ As much as this document is intended to an academic audience, it is also
 intended to them and to my father: This is the beginning of a lifelong
 attempt to explain /¿Cómo fue que se jodio el país?/ 
 
-\blockcquote{Alvarez2013}{The designation of the NPE [Nobel Prize in Economics] yesterday teaches us again the richness of economic theory, capable of producing  alternative points of view, and the risk that it represents to a society that does not know whom to follow. The power of this discipline is unusual, but just as it creates irrational exuberance, it also explains our own irrational behavior.}
-
 Should they be right, this article is wrong. 
 
 \mainmatter
 \pagestyle{scrheadings}
-* Notes                                                                         :noexport:
-The history of the relation between rationality and governance in 20th century american
-ecomics. 
-
-There is very little interest in discussoins of methodology of science, it
-seem due to the hegemony of instrumentalist or operationalist view of the
-progress of science. 
 * Preparatory Research
-** 無 First Sifting
+** 取 First Sifting
 :PROPERTIES:
 :CATEGORY: 1stSifting
 :END:
    \begin{labeling}[~]{Subject-matter} 
 \item[Subject-matter] Lorem ipsum dolor sit amet
 \end{labeling}
-*** 無 Key text
-- [ ] Supiot, 2012, La gouvernance par les nombres
+*** 無 [0/17] Key text
+1. [1/10] Solovey, Cold War Social Science: Knowledge Production, Liberal
+   Democracy, and Human Nature
+   - [ ] Solovey, Cold War Social Science: Specter, Reality, or Useful Concept?
+   - [ ] Tolon, Futures Studies: A New Social Science Rooted in Cold War Strategic Thinking
+   - [ ] Isaac, Epistemic Design: Theory and Data in Harvard’s Department of Social Relations
+   - [X] Heyck, Producing Reason 
+   - [ ] Cravens, Column Right, March! Nationalism, Scientific Positivism, and the Conservative Turn of the American Social Sciences in the Cold War Era
+   - [ ] Brick, Neo- Evolutionist Anthropology, the Cold War, and the Beginnings of the World Turn in U.S. Scholarship
+   - [ ] Jones-Imhotep, Maintaining Humans
+   - [ ] Bycroft, Psychology, Psychologists, and the Creativity Movement: The Lives of Method Inside and Outside the Cold War
+   - [ ] Weidman, An Anthropologist on TV: Ashley Montagu and the Biological
+     Basis of Human Nature, 1945–1960 
+   - [ ] Vicedo, Cold War Emotions: Mother Love and the War over Human Nature
+2. [0/5] Jamie, The Open Mind: Cold War Politics and the Sciences of Human
+   Nature
+   - [ ] Democratic Minds for a Complex Society
+   - [ ] Scientists as the Model of Human Nature
+   - [ ] Insituting Cognitive Science 
+   - [ ] Cognitive Theory and the Making of Liberal Americans
+   - [ ] A Fractured Politics of Human Nature
+3. [ ] Miller, 1955, Toward a general theory for the behavioral sciences
+4. [0/10] Supiot, 2012, La gouvernance par les nombres
+   - [ ] En quête de la machine à gouverner
+     - Poétique du gouvernement 
+     - L'homme machine
+     - Du gouvernement à la gouvernance
+   - [ ] Les aventures d'un idéal: le règne de la loi
+     - Le /nomos/ grec
+     - La /lex/ en droit romain
+     - La révolution gregorienne
+     - /Common Law/ et droit continental
+     - La tradition juridique occidental 
+   - [ ] Le rêve de l'harmonie par le calcul
+     - Les accords parfaits du nombre
+     - La fonction instituante de la discorde 
+   - [ ] L'essor des usages normatifs de la quantification
+     - Rendre compte
+     - Administrer
+     - Juger
+     - Légiférer 
+   - [ ] L’asservissement de la Loi au Nombre: du Gosplan au Marché total
+     - Le renversement du règne de la loi
+     - Le droit, outil de planification
+     - L'hybridation du communisme et capitalisme 
+   - [ ] Calculer l'incalculable: la doctrine Law and Economics
+     - La théorie des jeux
+     - La théorie de l'agence
+     - Le théorème de Coase et la théorie des /property rights/
+     - La /New Comparative Analysis/ et le marché du droit 
+   - [ ] La dynamique juridique de la gouvernance par les nombres
+     - La gouvernance individuelle 
+     - La gouvernance de l’entreprise 
+     - La gouvernance étatique 
+     - La gouvernance européenne 
+     - La gouvernance mondiale 
+   - [ ] Les impasses de la gouvernance par les nombres
+     - Les effets de structure de la gouvernance par les nombres 
+     - Les résistances du Droit à la gouvernance par les nombres
+   - [ ] Le dépérissement de l'état
+     - La sacralité de la chose publique
+     - La direction scientifique des hommes
+     - L'inversion de la hiérarchie publique/privé
+     - La loi pour soi et soi pour la loi
+     - Sans foi ni loi: la société insoutenable 
+   - [ ] Comment en sortir
+5. [ ] Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
+6. [ ] Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
+7. [ ] Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
+8. [0/15] Heyck, Herbert Simon: The Bounds of Reason in Modern America
+   - [ ] Unbounded rationality
+   - [ ] The garden of forking paths
+   - [ ] The Chicago school and the sciences of control
+   - [ ] Mathematics, logic, and the sciences of choice
+   - [ ] Research and reform
+   - [ ] /Homo administrativus/, or Choice under control
+   - [ ] Decisions and revisions
+   - [ ] Structuring his environment
+   - [ ] Islands of theory
+   - [ ] A new model of mind and machine
+   - [ ] The program /is/ the theory
+   - [ ] The cognitive revolution
+   - [ ] /Homo adaptativus/, the Finite problem solver
+   - [ ] Scientist of the artificial
+   - [ ] The expert problem solver 
+9. [0/8] Heyck, Age of System: Understanding the development of modern social science
+   - [ ] The Organizational Revolution and the Human Sciences
+   - [ ] High modern social science: A bird's eye view
+   - [ ] Patrons of the revolution: Ideas, Ideals, and Institutions in Postwar Social Science
+   - [ ] The magical year 1956, plus or minus one
+   - [ ] Producing reason
+   - [ ] Modernity and social change in American social science
+   - [ ] A model science?
+   - [ ] History and Legacy, Tree and the Web
+10. [ ] Heyck, Mind and Network
+11. [ ] Heyck, Georges Miller, language, and the computer metaphor of mind
+12. [ ] Heyck, Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 1
+13. [ ] Heyck Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 2
+14. [0/5] Ronald Kline, The Cybernetics Moment
+    - [ ] War and Information Theory
+    - [ ] The Cybernetics Craze
+    - [ ] The Information Bandwagon
+    - [ ] Machines as Humans 
+    - [ ] Humans as Machines 
+15. [0/4] Maas, William Stanley Jevons and the Making of Modern Economics
+    - [ ] The Prying Eyes of the Natural Scientist
+    - [ ] Engines of Discovery
+      - Babbage and his calculating engines
+      - God is a programmer
+      - An intelligent machine
+      - Is the mind a reasoning machine?
+    - [ ] The Machinery of the Mind
+      - The Logical Abacus
+      - The Logical Machine
+      - The machine of the mind
+      - Induction - the inverse of deduction
+      - To decide what things are similar
+    - [ ] The Image of Economics
+      - Bridging the natural and the social
+      - Mechanical dreams
+      - Economics as natural science
+16. [1/8] Mirowski, Machine Dreams
+    - [X] Cyborg Agonists
+      - [X] Rooms with a view
+      - [X] Where the cyborgs are
+      - [X] The natural sciences and the history of economics
+      - [X] Anatomy of a cyborg
+      - [X] Attack of the cyborgs
+      - [X] The new automaton theatre
+    - [ ] Some Cyborg Genealogies; or How the Demon Got Its Bots
+      - [ ] The little engines that could've
+      - [ ] Adventures of a red-hot demon
+      - [ ] Cybernetics
+      - [ ] The devil that made us do it
+      - [ ] The advent of complexity
+    - [ ] John von Neumann and the Cyborg Incursion into Economics
+      - [ ] Economics at one remove
+      - [ ] Purity
+      - [ ] Impurity
+      - [ ] Wordliness
+    - [ ] The Military, the Scientist, and the Revised Rules of the Game
+      - [ ] What did you do in the war, daddy?
+      - [ ] The cybord character of science mobilization in the WWII
+      - [ ] Operations Research
+      - [ ] The Ballad of Hotelling and Schultz
+      - [ ] SRG, RAND, Rad Lab
+    - [ ] Do Cyborgs Dream of Efficient Markets?
+      - [ ] From Red Vienna to Computopia
+      - [ ] The Goals of Cowles, and Red Afterglows
+      - [ ] Every Man His Own Stat Package
+      - [ ] On the Impossibility of a Democratic Computer
+    - [ ] The Empire Strikes Back
+      - [ ] Previews of Cunning Abstractions
+      - [ ] Its a World Eat World Dog: Game Theory at RAND
+      - [ ] The High Cost of Information in Postwar Neoclassical Theory
+      - [ ] Rigor Mortis in the First Casualty of War
+      - [ ] Does the Rational Agent Compute?
+    - [ ] Core Wars
+      - [ ] Inhuman, All Too Inhuman
+      - [ ] Herbert Simon: Simulacra vs Automata
+      - [ ] Showdown at the OR Corral
+      - [ ] Send in the Clones
+    - [ ] Machines Who Think vs Machines that Sell
+      - [ ] Where is the Computer Taking Us?
+      - [ ] Five Alternative Scenarios for the Future of Computational
+        Economics
+      - [ ] They Hayek Hypothesis and Experimental Economics
+      - [ ] Gode and Sunder Go Roboshoppin
+      - [ ] Contingency, Irony, and Computation
+17. [0/17] Mirowski, The Knowledge We Lost in Information
+    - [ ] It's not Rational 
+    - [ ] The Standard Narrative and the Bigger Picture
+    - [ ] Natural Science Inspirations 
+    - [ ] The Nobels and the Neoliberals 
+    - [ ] The Socialist Calculation Controversy as the Starting Point of the
+      Economics of Information 
+    - [ ] Hayek Changes his Mind 
+    - [ ] The Neoclassical Economics of Information Was Incubated at Cowles
+    - [ ] Three Different Modalities of Information in Neoclassical Theory
+    - [ ] Going the Market One Better
+    - [ ] The History of Markets and the Theory of Market Design
+    - [ ] The Walrasian School of Design
+    - [ ] The Bayes-Nash School of Design
+    - [ ] The Experimentalist School of Design
+    - [ ] Hayek and the Schools of Design
+    - [ ] Designs on the Market: The FCC Spectrum Auctions
+    - [ ] Private Intellectuals and Public Perplexity : The TARP
+    - [ ] Artificial Ignorance 
+18. [2/4] Backhouse, New Directions in Economic Methodology
+    - [ ] McCloskey, How to Do a Rhetorical Analysis, and Why
+    - [ ] Lawson, A Realist Theory for Economics
+    - [X] Mirowski, What are the Questions?
+    - [X] Henderson, Metaphor and Economics
+19. [ ] Backhouse, The unsocial social science: Economics and Neighboring Disciplines Since 1945
+20. [0/3] Backhouse, They History of the Social Sciences since 1945
+    - [ ] Ash, Psychology
+    - [ ] Backhouse, Economics
+    - [ ] Bevir, Political Science
+21. [ ] Gigerenzer, Mind as Computer: Birth of a Metaphor
+22. [ ] Marshall, Minds, Machines and Metaphors
+23. [ ] Vicedo, Cold War emotions: The war over human nature
+24. [0/1] Dupuy, Aux origines des sciences cognitives
+    - [ ]  
+25. [ ] Chomsky, The Cold War & the University: Toward an Intellectual History of the Postwar Years
+26. [ ] Mikulark, ``Cybernetics and Marxism-Leninism'' in The Social Impact of Cybernetics, ed. Charles Dechert
+27. [ ] Israel,  Meccanicismo
+28. [ ] Israel, La machina vivente: contre le visione meccanicistiche del uomo
+29. [ ] Edwards, 1996, The Closed World: Computers and the Politics of Discourse in Cold War America
+30. [0/9] Amadae, Rationalizing Capitalist Democracy: The Cold War Origins of
+    Rational Choice Liberalism
+    - [ ] Managing the National Securtity State: Decision Technologies and Policy Science
+    - [ ] Arrow's Social Choice and Individual Values
+    - [ ] Buchanan and Tullocks' Public Choice Theory
+    - [ ] Riker's Positive Political Theory
+    - [ ] Rational Choice and Capitalist Democracy
+    - [ ] Adam Smith's System of Natural Liberty
+    - [ ] Rational Mechanics, Marginalist Economics, and Rational Choice
+    - [ ] Consolidating Rational Choice Liberalism 1970-2000
+    - [ ] From the Panopticon to the Prisoner's Dilemma 
+*** 無 [0/23] Important text
+- [1/11] Solovey, Cold War Social Science: Knowledge Production, Liberal
+  Democracy, and Human Nature
+  - [ ] Solovey, Cold War Social Science: Specter, Reality, or Useful Concept?
+  - [ ] Tolon, Futures Studies: A New Social Science Rooted in Cold War Strategic Thinking
+  - [ ] Martin-Nilsen, “It Was All Connected”: Computers and Linguistics in Early Cold War America
+  - [ ] Isaac, Epistemic Design: Theory and Data in Harvard’s Department of Social Relations
+  - [X] Heyck, Producing Reason 
+  - [ ] Cravens, Column Right, March! Nationalism, Scientific Positivism, and the Conservative Turn of the American Social Sciences in the Cold War Era
+  - [ ] Brick, Neo- Evolutionist Anthropology, the Cold War, and the Beginnings of the World Turn in U.S. Scholarship
+  - [ ] Jones-Imhotep, Maintaining Humans
+  - [ ] Bycroft, Psychology, Psychologists, and the Creativity Movement: The Lives of Method Inside and Outside the Cold War
+  - [ ] Weidman, An Anthropologist on TV: Ashley Montagu and the Biological
+    Basis of Human Nature, 1945–1960 
+  - [ ] Vicedo, Cold War Emotions: Mother Love and the War over Human Nature
+- [0/5] Jamie, The Open Mind: Cold War Politics and the Sciences of Human
+  Nature
+  - [ ] Democratic Minds for a Complex Society
+  - [ ] Scientists as the Model of Human Nature
+  - [ ] Insituting Cognitive Science 
+  - [ ] Cognitive Theory and the Making of Liberal Americans
+  - [ ] A Fractured Politics of Human Nature
+- [ ] Miller, 1955, Toward a general theory for the behavioral sciences
+- [0/15] Supiot, 2012, La gouvernance par les nombres
+  - [ ] En quête de la machine à gouverner
+    - Poétique du gouvernement 
+    - L'homme machine
+    - Du gouvernement à la gouvernance
+  - [ ] Les aventures d'un idéal: le règne de la loi
+    - Le /nomos/ grec
+    - La /lex/ en droit romain
+    - La révolution gregorienne
+    - /Common Law/ et droit continental
+    - La tradition juridique occidental 
+  - [ ] Autres points de vue sur les lois
+  - [ ] Le rêve de l'harmonie par le calcul
+    - Les accords parfaits du nombre
+    - La fonction instituante de la discorde 
+  - [ ] L'essor des usages normatifs de la quantification
+    - Rendre compte
+    - Administrer
+    - Juger
+    - Légiférer 
+  - [ ] L’asservissement de la Loi au Nombre: du Gosplan au Marché total
+    - Le renversement du règne de la loi
+    - Le droit, outil de planification
+    - L'hybridation du communisme et capitalisme 
+  - [ ] Calculer l'incalculable: la doctrine Law and Economics
+    - La théorie des jeux
+    - La théorie de l'agence
+    - Le théorème de Coase et la théorie des /property rights/
+    - La /New Comparative Analysis/ et le marché du droit 
+  - [ ] La dynamique juridique de la gouvernance par les nombres
+    - La gouvernance individuelle 
+    - La gouvernance de l’entreprise 
+    - La gouvernance étatique 
+    - La gouvernance européenne 
+    - La gouvernance mondiale 
+  - [ ] Les impasses de la gouvernance par les nombres
+    - Les effets de structure de la gouvernance par les nombres 
+    - Les résistances du Droit à la gouvernance par les nombres
+  - [ ] Le dépérissement de l'état
+    - La sacralité de la chose publique
+    - La direction scientifique des hommes
+    - L'inversion de la hiérarchie publique/privé
+    - La loi pour soi et soi pour la loi
+    - Sans foi ni loi: la société insoutenable 
+  - [ ] La résurgence du gouvernement par les hommes
+  - [ ] De la mobilisation totale à la crise du Fordisme
+    - Le compromis Fordiste
+    - La déconstruction du droit du travail
+    - Les voies d'un nouveau compromis 
+  - [ ] De l'échange quantifié à l’allégeance des personnes
+    - La mobilisation totale au travail
+    - Les nouveaux droits attachés à la personne 
+  - [ ] La structure des liens d’allégeance
+    - L'allégeance dans les réseaux d'entreprises
+    - L'allégeance des multinationales aux États impériaux
+  - [ ] Comment en sortir
 - [ ] Hughes, 1958, Consciousness and Society: The Reorientation of European Social Thought, 1890-1930
 - [ ] Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
 - [ ] Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
 - [ ] Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
-- [ ] Miller, 1955, Toward a general theory for the behavioral sciences
 - [ ] Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
 - [ ] Cohen-Cole, 2009, The Creative American: Cold War salons, social science, and the cure for modern society.
-- [ ] Imhotep,
-- [ ] Vicedo, 2012, Cold War emotions: The war over human nature
-- [ ] Heyck, 2005, Herbert Simon: The Bounds of Reason in Modern America
-- [ ] Heyck, 2015, Age of System: Understanding the development of modern social science
-- [ ] Heyck, 2005, Mind and Network
-- [ ] Heyck, 1999, Georges Miller, language, and the computer metaphor of mind
-- [ ] Backhouse, 2010, The unsocial social science: Economics and Neighboring Disciplines Since 1945
-- [ ] Dupuy, 2005, Aux origines des sciences cognitives
-- [ ] Chomsky, 1998, The Cold War & the University: Toward an Intellectual History of the Postwar Years
-- [ ] Mikulark, 1966, ``Cybernetics and Marxism-Leninism'' in The Social Impact of Cybernetics, ed. Charles Dechert
-- [ ] Israel, 2004, Meccanicismo
+- [0/15] Heyck, Herbert Simon: The Bounds of Reason in Modern America
+  - [ ] Unbounded rationality
+  - [ ] The garden of forking paths
+  - [ ] The Chicago school and the sciences of control
+  - [ ] Mathematics, logic, and the sciences of choice
+  - [ ] Research and reform
+  - [ ] /Homo administrativus/, or Choice under control
+  - [ ] Decisions and revisions
+  - [ ] Structuring his environment
+  - [ ] Islands of theory
+  - [ ] A new model of mind and machine
+  - [ ] The program /is/ the theory
+  - [ ] The cognitive revolution
+  - [ ] /Homo adaptativus/, the Finite problem solver
+  - [ ] Scientist of the artificial
+  - [ ] The expert problem solver 
+- [0/8] Heyck, Age of System: Understanding the development of modern social science
+  - [ ] The Organizational Revolution and the Human Sciences
+  - [ ] High modern social science: A bird's eye view
+  - [ ] Patrons of the revolution: Ideas, Ideals, and Institutions in Postwar Social Science
+  - [ ] The magical year 1956, plus or minus one
+  - [ ] Producing reason
+  - [ ] Modernity and social change in American social science
+  - [ ] A model science?
+  - [ ] History and Legacy, Tree and the Web
+- [ ] Heyck, Mind and Network
+- [ ] Heyck, Georges Miller, language, and the computer metaphor of mind
+- [ ] Heyck, Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 1
+- [ ] Heyck Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 2
+- [0/9] Ronald Kline, The Cybernetics Moment
+  - [ ] War and Information Theory
+  - [ ] Circular Causality
+  - [ ] The Cybernetics Craze
+  - [ ] The Information Bandwagon
+  - [ ] Machines as Humans 
+  - [ ] Humans as Machines 
+  - [ ] Cybernetics in Crisis 
+  - [ ] Inventing an Information Age
+  - [ ] Two Cybernetic Frontiers 
+- [0/1] Koyré, Études d'histoire de la pensée philosophique
+  - [ ] Les philosophes et la machine
+    - L'appreciation du machinisme
+    - Les origines du machinisme 
+- [0/5] Maas, William Stanley Jevons and the Making of Modern Economics
+  - [ ] The Prying Eyes of the Natural Scientist
+  - [ ] Engines of Discovery
+    - Babbage and his calculating engines
+    - God is a programmer
+    - An intelligent machine
+    - Is the mind a reasoning machine?
+  - [ ] The Machinery of the Mind
+    - The Logical Abacus
+    - The Logical Machine
+    - The machine of the mind
+    - Induction - the inverse of deduction
+    - To decide what things are similar
+  - [ ] The Laws of Human Enjoyment
+    - The factory system and the division of labor
+    - Ruskin's aesthetic-driven criticism of the factory system
+    - Mill and the gospel of work
+    - Work and fatigue
+  - [ ] The Image of Economics
+    - Bridging the natural and the social
+    - Mechanical dreams
+    - Economics as natural science
+- [0/8] Mirowski, Machine Dreams
+  - [ ] Cyborg Agonists
+    - [ ] Rooms with a view
+    - [ ] Where the cyborgs are
+    - [ ] The natural sciences and the history of economics
+    - [ ] Anatomy of a cyborg
+    - [ ] Attack of the cyborgs
+    - [ ] The new automaton theatre
+  - [ ] Some Cyborg Genealogies; or How the Demon Got Its Bots
+    - [ ] The little engines that could've
+    - [ ] Adventures of a red-hot demon
+    - [ ] Cybernetics
+    - [ ] The devil that made us do it
+    - [ ] The advent of complexity
+  - [ ] John von Neumann and the Cyborg Incursion into Economics
+    - [ ] Economics at one remove
+    - [ ] Purity
+    - [ ] Impurity
+    - [ ] Wordliness
+  - [ ] The Military, the Scientist, and the Revised Rules of the Game
+    - [ ] What did you do in the war, daddy?
+    - [ ] The cybord character of science mobilization in the WWII
+    - [ ] Operations Research
+    - [ ] The Ballad of Hotelling and Schultz
+    - [ ] SRG, RAND, Rad Lab
+  - [ ] Do Cyborgs Dream of Efficient Markets?
+    - [ ] From Red Vienna to Computopia
+    - [ ] The Goals of Cowles, and Red Afterglows
+    - [ ] Every Man His Own Stat Package
+    - [ ] On the Impossibility of a Democratic Computer
+  - [ ] The Empire Strikes Back
+    - [ ] Previews of Cunning Abstractions
+    - [ ] Its a World Eat World Dog: Game Theory at RAND
+    - [ ] The High Cost of Information in Postwar Neoclassical Theory
+    - [ ] Rigor Mortis in the First Casualty of War
+    - [ ] Does the Rational Agent Compute?
+  - [ ] Core Wars
+    - [ ] Inhuman, All Too Inhuman
+    - [ ] Herbert Simon: Simulacra vs Automata
+    - [ ] Showdown at the OR Corral
+    - [ ] Send in the Clones
+  - [ ] Machines Who Think vs Machines that Sell
+    - [ ] Where is the Computer Taking Us?
+    - [ ] Five Alternative Scenarios for the Future of Computational
+      Economics
+    - [ ] They Hayek Hypothesis and Experimental Economics
+    - [ ] Gode and Sunder Go Roboshoppin
+    - [ ] Contingency, Irony, and Computation
+- [ ] Mirowski, More Heat than Light
+- [ ] Mirowski, Against Mechanism
+- [0/17] Mirowski, The Knowledge We Lost in Information
+  - [ ] It's not Rational 
+  - [ ] The Standard Narrative and the Bigger Picture
+  - [ ] Natural Science Inspirations 
+  - [ ] The Nobels and the Neoliberals 
+  - [ ] The Socialist Calculation Controversy as the Starting Point of the
+    Economics of Information 
+  - [ ] Hayek Changes his Mind 
+  - [ ] The Neoclassical Economics of Information Was Incubated at Cowles
+  - [ ] Three Different Modalities of Information in Neoclassical Theory
+  - [ ] Going the Market One Better
+  - [ ] The History of Markets and the Theory of Market Design
+  - [ ] The Walrasian School of Design
+  - [ ] The Bayes-Nash School of Design
+  - [ ] The Experimentalist School of Design
+  - [ ] Hayek and the Schools of Design
+  - [ ] Designs on the Market: The FCC Spectrum Auctions
+  - [ ] Private Intellectuals and Public Perplexity : The TARP
+  - [ ] Artificial Ignorance 
+- [2/4] Backhouse, New Directions in Economic Methodology
+  - [ ] McCloskey, How to Do a Rhetorical Analysis, and Why
+  - [ ] Lawson, A Realist Theory for Economics
+  - [X] Mirowski, What are the Questions?
+  - [X] Henderson, Metaphor and Economics
+- [ ] Backhouse, The unsocial social science: Economics and Neighboring Disciplines Since 1945
+- [0/3] Backhouse, They History of the Social Sciences since 1945
+  - [ ] Ash, Psychology
+  - [ ] Backhouse, Economics
+  - [ ] Bevir, Political Science
+- [ ] Gigerenzer, Mind as Computer: Birth of a Metaphor
+- [ ] Marshall, Minds, Machines and Metaphors
+- [ ] Vicedo, Cold War emotions: The war over human nature
+- [ ] Dupuy, Aux origines des sciences cognitives
+- [ ] Chomsky, The Cold War & the University: Toward an Intellectual History of the Postwar Years
+- [ ] Mikulark, ``Cybernetics and Marxism-Leninism'' in The Social Impact of Cybernetics, ed. Charles Dechert
+- [ ] Israel,  Meccanicismo
+- [ ] Israel, La machina vivente: contre le visione meccanicistiche del uomo
 - [ ] Edwards, 1996, The Closed World: Computers and the Politics of Discourse in Cold War America
-***  無 Important Text
-\lipsum
-*** 無 Ancillary Text
-\lipsum
-*** 無 Boundary Text
-\lipsum
+- [0/9] Amadae, Rationalizing Capitalist Democracy: The Cold War Origins of
+  Rational Choice Liberalism
+  - [ ] Managing the National Securtity State: Decision Technologies and Policy Science
+  - [ ] Arrow's Social Choice and Individual Values
+  - [ ] Buchanan and Tullocks' Public Choice Theory
+  - [ ] Riker's Positive Political Theory
+  - [ ] Rational Choice and Capitalist Democracy
+  - [ ] Adam Smith's System of Natural Liberty
+  - [ ] Rational Mechanics, Marginalist Economics, and Rational Choice
+  - [ ] Consolidating Rational Choice Liberalism 1970-2000
+  - [ ] From the Panopticon to the Prisoner's Dilemma 
+*** 無 [0/23] Ancillary text
+- [1/11] Solovey, Cold War Social Science: Knowledge Production, Liberal
+  Democracy, and Human Nature
+  - [ ] Solovey, Cold War Social Science: Specter, Reality, or Useful Concept?
+  - [ ] Tolon, Futures Studies: A New Social Science Rooted in Cold War Strategic Thinking
+  - [ ] Martin-Nilsen, “It Was All Connected”: Computers and Linguistics in Early Cold War America
+  - [ ] Isaac, Epistemic Design: Theory and Data in Harvard’s Department of Social Relations
+  - [X] Heyck, Producing Reason 
+  - [ ] Cravens, Column Right, March! Nationalism, Scientific Positivism, and the Conservative Turn of the American Social Sciences in the Cold War Era
+  - [ ] Brick, Neo- Evolutionist Anthropology, the Cold War, and the Beginnings of the World Turn in U.S. Scholarship
+  - [ ] Jones-Imhotep, Maintaining Humans
+  - [ ] Bycroft, Psychology, Psychologists, and the Creativity Movement: The Lives of Method Inside and Outside the Cold War
+  - [ ] Weidman, An Anthropologist on TV: Ashley Montagu and the Biological
+    Basis of Human Nature, 1945–1960 
+  - [ ] Vicedo, Cold War Emotions: Mother Love and the War over Human Nature
+- [0/5] Jamie, The Open Mind: Cold War Politics and the Sciences of Human
+  Nature
+  - [ ] Democratic Minds for a Complex Society
+  - [ ] Scientists as the Model of Human Nature
+  - [ ] Insituting Cognitive Science 
+  - [ ] Cognitive Theory and the Making of Liberal Americans
+  - [ ] A Fractured Politics of Human Nature
+- [ ] Miller, 1955, Toward a general theory for the behavioral sciences
+- [0/15] Supiot, 2012, La gouvernance par les nombres
+  - [ ] En quête de la machine à gouverner
+    - Poétique du gouvernement 
+    - L'homme machine
+    - Du gouvernement à la gouvernance
+  - [ ] Les aventures d'un idéal: le règne de la loi
+    - Le /nomos/ grec
+    - La /lex/ en droit romain
+    - La révolution gregorienne
+    - /Common Law/ et droit continental
+    - La tradition juridique occidental 
+  - [ ] Autres points de vue sur les lois
+  - [ ] Le rêve de l'harmonie par le calcul
+    - Les accords parfaits du nombre
+    - La fonction instituante de la discorde 
+  - [ ] L'essor des usages normatifs de la quantification
+    - Rendre compte
+    - Administrer
+    - Juger
+    - Légiférer 
+  - [ ] L’asservissement de la Loi au Nombre: du Gosplan au Marché total
+    - Le renversement du règne de la loi
+    - Le droit, outil de planification
+    - L'hybridation du communisme et capitalisme 
+  - [ ] Calculer l'incalculable: la doctrine Law and Economics
+    - La théorie des jeux
+    - La théorie de l'agence
+    - Le théorème de Coase et la théorie des /property rights/
+    - La /New Comparative Analysis/ et le marché du droit 
+  - [ ] La dynamique juridique de la gouvernance par les nombres
+    - La gouvernance individuelle 
+    - La gouvernance de l’entreprise 
+    - La gouvernance étatique 
+    - La gouvernance européenne 
+    - La gouvernance mondiale 
+  - [ ] Les impasses de la gouvernance par les nombres
+    - Les effets de structure de la gouvernance par les nombres 
+    - Les résistances du Droit à la gouvernance par les nombres
+  - [ ] Le dépérissement de l'état
+    - La sacralité de la chose publique
+    - La direction scientifique des hommes
+    - L'inversion de la hiérarchie publique/privé
+    - La loi pour soi et soi pour la loi
+    - Sans foi ni loi: la société insoutenable 
+  - [ ] La résurgence du gouvernement par les hommes
+  - [ ] De la mobilisation totale à la crise du Fordisme
+    - Le compromis Fordiste
+    - La déconstruction du droit du travail
+    - Les voies d'un nouveau compromis 
+  - [ ] De l'échange quantifié à l’allégeance des personnes
+    - La mobilisation totale au travail
+    - Les nouveaux droits attachés à la personne 
+  - [ ] La structure des liens d’allégeance
+    - L'allégeance dans les réseaux d'entreprises
+    - L'allégeance des multinationales aux États impériaux
+  - [ ] Comment en sortir
+- [ ] Hughes, 1958, Consciousness and Society: The Reorientation of European Social Thought, 1890-1930
+- [ ] Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
+- [ ] Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
+- [ ] Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
+- [ ] Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
+- [ ] Cohen-Cole, 2009, The Creative American: Cold War salons, social science, and the cure for modern society.
+- [0/15] Heyck, Herbert Simon: The Bounds of Reason in Modern America
+  - [ ] Unbounded rationality
+  - [ ] The garden of forking paths
+  - [ ] The Chicago school and the sciences of control
+  - [ ] Mathematics, logic, and the sciences of choice
+  - [ ] Research and reform
+  - [ ] /Homo administrativus/, or Choice under control
+  - [ ] Decisions and revisions
+  - [ ] Structuring his environment
+  - [ ] Islands of theory
+  - [ ] A new model of mind and machine
+  - [ ] The program /is/ the theory
+  - [ ] The cognitive revolution
+  - [ ] /Homo adaptativus/, the Finite problem solver
+  - [ ] Scientist of the artificial
+  - [ ] The expert problem solver 
+- [0/8] Heyck, Age of System: Understanding the development of modern social science
+  - [ ] The Organizational Revolution and the Human Sciences
+  - [ ] High modern social science: A bird's eye view
+  - [ ] Patrons of the revolution: Ideas, Ideals, and Institutions in Postwar Social Science
+  - [ ] The magical year 1956, plus or minus one
+  - [ ] Producing reason
+  - [ ] Modernity and social change in American social science
+  - [ ] A model science?
+  - [ ] History and Legacy, Tree and the Web
+- [ ] Heyck, Mind and Network
+- [ ] Heyck, Georges Miller, language, and the computer metaphor of mind
+- [ ] Heyck, Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 1
+- [ ] Heyck Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 2
+- [0/9] Ronald Kline, The Cybernetics Moment
+  - [ ] War and Information Theory
+  - [ ] Circular Causality
+  - [ ] The Cybernetics Craze
+  - [ ] The Information Bandwagon
+  - [ ] Machines as Humans 
+  - [ ] Humans as Machines 
+  - [ ] Cybernetics in Crisis 
+  - [ ] Inventing an Information Age
+  - [ ] Two Cybernetic Frontiers 
+- [0/1] Koyré, Études d'histoire de la pensée philosophique
+  - [ ] Les philosophes et la machine
+    - L'appreciation du machinisme
+    - Les origines du machinisme 
+- [0/5] Maas, William Stanley Jevons and the Making of Modern Economics
+  - [ ] The Prying Eyes of the Natural Scientist
+  - [ ] Engines of Discovery
+    - Babbage and his calculating engines
+    - God is a programmer
+    - An intelligent machine
+    - Is the mind a reasoning machine?
+  - [ ] The Machinery of the Mind
+    - The Logical Abacus
+    - The Logical Machine
+    - The machine of the mind
+    - Induction - the inverse of deduction
+    - To decide what things are similar
+  - [ ] The Laws of Human Enjoyment
+    - The factory system and the division of labor
+    - Ruskin's aesthetic-driven criticism of the factory system
+    - Mill and the gospel of work
+    - Work and fatigue
+  - [ ] The Image of Economics
+    - Bridging the natural and the social
+    - Mechanical dreams
+    - Economics as natural science
+- [0/8] Mirowski, Machine Dreams
+  - [ ] Cyborg Agonists
+    - [ ] Rooms with a view
+    - [ ] Where the cyborgs are
+    - [ ] The natural sciences and the history of economics
+    - [ ] Anatomy of a cyborg
+    - [ ] Attack of the cyborgs
+    - [ ] The new automaton theatre
+  - [ ] Some Cyborg Genealogies; or How the Demon Got Its Bots
+    - [ ] The little engines that could've
+    - [ ] Adventures of a red-hot demon
+    - [ ] Cybernetics
+    - [ ] The devil that made us do it
+    - [ ] The advent of complexity
+  - [ ] John von Neumann and the Cyborg Incursion into Economics
+    - [ ] Economics at one remove
+    - [ ] Purity
+    - [ ] Impurity
+    - [ ] Wordliness
+  - [ ] The Military, the Scientist, and the Revised Rules of the Game
+    - [ ] What did you do in the war, daddy?
+    - [ ] The cybord character of science mobilization in the WWII
+    - [ ] Operations Research
+    - [ ] The Ballad of Hotelling and Schultz
+    - [ ] SRG, RAND, Rad Lab
+  - [ ] Do Cyborgs Dream of Efficient Markets?
+    - [ ] From Red Vienna to Computopia
+    - [ ] The Goals of Cowles, and Red Afterglows
+    - [ ] Every Man His Own Stat Package
+    - [ ] On the Impossibility of a Democratic Computer
+  - [ ] The Empire Strikes Back
+    - [ ] Previews of Cunning Abstractions
+    - [ ] Its a World Eat World Dog: Game Theory at RAND
+    - [ ] The High Cost of Information in Postwar Neoclassical Theory
+    - [ ] Rigor Mortis in the First Casualty of War
+    - [ ] Does the Rational Agent Compute?
+  - [ ] Core Wars
+    - [ ] Inhuman, All Too Inhuman
+    - [ ] Herbert Simon: Simulacra vs Automata
+    - [ ] Showdown at the OR Corral
+    - [ ] Send in the Clones
+  - [ ] Machines Who Think vs Machines that Sell
+    - [ ] Where is the Computer Taking Us?
+    - [ ] Five Alternative Scenarios for the Future of Computational
+      Economics
+    - [ ] They Hayek Hypothesis and Experimental Economics
+    - [ ] Gode and Sunder Go Roboshoppin
+    - [ ] Contingency, Irony, and Computation
+- [ ] Mirowski, More Heat than Light
+- [ ] Mirowski, Against Mechanism
+- [0/17] Mirowski, The Knowledge We Lost in Information
+  - [ ] It's not Rational 
+  - [ ] The Standard Narrative and the Bigger Picture
+  - [ ] Natural Science Inspirations 
+  - [ ] The Nobels and the Neoliberals 
+  - [ ] The Socialist Calculation Controversy as the Starting Point of the
+    Economics of Information 
+  - [ ] Hayek Changes his Mind 
+  - [ ] The Neoclassical Economics of Information Was Incubated at Cowles
+  - [ ] Three Different Modalities of Information in Neoclassical Theory
+  - [ ] Going the Market One Better
+  - [ ] The History of Markets and the Theory of Market Design
+  - [ ] The Walrasian School of Design
+  - [ ] The Bayes-Nash School of Design
+  - [ ] The Experimentalist School of Design
+  - [ ] Hayek and the Schools of Design
+  - [ ] Designs on the Market: The FCC Spectrum Auctions
+  - [ ] Private Intellectuals and Public Perplexity : The TARP
+  - [ ] Artificial Ignorance 
+- [2/4] Backhouse, New Directions in Economic Methodology
+  - [ ] McCloskey, How to Do a Rhetorical Analysis, and Why
+  - [ ] Lawson, A Realist Theory for Economics
+  - [X] Mirowski, What are the Questions?
+  - [X] Henderson, Metaphor and Economics
+- [ ] Backhouse, The unsocial social science: Economics and Neighboring Disciplines Since 1945
+- [0/3] Backhouse, They History of the Social Sciences since 1945
+  - [ ] Ash, Psychology
+  - [ ] Backhouse, Economics
+  - [ ] Bevir, Political Science
+- [ ] Gigerenzer, Mind as Computer: Birth of a Metaphor
+- [ ] Marshall, Minds, Machines and Metaphors
+- [ ] Vicedo, Cold War emotions: The war over human nature
+- [ ] Dupuy, Aux origines des sciences cognitives
+- [ ] Chomsky, The Cold War & the University: Toward an Intellectual History of the Postwar Years
+- [ ] Mikulark, ``Cybernetics and Marxism-Leninism'' in The Social Impact of Cybernetics, ed. Charles Dechert
+- [ ] Israel,  Meccanicismo
+- [ ] Israel, La machina vivente: contre le visione meccanicistiche del uomo
+- [ ] Edwards, 1996, The Closed World: Computers and the Politics of Discourse in Cold War America
+- [0/9] Amadae, Rationalizing Capitalist Democracy: The Cold War Origins of
+  Rational Choice Liberalism
+  - [ ] Managing the National Securtity State: Decision Technologies and Policy Science
+  - [ ] Arrow's Social Choice and Individual Values
+  - [ ] Buchanan and Tullocks' Public Choice Theory
+  - [ ] Riker's Positive Political Theory
+  - [ ] Rational Choice and Capitalist Democracy
+  - [ ] Adam Smith's System of Natural Liberty
+  - [ ] Rational Mechanics, Marginalist Economics, and Rational Choice
+  - [ ] Consolidating Rational Choice Liberalism 1970-2000
+  - [ ] From the Panopticon to the Prisoner's Dilemma 
+*** 無 [0/23] Boundary text
+- [1/11] Solovey, Cold War Social Science: Knowledge Production, Liberal
+  Democracy, and Human Nature
+  - [ ] Solovey, Cold War Social Science: Specter, Reality, or Useful Concept?
+  - [ ] Tolon, Futures Studies: A New Social Science Rooted in Cold War Strategic Thinking
+  - [ ] Martin-Nilsen, “It Was All Connected”: Computers and Linguistics in Early Cold War America
+  - [ ] Isaac, Epistemic Design: Theory and Data in Harvard’s Department of Social Relations
+  - [X] Heyck, Producing Reason 
+  - [ ] Cravens, Column Right, March! Nationalism, Scientific Positivism, and the Conservative Turn of the American Social Sciences in the Cold War Era
+  - [ ] Brick, Neo- Evolutionist Anthropology, the Cold War, and the Beginnings of the World Turn in U.S. Scholarship
+  - [ ] Jones-Imhotep, Maintaining Humans
+  - [ ] Bycroft, Psychology, Psychologists, and the Creativity Movement: The Lives of Method Inside and Outside the Cold War
+  - [ ] Weidman, An Anthropologist on TV: Ashley Montagu and the Biological
+    Basis of Human Nature, 1945–1960 
+  - [ ] Vicedo, Cold War Emotions: Mother Love and the War over Human Nature
+- [0/5] Jamie, The Open Mind: Cold War Politics and the Sciences of Human
+  Nature
+  - [ ] Democratic Minds for a Complex Society
+  - [ ] Scientists as the Model of Human Nature
+  - [ ] Insituting Cognitive Science 
+  - [ ] Cognitive Theory and the Making of Liberal Americans
+  - [ ] A Fractured Politics of Human Nature
+- [ ] Miller, 1955, Toward a general theory for the behavioral sciences
+- [0/15] Supiot, 2012, La gouvernance par les nombres
+  - [ ] En quête de la machine à gouverner
+    - Poétique du gouvernement 
+    - L'homme machine
+    - Du gouvernement à la gouvernance
+  - [ ] Les aventures d'un idéal: le règne de la loi
+    - Le /nomos/ grec
+    - La /lex/ en droit romain
+    - La révolution gregorienne
+    - /Common Law/ et droit continental
+    - La tradition juridique occidental 
+  - [ ] Autres points de vue sur les lois
+  - [ ] Le rêve de l'harmonie par le calcul
+    - Les accords parfaits du nombre
+    - La fonction instituante de la discorde 
+  - [ ] L'essor des usages normatifs de la quantification
+    - Rendre compte
+    - Administrer
+    - Juger
+    - Légiférer 
+  - [ ] L’asservissement de la Loi au Nombre: du Gosplan au Marché total
+    - Le renversement du règne de la loi
+    - Le droit, outil de planification
+    - L'hybridation du communisme et capitalisme 
+  - [ ] Calculer l'incalculable: la doctrine Law and Economics
+    - La théorie des jeux
+    - La théorie de l'agence
+    - Le théorème de Coase et la théorie des /property rights/
+    - La /New Comparative Analysis/ et le marché du droit 
+  - [ ] La dynamique juridique de la gouvernance par les nombres
+    - La gouvernance individuelle 
+    - La gouvernance de l’entreprise 
+    - La gouvernance étatique 
+    - La gouvernance européenne 
+    - La gouvernance mondiale 
+  - [ ] Les impasses de la gouvernance par les nombres
+    - Les effets de structure de la gouvernance par les nombres 
+    - Les résistances du Droit à la gouvernance par les nombres
+  - [ ] Le dépérissement de l'état
+    - La sacralité de la chose publique
+    - La direction scientifique des hommes
+    - L'inversion de la hiérarchie publique/privé
+    - La loi pour soi et soi pour la loi
+    - Sans foi ni loi: la société insoutenable 
+  - [ ] La résurgence du gouvernement par les hommes
+  - [ ] De la mobilisation totale à la crise du Fordisme
+    - Le compromis Fordiste
+    - La déconstruction du droit du travail
+    - Les voies d'un nouveau compromis 
+  - [ ] De l'échange quantifié à l’allégeance des personnes
+    - La mobilisation totale au travail
+    - Les nouveaux droits attachés à la personne 
+  - [ ] La structure des liens d’allégeance
+    - L'allégeance dans les réseaux d'entreprises
+    - L'allégeance des multinationales aux États impériaux
+  - [ ] Comment en sortir
+- [ ] Hughes, 1958, Consciousness and Society: The Reorientation of European Social Thought, 1890-1930
+- [ ] Ross, 1994, Modernist Impulses in the Human Sciences, 1870-1930
+- [ ] Purcell, 1973, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
+- [ ] Butsch, 2008, The Citizen Audience: Crowds, Publics, and Individuals
+- [ ] Deutsch, 1963, The Nerves of Government: Models of Political Communication and Control
+- [ ] Cohen-Cole, 2009, The Creative American: Cold War salons, social science, and the cure for modern society.
+- [0/15] Heyck, Herbert Simon: The Bounds of Reason in Modern America
+  - [ ] Unbounded rationality
+  - [ ] The garden of forking paths
+  - [ ] The Chicago school and the sciences of control
+  - [ ] Mathematics, logic, and the sciences of choice
+  - [ ] Research and reform
+  - [ ] /Homo administrativus/, or Choice under control
+  - [ ] Decisions and revisions
+  - [ ] Structuring his environment
+  - [ ] Islands of theory
+  - [ ] A new model of mind and machine
+  - [ ] The program /is/ the theory
+  - [ ] The cognitive revolution
+  - [ ] /Homo adaptativus/, the Finite problem solver
+  - [ ] Scientist of the artificial
+  - [ ] The expert problem solver 
+- [0/8] Heyck, Age of System: Understanding the development of modern social science
+  - [ ] The Organizational Revolution and the Human Sciences
+  - [ ] High modern social science: A bird's eye view
+  - [ ] Patrons of the revolution: Ideas, Ideals, and Institutions in Postwar Social Science
+  - [ ] The magical year 1956, plus or minus one
+  - [ ] Producing reason
+  - [ ] Modernity and social change in American social science
+  - [ ] A model science?
+  - [ ] History and Legacy, Tree and the Web
+- [ ] Heyck, Mind and Network
+- [ ] Heyck, Georges Miller, language, and the computer metaphor of mind
+- [ ] Heyck, Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 1
+- [ ] Heyck Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 2
+- [0/9] Ronald Kline, The Cybernetics Moment
+  - [ ] War and Information Theory
+  - [ ] Circular Causality
+  - [ ] The Cybernetics Craze
+  - [ ] The Information Bandwagon
+  - [ ] Machines as Humans 
+  - [ ] Humans as Machines 
+  - [ ] Cybernetics in Crisis 
+  - [ ] Inventing an Information Age
+  - [ ] Two Cybernetic Frontiers 
+- [0/1] Koyré, Études d'histoire de la pensée philosophique
+  - [ ] Les philosophes et la machine
+    - L'appreciation du machinisme
+    - Les origines du machinisme 
+- [0/5] Maas, William Stanley Jevons and the Making of Modern Economics
+  - [ ] The Prying Eyes of the Natural Scientist
+  - [ ] Engines of Discovery
+    - Babbage and his calculating engines
+    - God is a programmer
+    - An intelligent machine
+    - Is the mind a reasoning machine?
+  - [ ] The Machinery of the Mind
+    - The Logical Abacus
+    - The Logical Machine
+    - The machine of the mind
+    - Induction - the inverse of deduction
+    - To decide what things are similar
+  - [ ] The Laws of Human Enjoyment
+    - The factory system and the division of labor
+    - Ruskin's aesthetic-driven criticism of the factory system
+    - Mill and the gospel of work
+    - Work and fatigue
+  - [ ] The Image of Economics
+    - Bridging the natural and the social
+    - Mechanical dreams
+    - Economics as natural science
+- [0/8] Mirowski, Machine Dreams
+  - [ ] Cyborg Agonists
+    - [ ] Rooms with a view
+    - [ ] Where the cyborgs are
+    - [ ] The natural sciences and the history of economics
+    - [ ] Anatomy of a cyborg
+    - [ ] Attack of the cyborgs
+    - [ ] The new automaton theatre
+  - [ ] Some Cyborg Genealogies; or How the Demon Got Its Bots
+    - [ ] The little engines that could've
+    - [ ] Adventures of a red-hot demon
+    - [ ] Cybernetics
+    - [ ] The devil that made us do it
+    - [ ] The advent of complexity
+  - [ ] John von Neumann and the Cyborg Incursion into Economics
+    - [ ] Economics at one remove
+    - [ ] Purity
+    - [ ] Impurity
+    - [ ] Wordliness
+  - [ ] The Military, the Scientist, and the Revised Rules of the Game
+    - [ ] What did you do in the war, daddy?
+    - [ ] The cybord character of science mobilization in the WWII
+    - [ ] Operations Research
+    - [ ] The Ballad of Hotelling and Schultz
+    - [ ] SRG, RAND, Rad Lab
+  - [ ] Do Cyborgs Dream of Efficient Markets?
+    - [ ] From Red Vienna to Computopia
+    - [ ] The Goals of Cowles, and Red Afterglows
+    - [ ] Every Man His Own Stat Package
+    - [ ] On the Impossibility of a Democratic Computer
+  - [ ] The Empire Strikes Back
+    - [ ] Previews of Cunning Abstractions
+    - [ ] Its a World Eat World Dog: Game Theory at RAND
+    - [ ] The High Cost of Information in Postwar Neoclassical Theory
+    - [ ] Rigor Mortis in the First Casualty of War
+    - [ ] Does the Rational Agent Compute?
+  - [ ] Core Wars
+    - [ ] Inhuman, All Too Inhuman
+    - [ ] Herbert Simon: Simulacra vs Automata
+    - [ ] Showdown at the OR Corral
+    - [ ] Send in the Clones
+  - [ ] Machines Who Think vs Machines that Sell
+    - [ ] Where is the Computer Taking Us?
+    - [ ] Five Alternative Scenarios for the Future of Computational
+      Economics
+    - [ ] They Hayek Hypothesis and Experimental Economics
+    - [ ] Gode and Sunder Go Roboshoppin
+    - [ ] Contingency, Irony, and Computation
+- [ ] Mirowski, More Heat than Light
+- [ ] Mirowski, Against Mechanism
+- [0/17] Mirowski, The Knowledge We Lost in Information
+  - [ ] It's not Rational 
+  - [ ] The Standard Narrative and the Bigger Picture
+  - [ ] Natural Science Inspirations 
+  - [ ] The Nobels and the Neoliberals 
+  - [ ] The Socialist Calculation Controversy as the Starting Point of the
+    Economics of Information 
+  - [ ] Hayek Changes his Mind 
+  - [ ] The Neoclassical Economics of Information Was Incubated at Cowles
+  - [ ] Three Different Modalities of Information in Neoclassical Theory
+  - [ ] Going the Market One Better
+  - [ ] The History of Markets and the Theory of Market Design
+  - [ ] The Walrasian School of Design
+  - [ ] The Bayes-Nash School of Design
+  - [ ] The Experimentalist School of Design
+  - [ ] Hayek and the Schools of Design
+  - [ ] Designs on the Market: The FCC Spectrum Auctions
+  - [ ] Private Intellectuals and Public Perplexity : The TARP
+  - [ ] Artificial Ignorance 
+- [2/4] Backhouse, New Directions in Economic Methodology
+  - [ ] McCloskey, How to Do a Rhetorical Analysis, and Why
+  - [ ] Lawson, A Realist Theory for Economics
+  - [X] Mirowski, What are the Questions?
+  - [X] Henderson, Metaphor and Economics
+- [ ] Backhouse, The unsocial social science: Economics and Neighboring Disciplines Since 1945
+- [0/3] Backhouse, They History of the Social Sciences since 1945
+  - [ ] Ash, Psychology
+  - [ ] Backhouse, Economics
+  - [ ] Bevir, Political Science
+- [ ] Gigerenzer, Mind as Computer: Birth of a Metaphor
+- [ ] Marshall, Minds, Machines and Metaphors
+- [ ] Vicedo, Cold War emotions: The war over human nature
+- [ ] Dupuy, Aux origines des sciences cognitives
+- [ ] Chomsky, The Cold War & the University: Toward an Intellectual History of the Postwar Years
+- [ ] Mikulark, ``Cybernetics and Marxism-Leninism'' in The Social Impact of Cybernetics, ed. Charles Dechert
+- [ ] Israel,  Meccanicismo
+- [ ] Israel, La machina vivente: contre le visione meccanicistiche del uomo
+- [ ] Edwards, 1996, The Closed World: Computers and the Politics of Discourse in Cold War America
+- [0/9] Amadae, Rationalizing Capitalist Democracy: The Cold War Origins of
+  Rational Choice Liberalism
+  - [ ] Managing the National Securtity State: Decision Technologies and Policy Science
+  - [ ] Arrow's Social Choice and Individual Values
+  - [ ] Buchanan and Tullocks' Public Choice Theory
+  - [ ] Riker's Positive Political Theory
+  - [ ] Rational Choice and Capitalist Democracy
+  - [ ] Adam Smith's System of Natural Liberty
+  - [ ] Rational Mechanics, Marginalist Economics, and Rational Choice
+  - [ ] Consolidating Rational Choice Liberalism 1970-2000
+  - [ ] From the Panopticon to the Prisoner's Dilemma 
 ** 無 Draft: Framework
 :PROPERTIES:
 :CATEGORY: D-Framework   
 :END:
-*** 無 Main question 
+*** 完 Subject-matter 
+**** 完 Main question 
+ What is Herbert Simon's conception of the computer, and how did this
+ conception influence his ideas on automation? 
+**** 完 Secondary Questions 
+What was the relation between the natural and the artificial for Simon, and
+how does this relation relate to his late-life project of a Science of
+the Artificial?
+
+How does Simon's Science of the Artificial relate to his views on
+economics? And, is his Science of the Artificial compatible with
+neoclassical economics? 
+
+How do Simon's ideas on automation relate to his political views?
+
+Did Simon draw a clear line between the natural and the artificial, and between
+the human and the inhuman? Likewise, did he subscribe to the unity of
+science thesis?
+*** 無 Motivation
+In this thesis, I will trace the genealogy of Simon's ideas on the computer
+and computation to discuss their influence for his views on automation. 
+
+The motivation for this thesis is a deep feeling that there is something
+wrong with today's society and that given that economics plays such an
+important cultural role in mediating people's understanding of the nature
+of political problems, it is necessary to understand what is wrong with
+economics to understand what is wrong with society at large. 
+
+Given this, I am interested in the context in which economic ideas
+originate; I am interested in the interactions between economic ideas,
+ideas in other sciences, utopian political ideas, and wider "pop-culture"
+understandings and receptions of those ideas.
+
+In today's society, in which the future utopia is construed as the
+apotheosis of technological revolution---and /not/ political revolution---,
+and in which the utopian discourse of trans-humanism joins corporate
+discourses on innovation and neoliberal panegyrics on entrepreneurship, we
+can see a relation between a certain conception of politics and the place
+and role that machines will play there, and in getting us there.
+
+In the case of economics, following the intellectual debacle of the 2008
+global financial crisis, in which those economists who gleefully took 
+refuge in baroque mathematics were scorned for the empiric irrelevance of
+their theories, behavioral economics was presented as an alternative
+version to mainstream economics that would finally present a more realistic
+version of economics, by integrating certain ideas from Psychology, to
+better understand economic problems, or more simply, reality.  
+
+The reason for writing a thesis on Henry Simon is /not/ to write another
+thesis on bounded rationality. Rather, the reason for focusing on Simon is
+because he was one of the first economists to embrace the postwar cyborg
+sciences, and because he played a key role in the foundation of the field
+of artificial intelligence. Given that artificial intelligence presents
+itself as the next holy grail of science in our generation, I think that it
+is worth to study Simon, due to the foundational role he played.
+
+Particularly, I am interested in Simon because he was more /cyborg/ than
+other postwar economists. Even though the economists close to the Cowles
+Commission embraced certain aspects of the cyborg sciences, such as a
+version of Game Theory, they were more conservative in their willingness to
+question to the Walrasian model, to which Simon wasn't attached. 
+
+In the end, Simon distanced himself from mainstream economics, to build a
+project of the sciences of the artificial, in which new modes of organizing
+society were envisioned based on his theories on artificial intelligence. 
+
+I believe that one aspect worth discussing of Simon is an ontological
+understanding of his idea of nature, society, the human, and the artificial. 
+Being a cyborg, these domains blur in his work, and I believe this has
+important consequences for his vision of organization, and its political
+and economic consequences. 
+
+Since one of the important aspects of his vision is his idea of the
+computer, this thesis will explore Simon's vision of the computer. Thus the
+title of the thesis: The computer in the thought of Henry Simon.
+
+The idea is to project this thesis into a Ph.D dissertation around the
+theme of the governing machine: the automation of political decision making
+and the delegation of all political responsibility to machines.
+
+ I am interested in
+the wider cultural influence of the ideas of economists.
+
+Particularly, today's futuristic utopias, in which technological change,
+but not political change, is wished seem to me to be very problematic. c
+
+Generally speaking, I am interested in ideas; specially, in the way that
+people come to understand and define their political utopias, and their
+definitions of nature and society.  
+
+Roughly speaking, with this thesis, I expect to understand better the
+épistémè of our time.
+
+*** 取 Thesis Outline 
+The thesis will have the following outline:
+
+- Introduction
+- Chapter 1:
+  - Section 1
+  - Section 2
+- Chapter 2:
+  - Section 1
+  - Section 2
+- Conclusion
+
+Next, I will discuss the content of each of these parts. 
+**** Introduction (15-20 pages)
+In the introduction, I will discuss the importance of economic metaphors
+**** The importance of the computer in economic though? (15-20)
+In this first chapter, I will discuss the importance of the computer for economic theory, specially in the work of Simon. 
+
+I might being by discussing Jevons's inspiration in the work of Charles
+Babbage.
+*****  The genealogy of Computer (Metaphor) in Simon's Work
+ In this chapter, I will trace the genealogy of the computer concept in
+ Simon's work, and how it evolved. 
+***** Section 2
+**** The influence of the computer for Simon's thought on automation (15-20)
+In this second (and final) chapter, I will discuss the influence of the computer concept in
+Simon's work, particularly in its relation with Simon's ideas on
+automation.
+***** Section 1
+***** Section 2
+**** Conclusion (10-15)
+*** 取 Methodology
+I would like to write a history of ideas in the style of Philip Mirowski. 
+
+
+*** 取 Debates & Controversies
 \lipsum
-*** 無 Scope and interrelations
+*** 取 Axes d'interpretation
 \lipsum
-*** 無 Research hypotheses.
-\lipsum
-*** 無 Methodology
-\lipsum
-*** 無 Keywords
-\lipsum
-*** 無 Debates & Controversies
-\lipsum
-*** 無 Axes d'interpretation
-\lipsum
-*** 無 Bibliography 
-# \printbibliography[heading=none]
+*** 完 Bibliography 
+This is a thematic bibliography organized around keywords. To facilitate
+reading, the book titles are highlighted in blue. 
+ 
+\nocite{*}
+**** The Brain
+\printbibliography[heading=none,keyword=memoire,keyword=brain]
+# \printbibliography[heading=none,type=book,keyword=memoire,keyword=brain]
+# \printbibliography[heading=none,type=article,keyword=memoire,keyword=brain]
+**** The Cold War
+\printbibliography[heading=none,keyword=memoire,keyword=cold-war,notkeyword=brain]
+**** The Computer
+\printbibliography[heading=none,keyword=memoire,keyword=computer,notkeyword=brain,notkeyword=cold-war]
+**** 取 Cyborgs
+\printbibliography[heading=none,keyword=memoire,keyword=cyborg,notkeyword=brain,notkeyword=computer,notkeyword=cold-war]
+**** Metaphors
+\printbibliography[heading=none,keyword=memoire,keyword=metaphors,notkeyword=brain,notkeyword=cold-war,notkeyword=computer,notkeyword=cyborg]
+**** Herbert Simon
+\printbibliography[heading=none,keyword=memoire,keyword=herbert-simon,notkeyword=brain,notkeyword=cold-war,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors]
+**** The Social Sciences
+\printbibliography[heading=none,keyword=memoire,keyword=social-science,notkeyword=brain,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors,notkeyword=herbert-simon,notkeyword=cold-war]
 * 取 Research
 ** Framework
 - [ ] Main question.
@@ -272,7 +1350,10 @@ progress of science.
 #+LATEX_HEADER:\AtBeginEnvironment{quote}{\itshape}
 *** Biblatex
 # Set up bibliography management through biblatex
-#+LATEX_HEADER: \usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=true]{biblatex}
+#+LATEX_HEADER: \usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=false]{biblatex}
+# Color the book title in the bibliography
+#+LATEX_HEADER: \DeclareFieldFormat{booktitle}{\color{blue}\mkbibemph{#1}}
+#+LATEX_HEADER: \DeclareFieldFormat{title}{\color{blue}\mkbibemph{#1}}
 # Choose bibliography file
 #+LATEX_HEADER: \addbibresource{~/Documents/mendeley/library.bib}
 *** Ams
@@ -382,7 +1463,8 @@ progress of science.
 # Change font settings of page numbers
 # #+LATEX_HEADER: \addtokomafont{pagenumber}{\sffamily}
 # Change font settings page head & foot.
-#+LATEX_HEADER: \addtokomafont{pageheadfoot}{\bfseries\sffamily\upshape}
+# #+LATEX_HEADER: \addtokomafont{pageheadfoot}{\bfseries\sffamily\upshape}
+#+LATEX_HEADER: \addtokomafont{pageheadfoot}{\sffamily\upshape}
 *** Figures
 #+LATEX_HEADER: \addtokomafont{caption}{\small}
 #+LATEX_HEADER: \addtokomafont{captionlabel}{\bfseries}
@@ -419,7 +1501,7 @@ progress of science.
 #+LATEX_HEADER: \usepackage[tocindentauto,tocgraduated]{tocstyle}
 #+LATEX_HEADER: \usetocstyle{nopagecolumn}
 # Have a two-column table of contents. 
-#+LATEX_HEADER: \unsettoc{toc}{onecolumn}
+# #+LATEX_HEADER: \unsettoc{toc}{onecolumn}
 # Delete "Part" to TOC entry.
 # #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\scshape\sffamily\lowercase{#2}}}
 #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\protect\sffamily\Large\scshape\lowercase{#1}\hspace{1em}}{#2}}
