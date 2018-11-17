@@ -1,0 +1,1447 @@
+\begin{titlepage}
+ \centering
+ \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
+ \vspace{4\baselineskip}
+ {\Huge Log\par}
+ % {\LARGE \textsc{mi} $\cdot$ \textsc{ii}\par}
+ \vspace{8\baselineskip}
+ {\Large \textsc{sync0}\par}
+ \vfill
+\end{titlepage}
+# \newpage
+# \tableofcontents 
+\newpage
+* 2018
+** Janvier                                                                      :noexport:
+*** 1
+*** 2
+*** 3
+*** 4
+*** 5
+*** 6
+*** 7
+*** 8
+*** 9
+*** 10
+*** 11
+*** 12
+*** 13
+*** 14
+*** 15
+*** 16
+*** 17
+*** 18
+*** 19
+*** 20
+*** 21
+*** 22
+*** 23
+*** 24
+*** 25
+*** 26
+*** 27
+*** 28
+*** 29 
+*** 30
+*** 31
+** Février                                                                      :noexport:
+*** 1
+*** 2
+*** 3
+*** 4
+*** 5
+*** 6
+*** 7
+*** 8
+*** 9
+*** 10
+*** 11
+*** 12
+*** 13
+*** 14
+*** 15
+*** 16
+*** 17
+*** 18
+*** 19
+*** 20
+*** 21
+*** 22
+*** 23
+*** 24
+*** 25
+*** 26
+*** 27
+*** 28
+** Mars                                                                         :noexport:
+*** 1
+*** 2
+*** 3
+*** 4
+*** 5
+*** 6
+*** 7
+*** 8
+*** 9
+*** 10
+*** 11
+*** 12
+*** 13
+*** 14
+*** 15
+*** 16
+*** 17
+*** 18
+*** 19
+*** 20
+*** 21
+*** 22
+*** 23
+*** 24
+*** 25
+*** 26
+*** 27
+*** 28
+*** 29 
+*** 30
+*** 31
+** Avril                                                                        :noexport:
+*** 1
+*** 2
+*** 3
+*** 4
+*** 5
+*** 6
+*** 7
+*** 8
+*** 9
+*** 10
+*** 11
+*** 12
+*** 13
+*** 14
+*** 15
+*** 16
+*** 17
+*** 18
+*** 19
+*** 20
+*** 21
+*** 22
+*** 23
+*** 24
+*** 25
+*** 26
+*** 27
+*** 28
+*** 29 
+*** 30
+** Mai                                                                          :noexport:
+*** 1
+*** 2
+*** 3
+*** 4
+*** 5
+*** 6
+*** 7
+*** 8
+*** 9
+*** 10
+*** 11
+*** 12
+*** 13
+*** 14
+*** 15
+*** 16
+*** 17
+*** 18
+*** 19
+*** 20
+*** 21
+*** 22
+*** 23
+*** 24
+*** 25
+*** 26
+*** 27
+*** 28
+*** 29 
+*** 30
+*** 31
+** Juin                                                                         :noexport:
+*** 1                                                                           :noexport:
+*** 2                                                                           :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6                                                                           :noexport:
+*** 7                                                                           :noexport:
+*** 8                                                                           :noexport:
+*** 9                                                                           :noexport:
+*** 10                                                                          :noexport:
+*** 11                                                                          :noexport:
+*** 12                                                                          :noexport:
+*** 13
+Pas beaucoup de choses ont été accomplies aujourd'hui. Je commença  à
+traduire un autre article pour Niels. C'est difficile à le croire (même
+pour l'auteur de ces mots), mais j'eus mal à finir trois pages en quelques
+heures. Il faudrait augmenter la vitesse.
+
+En ce qui concerne Emacs, je dépense beaucoup de temps en le travaillant.
+Même si c'est la galère, il vaut mieux commencer à apprendre à programmer
+elisp pour diminuer le temps dépensé en configurant le logiciel. 
+
+Il serait bon de faire un /minor mode/ pour accélérer la révision des
+fichiers tex. 
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19
+Je vins au laboratoire environ à 11. C'est pas optimal. 
+
+Il vaut mieux arriver plus tôt pour pouvoir travailler à ma propre
+recherche. Ainsi, l'après-midi je pourrais réviser les articles
+et etc. sans me dépêcher. 
+
+Il faut pas s’inquiéter pour la longue durée des révisions. C'est normal
+de s'attarder aux révisions des articles académiques. On dirait que pas
+plus d'une page par heure (cela dépend de la qualité de l'article). 
+
+Je fini la révision de la première section de l'article de Niels. Il faut
+attendre jusqu'à ce qu'il la révise. 
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+** Juillet                                                                      :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7
+Aujourd'hui, je commence à penser seurieusement à l'organisation de la
+thèse.
+
+Il ne me reste que trois semaines en juillet, quatre en août, et deux en
+septembre pour finir mes préparations pour le M2. Cela fait sept semaines.
+
+J'ai décidé d'arrêter la lecture des livres d'Austin, Searle, et Hacking.
+Je m'inquiète plutôt au sujet du mémoire. Michel Beaud et Umberto Eco
+publièrent des très bons bouquins sur les démarches de la préparation d'une
+thèse. Je les feuilletai, mais je craigne que les lire soit une perte du
+temps. En tout cas, pour les deux, cela ne suffit guère de juste les lire.
+Il faut s'y plonger. Peut-être, regrouper leurs conseilles et rédiger un
+calendrier de préparation de thèse vaudrait la peine.
+
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Août                                                                         :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Septembre                                                                    :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+** Octobre                                                                      :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Novembre
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14
+On était censé de commencer à écrire vers la fin de janvier, ce que nous
+laisserait seulement deux mois pour lire tous les références. 
+
+Il faut faire le /365 paper challenge/, et donc lire un article de recherche
+chaque jour. On peut le lire pendant le temps de mémoire.
+
+Aussi, il y a le problème que l'on ne respecte pas les horaires. Si cela ne
+change pas, on aura des problèmes. 
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17
+Pour maintenant, il faudra lire un article académique par jour. Il me
+semble que la façon la plus rapide de lire avec un maximum de compréhension
+(c'est-à-dire, non pas du /skimming/) est en dessinant une /mind-map/ (carte
+mentale?), et en rédigeant un texte basé sur celle-ci. C'est la même
+méthode que j'utilise pour rédiger rapidement mes réponses et mes
+dissertations aux examens. On peut expérimenter ce mois et voire comment
+cela se passe.
+
+Par rapport au délais, on commence à prendre un peu de retard. Le problème
+est qu'il ne reste que quatre semaines avant l'examen d'épistémologie.
+Malheureusement, je pense que les textes que Jérôme nous a donné, il faudra
+soit ne pas les lire, ou les lire à la dernière minute.
+
+ Il faut aussi lire le bouquin de Hunter Heyck. Il faut le lire après avoir
+fini le livre de Mirowski et le livre de Crozier. C'est la meilleure
+référence qu'il existe à ce moment sur Herbert Simon. 
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+** Décembre                                                                     :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+* 2019                                                                          :noexport:ARCHIVE:
+** Janvier                                                                      :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Février                                                                      :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+** Mars                                                                         :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Avril                                                                        :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+** Mai                                                                          :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Juin                                                                         :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+** Juillet                                                                      :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Août                                                                         :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Septembre                                                                    :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+** Octobre                                                                      :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Novembre                                                                     :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+** Décembre                                                                     :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+* 2020                                                                          :noexport:ARCHIVE:
+** Janvier                                                                      :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Février                                                                      :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+** Mars                                                                         :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Avril                                                                        :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+** Mai                                                                          :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Juin                                                                         :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+** Juillet                                                                      :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Août                                                                         :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Septembre                                                                    :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+** Octobre                                                                      :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+** Novembre                                                                     :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+** Décembre                                                                     :noexport:
+*** 1 :noexport:
+*** 2 :noexport:
+*** 3 :noexport:
+*** 4 :noexport:
+*** 5 :noexport:
+*** 6 :noexport:
+*** 7 :noexport:
+*** 8 :noexport:
+*** 9 :noexport:
+*** 10 :noexport:
+*** 11 :noexport:
+*** 12 :noexport:
+*** 13 :noexport:
+*** 14 :noexport:
+*** 15 :noexport:
+*** 16 :noexport:
+*** 17 :noexport:
+*** 18 :noexport:
+*** 19 :noexport:
+*** 20 :noexport:
+*** 21 :noexport:
+*** 22 :noexport:
+*** 23 :noexport:
+*** 24 :noexport:
+*** 25 :noexport:
+*** 26 :noexport:
+*** 27 :noexport:
+*** 28 :noexport:
+*** 29  :noexport:
+*** 30 :noexport:
+*** 31 :noexport:
+* Settings                                   :noexport:ARCHIVE:
+#+STARTUP: noindent showstars logdrawer showeverything
+# Local Variables:
+# eval: (rabelais-mode) 
+# End:
+** LaTeX Export Settings
+# Choose which language to use for typesetting org settings
+#+LANGUAGE: fr
+#+OPTIONS: \n:nil ::t |:t ^:t f:t *:t ':t pro:nil H:5 timestamp:nil date:nil toc:nil
+#+OPTIONS: LaTeX:t d:nil pri:t p:t inline:nil tags:nil todo:nil 
+# Use KOMA script classes instead of LaTeX's defaults
+#+LATEX_CLASS: scrbook
+#+LATEX_CLASS_OPTIONS: [paper=B6,portrait,twoside=true,twocolumn=false,headinclude=true,footinclude=false,fontsize=12,BCOR=5mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,headings=normal,headings=twolinechapter,open=right,toc=graduated,chapterprefix=false,numbers=endperiod,parskip=half+]
+# Custom section to choose latex export engine (XeTeX). Can't believe this
+# feature does not exist by default. Check Emacs' configuration for the relevant configurations
+#+LATEX_CMD: xelatex
+#+EXPORT_SELECT_TAGS: export
+# Create tag to allow for non-exportable org sub-trees (useful for keeping notes) 
+#+EXPORT_EXCLUDE_TAGS: noexport
+** LaTeX Packages
+*** Languages
+ #+LATEX_HEADER: \usepackage{polyglossia} 
+# Choose typesetting language 
+ #+LATEX_HEADER: \setmainlanguage{french} 
+# Choose secondary typesetting languages
+ #+LATEX_HEADER: \setotherlanguages{english} 
+# Configure typesetting of Chinese, Japanese, and Korean
+ #+LATEX_HEADER: \usepackage{xeCJK}
+# Choose font to typeset Korean 
+ #+LATEX_HEADER: \setCJKmainfont{Baekmuk Batang}
+*** Csquotes
+# Choose threshold for turning an in-text quote into a block quote
+ #+LATEX_HEADER: \usepackage[french=guillemets,thresholdtype=words,threshold=3]{csquotes}
+#+LATEX_HEADER: \MakeAutoQuote{«}{»}
+# Italicize all quotes
+#+LATEX_HEADER:\AtBeginEnvironment{quote}{\itshape}
+*** Biblatex
+# Set up bibliography management through biblatex
+# #+LATEX_HEADER: \usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=true]{biblatex}
+# Choose bibliography file
+# #+LATEX_HEADER: \addbibresource{~/Documents/mendeley/library.bib}
+*** Ams
+# Necessary settings for typesetting math, symbols, and formulae
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amsthm}
+#+LATEX_HEADER: \usepackage{amssymb}
+# Easily cross out symbols and arrows with \centernot command
+#+LATEX_HEADER: \usepackage{centernot}
+*** Hyperref
+# Add hyperlinks wihin the document (sections, table of contents, etc.)
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \hypersetup{colorlinks,urlcolor=blue,linkcolor=red,citecolor=red,filecolor=black}
+*** Typography
+# Prevent ugly typesetting when using two-column setup
+ # #+LATEX_HEADER: \usepackage{balance}
+# Improves typesetting of tables
+ #+LATEX_HEADER: \usepackage{booktabs}
+# Adds macros to typeset 1^st 2^nd, etc. in different languages
+#+LATEX_HEADER: \usepackage[french]{fmtcount} 
+#+LATEX_HEADER: \fmtcountsetoptions{french=france}
+# Typeset according to selection of single space, double space, etc. 
+ #+LATEX_HEADER: \usepackage[singlespacing]{setspace}
+# Kinda same as fmtcount but less flexible
+ #+LATEX_HEADER: \usepackage[super]{nth}
+# Glorious typesetting of microtypographic details
+#+LATEX_HEADER: \usepackage{microtype}
+# Choose language specific microtype settings
+#+LATEX_HEADER: \microtypecontext{kerning=french}
+# Correctly typeset ragged text
+#+LATEX_HEADER: \usepackage{ragged2e}
+# Prevent widows (danggling lines at the top or bottom of pages)
+#+LATEX_HEADER: \usepackage[all]{nowidow}
+# Correctly typeset lists, etc. with itemize environment 
+#+LATEX_HEADER: \usepackage{enumitem}
+# Beautify the page with nice typographic symbols 
+#+LATEX_HEADER: \usepackage{adforn}
+# #+LATEX_HEADER: \usepackage[object=vectorian]{pgfornament}
+# Correctly typeset floats
+#+LATEX_HEADER: \usepackage{float}
+*** Graphicx
+# Add color to documents
+#+LATEX_HEADER: \usepackage{xcolor}
+# Allow colored tables
+# #+LATEX_HEADER: \usepackage{colortbl}
+# Add graphics to documents
+ #+LATEX_HEADER: \usepackage{graphicx}
+# Choose graphics' folder
+ #+LATEX_HEADER: \graphicspath{ {/home/sync0/Dropbox/paris_1/} }
+# Allow footnotes in tables 
+# #+LATEX_HEADER: \usepackage{tablefootnote}
+# Correctly color code blocks
+# #+LATEX_HEADER: \usepackage{minted}
+# Insert dummy text (typesetting aid) 
+#+LATEX_HEADER: \usepackage{lipsum}
+*** TiKz
+# Add simple graphics in latex
+# #+LATEX_HEADER:\usepackage{tikz}
+# #+LATEX_HEADER:\usetikzlibrary{calc,trees,positioning,arrows,chains,shapes.geometric,decorations.pathreplacing,decorations.pathmorphing,shapes,matrix,shapes.symbols}
+# #+LATEX_HEADER:\tikzset{>=stealth',punktchain/.style={rectangle,rounded corners,draw=black, very thick,text width=10em,minimum height=3em,text centered,on chain},line/.style={draw, thick, <-},element/.style={tape,top color=white,bottom color=blue!50!black!60!,minimum width=8em,draw=blue!40!black!90, very thick,text width=10em,minimum height=3.5em,text centered,on chain},every join/.style={->, thick,shorten >=1pt},decoration={brace},tuborg/.style={decorate},tubnode/.style={midway, right=2pt},}
+*** Editing
+# Add margin TODO notes.
+#+LATEX_HEADER: \usepackage[textsize=scriptsize, linecolor=soothing_green, backgroundcolor=soothing_green]{todonotes}
+** Fonts
+# Set up XeTeX
+#+LATEX_HEADER: \usepackage{xunicode}
+#+LATEX_HEADER: \usepackage{fontspec}
+#+LATEX_HEADER: \usepackage{xltxtra}
+# Adjust all used fonts to the same x-height.
+#+LATEX_HEADER: \defaultfontfeatures{Scale=MatchLowercase}
+# Use Linux Libertine font.
+#+LATEX_HEADER:\setmainfont[Mapping=tex-text,Numbers=OldStyle,SmallCapsFeatures={LetterSpace=4,Ligatures=NoCommon}]{Linux Libertine O}
+#+LATEX_HEADER:\setsansfont[Mapping=tex-text]{Linux Biolinum O}
+#+LATEX_HEADER:\setmonofont[Mapping=tex-text]{Inconsolata}
+# Define a font family to use in the title.
+#+LATEX_HEADER:\newfontfamily\titlefamily[Scale=1.5]{Linux Biolinum O}
+# Define a bigger face size than \Huge to use in the part and chapter titles.
+#+LATEX_HEADER:\newcommand\HUGE{\fontsize{30}{30}\selectfont}
+** Page Design
+# Customize page desing 
+#+LATEX_HEADER:\usepackage{scrlayer-scrpage}
+#+LATEX_HEADER:\pagestyle{scrheadings}
+#+LATEX_HEADER:\clearscrheadfoot
+# Automatically add Chapter as heading 
+#+LATEX_HEADER:\automark[chapter]{part}
+# Center headings 
+# #+LATEX_HEADER:\cehead{\headmark} 
+# #+LATEX_HEADER:\cohead{\headmark} 
+#+LATEX_HEADER:\chead{\headmark} 
+# Put headings in the outermost part of the page
+# #+LATEX_HEADER:\lehead{\headmark} 
+# #+LATEX_HEADER:\rohead{\headmark} 
+# Put numbers in the outermost part of the page
+# #+LATEX_HEADER:\lehead{\thepage} 
+# #+LATEX_HEADER:\rohead{\thepage} 
+#+LATEX_HEADER:\ohead{\thepage} 
+# Add numbering in the outer footer (margin) of pages
+# #+LATEX_HEADER:\ofoot*{\thepage} 
+# Remove annoying "First Part" from headings 
+#+LATEX_HEADER:\renewcommand\partmarkformat{}
+** Typographic settings
+# Add different spacing for things after table of contents
+#+LATEX_HEADER: \AfterTOCHead{\singlespacing}
+# Set default settings for document font
+#+LATEX_HEADER: \setkomafont{disposition}{\normalfont\normalcolor}
+# Change font settings of labeling environment
+#+LATEX_HEADER: \setkomafont{labelinglabel}{\normalfont\bfseries}
+# Change font settings of minisec titles
+#+LATEX_HEADER: \setkomafont{minisec}{\usekomafont{subsection}}
+# Change font settings page number.
+# #+LATEX_HEADER: \addtokomafont{pagenumber}{\bfseries}
+# Change font settings page head & foot.
+# #+LATEX_HEADER: \addtokomafont{pageheadfoot}{\bfseries\sffamily\upshape}
+#+LATEX_HEADER: \addtokomafont{pageheadfoot}{\sffamily\upshape}
+*** Figures
+#+LATEX_HEADER: \addtokomafont{caption}{\small}
+#+LATEX_HEADER: \addtokomafont{captionlabel}{\bfseries}
+*** Part
+# Customize fonts used in Part 
+#+LATEX_HEADER: \addtokomafont{part}{\HUGE\scshape\sffamily\lowercase}
+# # Remove the part numbering from part pages
+#+LATEX_HEADER: \renewcommand*{\partformat}{\partname}
+*** Chapter 
+# Customize fonts used in Chapter
+# #+LATEX_HEADER: \addtokomafont{chapter}{\HUGE\scshape\sffamily\bfseries\lowercase}
+#+LATEX_HEADER: \addtokomafont{chapter}{\huge\scshape\bfseries\sffamily\lowercase}
+# Center chapter 
+# #+LATEX_HEADER:\renewcommand{\raggedchapter}{\centering}
+# Increase vertical space between chapter and text body.
+# A bug arises when \RedeclareSectionCommand appears before package
+# tocbasic or tocstyle
+#+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter} 
+*** Section
+# Customize fonts used in Section
+#+LATEX_HEADER: \addtokomafont{section}{\LARGE\scshape\sffamily\lowercase}
+# #+LATEX_HEADER: \addtokomafont{section}{\huge\scshape\sffamily\lowercase}
+*** Subsection
+# Customize fonts used in Subsection
+# #+LATEX_HEADER: \addtokomafont{subsection}{\LARGE\scshape\sffamily\lowercase}
+#+LATEX_HEADER: \addtokomafont{subsection}{\large\sffamily\bfseries}
+# #+LATEX_HEADER: \addtokomafont{subsection}{\sffamily\Large}
+*** Subsubsection
+# Customize fonts used in Subsubsection
+# #+LATEX_HEADER: \addtokomafont{subsubsection}{\scshape\sffamily\Large\lowercase}
+# #+LATEX_HEADER: \addtokomafont{subsubsection}{\large\sffamily\bfseries}
+#+LATEX_HEADER: \addtokomafont{subsubsection}{\large\sffamily\itshape}
+*** Table of Contents
+# Customize fonts used in the table of contents
+# Delete "Part" to TOC entry.
+#+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\scshape\sffamily\lowercase{#2}}}
+#+LATEX_HEADER: \addtokomafont{chapterentry}{\normalsize\sffamily\bfseries}
+#+LATEX_HEADER: \usepackage[tocflat,tocindentauto]{tocstyle}
+# Remove dots after section title.
+#+LATEX_HEADER: \usetocstyle{nopagecolumn}
+# Have a two-column table of contents. 
+#+LATEX_HEADER: \unsettoc{toc}{onecolumn}
+*** Code blocks
+# Customize fonts used in code blocks (requires minted package)
+# #+LATEX_HEADER:\usemintedstyle{borland}
+** User-defined elements
+*** Itemize symbols
+ # Replace adforn's typographic symbols for itemize items
+ #+LATEX_HEADER:\renewcommand*\labelitemi{\adforn{33}}
+ #+LATEX_HEADER:\renewcommand*\labelitemii{\adforn{73}}
+ #+LATEX_HEADER:\renewcommand*\labelitemiii{\adforn{73}}
+ #+LATEX_HEADER:\renewcommand*\labelitemiv{\adforn{73}}
+ # reduce the indent of "itemize" items 
+ # #+LATEX_HEADER:\setlist[itemize]{leftmargin=*}
+*** Dictum
+# Customize KOMA script's dictum environment
+#+LATEX_HEADER: \renewcommand*{\dictumwidth}{.8\textwidth}
+#+LATEX_HEADER: \renewcommand*{\raggeddictum}{\centering}
+#+LATEX_HEADER: \renewcommand*{\raggeddictumtext}{\centering}
+#+LATEX_HEADER: \addtokomafont{dictum}{\large\rmfamily}
+*** Colors
+# Nice color to add to hyperlinks
+#+LATEX_HEADER:\definecolor{bibleblue}{HTML}{00339a}
+# Define color to use in TODO notes. 
+#+LATEX_HEADER: \definecolor{soothing_green}{HTML}{E1F7DB}
+*** LaTeX theorems
+# This is something I use for adding figure or table interpretations 
+#+LATEX_HEADER:\theoremstyle{definition}
+#+LATEX_HEADER:\newtheorem{lecture}{Lecture}
+#+LATEX_HEADER:\newtheorem*{lecture*}{Lecture}
+#+LATEX_HEADER:\newtheorem{problem}{Problème}
+#+LATEX_HEADER:\newtheorem*{problem*}{Problème}
+#+LATEX_HEADER:\newtheorem{interpretation}{Interpretation}
+#+LATEX_HEADER:\newtheorem*{interpretation*}{Interpretation}
+** Etc
+# Set limits for numbering (parts, chapters, sections, etc.)
+#+LATEX_HEADER: \setcounter{secnumdepth}{\partnumdepth}
+# Set limits for table of contents entries
+#+LATEX_HEADER: \setcounter{tocdepth}{1}
+# Recalculate type area based on new settings (required for corectly
+# spacing two-column pages)
+#+LATEX_HEADER: \recalctypearea
+# Change spacing of itemize environment items
+# #+LATEX_HEADER: \setlist[1]{itemsep=\parskip}
+# Set separation between columns for two-column pages
+# #+LATEX_HEADER: \setlength{\columnsep}{1cm}
