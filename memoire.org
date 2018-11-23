@@ -229,15 +229,21 @@ Aux lecteurs lointains.
 # #+LATEX_HEADER: \addtokomafont{partentry}{\scshape\lowercase}
 # #+LATEX_HEADER: \addtokomafont{chapterentry}{\bfseries}
 # #+LATEX_HEADER: \addtokomafont{sectionentry}{\itshape}
-#+LATEX_HEADER: \usepackage[tocindentauto,tocgraduated]{tocstyle}
+#+LATEX_HEADER: \usepackage{tocstyle}
+#+LATEX_HEADER: \settocfeature{raggedhook}{\raggedright}
+#+LATEX_HEADER: \selecttocstyleoption{tocgraduated}
 #+LATEX_HEADER: \usetocstyle{nopagecolumn}
 # Delete "Part" to TOC entry.
 #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\protect\scshape\lowercase{#1}\hspace{1em}}{#2}}
 # Add "Part" to TOC entry.
 # #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\partname\nobreakspace #1}{#2}}
 *** Figures
-# #+LATEX_HEADER: \addtokomafont{caption}{\normalsize}
-# #+LATEX_HEADER: \addtokomafont{captionlabel}{\bfseries}
+#+LATEX_HEADER: \addtokomafont{caption}{\sffamily\small}
+#+LATEX_HEADER: \addtokomafont{captionlabel}{\sffamily\bfseries}
+# Remove labels and delimiters from captions
+# #+LATEX_HEADER: \renewcommand*{\figureformat}{}
+# #+LATEX_HEADER: \renewcommand*{\tableformat}{}
+# #+LATEX_HEADER: \renewcommand*{\captionformat}{}
 *** Part
 # Customize fonts used in Part 
 #+LATEX_HEADER: \addtokomafont{part}{\scshape\huge\lowercase}

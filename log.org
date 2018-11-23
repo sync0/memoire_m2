@@ -374,7 +374,7 @@ calendrier de préparation de thèse vaudrait la peine.
 *** 8 :noexport:
 *** 9 :noexport:
 *** 10 :noexport:
-*** 11 :noexport:
+*** 11 : Révision hebdomadaire                                                                     :noexport:
 *** 12 :noexport:
 *** 13 :noexport:
 *** 14
@@ -405,14 +405,34 @@ soit ne pas les lire, ou les lire à la dernière minute.
  Il faut aussi lire le bouquin de Hunter Heyck. Il faut le lire après avoir
 fini le livre de Mirowski et le livre de Crozier. C'est la meilleure
 référence qu'il existe à ce moment sur Herbert Simon. 
-*** 18 :noexport:
+*** 18 : Révision hebdomadaire 
+Cette semaine, je suis revenu aux /mind maps/ pour résumer les textes. Je les
+avais laissés de côté, sauf pour les examens, car on prend longtemps pour
+en dessiner une, mais j'y reviens grâce à leur efficacité pour résumer de
+l'information de manière concise. J'envisage leur utilisation de la façon
+suivante: une carte par section d'un texte (chapitre, section,
+sous-section, etc.).
+
+Dans les lectures, on a peu avancé cette semaine. J'ai commencé à lire le
+livre sur l'automation de Simon et j'ai commencé à lire les articles de
+Heyck. 
+
+Dans l'écriture, on a rien avancé cette semaine. 
+
+Objectives pour cette semaine:
+- [ ] Commencer à lire le livre de Crozier.
+- [ ] Commencer à réviser.
+- [ ] Se coucher et se réveiller à une heure régulière. 
+- [ ] Lire le plus que possible d'articles de Simon en les commentant. 
+    
+Le bilan  de  cette semaine est: 2/10. 
 *** 19 :noexport:
 *** 20 :noexport:
 *** 21 :noexport:
 *** 22 :noexport:
 *** 23 :noexport:
 *** 24 :noexport:
-*** 25 :noexport:
+*** 25 : Révision hebdomadaire                                                                     :noexport:
 *** 26 :noexport:
 *** 27 :noexport:
 *** 28 :noexport:
@@ -1207,7 +1227,7 @@ référence qu'il existe à ce moment sur Herbert Simon.
 *** 30 :noexport:
 *** 31 :noexport:
 * Settings                                   :noexport:ARCHIVE:
-#+STARTUP: noindent showstars logdrawer showeverything
+#+STARTUP: noindent hidestars logdrawer showeverything
 # Local Variables:
 # eval: (rabelais-mode) 
 # End:

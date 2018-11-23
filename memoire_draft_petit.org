@@ -1440,8 +1440,12 @@ reading, the booktitles are highlighted in blue.
 # #+LATEX_HEADER: \addtokomafont{pageheadfoot}{\bfseries\sffamily\upshape}
 #+LATEX_HEADER: \addtokomafont{pageheadfoot}{\sffamily\upshape}
 *** Figures
-#+LATEX_HEADER: \addtokomafont{caption}{\small}
-#+LATEX_HEADER: \addtokomafont{captionlabel}{\bfseries}
+#+LATEX_HEADER: \addtokomafont{caption}{\sffamily\small}
+#+LATEX_HEADER: \addtokomafont{captionlabel}{\sffamily\bfseries}
+# Remove labels and delimiters from captions
+# #+LATEX_HEADER: \renewcommand*{\figureformat}{}
+# #+LATEX_HEADER: \renewcommand*{\tableformat}{}
+# #+LATEX_HEADER: \renewcommand*{\captionformat}{}
 *** Part
 # Customize fonts used in Part 
 #+LATEX_HEADER: \addtokomafont{part}{\HUGE\scshape\sffamily\lowercase}

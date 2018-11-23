@@ -1373,8 +1373,12 @@ reading, the book titles are highlighted in blue.
 # #+LATEX_HEADER: \addtokomafont{pageheadfoot}{\bfseries\sffamily\upshape}
 #+LATEX_HEADER: \addtokomafont{pageheadfoot}{\sffamily\upshape}
 *** Figures
-#+LATEX_HEADER: \addtokomafont{caption}{\small}
-#+LATEX_HEADER: \addtokomafont{captionlabel}{\bfseries}
+#+LATEX_HEADER: \addtokomafont{caption}{\sffamily\small}
+#+LATEX_HEADER: \addtokomafont{captionlabel}{\sffamily\bfseries}
+# Remove labels and delimiters from captions
+# #+LATEX_HEADER: \renewcommand*{\figureformat}{}
+# #+LATEX_HEADER: \renewcommand*{\tableformat}{}
+# #+LATEX_HEADER: \renewcommand*{\captionformat}{}
 *** Part
 # Customize fonts used in Part 
 #+LATEX_HEADER: \addtokomafont{part}{\HUGE\scshape\sffamily\lowercase}
@@ -1405,7 +1409,9 @@ reading, the book titles are highlighted in blue.
 #+LATEX_HEADER: \addtokomafont{chapterentry}{\normalsize\sffamily\bfseries}
 # #+LATEX_HEADER: \addtokomafont{chapterentry}{\scshape\sffamily\large\lowercase}
 # #+LATEX_HEADER: \addtokomafont{chapterentry}{\bfseries}
-#+LATEX_HEADER: \usepackage[tocindentauto,tocgraduated]{tocstyle}
+#+LATEX_HEADER: \usepackage{tocstyle}
+#+LATEX_HEADER: \settocfeature{raggedhook}{\raggedright}
+#+LATEX_HEADER: \selecttocstyleoption{tocgraduated}
 #+LATEX_HEADER: \usetocstyle{nopagecolumn}
 # Have a two-column table of contents. 
 # #+LATEX_HEADER: \unsettoc{toc}{onecolumn}
