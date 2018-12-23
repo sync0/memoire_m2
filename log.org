@@ -438,7 +438,7 @@ Le bilan  de  cette semaine est: 2/10.
 *** 28 :noexport:
 *** 29  :noexport:
 *** 30 :noexport:
-** Décembre                                                                     :noexport:
+** Décembre
 *** 1 :noexport:
 *** 2 :noexport:
 *** 3 :noexport:
@@ -459,9 +459,15 @@ Le bilan  de  cette semaine est: 2/10.
 *** 18 :noexport:
 *** 19 :noexport:
 *** 20 :noexport:
-*** 21 :noexport:
+*** 21                                                                                             :noexport:
 *** 22 :noexport:
-*** 23 :noexport:
+*** 23: Révision hebdomadaire 
+Monsieur Lenfant me dit d'ajouter dans l'introduction une justification de
+la réduction du corpus. Après tout, on va pas parler de l'ouvre intégrale
+de Simon.
+
+Ensuite, il faut que dans la conclusion du mémoire on soit capable d'ouvrir
+une question de recherche pour introduire un sujet de thèse. 
 *** 24 :noexport:
 *** 25 :noexport:
 *** 26 :noexport:
@@ -1231,221 +1237,212 @@ Le bilan  de  cette semaine est: 2/10.
 # Local Variables:
 # eval: (rabelais-mode) 
 # End:
+* Settings  :noexport:ARCHIVE:
+ #+STARTUP: noindent nostars logdrawer showeverything
 ** LaTeX Export Settings
-# Choose which language to use for typesetting org settings
+# Typesetting language. 
 #+LANGUAGE: fr
-#+OPTIONS: \n:nil ::t |:t ^:t f:t *:t ':t pro:nil H:5 timestamp:nil date:nil toc:nil
-#+OPTIONS: LaTeX:t d:nil pri:t p:t inline:nil tags:nil todo:nil 
-# Use KOMA script classes instead of LaTeX's defaults
+# Org mode export settings.
+#+OPTIONS: \n:nil |:t ^:t f:t *:t ':t pro:nil H:5 timestamp:nil date:nil toc:nil
+#+OPTIONS: LaTeX:t pri:t p:nil tags:nil todo:nil 
+# Use KOMA script classes instead of LaTeX defaults
 #+LATEX_CLASS: scrbook
-#+LATEX_CLASS_OPTIONS: [paper=B6,portrait,twoside=true,twocolumn=false,headinclude=true,footinclude=false,fontsize=12,BCOR=5mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,headings=normal,headings=twolinechapter,open=right,toc=graduated,chapterprefix=false,numbers=endperiod,parskip=half+]
-# Custom section to choose latex export engine (XeTeX). Can't believe this
-# feature does not exist by default. Check Emacs' configuration for the relevant configurations
+#+LATEX_CLASS_OPTIONS: [paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=10,BCOR=15mm,DIV=13,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=twolinechapter,open=right,chapterprefix=false,numbers=noendperiod,headsepline=false,parskip=false]
+# Use XeTeX instead of default export engine; this is a custom command. 
 #+LATEX_CMD: xelatex
 #+EXPORT_SELECT_TAGS: export
-# Create tag to allow for non-exportable org sub-trees (useful for keeping notes) 
+# Set tag for non-exportable org sub-trees (useful for comments). 
 #+EXPORT_EXCLUDE_TAGS: noexport
 ** LaTeX Packages
 *** Languages
  #+LATEX_HEADER: \usepackage{polyglossia} 
-# Choose typesetting language 
+# Set main typesetting language.
  #+LATEX_HEADER: \setmainlanguage{french} 
-# Choose secondary typesetting languages
+# Set secondary typesetting languages.
  #+LATEX_HEADER: \setotherlanguages{english} 
-# Configure typesetting of Chinese, Japanese, and Korean
- #+LATEX_HEADER: \usepackage{xeCJK}
-# Choose font to typeset Korean 
- #+LATEX_HEADER: \setCJKmainfont{Baekmuk Batang}
+# Configure typesetting of Chinese, Japanese, and Korean.
+ # #+LATEX_HEADER: \usepackage{xeCJK}
+# Set font to typeset Korean. 
+ # #+LATEX_HEADER: \setCJKmainfont{Baekmuk Batang}
 *** Csquotes
-# Choose threshold for turning an in-text quote into a block quote
+# Set threshold for turning an in-text quote into a block quote.
  #+LATEX_HEADER: \usepackage[french=guillemets,thresholdtype=words,threshold=3]{csquotes}
+# Set symbol to automatically recognize quotes. 
 #+LATEX_HEADER: \MakeAutoQuote{«}{»}
-# Italicize all quotes
+# Italicize all quotes.
 #+LATEX_HEADER:\AtBeginEnvironment{quote}{\itshape}
 *** Biblatex
-# Set up bibliography management through biblatex
+# Configure bibliography management with biblatex. 
 # #+LATEX_HEADER: \usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=true]{biblatex}
-# Choose bibliography file
+# Set bibliography file. 
 # #+LATEX_HEADER: \addbibresource{~/Documents/mendeley/library.bib}
 *** Ams
-# Necessary settings for typesetting math, symbols, and formulae
+# Settings for typesetting math, symbols, and formulae. 
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amsthm}
 #+LATEX_HEADER: \usepackage{amssymb}
-# Easily cross out symbols and arrows with \centernot command
+# Cross out symbols and arrows with \centernot command. 
 #+LATEX_HEADER: \usepackage{centernot}
 *** Hyperref
-# Add hyperlinks wihin the document (sections, table of contents, etc.)
+# Allow hyperlinks. 
 #+LATEX_HEADER: \usepackage{hyperref}
-#+LATEX_HEADER: \hypersetup{colorlinks,urlcolor=blue,linkcolor=red,citecolor=red,filecolor=black}
+#+LATEX_HEADER: \hypersetup{colorlinks,urlcolor=blue,linkcolor=blue,citecolor=red,filecolor=black}
 *** Typography
-# Prevent ugly typesetting when using two-column setup
- # #+LATEX_HEADER: \usepackage{balance}
-# Improves typesetting of tables
+# Prevent ugly typesetting in two-column mode.
+ #+LATEX_HEADER: \usepackage{balance}
+# Improve typesetting of tables.
  #+LATEX_HEADER: \usepackage{booktabs}
-# Adds macros to typeset 1^st 2^nd, etc. in different languages
+# Adds macros to typeset 1st, 2nd, etc., in different languages.
 #+LATEX_HEADER: \usepackage[french]{fmtcount} 
 #+LATEX_HEADER: \fmtcountsetoptions{french=france}
-# Typeset according to selection of single space, double space, etc. 
+# Set interline spacing.
  #+LATEX_HEADER: \usepackage[singlespacing]{setspace}
-# Kinda same as fmtcount but less flexible
+# Alternative to 'fmtcount' without multilingual support. 
  #+LATEX_HEADER: \usepackage[super]{nth}
-# Glorious typesetting of microtypographic details
+# Configure microtypographic settings. 
 #+LATEX_HEADER: \usepackage{microtype}
-# Choose language specific microtype settings
+# Configure language-specific microtype settings. 
 #+LATEX_HEADER: \microtypecontext{kerning=french}
 # Correctly typeset ragged text
 #+LATEX_HEADER: \usepackage{ragged2e}
-# Prevent widows (danggling lines at the top or bottom of pages)
+# Prevent widows (dangling lines at the top or bottom of pages).
 #+LATEX_HEADER: \usepackage[all]{nowidow}
-# Correctly typeset lists, etc. with itemize environment 
+# Correctly typeset lists with 'itemize' environment.
 #+LATEX_HEADER: \usepackage{enumitem}
-# Beautify the page with nice typographic symbols 
+# Beautify the page with typographic symbols.
 #+LATEX_HEADER: \usepackage{adforn}
 # #+LATEX_HEADER: \usepackage[object=vectorian]{pgfornament}
-# Correctly typeset floats
+# Correctly typeset floats.
 #+LATEX_HEADER: \usepackage{float}
-*** Graphicx
-# Add color to documents
+*** Graphics
+# Allow colors. 
 #+LATEX_HEADER: \usepackage{xcolor}
-# Allow colored tables
+# Allow colored tables.
 # #+LATEX_HEADER: \usepackage{colortbl}
-# Add graphics to documents
+# Allow graphics.
  #+LATEX_HEADER: \usepackage{graphicx}
-# Choose graphics' folder
+# Choose graphics folder.
  #+LATEX_HEADER: \graphicspath{ {/home/sync0/Dropbox/paris_1/} }
-# Allow footnotes in tables 
+# Allow footnotes in tables.
 # #+LATEX_HEADER: \usepackage{tablefootnote}
-# Correctly color code blocks
+# Color code blocks.
 # #+LATEX_HEADER: \usepackage{minted}
-# Insert dummy text (typesetting aid) 
-#+LATEX_HEADER: \usepackage{lipsum}
+# Insert dummy text (typesetting aid).
+# #+LATEX_HEADER: \usepackage{lipsum}
 *** TiKz
-# Add simple graphics in latex
+# Add TiKz graphics in LaTeX.
 # #+LATEX_HEADER:\usepackage{tikz}
 # #+LATEX_HEADER:\usetikzlibrary{calc,trees,positioning,arrows,chains,shapes.geometric,decorations.pathreplacing,decorations.pathmorphing,shapes,matrix,shapes.symbols}
 # #+LATEX_HEADER:\tikzset{>=stealth',punktchain/.style={rectangle,rounded corners,draw=black, very thick,text width=10em,minimum height=3em,text centered,on chain},line/.style={draw, thick, <-},element/.style={tape,top color=white,bottom color=blue!50!black!60!,minimum width=8em,draw=blue!40!black!90, very thick,text width=10em,minimum height=3.5em,text centered,on chain},every join/.style={->, thick,shorten >=1pt},decoration={brace},tuborg/.style={decorate},tubnode/.style={midway, right=2pt},}
 *** Editing
-# Add margin TODO notes.
-#+LATEX_HEADER: \usepackage[textsize=scriptsize, linecolor=soothing_green, backgroundcolor=soothing_green]{todonotes}
+# Add TODO margin notes.
+# #+LATEX_HEADER: \usepackage[textsize=scriptsize, linecolor=soothing_green, backgroundcolor=soothing_green]{todonotes}
 ** Fonts
-# Set up XeTeX
+# Configure XeTeX fonts.
 #+LATEX_HEADER: \usepackage{xunicode}
 #+LATEX_HEADER: \usepackage{fontspec}
 #+LATEX_HEADER: \usepackage{xltxtra}
-# Adjust all used fonts to the same x-height.
-#+LATEX_HEADER: \defaultfontfeatures{Scale=MatchLowercase}
-# Use Linux Libertine font.
-#+LATEX_HEADER:\setmainfont[Mapping=tex-text,Numbers=OldStyle,SmallCapsFeatures={LetterSpace=4,Ligatures=NoCommon}]{Linux Libertine O}
-#+LATEX_HEADER:\setsansfont[Mapping=tex-text]{Linux Biolinum O}
-#+LATEX_HEADER:\setmonofont[Mapping=tex-text]{Inconsolata}
-# Define a font family to use in the title.
-#+LATEX_HEADER:\newfontfamily\titlefamily[Scale=1.5]{Linux Biolinum O}
-# Define a bigger face size than \Huge to use in the part and chapter titles.
+#+LATEX_HEADER: \usepackage{unicode-math}
+# Use Linux Libertine and Linux Biolinum fonts.
+#+LATEX_HEADER: \usepackage[oldstyle]{libertine}
+# Have all fonts use the same x-height.
+# #+LATEX_HEADER: \defaultfontfeatures{Scale=MatchLowercase}
+# Typeset math using Linux Libertine. 
+#+LATEX_HEADER :\setmathfont[Scale=MatchUppercase]{libertinusmath-regular.otf}
+# Define a font family for titles.
+#+LATEX_HEADER:\newfontfamily\titlefamily[Scale=2]{Linux Biolinum O}
+# Define the '\HUGE' macro. 
 #+LATEX_HEADER:\newcommand\HUGE{\fontsize{30}{30}\selectfont}
 ** Page Design
-# Customize page desing 
+# Customize page design.
 #+LATEX_HEADER:\usepackage{scrlayer-scrpage}
 #+LATEX_HEADER:\pagestyle{scrheadings}
 #+LATEX_HEADER:\clearscrheadfoot
-# Automatically add Chapter as heading 
+# Set 'part' as left and 'chapter' as right page headings.  
 #+LATEX_HEADER:\automark[chapter]{part}
-# Center headings 
-# #+LATEX_HEADER:\cehead{\headmark} 
-# #+LATEX_HEADER:\cohead{\headmark} 
+# Center page headings.
 #+LATEX_HEADER:\chead{\headmark} 
-# Put headings in the outermost part of the page
-# #+LATEX_HEADER:\lehead{\headmark} 
-# #+LATEX_HEADER:\rohead{\headmark} 
-# Put numbers in the outermost part of the page
-# #+LATEX_HEADER:\lehead{\thepage} 
-# #+LATEX_HEADER:\rohead{\thepage} 
-#+LATEX_HEADER:\ohead{\thepage} 
-# Add numbering in the outer footer (margin) of pages
-# #+LATEX_HEADER:\ofoot*{\thepage} 
-# Remove annoying "First Part" from headings 
-#+LATEX_HEADER:\renewcommand\partmarkformat{}
+# Place page numbers in the outer heading.
+#+LATEX_HEADER:\ohead{\pagemark} 
 ** Typographic settings
-# Add different spacing for things after table of contents
+# Set different line spacing after table of contents
 #+LATEX_HEADER: \AfterTOCHead{\singlespacing}
-# Set default settings for document font
-#+LATEX_HEADER: \setkomafont{disposition}{\normalfont\normalcolor}
-# Change font settings of labeling environment
-#+LATEX_HEADER: \setkomafont{labelinglabel}{\normalfont\bfseries}
-# Change font settings of minisec titles
+# Set font for 'labeling' environment.
+#+LATEX_HEADER: \setkomafont{labelinglabel}{\normalfont\sffamily\bfseries}
+# Set font for 'minisec' titles.
 #+LATEX_HEADER: \setkomafont{minisec}{\usekomafont{subsection}}
-# Change font settings page number.
-# #+LATEX_HEADER: \addtokomafont{pagenumber}{\bfseries}
-# Change font settings page head & foot.
-# #+LATEX_HEADER: \addtokomafont{pageheadfoot}{\bfseries\sffamily\upshape}
-#+LATEX_HEADER: \addtokomafont{pageheadfoot}{\sffamily\upshape}
+# Set font for page headings. 
+#+LATEX_HEADER: \setkomafont{pagehead}{\normalfont\itshape}
+# Set font for page numbers.
+#+LATEX_HEADER: \setkomafont{pagenumber}{\large\upshape}
 *** Figures
-#+LATEX_HEADER: \addtokomafont{caption}{\small}
-#+LATEX_HEADER: \addtokomafont{captionlabel}{\bfseries}
+# Set font for caption text.
+#+LATEX_HEADER: \setkomafont{caption}{\small}
+# Set font for caption titles.
+#+LATEX_HEADER: \setkomafont{captionlabel}{\sffamily\bfseries}
+*** Dictum
+# Configure KOMA script 'dictum' environment
+# #+LATEX_HEADER: \renewcommand*{\dictumwidth}{.8\textwidth}
+# #+LATEX_HEADER: \renewcommand*{\raggeddictum}{\centering}
+# #+LATEX_HEADER: \renewcommand*{\raggeddictumtext}{\centering}
+# Set font for KOMA script 'dictum' environment
+# #+LATEX_HEADER: \setkomafont{dictum}{\large\rmfamily}
 *** Part
-# Customize fonts used in Part 
-#+LATEX_HEADER: \addtokomafont{part}{\HUGE\scshape\sffamily\lowercase}
-# # Remove the part numbering from part pages
+# Set font for 'part'. 
+#+LATEX_HEADER: \setkomafont{part}{\HUGE\scshape\lowercase}
+# Remove 'part' numbering from 'part' pages.
 #+LATEX_HEADER: \renewcommand*{\partformat}{\partname}
+# Remove 'First Part', 'Second Part', etc.
+#+LATEX_HEADER:\renewcommand\partmarkformat{}
 *** Chapter 
-# Customize fonts used in Chapter
-# #+LATEX_HEADER: \addtokomafont{chapter}{\HUGE\scshape\sffamily\bfseries\lowercase}
-#+LATEX_HEADER: \addtokomafont{chapter}{\huge\scshape\bfseries\sffamily\lowercase}
-# Center chapter 
-# #+LATEX_HEADER:\renewcommand{\raggedchapter}{\centering}
+# Set font for 'chapter'. 
+#+LATEX_HEADER: \setkomafont{chapter}{\Huge\scshape\lowercase}
 # Increase vertical space between chapter and text body.
-# A bug arises when \RedeclareSectionCommand appears before package
-# tocbasic or tocstyle
+# Beware! A bug arises when '\RedeclareSectionCommand' appears after package
+# tocbasic or tocstyle.
 #+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter} 
 *** Section
-# Customize fonts used in Section
-#+LATEX_HEADER: \addtokomafont{section}{\LARGE\scshape\sffamily\lowercase}
-# #+LATEX_HEADER: \addtokomafont{section}{\huge\scshape\sffamily\lowercase}
+# Set font for 'section'.
+#+LATEX_HEADER: \setkomafont{section}{\LARGE\scshape\lowercase}
 *** Subsection
-# Customize fonts used in Subsection
-# #+LATEX_HEADER: \addtokomafont{subsection}{\LARGE\scshape\sffamily\lowercase}
-#+LATEX_HEADER: \addtokomafont{subsection}{\large\sffamily\bfseries}
-# #+LATEX_HEADER: \addtokomafont{subsection}{\sffamily\Large}
+# Set font for 'subsection'.
+#+LATEX_HEADER: \setkomafont{subsection}{\large}
 *** Subsubsection
-# Customize fonts used in Subsubsection
-# #+LATEX_HEADER: \addtokomafont{subsubsection}{\scshape\sffamily\Large\lowercase}
-# #+LATEX_HEADER: \addtokomafont{subsubsection}{\large\sffamily\bfseries}
-#+LATEX_HEADER: \addtokomafont{subsubsection}{\large\sffamily\itshape}
+# Set font for 'subsubsection'.
+#+LATEX_HEADER: \setkomafont{subsubsection}{\normalfont\sffamily\bfseries}
 *** Table of Contents
-# Customize fonts used in the table of contents
-# Delete "Part" to TOC entry.
+# Set fonts for table of contents.
+# Delete 'part' from TOC entry.
 #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\scshape\sffamily\lowercase{#2}}}
+# Set font for chapter entry.
 #+LATEX_HEADER: \addtokomafont{chapterentry}{\normalsize\sffamily\bfseries}
-#+LATEX_HEADER: \usepackage[tocflat,tocindentauto]{tocstyle}
-# Remove dots after section title.
+# Customize table of contents. 
+#+LATEX_HEADER: \usepackage{tocstyle}
+#+LATEX_HEADER: \settocfeature{raggedhook}{\raggedright}
+#+LATEX_HEADER: \selecttocstyleoption{tocgraduated}
+# Remove dots. 
 #+LATEX_HEADER: \usetocstyle{nopagecolumn}
-# Have a two-column table of contents. 
-#+LATEX_HEADER: \unsettoc{toc}{onecolumn}
+# Set two-column table of contents. 
+# #+LATEX_HEADER: \unsettoc{toc}{onecolumn}
 *** Code blocks
-# Customize fonts used in code blocks (requires minted package)
+# Set fonts used in code blocks (requires 'minted' package).
 # #+LATEX_HEADER:\usemintedstyle{borland}
 ** User-defined elements
 *** Itemize symbols
- # Replace adforn's typographic symbols for itemize items
+ # Use 'adforn' symbols instead of 'itemize' symbols. 
  #+LATEX_HEADER:\renewcommand*\labelitemi{\adforn{33}}
  #+LATEX_HEADER:\renewcommand*\labelitemii{\adforn{73}}
  #+LATEX_HEADER:\renewcommand*\labelitemiii{\adforn{73}}
  #+LATEX_HEADER:\renewcommand*\labelitemiv{\adforn{73}}
- # reduce the indent of "itemize" items 
+ # Reduce indent of 'itemize' items. 
  # #+LATEX_HEADER:\setlist[itemize]{leftmargin=*}
-*** Dictum
-# Customize KOMA script's dictum environment
-#+LATEX_HEADER: \renewcommand*{\dictumwidth}{.8\textwidth}
-#+LATEX_HEADER: \renewcommand*{\raggeddictum}{\centering}
-#+LATEX_HEADER: \renewcommand*{\raggeddictumtext}{\centering}
-#+LATEX_HEADER: \addtokomafont{dictum}{\large\rmfamily}
 *** Colors
-# Nice color to add to hyperlinks
+# Define color for hyperlinks. 
 #+LATEX_HEADER:\definecolor{bibleblue}{HTML}{00339a}
-# Define color to use in TODO notes. 
+# Define color for TODO notes. 
 #+LATEX_HEADER: \definecolor{soothing_green}{HTML}{E1F7DB}
-*** LaTeX theorems
-# This is something I use for adding figure or table interpretations 
+*** Mathematics
+# Define custom environments for amsmath. 
 #+LATEX_HEADER:\theoremstyle{definition}
 #+LATEX_HEADER:\newtheorem{lecture}{Lecture}
 #+LATEX_HEADER:\newtheorem*{lecture*}{Lecture}
@@ -1453,15 +1450,16 @@ Le bilan  de  cette semaine est: 2/10.
 #+LATEX_HEADER:\newtheorem*{problem*}{Problème}
 #+LATEX_HEADER:\newtheorem{interpretation}{Interpretation}
 #+LATEX_HEADER:\newtheorem*{interpretation*}{Interpretation}
-** Etc
-# Set limits for numbering (parts, chapters, sections, etc.)
+# Define '\notimplies' macro. Requires 'centernot' package.  
+#+LATEX_HEADER:\newcommand{\notimplies}{\centernot\implies}
+** Coda
+# Limit numbering to parts, chapters, sections, etc.
 #+LATEX_HEADER: \setcounter{secnumdepth}{\partnumdepth}
-# Set limits for table of contents entries
+# Limits table of contents entries. 
 #+LATEX_HEADER: \setcounter{tocdepth}{1}
-# Recalculate type area based on new settings (required for corectly
-# spacing two-column pages)
+# Recalculate type area; required for spacing two-column pages correctly.
 #+LATEX_HEADER: \recalctypearea
-# Change spacing of itemize environment items
+# Set spacing of 'itemize' items.
 # #+LATEX_HEADER: \setlist[1]{itemsep=\parskip}
-# Set separation between columns for two-column pages
-# #+LATEX_HEADER: \setlength{\columnsep}{1cm}
+# Set separation between columns for two-column pages.
+#+LATEX_HEADER: \setlength{\columnsep}{0.5cm}

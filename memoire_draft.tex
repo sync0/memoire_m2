@@ -1,87 +1,91 @@
 % Intended LaTeX compiler: pdflatex
-\documentclass[draft=false, paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=big,headings=twolinechapter,open=right,chapterprefix=false,headsepline=false,parskip=full]{scrbook}
+\documentclass[paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=10,BCOR=15mm,DIV=13,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=twolinechapter,open=right,chapterprefix=false,numbers=noendperiod,headsepline=false,parskip=false]{scrbook}
 \usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{url}
 \usepackage{soul}
 \usepackage{polyglossia}
 \setmainlanguage{english}
-\setotherlanguages{italian,spanish,french}
+\setotherlanguages{french,italian}
 \usepackage[french=guillemets,thresholdtype=words,threshold=3]{csquotes}
 \MakeAutoQuote{«}{»}
 \AtBeginEnvironment{quote}{\itshape}
 \usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=false]{biblatex}
-\DeclareFieldFormat{booktitle}{\color{blue}\mkbibemph{#1}}
-\DeclareFieldFormat{title}{\color{blue}\mkbibemph{#1}}
 \addbibresource{~/Documents/mendeley/library.bib}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{centernot}
 \usepackage{hyperref}
-\hypersetup{colorlinks,urlcolor=blue,linkcolor=red,citecolor=red,filecolor=black}
+\hypersetup{colorlinks,urlcolor=blue,linkcolor=blue,citecolor=red,filecolor=black}
+\usepackage{balance}
 \usepackage{booktabs}
-\usepackage[english]{fmtcount}
+\usepackage[french]{fmtcount}
+\fmtcountsetoptions{french=france}
 \usepackage[singlespacing]{setspace}
 \usepackage[super]{nth}
 \usepackage{microtype}
+\microtypecontext{kerning=french}
 \usepackage{ragged2e}
+\usepackage[all]{nowidow}
 \usepackage{enumitem}
 \usepackage{adforn}
 \usepackage{float}
 \usepackage{xcolor}
 \usepackage{graphicx}
 \graphicspath{ {/home/sync0/Dropbox/paris_1/} }
-\usepackage{lipsum}
-\usepackage[textsize=scriptsize, linecolor=soothing_green, backgroundcolor=soothing_green]{todonotes}
 \usepackage{xunicode}
 \usepackage{fontspec}
 \usepackage{xltxtra}
-\defaultfontfeatures{Scale=MatchLowercase}
-\setmainfont[Mapping=tex-text,Numbers=OldStyle,SmallCapsFeatures={LetterSpace=4,Ligatures=NoCommon}]{Linux Libertine O}
-\setsansfont[Mapping=tex-text]{Linux Biolinum O}
-\setmonofont[Mapping=tex-text]{Inconsolata}
+\usepackage{unicode-math}
+\usepackage[oldstyle]{libertine}
 \newfontfamily\titlefamily[Scale=2]{Linux Biolinum O}
 \newcommand\HUGE{\fontsize{30}{30}\selectfont}
 \usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
 \clearscrheadfoot
 \automark[chapter]{part}
-\cehead{\headmark}
-\cohead{\headmark}
-\lehead{\thepage}
-\rohead{\thepage}
-\renewcommand\partmarkformat{}
+\chead{\headmark}
+\ohead{\pagemark}
 \AfterTOCHead{\singlespacing}
-\setkomafont{disposition}{\normalfont\normalcolor}
-\setkomafont{labelinglabel}{\normalfont\bfseries}
+\setkomafont{labelinglabel}{\normalfont\sffamily\bfseries}
 \setkomafont{minisec}{\usekomafont{subsection}}
-\addtokomafont{pageheadfoot}{\sffamily\upshape}
-\addtokomafont{caption}{\sffamily\small}
-\addtokomafont{captionlabel}{\sffamily\bfseries}
-\addtokomafont{part}{\HUGE\scshape\sffamily\lowercase}
+\setkomafont{pagehead}{\normalfont\itshape}
+\setkomafont{pagenumber}{\large\upshape}
+\setkomafont{caption}{\small}
+\setkomafont{captionlabel}{\sffamily\bfseries}
+\setkomafont{part}{\HUGE\scshape\lowercase}
 \renewcommand*{\partformat}{}
-\addtokomafont{chapter}{\HUGE\scshape\sffamily\lowercase}
-\renewcommand{\raggedchapter}{\centering}
+\renewcommand\partmarkformat{}
+\setkomafont{chapter}{\Huge\scshape\lowercase}
 \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter}
-\addtokomafont{section}{\huge\scshape\sffamily\setstretch{0.7}\lowercase}
-\addtokomafont{subsection}{\sffamily\Large}
-\addtokomafont{subsubsection}{\scshape\sffamily\Large\lowercase}
+\setkomafont{section}{\LARGE\scshape\lowercase}
+\setkomafont{subsection}{\large}
+\setkomafont{subsubsection}{\normalfont\sffamily\bfseries}
+\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\scshape\sffamily\lowercase{#2}}}
 \addtokomafont{chapterentry}{\normalsize\sffamily\bfseries}
 \usepackage{tocstyle}
 \settocfeature{raggedhook}{\raggedright}
 \selecttocstyleoption{tocgraduated}
 \usetocstyle{nopagecolumn}
-\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\protect\sffamily\Large\scshape\lowercase{#1}\hspace{1em}}{#2}}
 \renewcommand*\labelitemi{\adforn{33}}
 \renewcommand*\labelitemii{\adforn{73}}
 \renewcommand*\labelitemiii{\adforn{73}}
 \renewcommand*\labelitemiv{\adforn{73}}
+\definecolor{bibleblue}{HTML}{00339a}
 \definecolor{soothing_green}{HTML}{E1F7DB}
+\theoremstyle{definition}
+\newtheorem{lecture}{Lecture}
+\newtheorem*{lecture*}{Lecture}
+\newtheorem{problem}{Problème}
+\newtheorem*{problem*}{Problème}
+\newtheorem{interpretation}{Interpretation}
+\newtheorem*{interpretation*}{Interpretation}
+\newcommand{\notimplies}{\centernot\implies}
 \setcounter{secnumdepth}{\partnumdepth}
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 \recalctypearea
-\setlength{\marginparwidth}{2\marginparwidth}
+\setlength{\columnsep}{0.5cm}
 \author{Carlos Alberto Rivera Carreño}
 \date{}
 \title{}
@@ -102,11 +106,11 @@
  {\Large Université Paris I Panthéon Sorbonne \par}
  {\Large \textsc{ufr} 02 : Sciences économiques  \par}
  {\large Master 2 : Économie et sciences humaines \par}
- {\large 2019 \par}
+ {\large 2018-2019 \par}
 \end{french}
  \vspace{2\baselineskip}
- {\huge The Automata \& the Engineer \par}
- {\Large Herbert Simon's Quest for the Governing Machine \par}
+ {\huge Vers la machine à gouverner  \par}
+ {\Large Herbert Simon and the Impossibility of a Democratic Computer \par}
 \vspace*{\fill}
 \begin{french}
  {\large Présenté et sountenu par : \par}
@@ -119,6 +123,7 @@
  {\large \textsc{jean-sébastien lenfant}\par}
 \end{titlepage}
 
+\onecolumn
 \pagestyle{empty}
 
 \begin{french}
@@ -157,7 +162,8 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \begin{italian}
 % \textit{Para una lectora lejana.}
 % \textit{Per il professore Giorgio Israel. \newline Mi dispiace, ho mancato il nostro incontro. \linebreak Sono in ritardo, come la coscienza della nostra generazione. \linebreak I campi sanguinano. Tutti lo sanno, ma a nessuno importa.}
-\textit{Per il professore Giorgio Israel. \newline Benché i nostri destini fossero uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Sono arrivato in ritardo, come la coscienza della nostra generazione. \linebreak I campi sanguinanti sono così prossimi \linebreak che le gocce accarezzerebbero gli occhi. \linebreak Eppure, nessuno vede niente. \linebreak Tante informazione, ma così poca conoscenza. \linebreak Anche le lacrime non bastano per addolcire i cuori. \linebreak Nel fratempo, riposa in pace, maestro.}
+% \textit{Per il professore Giorgio Israel. \newline Benché i nostri destini fossero uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Sono arrivato in ritardo, come la coscienza della nostra generazione. \linebreak I campi sanguinanti sono così prossimi \linebreak che le gocce accarezzerebbero gli occhi. \linebreak Eppure, nessuno vede niente. \linebreak Tante informazione, ma così poca conoscenza. \linebreak Anche le lacrime non bastano per addolcire i cuori. \linebreak Nel fratempo, riposa in pace, maestro.}
+\textit{Per il professore Giorgio Israel. \newline Benché i nostri destini fossero uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Sono arrivato in ritardo, come la coscienza della nostra generazione. \linebreak I campi sanguinanti sono così prossimi, \linebreak ma nessuno vede niente. \linebreak Nell'era dell'informazione, diventiamo più ignoranti. \linebreak Questo è il prezzo del biglietto d'ingresso. \linebreak Grazie a Lei l'ho capito, maestro.}
 \end{italian}
 \end{FlushRight}
 
@@ -165,21 +171,34 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \tableofcontents 
 
 \frontmatter
+\twocolumn
 \pagestyle{plain}
-\chapter{Acknowledgements} 
-
-\lipsum
-
-\chapter{Preface} 
 
 \mainmatter
 \pagestyle{scrheadings}
-\part{Preparatory Research}
-\label{sec:orga9fecd7}
+\part{Research}
+\label{sec:orgf4c29f5}
 \chapter{Research Proposal}
-\label{sec:org0642e8f}
+\label{sec:org73a8ab1}
+\begin{itemize}
+\item[{$\square$}] Main question.
+\item[{$\square$}] Secondary questions.
+\item[{$\square$}] Scope and interrelations.
+\item[{$\square$}] Research hypotheses.
+\item[{$\square$}] Methodology.
+\begin{itemize}
+\item[{$\square$}] Keywords.
+\item[{$\square$}] Debates \& controversies.
+\item[{$\square$}] Axes d'interpretation.
+\end{itemize}
+\item[{$\square$}] Sources.
+\begin{itemize}
+\item[{$\square$}] Update list of key texts.
+\item[{$\square$}] Update list of key authors.
+\end{itemize}
+\end{itemize}
 \section{Motivation}
-\label{sec:org33ec881}
+\label{sec:org410c653}
 Generally speaking, I am interested in questions of methodology in the
 social sciences. More specifically, I am interested in the role of
 metaphors in the construction of social theories, and the place that these
@@ -209,7 +228,7 @@ more about computer science and its ontology.\footnote{As Mirowski shows in \emp
 computer and its entourage of systems sciences have had profound
 consequences for postwar neoclassical economics.} 
 \section{Subject-matter}
-\label{sec:orga9d2802}
+\label{sec:orge6d36cb}
 I would like to write about the computer as a political technology,
 specially in its guise as the so-called \emph{machine à gouverner}: the ultimate
 delegation of political authority and responsibility to machines---or more
@@ -253,12 +272,12 @@ some insightful material therein to construct this section. Although, I
 would like to mention Babbage and Jevons at some point to compare their
 thinking to Simon's, it is unlikely that time will allow for this.
 \subsection{Main question}
-\label{sec:orga8b62aa}
-What is Herbert Simon's definition of the computer? How did this
-concept influence his ideas of \emph{the human}? And, what are the political
-consequences of this vision of man and machine?
+\label{sec:orged090cf}
+What is Herbert Simon's definition of the computer? How did this concept
+influence his ideas of \emph{the human}? And, what are the consequences for the
+organization of labor of this vision of man and machine?
 \subsection{Secondary Questions}
-\label{sec:org5a3edeb}
+\label{sec:org0127caf}
 What was the relation between the natural and the artificial for Simon, and
 how does this relation relate to his late-life project of a Science of
 the Artificial?
@@ -267,27 +286,89 @@ How do Simon's ideas on automation relate to his political views?
 
 Did Simon subscribe to the unity of science thesis?
 \section{Bibliography}
-\label{sec:orgb03c4c8}
+\label{sec:org474f37c}
 This is a thematic bibliography organized around keywords. To facilitate
 reading, the book titles are highlighted in blue. 
 
 \nocite{*}
 \subsection{The Brain}
-\label{sec:orgf27d9e8}
+\label{sec:orga7db58d}
 \printbibliography[heading=none,keyword=memoire,keyword=brain]
 \subsection{The Cold War}
-\label{sec:org522528d}
+\label{sec:orgd1f832c}
 \printbibliography[heading=none,keyword=memoire,keyword=cold-war,notkeyword=brain]
 \subsection{The Computer}
-\label{sec:org765984a}
+\label{sec:org2f14920}
 \printbibliography[heading=none,keyword=memoire,keyword=computer,notkeyword=brain,notkeyword=cold-war]
 \subsection{Metaphors}
-\label{sec:org20d02c0}
+\label{sec:orgd1be263}
 \printbibliography[heading=none,keyword=memoire,keyword=metaphors,notkeyword=brain,notkeyword=cold-war,notkeyword=computer,notkeyword=cyborg]
 \subsection{Herbert Simon}
-\label{sec:org4923ad7}
+\label{sec:org49c097b}
 \printbibliography[heading=none,keyword=memoire,keyword=herbert-simon,notkeyword=brain,notkeyword=cold-war,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors]
 \subsection{The Social Sciences}
-\label{sec:org9da67eb}
+\label{sec:org7a44487}
 \printbibliography[heading=none,keyword=memoire,keyword=social-science,notkeyword=brain,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors,notkeyword=herbert-simon,notkeyword=cold-war]
+\chapter{Research Plan}
+\label{sec:org98e165f}
+Look up into the history of Herbert Simon's 
+\chapter{Thesis Plan}
+\label{sec:orgf401c6c}
+\section{Skeleton}
+\label{sec:org069f469}
+\begin{center}
+\begin{tabular}{llr}
+\textbf{Section} &  & \textbf{Length}\\
+Introduction &  & 20\\
+Chapter 1 &  & 25\\
+ & Section 1 & \\
+ & Section 2 & \\
+ & Section 3 & \\
+Chapter 2 &  & 25\\
+ & Section 1 & \\
+ & Section 2 & \\
+ & Section 3 & \\
+Conclusion &  & 5\\
+\textbf{Total} &  & 80\\
+\end{tabular}
+\end{center}
+\section{Draft Outline}
+\label{sec:org4c78789}
+\subsection{Introduction}
+\label{sec:org733e086}
+\subsection{Chapter 1}
+\label{sec:org2742b82}
+\begin{labeling}[~]{Section 1} 
+\item[Section 1] Background on the cold war and the computer. 
+\item[Section 2] Simon's place in the context just given. That is, historical information on Simon.
+\item[Section 3] Simon's history with the computer and artifical intelligence.
+\end{labeling}
+\subsection{Chapter 2}
+\label{sec:org492410d}
+Discuss Simon's article on economic democracy and his views of the
+organization of labor. 
+\begin{labeling}[~]{Section 1} 
+\item[Section 1] 
+\item[Section 2] 
+\item[Section 3] 
+\end{labeling}
+\subsection{Conclusion}
+\label{sec:org09ac90b}
+\chapter{Task list}
+\label{sec:orga3e8ae3}
+\begin{itemize}
+\item[{$\square$}] Check with adviser.
+\item[{$\square$}] Check with selected readers.
+\item[{$\square$}] Update the Framework.
+\end{itemize}
+\chapter{Research}
+\label{sec:org4744676}
+\begin{itemize}
+\item[{$\square$}] Final Sifting.
+\begin{itemize}
+\item[{$\square$}] Update list of key texts.
+\item[{$\square$}] Update list of key authors.
+\end{itemize}
+\item[{$\square$}] If necessary, update any component of the Framework.
+\end{itemize}
 \end{document}
