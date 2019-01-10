@@ -1,72 +1,103 @@
-% Intended LaTeX compiler: pdflatex
-\documentclass[paper=A5,portrait,twoside=true,twocolumn=false,headinclude=true,footinclude=true,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,headings=normal,headings=twolinechapter,open=right,chapterprefix=false]{scrbook}
-\usepackage{fontspec}
-\usepackage{xunicode}
-\usepackage{url}
-\usepackage{soul}
+% Intended LaTeX compiler: lualatex
+\documentclass[version=last,draft=false,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrreprt}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
 \usepackage{polyglossia}
-\setmainlanguage{french}
-\setotherlanguages{italian,spanish,english}
-\usepackage[french=guillemets,thresholdtype=words,threshold=3]{csquotes}
-\MakeAutoQuote{«}{»}
+\setmainlanguage{english}
+\setotherlanguages{french,italian}
+\usepackage[autostyle=true,english=american,french=guillemets,thresholdtype=words,threshold=3]{csquotes}
+\MakeOuterQuote{"}
+\MakeForeignQuote{french}{«}{»}
 \AtBeginEnvironment{quote}{\itshape}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{centernot}
 \usepackage{hyperref}
-\hypersetup{colorlinks,urlcolor=blue,linkcolor=red,citecolor=red,filecolor=black}
+\hypersetup{colorlinks,urlcolor=bibleblue,linkcolor=bibleblue,citecolor=bibleblue,filecolor=black}
+\usepackage{balance}
+\usepackage{array}
+\usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage[most]{tcolorbox}
 \usepackage[french]{fmtcount}
 \fmtcountsetoptions{french=france}
 \usepackage[singlespacing]{setspace}
 \usepackage[super]{nth}
-\usepackage{microtype}
-\microtypecontext{kerning=french}
+\usepackage[protrusion=true,tracking=true]{microtype}
 \usepackage{ragged2e}
+\usepackage[all]{nowidow}
 \usepackage{enumitem}
 \usepackage{adforn}
 \usepackage{float}
 \usepackage{xcolor}
 \usepackage{graphicx}
-\graphicspath{ {/home/sync0/Dropbox/projects/paris_1/} }
+\graphicspath{ {/home/sync0/Dropbox/paris_1/} }
 \usepackage{lipsum}
-\usepackage{xunicode}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\tikzset{main node/.style={circle,fill=gray!45,draw,minimum size=0.5cm,inner sep=0pt},}
 \usepackage{fontspec}
-\usepackage{xltxtra}
+\usepackage{unicode-math}
+\usepackage[oldstyle]{libertine}
 \defaultfontfeatures{Scale=MatchLowercase}
-\setmainfont[Mapping=tex-text,Numbers=OldStyle,SmallCapsFeatures={LetterSpace=4,Ligatures=NoCommon}]{Linux Libertine O}
-\setsansfont[Mapping=tex-text]{Linux Biolinum O}
-\setmonofont[Mapping=tex-text]{Liberation Mono}
+\newfontfamily\titlefamily[Scale=2]{Linux Biolinum O}
+\newcommand\HUGE{\fontsize{30}{33}\selectfont}
 \usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
 \clearscrheadfoot
 \automark[chapter]{part}
-\lehead{\headmark}
-\rohead{\headmark}
-\ofoot*{\thepage}
-\renewcommand\partmarkformat{}
+\cehead{vers la machine à gourverner}
+\cohead{\MakeLowercase{\headmark}}
+\ohead{\pagemark}
 \AfterTOCHead{\singlespacing}
-\setkomafont{disposition}{\normalfont\normalcolor}
-\setkomafont{labelinglabel}{\normalfont\bfseries}
-\setkomafont{minisec}{\large\bfseries}
-\usepackage[tocindentauto,tocgraduated]{tocstyle}
+\setkomafont{labelinglabel}{\normalfont\sffamily\bfseries}
+\setkomafont{minisec}{\usekomafont{subsection}}
+\setkomafont{pagehead}{\normalfont\sffamily\mdseries\scshape}
+\setkomafont{pagenumber}{\large\rmfamily\upshape}
+\setkomafont{sectioning}{\sffamily\mdseries}
+\setkomafont{caption}{\small}
+\setkomafont{captionlabel}{\sffamily\mdseries\scshape\lowercase}
+\setkomafont{chapter}{\Huge\scshape\lowercase}
+\renewcommand{\raggedchapter}{\centering}
+\renewcommand*\chapterformat{\thechapter\autodot\par\enskip}
+\renewcommand*\chaptermarkformat{}
+\RedeclareSectionCommand[beforeskip=0pt,afterskip=8\baselineskip,innerskip=\baselineskip]{chapter}
+\setkomafont{section}{\Large\scshape\lowercase}
+\setkomafont{subsection}{\large}
+\renewcommand*{\subsubsectionformat}{\sffamily\mdseries\upshape \thesubsubsection\autodot\enskip}
+\setkomafont{subsubsection}{\large\itshape}
+\AtBeginDocument{\renewcaptionname{english}\contentsname{contents}}
+\addtokomafont{chapterentry}{\large\sffamily\mdseries\scshape\lowercase}
+\usepackage{tocstyle}
+\settocfeature{raggedhook}{\raggedright}
+\selecttocstyleoption{tocgraduated}
 \usetocstyle{nopagecolumn}
-\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{\protect\scshape\lowercase{#1}\hspace{1em}}{#2}}
-\addtokomafont{part}{\scshape\huge\lowercase}
-\renewcommand*{\partformat}{\partname}
-\addtokomafont{chapter}{\scshape\LARGE\lowercase}
-\RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter}
-\renewcommand*{\thechapter}{}
-\addtokomafont{section}{\scshape\Large\lowercase}
-\addtokomafont{subsection}{\large\bfseries}
-\addtokomafont{subsubsection}{\large\itshape}
+\newtcolorbox{note}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{lightgrey},title={#2},coltitle={black},fonttitle={\sffamily},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+\newtcolorbox{question}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{darkgrey},title={#2},coltitle={black},fonttitle={\sffamily},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+\newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{midgrey},title={#2},coltitle={black},fonttitle={\sffamily\bfseries},fontupper={\normalfont},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
 \renewcommand*\labelitemi{\adforn{33}}
 \renewcommand*\labelitemii{\adforn{73}}
 \renewcommand*\labelitemiii{\adforn{73}}
 \renewcommand*\labelitemiv{\adforn{73}}
-\setcounter{secnumdepth}{\sectionnumdepth}
-\setcounter{tocdepth}{2}
+\definecolor{bibleblue}{HTML}{00339a}
+\definecolor{whitegrey}{HTML}{f7f7f7}
+\definecolor{lightgrey}{HTML}{cccccc}
+\definecolor{midgrey}{HTML}{969696}
+\definecolor{darkgrey}{HTML}{636363}
+\definecolor{blackgrey}{HTML}{252525}
+\newcommand{\notimplies}{\centernot\implies}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{1}
 \recalctypearea
 \author{Carlos Alberto Rivera Carreño}
 \date{}
@@ -76,39 +107,57 @@
  pdftitle={},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 26.1 (Org mode 9.1.13)}, 
- pdflang={Frenchb}}
+ pdfcreator={Emacs 26.1 (Org mode 9.2)}, 
+ pdflang={English}}
 \begin{document}
 
 \begin{titlepage}
  \centering
- \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
- \vspace{4\baselineskip}
- {\Huge Titre magnifique \par}
- {\Large Sous-titre magnifique \par}
-\vspace*{\fill}
- {\Large Mémoire de \textsc{m2} \par}
- \vspace{2\baselineskip}
- {\large Par: \par}
- {\large \textsc{carlos alberto rivera carreño}\par}
+\begin{french}
+ {\large Université Paris I Panthéon Sorbonne \par}
+ \vspace{0.5\baselineskip}
+ {\large \textsc{ufr} 02 : Sciences économiques  \par}
+ \vspace{0.5\baselineskip}
+ {\large Master 2 : Économie et sciences humaines \par}
+ \vspace{0.5\baselineskip}
+ {\large 2018-2019 \par}
+\end{french}
+ \vspace{6\baselineskip}
+ {\huge\sffamily \textsc{vers la machine à gouverner}  \par}
+ {\Large\sffamily Herbert Simon and the Impossibility of a Democratic Computer \par}
+\vfill
+\begin{french}
+ {\large Présenté et sountenu par : \par}
+\end{french}
+ {\large Carlos Alberto Rivera Carreño \par}
  \vspace{1\baselineskip}
- {\large Directeur de thèse: \par}
- {\large \textsc{john eccentric doe}\par}
+\begin{french}
+ {\large Directeur de mémoire : \par}
+\end{french}
+ {\large Jean-Sébastien Lenfant \par}
 \end{titlepage}
 
+\pagestyle{empty}
+
+\begin{french}
+L'Université Paris 1 Panthéon Sorbonne n'entend donner aucune approbation,
+ni désapprobation aux opinions émises dans ce mémoire ; elle doivent être
+considérées comme propres à leur auteur. 
+\end{french}
+
+\newpage
 \vspace*{\fill}
 \noindent
 \includegraphics[height=1.5cm]{gpl3.png}\par
 \vspace{1\baselineskip}
-\begin{english}
 This text is free: you can redistribute it and/or modify it
 under the terms of the \textsc{gnu} General Public License as published by
 the Free Software Foundation, either version 3 of the License or any later
 version.
 
-This text is distributed in the hope that it will be useful, but \textbf{without
-any warranty}; without even the implied warranty of \textbf{merchantability or 
-fitness for a particular purpose}. See the \textsc{gnu} General 
+This text is distributed in the hope that it will be useful, but \textbf\{without
+any warranty\}; without even the implied warranty of \textbf\{merchantability or 
+fitness for a particular purpose\}. See the \textsc{gnu} General 
 Public License for more details.
 
 You should have received a copy of the \textsc{gnu} General Public License along
@@ -117,41 +166,55 @@ with this text. If not, see \url{http://www.gnu.org/licenses/}.
 \vspace{1\baselineskip}
 \noindent
 Copyright \textcopyright \textsc{sync0} 2018. 
-\end{english}
 
-\thispagestyle{empty}
 \newpage 
-\vspace*{\fill}
 \begin{FlushRight}
-\itshape
-Aux lecteurs lointains. 
+\begin{italian}
+\textit{Per il professore Giorgio Israel. \newline Benché i nostri destini fossero uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Sono arrivato in ritardo, come la coscienza della nostra generazione. \linebreak I campi sanguinanti sono così prossimi, \linebreak ma nessuno vede niente. \linebreak Nell'era dell'informazione, diventiamo più ignoranti. \linebreak Questo è il prezzo del biglietto d'ingresso. \linebreak Grazie a Lei l'ho capito, maestro.}
+\end{italian}
 \end{FlushRight}
-\vspace*{\fill}
 
-\thispagestyle{empty}
-\newpage 
-\tableofcontents
+\newpage
+\tableofcontents 
 
-\thispagestyle{empty}
-\newpage 
-\frontmatter
 \pagestyle{plain}
-\chapter{Remerciements} 
 
-\lipsum
-\chapter{Préface} 
-
-\lipsum
-\mainmatter
 \pagestyle{scrheadings}
-\part{La vérité économique}
-\label{sec:org879f541}
-\chapter{Marx et Ricardo}
-\label{sec:orgb2ab3bd}
+
+\chapter{Introduction: The Computer as Management Technology}
+\label{sec:org1435d05}
+A story that although was present for a long time, seems today relegated to
+the confines of a few books on the history of computing. 
+
 \lipsum
-\part{La vérité juridique}
-\label{sec:org486a5d9}
-\chapter{Marx et Ricardo}
-\label{sec:org7c58ac6}
+\section{De Prony's Tables}
+\label{sec:org3a51ca9}
 \lipsum
+\section{Simon and Babbage}
+\label{sec:org9bb9bee}
+\lipsum
+\section{Simon and Industrial Democracy}
+\label{sec:org0bd3b04}
+\lipsum
+\chapter{An History of the Concept of Labor}
+\label{sec:org91844f3}
+\section{From Political Economy to Mechanics}
+\label{sec:org3df3404}
+\lipsum
+\chapter{Herbert Simon and the Thinking Machines}
+\label{sec:org3a09a0f}
+\section{The Cold War and the Computer}
+\label{sec:org31b3eba}
+\lipsum
+\section{Artificial Intelligence}
+\label{sec:orgda032f3}
+\lipsum
+\section{Administrative Behavior}
+\label{sec:org795bd18}
+\lipsum
+\chapter{Conclusion}
+\label{sec:orga14f065}
+\lipsum
+\chapter{References}
+\label{sec:orgd134295}
 \end{document}

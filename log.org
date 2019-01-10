@@ -1232,11 +1232,6 @@ une question de recherche pour introduire un sujet de thèse.
 *** 29  :noexport:
 *** 30 :noexport:
 *** 31 :noexport:
-* Settings                                   :noexport:ARCHIVE:
-#+STARTUP: noindent hidestars logdrawer showeverything
-# Local Variables:
-# eval: (rabelais-mode) 
-# End:
 * Settings  :noexport:ARCHIVE:
  #+STARTUP: noindent nostars logdrawer showeverything
 ** LaTeX Export Settings
@@ -1249,7 +1244,7 @@ une question de recherche pour introduire un sujet de thèse.
 #+LATEX_CLASS: scrbook
 #+LATEX_CLASS_OPTIONS: [paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=10,BCOR=15mm,DIV=13,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=twolinechapter,open=right,chapterprefix=false,numbers=noendperiod,headsepline=false,parskip=false]
 # Use XeTeX instead of default export engine; this is a custom command. 
-#+LATEX_CMD: xelatex
+#+LATEX_COMPILER: lualatex
 #+EXPORT_SELECT_TAGS: export
 # Set tag for non-exportable org sub-trees (useful for comments). 
 #+EXPORT_EXCLUDE_TAGS: noexport

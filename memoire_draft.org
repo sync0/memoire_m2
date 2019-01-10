@@ -49,7 +49,6 @@ considérées comme propres à leur auteur.
 \noindent
 \includegraphics[height=1.5cm]{gpl3.png}\par
 \vspace{1\baselineskip}
-\begin{english}
 This text is free: you can redistribute it and/or modify it
 under the terms of the \textsc{gnu} General Public License as published by
 the Free Software Foundation, either version 3 of the License or any later
@@ -66,7 +65,6 @@ with this text. If not, see \url{http://www.gnu.org/licenses/}.
 \vspace{1\baselineskip}
 \noindent
 Copyright \textcopyright \textsc{sync0} 2018. 
-\end{english}
 
 \newpage 
 # \vspace*{\fill}
@@ -1066,7 +1064,7 @@ Copyright \textcopyright \textsc{sync0} 2018.
   - [ ] Rational Mechanics, Marginalist Economics, and Rational Choice
   - [ ] Consolidating Rational Choice Liberalism 1970-2000
   - [ ] From the Panopticon to the Prisoner's Dilemma 
-** 取 Research Proposal 
+** 取 Draft: Research Proposal 
    :PROPERTIES:
    :CATEGORY: D-Framework
    :END:
@@ -1220,7 +1218,7 @@ reading, the book titles are highlighted in blue.
    :PROPERTIES:
    :CATEGORY: Framework
    :END:
-- [ ] Main question.
+ - [ ] Main question.
 - [ ] Secondary questions.
 - [ ] Scope and interrelations.
 - [ ] Research hypotheses.
@@ -1395,7 +1393,8 @@ Look up into the history of Herbert Simon's
 *** Draft Outline
 **** Introduction
 **** Chapter 1
-# Discuss, historically, the relations between 
+Discuss, historically, the relations between 
+
 \begin{labeling}[~]{Section 1} 
 \item[Section 1] Background on the cold war and the computer. 
 \item[Section 2] Simon's place in the context just given. That is, historical information on Simon.
@@ -1413,14 +1412,14 @@ organization of labor.
 ** Task list
 - [ ] Check with adviser.
 - [ ] Check with selected readers.
-- [ ] Update the Framework.
+- [ ] Update the Research Proposal.
 ** Research
 - [ ] Final Sifting.
  - [ ] Update list of key texts.
  - [ ] Update list of key authors.
-- [ ] If necessary, update any component of the Framework.
+- [ ] If necessary, update any component of the Research Proposal.
 * 取 Preparatory Writing 
-** Draft: Outline
+** Draft: Writing Proposal
 - [ ] Update Main Question.
 - [ ] Write the Directing Idea.
 - [ ] Write the Argument.
@@ -1430,7 +1429,7 @@ organization of labor.
 * 取 Writing 
 ** Exploratory Draft: Thesis
 - [ ] Check with thesis adviser.
-** Outline
+** Writing Proposal
 - [ ] Check with thesis adviser.
 - [ ] Check with selected readers.
 ** Writing Plan
@@ -1462,9 +1461,9 @@ organization of labor.
 #+OPTIONS: LaTeX:t pri:t p:nil tags:nil todo:nil 
 # Use KOMA script classes instead of LaTeX defaults
 #+LATEX_CLASS: scrbook
-#+LATEX_CLASS_OPTIONS: [paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=10,BCOR=15mm,DIV=13,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=twolinechapter,open=right,chapterprefix=false,numbers=noendperiod,headsepline=false,parskip=false]
+#+LATEX_CLASS_OPTIONS: [paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=10,BCOR=15mm,DIV=13,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]
 # Use XeTeX instead of default export engine; this is a custom command. 
-#+LATEX_CMD: xelatex
+#+LATEX_COMPILER: lualatex
 #+EXPORT_SELECT_TAGS: export
 # Set tag for non-exportable org sub-trees (useful for comments). 
 #+EXPORT_EXCLUDE_TAGS: noexport
@@ -1501,12 +1500,15 @@ organization of labor.
 *** Hyperref
 # Allow hyperlinks. 
 #+LATEX_HEADER: \usepackage{hyperref}
-#+LATEX_HEADER: \hypersetup{colorlinks,urlcolor=blue,linkcolor=blue,citecolor=red,filecolor=black}
+#+LATEX_HEADER: \hypersetup{colorlinks,urlcolor=bibleblue,linkcolor=bibleblue,citecolor=red,filecolor=black}
 *** Typography
 # Prevent ugly typesetting in two-column mode.
  #+LATEX_HEADER: \usepackage{balance}
 # Improve typesetting of tables.
+#+LATEX_HEADER: \usepackage{array}
+ #+LATEX_HEADER: \usepackage{tabularx}
  #+LATEX_HEADER: \usepackage{booktabs}
+#+LATEX_HEADER:\usepackage[most]{tcolorbox}
 # Adds macros to typeset 1st, 2nd, etc., in different languages.
 #+LATEX_HEADER: \usepackage[french]{fmtcount} 
 #+LATEX_HEADER: \fmtcountsetoptions{french=france}
@@ -1515,9 +1517,9 @@ organization of labor.
 # Alternative to 'fmtcount' without multilingual support. 
  #+LATEX_HEADER: \usepackage[super]{nth}
 # Configure microtypographic settings. 
-#+LATEX_HEADER: \usepackage{microtype}
+#+LATEX_HEADER: \usepackage[protrusion=true,tracking=true]{microtype}
 # Configure language-specific microtype settings. 
-#+LATEX_HEADER: \microtypecontext{kerning=french}
+# #+LATEX_HEADER: \microtypecontext{kerning=french}
 # Correctly typeset ragged text
 #+LATEX_HEADER: \usepackage{ragged2e}
 # Prevent widows (dangling lines at the top or bottom of pages).
@@ -1554,14 +1556,14 @@ organization of labor.
 # #+LATEX_HEADER: \usepackage[textsize=scriptsize, linecolor=soothing_green, backgroundcolor=soothing_green]{todonotes}
 ** Fonts
 # Configure XeTeX fonts.
-#+LATEX_HEADER: \usepackage{xunicode}
+# #+LATEX_HEADER: \usepackage{xunicode}
 #+LATEX_HEADER: \usepackage{fontspec}
-#+LATEX_HEADER: \usepackage{xltxtra}
+# #+LATEX_HEADER: \usepackage{xltxtra}
 #+LATEX_HEADER: \usepackage{unicode-math}
 # Use Linux Libertine and Linux Biolinum fonts.
 #+LATEX_HEADER: \usepackage[oldstyle]{libertine}
 # Have all fonts use the same x-height.
-# #+LATEX_HEADER: \defaultfontfeatures{Scale=MatchLowercase}
+#+LATEX_HEADER: \defaultfontfeatures{Scale=MatchLowercase}
 # Typeset math using Linux Libertine. 
 #+LATEX_HEADER :\setmathfont[Scale=MatchUppercase]{libertinusmath-regular.otf}
 # Define a font family for titles.
@@ -1576,25 +1578,27 @@ organization of labor.
 # Set 'part' as left and 'chapter' as right page headings.  
 #+LATEX_HEADER:\automark[chapter]{part}
 # Center page headings.
-#+LATEX_HEADER:\chead{\headmark} 
+#+LATEX_HEADER:\chead{\MakeLowercase{\headmark}} 
 # Place page numbers in the outer heading.
 #+LATEX_HEADER:\ohead{\pagemark} 
 ** Typographic settings
 # Set different line spacing after table of contents
 #+LATEX_HEADER: \AfterTOCHead{\singlespacing}
 # Set font for 'labeling' environment.
-#+LATEX_HEADER: \setkomafont{labelinglabel}{\normalfont\sffamily\bfseries}
+#+LATEX_HEADER: \setkomafont{labelinglabel}{\normalfont\bfseries}
 # Set font for 'minisec' titles.
 #+LATEX_HEADER: \setkomafont{minisec}{\usekomafont{subsection}}
 # Set font for page headings. 
-#+LATEX_HEADER: \setkomafont{pagehead}{\normalfont\itshape}
+#+LATEX_HEADER: \setkomafont{pagehead}{\normalfont\sffamily\mdseries\scshape}
 # Set font for page numbers.
-#+LATEX_HEADER: \setkomafont{pagenumber}{\large\upshape}
+#+LATEX_HEADER: \setkomafont{pagenumber}{\large\rmfamily\upshape}
+# Set font for sectioning numbers.
+#+LATEX_HEADER:\setkomafont{sectioning}{\sffamily\mdseries}
 *** Figures
 # Set font for caption text.
 #+LATEX_HEADER: \setkomafont{caption}{\small}
 # Set font for caption titles.
-#+LATEX_HEADER: \setkomafont{captionlabel}{\sffamily\bfseries}
+#+LATEX_HEADER: \setkomafont{captionlabel}{\sffamily\mdseries\scshape\lowercase}
 *** Dictum
 # Configure KOMA script 'dictum' environment
 # #+LATEX_HEADER: \renewcommand*{\dictumwidth}{.8\textwidth}
@@ -1612,25 +1616,36 @@ organization of labor.
 *** Chapter 
 # Set font for 'chapter'. 
 #+LATEX_HEADER: \setkomafont{chapter}{\Huge\scshape\lowercase}
+# Center chapter title.
+#+LATEX_HEADER:\renewcommand{\raggedchapter}{\centering}
+# Add vertical space between chapter number and chapter title.
+#+LATEX_HEADER:\renewcommand*\chapterformat{\thechapter\autodot\par\enskip}
+# Remove chapter numbering from chapter mark (heading). 
+#+LATEX_HEADER:\renewcommand*\chaptermarkformat{}
 # Increase vertical space between chapter and text body.
 # Beware! A bug arises when '\RedeclareSectionCommand' appears after package
 # tocbasic or tocstyle.
-#+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter} 
+# #+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter} 
+#+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0pt,afterskip=8\baselineskip,innerskip=\baselineskip]{chapter} 
 *** Section
 # Set font for 'section'.
-#+LATEX_HEADER: \setkomafont{section}{\LARGE\scshape\lowercase}
+#+LATEX_HEADER: \setkomafont{section}{\large\scshape\lowercase}
 *** Subsection
 # Set font for 'subsection'.
 #+LATEX_HEADER: \setkomafont{subsection}{\large}
 *** Subsubsection
+# Change subsubsection number font independently of its title.
+#+LATEX_HEADER: \renewcommand*{\subsubsectionformat}{\sffamily\mdseries\upshape \thesubsubsection\autodot\enskip}
 # Set font for 'subsubsection'.
-#+LATEX_HEADER: \setkomafont{subsubsection}{\normalfont\sffamily\bfseries}
+#+LATEX_HEADER: \setkomafont{subsubsection}{\large\itshape}
 *** Table of Contents
 # Set fonts for table of contents.
+# Change TOC title to lowercase (needed for small caps). 
+#+LATEX_HEADER:\AtBeginDocument{\renewcaptionname{english}\contentsname{contents}}
 # Delete 'part' from TOC entry.
-#+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\scshape\sffamily\lowercase{#2}}}
+#+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\rmfamily\mdseries\scshape\lowercase{#2}}}
 # Set font for chapter entry.
-#+LATEX_HEADER: \addtokomafont{chapterentry}{\normalsize\sffamily\bfseries}
+#+LATEX_HEADER: \addtokomafont{chapterentry}{\normalsize\rmfamily\bfseries}
 # Customize table of contents. 
 #+LATEX_HEADER: \usepackage{tocstyle}
 #+LATEX_HEADER: \settocfeature{raggedhook}{\raggedright}
@@ -1643,6 +1658,14 @@ organization of labor.
 # Set fonts used in code blocks (requires 'minted' package).
 # #+LATEX_HEADER:\usemintedstyle{borland}
 ** User-defined elements
+*** Environments 
+# #+LATEX_HEADER: \newenvironment{box}{\begin{center}\begin{tabular}{|p{0.9\textwidth}|}\hline\\}{\\\\\hline\end{tabular}\end{center}}
+# #+LATEX_HEADER: \newenvironment{note}{\par\noindent {\sffamily\bfseries Comment:}}{\medskip}
+# #+LATEX_HEADER: \newenvironment{note}{\bigskip\setlength\arrayrulewidth{4pt}\begin{tabular}{|m{0.8\columnwidth}}}{\end{tabular}\bigskip}
+#+LATEX_HEADER:\newtcolorbox{note}{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{gray}}
+#+LATEX_HEADER:\newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{gray},title={#2},coltitle={black},fonttitle={\sffamily\bfseries},fontupper={\normalfont},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
+# #+LATEX_HEADER:\newtcolorbox{note}{colback=block-gray,grow to right by=-10mm,grow to left by=-10mm,boxrule=0pt,boxsep=0pt,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{gray}}
+# #+LATEX_HEADER: \newenvironment{note}{\setlength\arrayrulewidth{4pt}\extracolsep{\quad}\begin{tabular}{|p{0.3\textwidth}}}{\end{tabular}}
 *** Itemize symbols
  # Use 'adforn' symbols instead of 'itemize' symbols. 
  #+LATEX_HEADER:\renewcommand*\labelitemi{\adforn{33}}
@@ -1669,7 +1692,7 @@ organization of labor.
 #+LATEX_HEADER:\newcommand{\notimplies}{\centernot\implies}
 ** Coda
 # Limit numbering to parts, chapters, sections, etc.
-#+LATEX_HEADER: \setcounter{secnumdepth}{\partnumdepth}
+#+LATEX_HEADER: \setcounter{secnumdepth}{3}
 # Limits table of contents entries. 
 #+LATEX_HEADER: \setcounter{tocdepth}{1}
 # Recalculate type area; required for spacing two-column pages correctly.

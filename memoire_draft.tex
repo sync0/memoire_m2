@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: pdflatex
-\documentclass[paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=10,BCOR=15mm,DIV=13,pagesize=auto,titlepage=firstiscover,mpinclude=true,headings=twolinechapter,open=right,chapterprefix=false,numbers=noendperiod,headsepline=false,parskip=false]{scrbook}
+\documentclass[paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=10,BCOR=15mm,DIV=13,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
 \usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{url}
@@ -17,7 +17,7 @@
 \usepackage{amssymb}
 \usepackage{centernot}
 \usepackage{hyperref}
-\hypersetup{colorlinks,urlcolor=blue,linkcolor=blue,citecolor=red,filecolor=black}
+\hypersetup{colorlinks,urlcolor=bibleblue,linkcolor=bibleblue,citecolor=red,filecolor=black}
 \usepackage{balance}
 \usepackage{booktabs}
 \usepackage[french]{fmtcount}
@@ -38,8 +38,8 @@
 \usepackage{fontspec}
 \usepackage{xltxtra}
 \usepackage{unicode-math}
-\usepackage[oldstyle]{libertine}
-\newfontfamily\titlefamily[Scale=2]{Linux Biolinum O}
+\usepackage[oldstyle,libertine]{libertine}
+\newfontfamily\titlefamily[Scale=2]{Linux Libertine O}
 \newcommand\HUGE{\fontsize{30}{30}\selectfont}
 \usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
@@ -48,22 +48,26 @@
 \chead{\headmark}
 \ohead{\pagemark}
 \AfterTOCHead{\singlespacing}
-\setkomafont{labelinglabel}{\normalfont\sffamily\bfseries}
+\setkomafont{labelinglabel}{\normalfont\bfseries}
 \setkomafont{minisec}{\usekomafont{subsection}}
 \setkomafont{pagehead}{\normalfont\itshape}
-\setkomafont{pagenumber}{\large\upshape}
+\setkomafont{pagenumber}{\large\rmfamily\upshape}
+\setkomafont{sectioning}{\rmfamily}
 \setkomafont{caption}{\small}
-\setkomafont{captionlabel}{\sffamily\bfseries}
-\setkomafont{part}{\HUGE\scshape\lowercase}
+\setkomafont{captionlabel}{\mdseries\scshape\lowercase}
+\setkomafont{part}{\HUGE\mdseries\scshape\lowercase}
 \renewcommand*{\partformat}{}
 \renewcommand\partmarkformat{}
-\setkomafont{chapter}{\Huge\scshape\lowercase}
-\RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter}
-\setkomafont{section}{\LARGE\scshape\lowercase}
+\setkomafont{chapter}{\Huge\mdseries\scshape\lowercase}
+\renewcommand{\raggedchapter}{\centering}
+\renewcommand*\chapterformat{\thechapter\autodot\par\enskip}
+\renewcommand*\chaptermarkformat{}
+\RedeclareSectionCommand[beforeskip=0pt,afterskip=8\baselineskip,innerskip=\baselineskip]{chapter}
+\setkomafont{section}{\large\mdseries\scshape\lowercase}
 \setkomafont{subsection}{\large}
-\setkomafont{subsubsection}{\normalfont\sffamily\bfseries}
-\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\scshape\sffamily\lowercase{#2}}}
-\addtokomafont{chapterentry}{\normalsize\sffamily\bfseries}
+\setkomafont{subsubsection}{\large\mdseries\itshape}
+\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\rmfamily\mdseries\scshape\lowercase{#2}}}
+\addtokomafont{chapterentry}{\normalsize\rmfamily\bfseries}
 \usepackage{tocstyle}
 \settocfeature{raggedhook}{\raggedright}
 \selecttocstyleoption{tocgraduated}
@@ -82,7 +86,7 @@
 \newtheorem{interpretation}{Interpretation}
 \newtheorem*{interpretation*}{Interpretation}
 \newcommand{\notimplies}{\centernot\implies}
-\setcounter{secnumdepth}{\partnumdepth}
+\setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{1}
 \recalctypearea
 \setlength{\columnsep}{0.5cm}
@@ -177,11 +181,13 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \mainmatter
 \pagestyle{scrheadings}
 \part{Research}
-\label{sec:orgf4c29f5}
+\label{sec:org0ce425b}
 \chapter{Research Proposal}
-\label{sec:org73a8ab1}
+\label{sec:org43c8467}
 \begin{itemize}
 \item[{$\square$}] Main question.
+\end{itemize}
+\begin{itemize}
 \item[{$\square$}] Secondary questions.
 \item[{$\square$}] Scope and interrelations.
 \item[{$\square$}] Research hypotheses.
@@ -198,7 +204,7 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \end{itemize}
 \end{itemize}
 \section{Motivation}
-\label{sec:org410c653}
+\label{sec:org9f06641}
 Generally speaking, I am interested in questions of methodology in the
 social sciences. More specifically, I am interested in the role of
 metaphors in the construction of social theories, and the place that these
@@ -228,7 +234,7 @@ more about computer science and its ontology.\footnote{As Mirowski shows in \emp
 computer and its entourage of systems sciences have had profound
 consequences for postwar neoclassical economics.} 
 \section{Subject-matter}
-\label{sec:orge6d36cb}
+\label{sec:orgdb5539b}
 I would like to write about the computer as a political technology,
 specially in its guise as the so-called \emph{machine à gouverner}: the ultimate
 delegation of political authority and responsibility to machines---or more
@@ -272,12 +278,12 @@ some insightful material therein to construct this section. Although, I
 would like to mention Babbage and Jevons at some point to compare their
 thinking to Simon's, it is unlikely that time will allow for this.
 \subsection{Main question}
-\label{sec:orged090cf}
+\label{sec:org2dbffb8}
 What is Herbert Simon's definition of the computer? How did this concept
 influence his ideas of \emph{the human}? And, what are the consequences for the
 organization of labor of this vision of man and machine?
 \subsection{Secondary Questions}
-\label{sec:org0127caf}
+\label{sec:orgb1d6440}
 What was the relation between the natural and the artificial for Simon, and
 how does this relation relate to his late-life project of a Science of
 the Artificial?
@@ -286,36 +292,36 @@ How do Simon's ideas on automation relate to his political views?
 
 Did Simon subscribe to the unity of science thesis?
 \section{Bibliography}
-\label{sec:org474f37c}
+\label{sec:org6d4a27a}
 This is a thematic bibliography organized around keywords. To facilitate
 reading, the book titles are highlighted in blue. 
 
 \nocite{*}
 \subsection{The Brain}
-\label{sec:orga7db58d}
+\label{sec:orgeb943e2}
 \printbibliography[heading=none,keyword=memoire,keyword=brain]
 \subsection{The Cold War}
-\label{sec:orgd1f832c}
+\label{sec:orgb09659a}
 \printbibliography[heading=none,keyword=memoire,keyword=cold-war,notkeyword=brain]
 \subsection{The Computer}
-\label{sec:org2f14920}
+\label{sec:orgeda5318}
 \printbibliography[heading=none,keyword=memoire,keyword=computer,notkeyword=brain,notkeyword=cold-war]
 \subsection{Metaphors}
-\label{sec:orgd1be263}
+\label{sec:orgad8fc8d}
 \printbibliography[heading=none,keyword=memoire,keyword=metaphors,notkeyword=brain,notkeyword=cold-war,notkeyword=computer,notkeyword=cyborg]
 \subsection{Herbert Simon}
-\label{sec:org49c097b}
+\label{sec:org9922628}
 \printbibliography[heading=none,keyword=memoire,keyword=herbert-simon,notkeyword=brain,notkeyword=cold-war,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors]
 \subsection{The Social Sciences}
-\label{sec:org7a44487}
+\label{sec:orgbe5f372}
 \printbibliography[heading=none,keyword=memoire,keyword=social-science,notkeyword=brain,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors,notkeyword=herbert-simon,notkeyword=cold-war]
 \chapter{Research Plan}
-\label{sec:org98e165f}
+\label{sec:orgdbe11bb}
 Look up into the history of Herbert Simon's 
 \chapter{Thesis Plan}
-\label{sec:orgf401c6c}
+\label{sec:org7b548e9}
 \section{Skeleton}
-\label{sec:org069f469}
+\label{sec:orgd2bfb93}
 \begin{center}
 \begin{tabular}{llr}
 \textbf{Section} &  & \textbf{Length}\\
@@ -333,18 +339,18 @@ Conclusion &  & 5\\
 \end{tabular}
 \end{center}
 \section{Draft Outline}
-\label{sec:org4c78789}
+\label{sec:org3ed55ba}
 \subsection{Introduction}
-\label{sec:org733e086}
+\label{sec:org98283b6}
 \subsection{Chapter 1}
-\label{sec:org2742b82}
+\label{sec:orgd91d449}
 \begin{labeling}[~]{Section 1} 
 \item[Section 1] Background on the cold war and the computer. 
 \item[Section 2] Simon's place in the context just given. That is, historical information on Simon.
 \item[Section 3] Simon's history with the computer and artifical intelligence.
 \end{labeling}
 \subsection{Chapter 2}
-\label{sec:org492410d}
+\label{sec:org2d7659e}
 Discuss Simon's article on economic democracy and his views of the
 organization of labor. 
 \begin{labeling}[~]{Section 1} 
@@ -353,22 +359,22 @@ organization of labor.
 \item[Section 3] 
 \end{labeling}
 \subsection{Conclusion}
-\label{sec:org09ac90b}
+\label{sec:org098cd12}
 \chapter{Task list}
-\label{sec:orga3e8ae3}
+\label{sec:orgf630b15}
 \begin{itemize}
 \item[{$\square$}] Check with adviser.
 \item[{$\square$}] Check with selected readers.
-\item[{$\square$}] Update the Framework.
+\item[{$\square$}] Update the Research Proposal.
 \end{itemize}
 \chapter{Research}
-\label{sec:org4744676}
+\label{sec:orgdf8a695}
 \begin{itemize}
 \item[{$\square$}] Final Sifting.
 \begin{itemize}
 \item[{$\square$}] Update list of key texts.
 \item[{$\square$}] Update list of key authors.
 \end{itemize}
-\item[{$\square$}] If necessary, update any component of the Framework.
+\item[{$\square$}] If necessary, update any component of the Research Proposal.
 \end{itemize}
 \end{document}

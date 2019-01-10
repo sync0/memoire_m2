@@ -1,17 +1,9 @@
 * Description
-This is still a work in progress!
+This repository contains most files used to prepare my Master's thesis.
 
-This repository contains most of the files used to prepare my Master's
-thesis. 
+This is a work in progress!
 ** Subject-matter 
-Broadly speaking, the idea is to write about issues of communication,
-public opinion, democracy, and their relation to the history of economic
-thought in the postwar United States. Very likely, these will become the
-object of my PhD dissertation as well.
- 
-This Master's thesis will likely focus on the so-called Dewey-Lippmann
-Debate. Perhaps, I will write more on Lippmann than on Dewey because of the
-former's (unintended) role in the /Colloque Walter Lippmann./
+
 ** Copyright
 [[./images/gpl3.png]]
 
@@ -30,46 +22,49 @@ https://www.gnu.org/licenses/gpl-3.0.en.html
 Copyright © SYNC0 2018.
 * File Structure 
 I have organized all work (planing, research, and writing) in these files:
-*** ~todo.org~
-This file (not included in the repository) is a collection of task lists used for planning and scheduling.
-
-It follows this structure (the "stages" are explained [[file:README.org::Preparation][here]]): 
-*** ~master.org~
-This file (not included in the repository) contains my specific research notes per
-author per text; it follows this structure:
-
-First level headings are the authors, and second level headings are the
-texts (books, journal artciles, webpages, etc.). 
-
-I use the ~:lecture:~ tag with ~org-mode~'s custom agenda commands, so I add it
-to all first level headings.
-
-Most entries are produced automatically with [[https://github.com/jkitchin/org-ref][org-ref]] and ~master.bib~ (a
-bibliography file, maintained with [[https://www.mendeley.com/download-desktop/][Mendeley]], not included in this
-repository).
-
-Please look at my [[https://github.com/sync0/sync0_laptop_config/blob/master/.emacs.d/init.org][Emacs' configuration]] for details. And, please excuse the
-chaos therein; I am not a proficient coder.
 *** ~README.org~
-This is the file you are reading now; it introduces the contents of the ~git~
-repository where my Master's thesis rests.
+This is the file you are reading now; it describes the contents of my
+Master's thesis ~git~ repository.
+*** ~todo.org~
+This file (not included in the repository) is a collection of task lists
+used for planning and scheduling.
+
+# It follows this structure (the "stages" are explained [[file:README.org::Preparation][here]]): 
+*** ~master.org~
+This file (not included in the repository) contains my research notes. 
+
+# it follows this structure:
+
+# First level headings are the authors, and second level headings are the
+# texts (books, journal artciles, webpages, etc.). 
+
+# I use the ~:lecture:~ tag with ~org-mode~'s custom agenda commands, so I add it
+# to all first level headings.
+
+Most entries are produced automatically with John Kitchin's Emacs package
+[[https://github.com/jkitchin/org-ref][org-ref]] and a bibliography file, ~master.bib~, maintained with [[https://www.mendeley.com/download-desktop/][Mendeley]]. 
+
+For details, please look at my [[https://github.com/sync0/sync0_laptop_config/blob/master/.emacs.d/init.org][Emacs' configuration]]. And, excuse me for the
+chaos therein.
 *** ~memoire.org~
 This file is the final version of my Master's thesis; it is the source code
 that produces the pdf.
 
 I only used this file to prepare what would be the final version of the
-thesis, i.e., the writing stage. For all other notes and drafts, l used the
-~memoire_draft.org~.
-*** ~memoire_draft.org~
-This file contains most of the preparatory notes, and drafts.
+thesis. For all other notes, l used the ~memoire_draft.org~.
 
 Since I use ~git~ for version control, I could dispense with the list of
 files titled draft 1, draft 2, /ad nauseam/. Instead, I tagged certain
 commits as "drafts". 
+*** ~memoire_draft.org~
+This file contains most of the preparatory notes. So, it is not an actual
+draft, but a collection of intermediary writings before the preparation of
+the first draft of the thesis.
 *** ~notes.org~
-This file is a "travel log" to track the development of the thesis and
-preserve all disparate ideas that occur to me. Most research notes are
-stored herein.  
+This file is a collection of all my research notes; it is organized by day
+and by week. 
+*** ~log.org~
+This file is a "travel log" to track the development of the thesis. 
 
 I was inspired to create this file by a chapter of Bernard Lahire's
 /Tableaux de famille: Heurs et malheurs scolaires en milieux populaires/ that
@@ -97,48 +92,48 @@ taken from Beaud's /L'art de la these/; they are good enough for the French
 system, in which a M2 Master's thesis should be prepared in one year.
 
 #+ATTR_LATEX: :environment tabular :booktabs :align clcc :caption \captionabove{Calendar for preparing a Master's thesis.}
-| \footnotesize \textsc{stage} | \footnotesize\textsc{task}                 | \footnotesize\textsc{spent} | \footnotesize\textsc{remaining} |
-|-----------------------+-------------------------------+----------------+--------------------|
-|\footnotesize \textsc{pre-research} |                               |              4 |                  4 |
-|-----------------------+-------------------------------+----------------+--------------------|
-|                       | \footnotesize Choice: Subject-matter |              0 |                  0 |
-|                       | \footnotesize First Sifting          |              0 |                  2 |
-|                       | \footnotesize Draft: Framework       |              0 |                  0 |
-|-----------------------+-------------------------------+----------------+--------------------|
-| \footnotesize\textsc{research}     |                               |             14 |                 14 |
-|-----------------------+-------------------------------+----------------+--------------------|
-|                       | \footnotesize Framework              |              0 |                  0 |
-|                       | \footnotesize Research Plan          |              0 |                  0 |
-|                       | \footnotesize Research               |              0 |                  0 |
-| \footnotesize\textsc{pre-writing}  |                               |              0 |                  0 |
-|                       | \footnotesize Draft: Outline         |              0 |                  0 |
-|                       | \footnotesize Draft: Writing Plan    |              0 |                  0 |
-|                       | \footnotesize Additional Research    |              0 |                  0 |
-|-----------------------+-------------------------------+----------------+--------------------|
-| \footnotesize\textsc{writing}      |                               |             11 |                 11 |
-|-----------------------+-------------------------------+----------------+--------------------|
-|                       | \footnotesize Exploratory Draft      |              0 |                  0 |
-|                       | \footnotesize Outline                |              0 |                  0 |
-|                       | \footnotesize Writing Plan           |              0 |                  0 |
-|                       | \footnotesize First Draft |              0 |                  0 |
-|                       | \footnotesize Last Draft |              0 |                  0 |
-|                       | \footnotesize Final Version |              0 |                  0 |
-|-----------------------+-------------------------------+----------------+--------------------|
-| \footnotesize\textsc{jury}         |                               |              2 |                  2 |
-|-----------------------+-------------------------------+----------------+--------------------|
-|                       | \footnotesize Adviser Agreement      |              0 |                  0 |
-|                       | \footnotesize Fine Tuning |              0 |                  1 |
-|                       | \footnotesize Printing               |              0 |                  0 |
-|                       | \footnotesize Due Diligence |              0 |                  0 |
-|                       | \footnotesize Jury                   |              0 |                  0 |
-|-----------------------+-------------------------------+----------------+--------------------|
-|                       | \footnotesize\textsc{total} (週) |           0.00 |              31.00 |
-|                       | \footnotesize\textsc{total}  (月) |           0.00 |               7.75 |
+| Stage        | Task                   | Spent | Remaining |
+|--------------+------------------------+-------+-----------|
+| Pre-research |                        |     4 |         4 |
+|--------------+------------------------+-------+-----------|
+|              | Choice: Subject-matter |     0 |         0 |
+|              | First Sifting          |     0 |         2 |
+|              | Draft: Research Proposal |     0 |         0 |
+|--------------+------------------------+-------+-----------|
+| Research     |                        |    14 |        14 |
+|--------------+------------------------+-------+-----------|
+|              | Research Proposal |     0 |         0 |
+|              | Research Plan          |     0 |         0 |
+|              | Research               |     0 |         0 |
+| Pre-writing  |                        |     0 |         0 |
+|              | Draft: Writing Proposal |     0 |         0 |
+|              | Draft: Writing Plan    |     0 |         0 |
+|              | Additional Research    |     0 |         0 |
+|--------------+------------------------+-------+-----------|
+| Writing      |                        |    11 |        11 |
+|--------------+------------------------+-------+-----------|
+|              | Exploratory Draft      |     0 |         0 |
+|              | Writing Proposal |     0 |         0 |
+|              | Writing Plan           |     0 |         0 |
+|              | First Draft            |     0 |         0 |
+|              | Last Draft             |     0 |         0 |
+|              | Final Version          |     0 |         0 |
+|--------------+------------------------+-------+-----------|
+| Jury         |                        |     2 |         2 |
+|--------------+------------------------+-------+-----------|
+|              | Adviser Agreement      |     0 |         0 |
+|              | Fine Tuning            |     0 |         1 |
+|              | Printing               |     0 |         0 |
+|              | Due Diligence          |     0 |         0 |
+|              | Jury                   |     0 |         0 |
+|--------------+------------------------+-------+-----------|
+|              | Total (週)             |  0.00 |     31.00 |
+|              | Total  (月)            |  0.00 |      7.75 |
 #+TBLFM: @>>$3..@>>$>=vsum(@2..@-2);%.2f::@>$3..@>$>=(vsum(@2..@-2))/4;%.2f::@<<$>>..@>>>$>>=$>-$>>>;%.0f::
 
-Since the table is coded with Emacs' ~org-mode~, it is interactive. Just type
-the number of weeks spent in each stage under the ~Spent~ column, and the
-rest will adjust (with ~C-c C-c~) to display the remaining weeks and months.
+# Since the table is coded with Emacs' ~org-mode~, it is interactive. Just type
+# the number of weeks spent in each stage under the ~Spent~ column, and the
+# rest will adjust (with ~C-c C-c~) to display the remaining weeks and months.
 * 無 Administration                                                                                 :Administration: 
 :PROPERTIES:
 :CATEGORY: Administration   
@@ -154,8 +149,7 @@ SCHEDULED: <2019-05-16 Thu>
 SCHEDULED: <2019-05-24 Fri>
 ** Délibération
 SCHEDULED: <2019-06-05 Wed>
-
-* 無 Stages du mémoire                                                                              :Étapes:
+* 無 Stages :Étapes:
 :PROPERTIES:
 :CATEGORY: Étapes  
 :END:
@@ -166,7 +160,7 @@ DEADLINE: <2018-10-31 Wed>
 SCHEDULED: <2018-10-28 Sun>
 - [X] Key texts.
 - [X] Key authors.
-*** 完 Draft: Framework
+*** 完 Draft: Research Proposal 
 DEADLINE: <2018-10-31 Wed>
 - [X] Main question.
 - [X] Scope and interrelations.
@@ -178,7 +172,7 @@ DEADLINE: <2018-10-31 Wed>
 - [X] Check with adviser.
 ** 中 Research Stage
 SCHEDULED: <2018-11-01 Thu>
-*** 中 Framework
+*** 中 Research Proposal
 - [ ] Main question.
 - [ ] Secondary questions.
 - [ ] Scope and interrelations.
@@ -200,7 +194,7 @@ SCHEDULED: <2018-11-01 Thu>
   - [ ] Update list of key authors.
  - [ ] If necessary, update any component of the Framework.
 ** 待 Preparatory Writing Stage
-*** Draft: Outline
+*** Draft: Writing Proposal
 - [ ] Update Main Question.
 - [ ] Write the Directing Idea.
 - [ ] Write the Argument.
@@ -211,7 +205,7 @@ SCHEDULED: <2018-11-01 Thu>
 SCHEDULED: <2019-01-20 Sun>
 *** Exploratory Draft: Thesis
 - [ ] Check with thesis adviser.
-*** Outline
+*** Writing Proposal
 - [ ] Check with thesis adviser.
 - [ ] Check with selected readers.
 *** Writing Plan
@@ -242,7 +236,7 @@ SCHEDULED: <2019-01-20 Sun>
 *** Due Diligence: Jury
 *** Jury
 * 無 Lectures                                                                                       :Lectures: 
-** 無 [4/50] Key Text                                                                              :Key:
+** 無 [4/57] Key Text                                                                             :Key:
 :PROPERTIES:
 :CATEGORY: KeyText   
 :END:
@@ -273,7 +267,6 @@ SCHEDULED: <2019-01-20 Sun>
 [[file:master.org::Producing Reason]]
 *** 無 Heyck, The Organizational Revolution and the Human Sciences
 *** 次 Mirowski, Core Wars
-*** 無 Mirowski, Interaction and Market Structure
 *** 次 Mirowski, Machines that Buy to Machines that Sell
 *** 無 Sent, Behavioral Economics: How Psychology Made Its (Limited) Way Back Into Economics
 *** 次 Sent, Herbert A. Simon as a Cyborg Scientist
@@ -325,7 +318,15 @@ Probably good for writing the introduction.
 Recommended by Jean-Sébastien Lenfant for the Economics and Psychology class.
 *** 無 Simon, What Computers Mean for Man and Society
 *** 次 Simon, What is Industrial Democracy?
-** 無 [0/30] Important Text                                                                        :Important:
+*** 阻 Mayr, Authority, Liberty and Automatic Machinery in Early Modern Europe
+*** 阻 Schaffer, Babbage's Intelligence: Calculating Engines and the Factory System
+*** 阻 Schaffer, Enlightened Automata 
+*** 阻 Riskin, The Defecating Duck, or the Ambiguous Origins of Artificial Life 
+*** 阻 Thompson, Time, Work-Discipline, and Industrial Capitalism 
+*** 無 Rabinbach, The Utopias of Labor
+*** 無 Rabinbach, The Human Motor
+*** 無 Taylorism Transformed
+** 無 [0/33] Important Text                                                                       :Important:
 :PROPERTIES:
 :CATEGORY: ImportantText   
 :END:
@@ -378,6 +379,9 @@ Recommended by Jean-Sébastien Lenfant for the Economics and Psychology class.
     - [ ] Gode and Sunder Go Roboshoppin
     - [ ] Contingency, Irony, and Computation
 *** 無 Ando, On the Contributions of Herbert Simon to Economics
+*** 無 Mirowski, Interaction and Market Structure
+*** 阻 Campbell-Kelly, Computer: A History of the Information Machine
+*** 阻 Dasgupta, It Began with Babbage: The Genesis of Computer Science
 *** 無 Callon, Economization, part 1: Shifting Attention from the Economy towards Processes of Economization
 *** 無 Callon, Economization, part 2: A Research Programme for the Study of Markets
 *** 無 Dubarle, Vers la machine à gouverner
@@ -410,7 +414,7 @@ Cannot read it all; too lon
 *** 無 Simon, Programs as Factors of Production 
 *** 無 Simon,  Remebering John von Neumann
 *** 無 Simon, Whether Software Engineering Needs to Be Artificially Intelligent
-** 無 [0/15] Ancillary Text                                                                        :Ancillary:
+** 無 [0/12] Ancillary Text                                                                       :Ancillary:
 :PROPERTIES:
 :CATEGORY: AncillaryText   
 :END:
@@ -470,6 +474,7 @@ Cannot read it all; too lon
     - L'allégeance dans les réseaux d'entreprises
     - L'allégeance des multinationales aux États impériaux
   - [ ] Comment en sortir
+*** 阻 Morton, The Revolt Against Formalism in American Social Thought of the Twentieth Century
 *** 阻 [0/17] Mirowski, The Knowledge We Lost in Information
   - [ ] It's not Rational 
   - [ ] The Standard Narrative and the Bigger Picture
@@ -540,15 +545,11 @@ Cannot read it all; too lon
   - [ ] Weidman, An Anthropologist on TV: Ashley Montagu and the Biological
     Basis of Human Nature, 1945–1960 
   - [ ] Vicedo, Cold War Emotions: Mother Love and the War over Human Nature
-*** 阻 Campbell-Kelly, Computer: A History of the Information Machine
-*** 阻 Dasgupta, It Began with Babbage: The Genesis of Computer Science
 *** 阻 Dupuy, Aux origines des sciences cognitives
 *** 阻 Heyck, The Organizational Revolution and the Human Sciences
 *** 阻 Klaes, A Conceptual History of the Emergence of Bounded Rationality 
 *** 阻 Porter, The Cambridge History of Science: The Modern Social Sciences 
-*** 阻 Sent, Sent Simulating Simon Simulating Scientists 
-*** 阻 Sent, Simplifying Herbert Simon 
-** 無 [0/29] Boundary Text                                                                         :Boundary:
+** 無 [0/25] Boundary Text                                                                        :Boundary:
 :PROPERTIES:
 :CATEGORY: BoundaryText   
 :END:
@@ -604,33 +605,27 @@ SCHEDULED: <2018-11-05 Mon>
 *** 阻 Israel, La machina vivente: contre le visione meccanicistiche del uomo
 *** 阻 Koyré, Études d'histoire de la pensée scientifique
 *** 阻 Levy, La machine univers: Creation et culture informatique 
+*** 阻 Levy, Les théories de l'intelligence 
 *** 阻 MacKenzie, The Automation of Proof: A Historical and Sociological Explanation
-*** 阻 Mayr, Authority, Liberty and Automatic Machinery in Early Modern Europe
 *** 阻 Mikulark, ``Cybernetics and Marxism-Leninism'' in The Social Impact of Cybernetics, ed. Charles Dechert
 *** 阻 Mirowski, Against Mechanism
 *** 阻 Mirowski, More Heat than Light
 *** 阻 Mirowski, Natural Images in Economic Thought: Markets Read in Tooth and Claw
 *** 阻 Pickering, The Cybernetic Brain
 *** 阻 Purcell, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
-*** 阻 Riskin, The Defecating Duck, or the Ambiguous Origins of Artificial Life 
 *** 阻 Ross, Modernist Impulses in the Human Sciences, 1870-1930
 *** 阻 Ross, The Origins of American Social Science 
-*** 阻 Schaffer, Babbage's Intelligence: Calculating Engines and the Factory System
-*** 阻 Schaffer, Enlightened Automata 
-*** 阻 Thompson, Time, Work-Discipline, and Industrial Capitalism 
-* 無 [3/3] Adviser                                                                          :Directeur:
+* 無 [3/3] Advisor                                                                          :Directeur:
 :PROPERTIES:
 :CATEGORY: Directeur   
 :END:
 ** 完 Écrire cinq pages 
-DEADLINE: <2018-11-19 Mon>
 - Il faut avoir des intuitions.
 - Il faut prendre des notes pour avoir de l'ordre jusqu'à ce que l'on
-  puisse dire: «Mon projet est ceci et cela»
-- Il faut commencer à écrire. Sa permet d'être en échange en dialoguq
-  quelque chose voius.
-- En anglais, cela va. On peut convenir qu'à partir, on prend ud temps avec
-  chaque séance pour en dsicuter.
+  puisse dire: «Mon projet est ceci et cela». 
+- Il faut commencer à écrire. Sa permet d'être en dialogue avec les
+  matériaux.  
+- On peut écrire en anglais. 
 ** 完 Trouver une bibliographie de Simon
 La plus a jour sur Simon, pour choisir le corpus
 
