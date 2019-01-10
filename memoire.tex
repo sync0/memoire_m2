@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: lualatex
-\documentclass[version=last,draft=false,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrreprt}
+\documentclass[version=last,draft=true,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
@@ -67,11 +67,13 @@
 \setkomafont{sectioning}{\sffamily\mdseries}
 \setkomafont{caption}{\small}
 \setkomafont{captionlabel}{\sffamily\mdseries\scshape\lowercase}
+\setkomafont{part}{\HUGE\scshape\lowercase}
+\renewcommand*{\partformat}{}
+\renewcommand\partmarkformat{}
 \setkomafont{chapter}{\Huge\scshape\lowercase}
 \renewcommand{\raggedchapter}{\centering}
 \renewcommand*\chapterformat{\thechapter\autodot\par\enskip}
 \renewcommand*\chaptermarkformat{}
-\RedeclareSectionCommand[beforeskip=0pt,afterskip=8\baselineskip,innerskip=\baselineskip]{chapter}
 \setkomafont{section}{\Large\scshape\lowercase}
 \setkomafont{subsection}{\large}
 \renewcommand*{\subsubsectionformat}{\sffamily\mdseries\upshape \thesubsubsection\autodot\enskip}
@@ -114,7 +116,7 @@
 \begin{titlepage}
  \centering
 \begin{french}
- {\large Université Paris I Panthéon Sorbonne \par}
+ {\large \textsc{université paris i panthéon sorbonne} \par}
  \vspace{0.5\baselineskip}
  {\large \textsc{ufr} 02 : Sciences économiques  \par}
  \vspace{0.5\baselineskip}
@@ -129,12 +131,12 @@
 \begin{french}
  {\large Présenté et sountenu par : \par}
 \end{french}
- {\large Carlos Alberto Rivera Carreño \par}
+ {\Large Carlos Alberto Rivera Carreño \par}
  \vspace{1\baselineskip}
 \begin{french}
  {\large Directeur de mémoire : \par}
 \end{french}
- {\large Jean-Sébastien Lenfant \par}
+ {\Large Jean-Sébastien Lenfant \par}
 \end{titlepage}
 
 \pagestyle{empty}
@@ -144,6 +146,7 @@ L'Université Paris 1 Panthéon Sorbonne n'entend donner aucune approbation,
 ni désapprobation aux opinions émises dans ce mémoire ; elle doivent être
 considérées comme propres à leur auteur. 
 \end{french}
+\vfill
 
 \newpage
 \vspace*{\fill}
@@ -177,44 +180,55 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \newpage
 \tableofcontents 
 
+\frontmatter
 \pagestyle{plain}
+\chapter{Note aux lecteurs français} 
+\lipsum
+\chapter{Acknowledgements} 
+\lipsum
 
-\pagestyle{scrheadings}
+\chapter{Introduction} 
 
-\chapter{Introduction: The Computer as Management Technology}
-\label{sec:org1435d05}
 A story that although was present for a long time, seems today relegated to
 the confines of a few books on the history of computing. 
 
+De Prony's Tables
+
+Simon and Babbage
+
+Simon and Industrial Democracy
+
 \lipsum
+\mainmatter
+\pagestyle{scrheadings}
+\chapter{Introduction}
+\label{sec:org38f9efc}
 \section{De Prony's Tables}
-\label{sec:org3a51ca9}
-\lipsum
+\label{sec:org4c3c909}
 \section{Simon and Babbage}
-\label{sec:org9bb9bee}
-\lipsum
+\label{sec:org0413090}
 \section{Simon and Industrial Democracy}
-\label{sec:org0bd3b04}
-\lipsum
-\chapter{An History of the Concept of Labor}
-\label{sec:org91844f3}
+\label{sec:orgc8721e0}
+\chapter{A History of the Concept of Labor}
+\label{sec:orgfed6883}
 \section{From Political Economy to Mechanics}
-\label{sec:org3df3404}
+\label{sec:org0db3e41}
 \lipsum
 \chapter{Herbert Simon and the Thinking Machines}
-\label{sec:org3a09a0f}
+\label{sec:orgd0e89ee}
 \section{The Cold War and the Computer}
-\label{sec:org31b3eba}
+\label{sec:org6e81264}
 \lipsum
 \section{Artificial Intelligence}
-\label{sec:orgda032f3}
+\label{sec:org217d965}
 \lipsum
 \section{Administrative Behavior}
-\label{sec:org795bd18}
+\label{sec:org19668d2}
 \lipsum
-\chapter{Conclusion}
-\label{sec:orga14f065}
+
+\backmatter
+\chapter{Conclusion} 
 \lipsum
-\chapter{References}
-\label{sec:orgd134295}
+\chapter{References} 
+\lipsum
 \end{document}

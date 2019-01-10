@@ -14,7 +14,7 @@
 \begin{titlepage}
  \centering
 \begin{french}
- {\large \textsc{université paris I panthéon sorbonne} \par}
+ {\large \textsc{université paris i panthéon sorbonne} \par}
  \vspace{0.5\baselineskip}
  {\large \textsc{ufr} 02 : Sciences économiques  \par}
  \vspace{0.5\baselineskip}
@@ -44,6 +44,7 @@ L'Université Paris 1 Panthéon Sorbonne n'entend donner aucune approbation,
 ni désapprobation aux opinions émises dans ce mémoire ; elle doivent être
 considérées comme propres à leur auteur. 
 \end{french}
+\vfill
 
 \newpage
 \vspace*{\fill}
@@ -77,28 +78,39 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \newpage
 \tableofcontents 
 
-# \frontmatter
-\pagestyle{plain}
-# \chapter{Acknowledgements} 
-# \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
-
 # \chapter{Preface} 
 # \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 # \mainmatter
-\pagestyle{scrheadings}
 
-* Introduction: The Computer as Management Technology
+\frontmatter
+\pagestyle{plain}
+\chapter{Note aux lecteurs français} 
+\lipsum
+\chapter{Acknowledgements} 
+\lipsum
+# \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
+
+\chapter{Introduction} 
+# \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
+# \mainmatter
+
 A story that although was present for a long time, seems today relegated to
 the confines of a few books on the history of computing. 
 
+ De Prony's Tables
+
+ Simon and Babbage
+
+ Simon and Industrial Democracy
+
 \lipsum
+\mainmatter
+\pagestyle{scrheadings}
+* Introduction
 ** De Prony's Tables
-\lipsum
-** Simon and Babbage
-\lipsum
+**  Simon and Babbage
 ** Simon and Industrial Democracy
-\lipsum
-* An History of the Concept of Labor
+* A History of the Concept of Labor
 ** From Political Economy to Mechanics 
 \lipsum
 * Herbert Simon and the Thinking Machines
@@ -108,11 +120,13 @@ the confines of a few books on the history of computing.
 \lipsum
 ** Administrative Behavior
 \lipsum
-* Conclusion
+
+\backmatter
+\chapter{Conclusion} 
 \lipsum
-* References 
+\chapter{References} 
+\lipsum
 # \printbibliography[heading=none]
-# \newpage 
 * Settings                                   :noexport:ARCHIVE:
 #+STARTUP: indent nostars logdrawer showeverything
 ** LaTeX Export Settings
@@ -121,8 +135,8 @@ the confines of a few books on the history of computing.
 #+OPTIONS: \n:nil |:t ^:t f:t *:t ':t pro:nil H:5 timestamp:nil date:nil toc:nil
 #+OPTIONS: LaTeX:t pri:nil p:nil tags:nil todo:nil prop:nil d:nil
 # Use KOMA script classes instead of LaTeX's defaults
-#+LATEX_CLASS: scrreprt
-#+LATEX_CLASS_OPTIONS: [version=last,draft=false,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]
+#+LATEX_CLASS: sync0book
+#+LATEX_CLASS_OPTIONS: [version=last,draft=true,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]
 # Use LuaLaTeX instead of default export engine; this is a custom command. 
 #+LATEX_COMPILER: lualatex
 #+EXPORT_SELECT_TAGS: export
@@ -267,11 +281,11 @@ the confines of a few books on the history of computing.
 #+LATEX_HEADER: \setkomafont{captionlabel}{\sffamily\mdseries\scshape\lowercase}
 *** Part
 # Set font for 'part'. 
-# #+LATEX_HEADER: \setkomafont{part}{\HUGE\scshape\lowercase}
+#+LATEX_HEADER: \setkomafont{part}{\HUGE\scshape\lowercase}
 # Remove 'part' numbering from 'part' pages.
-# #+LATEX_HEADER: \renewcommand*{\partformat}{}
+#+LATEX_HEADER: \renewcommand*{\partformat}{}
 # Remove 'First Part', 'Second Part', etc.
-# #+LATEX_HEADER:\renewcommand\partmarkformat{}
+#+LATEX_HEADER:\renewcommand\partmarkformat{}
 *** Chapter 
 # Set font for 'chapter'. 
 #+LATEX_HEADER: \setkomafont{chapter}{\Huge\scshape\lowercase}
@@ -285,7 +299,7 @@ the confines of a few books on the history of computing.
 # Beware! A bug arises when '\RedeclareSectionCommand' appears after package
 # tocbasic or tocstyle.
 # #+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter} 
-#+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0pt,afterskip=8\baselineskip,innerskip=\baselineskip]{chapter} 
+# #+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0pt,afterskip=8\baselineskip,innerskip=\baselineskip]{chapter} 
 *** Section
 # Set font for 'section'.
 #+LATEX_HEADER: \setkomafont{section}{\Large\scshape\lowercase}
@@ -302,7 +316,7 @@ the confines of a few books on the history of computing.
 # Change TOC title to lowercase (needed for small caps). 
 #+LATEX_HEADER:\AtBeginDocument{\renewcaptionname{english}\contentsname{contents}}
 # Delete 'part' from TOC entry.
-# #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\sffamily\mdseries\scshape\lowercase{#2}}}
+# #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\large\sffamily\mdseries\scshape\lowercase{#2}}}
 # Set font for chapter entry.
 #+LATEX_HEADER: \addtokomafont{chapterentry}{\large\sffamily\mdseries\scshape\lowercase}
 # Customize table of contents. 
