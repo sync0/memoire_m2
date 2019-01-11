@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: lualatex
-\documentclass[version=last,draft=true,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=20mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
+\documentclass[version=last,draft=false,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=20mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
@@ -18,6 +18,9 @@
 \MakeOuterQuote{"}
 \MakeForeignQuote{french}{«}{»}
 \AtBeginEnvironment{quote}{\itshape}
+\usepackage[backend=biber,bibstyle=verbose,citestyle=verbose-trad1,doi=false,isbn=false,url=true]{biblatex}
+\addbibresource{~/Documents/mendeley/sync0_library.bib}
+\renewbibmacro*{date}{\printdate\iffieldundef{origyear}{}{\setunit*{\addspace}\printtext[parens]{\printorigdate}}}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
@@ -48,9 +51,8 @@
 \tikzset{main node/.style={circle,fill=gray!45,draw,minimum size=0.5cm,inner sep=0pt},}
 \usepackage{fontspec}
 \usepackage{unicode-math}
-\usepackage[oldstyle]{libertine}
+\usepackage[oldstyle,libertine]{libertine}
 \defaultfontfeatures{Scale=MatchLowercase}
-\newfontfamily\titlefamily[Scale=2]{Linux Biolinum O}
 \newcommand\HUGE{\fontsize{30}{33}\selectfont}
 \usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
@@ -60,33 +62,34 @@
 \cohead{\MakeLowercase{\headmark}}
 \ohead{\pagemark}
 \AfterTOCHead{\singlespacing}
-\setkomafont{labelinglabel}{\normalfont\sffamily\bfseries}
-\setkomafont{minisec}{\usekomafont{subsection}}
-\setkomafont{pagehead}{\normalfont\sffamily\mdseries\scshape}
+\setkomafont{labelinglabel}{\normalfont\bfseries}
+\setkomafont{minisec}{\usekomafont{section}}
+\setkomafont{pagehead}{\normalfont\mdseries\scshape}
 \setkomafont{pagenumber}{\large\rmfamily\upshape}
-\setkomafont{sectioning}{\sffamily\mdseries}
+\setkomafont{sectioning}{\mdseries}
 \setkomafont{caption}{\small}
-\setkomafont{captionlabel}{\sffamily\mdseries\scshape\lowercase}
+\setkomafont{captionlabel}{\mdseries\scshape\lowercase}
 \setkomafont{part}{\HUGE\scshape\lowercase}
 \renewcommand*{\partformat}{}
 \renewcommand\partmarkformat{}
-\setkomafont{chapter}{\Huge\scshape\lowercase}
+\setkomafont{chapter}{\huge\scshape\lowercase}
 \renewcommand{\raggedchapter}{\centering}
 \renewcommand*\chapterformat{\thechapter\autodot\par\enskip}
 \renewcommand*\chaptermarkformat{}
 \setkomafont{section}{\Large\scshape\lowercase}
 \setkomafont{subsection}{\large}
-\renewcommand*{\subsubsectionformat}{\sffamily\mdseries\upshape \thesubsubsection\autodot\enskip}
+\renewcommand*{\subsubsectionformat}{\mdseries\upshape \thesubsubsection\autodot\enskip}
 \setkomafont{subsubsection}{\large\itshape}
 \AtBeginDocument{\renewcaptionname{english}\contentsname{contents}}
-\addtokomafont{chapterentry}{\large\sffamily\mdseries\scshape\lowercase}
+\addtokomafont{chapterentry}{\mdseries\scshape\lowercase}
+\setkomafont{chapterentrypagenumber}{\normalfont}
 \usepackage{tocstyle}
 \settocfeature{raggedhook}{\raggedright}
 \selecttocstyleoption{tocgraduated}
 \usetocstyle{nopagecolumn}
-\newtcolorbox{note}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{lightgrey},title={#2},coltitle={black},fonttitle={\sffamily},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
-\newtcolorbox{question}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{darkgrey},title={#2},coltitle={black},fonttitle={\sffamily},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
-\newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{midgrey},title={#2},coltitle={black},fonttitle={\sffamily\bfseries},fontupper={\normalfont},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
+\newtcolorbox{note}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{lightgrey},title={#2},coltitle={black},fonttitle={},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+\newtcolorbox{question}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{darkgrey},title={#2},coltitle={black},fonttitle={},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+\newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{midgrey},title={#2},coltitle={black},fonttitle={\bfseries},fontupper={\normalfont},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
 \renewcommand*\labelitemi{\adforn{33}}
 \renewcommand*\labelitemii{\adforn{73}}
 \renewcommand*\labelitemiii{\adforn{73}}
@@ -125,8 +128,8 @@
  {\large 2018-2019 \par}
 \end{french}
  \vspace{6\baselineskip}
- {\huge\sffamily \textsc{vers la machine à gouverner}  \par}
- {\Large\sffamily Herbert Simon and the Impossibility of a Democratic Computer \par}
+ {\huge \textsc{vers la machine à gouverner}  \par}
+ {\Large Herbert Simon and the Impossibility of a Democratic Computer \par}
 \vfill
 \begin{french}
  {\large Présenté et sountenu par : \par}
@@ -173,7 +176,7 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \newpage 
 \begin{FlushRight}
 \begin{italian}
-\textit{Per il professore Giorgio Israel. \newline Benché i nostri destini fossero uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Sono arrivato in ritardo, come la coscienza della nostra generazione. \linebreak I campi sanguinanti sono così prossimi, \linebreak ma nessuno vede niente. \linebreak Nell'era dell'informazione, diventiamo più ignoranti. \linebreak Questo è il prezzo del biglietto d'ingresso. \linebreak Grazie a Lei l'ho capito, maestro.}
+\textit{Per il professore Giorgio Israel. \newline Benché i nostri destini fossero uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Sono arrivato in ritardo, come la coscienza della nostra generazione. \linebreak Nell'era dell'informazione, diventiamo più ignoranti. \linebreak Grazie a Lei l'ho capito, maestro.}
 \end{italian}
 \end{FlushRight}
 
@@ -200,49 +203,60 @@ Dans le deuxième chapitre je raconte \ldots
 \chapter{Acknowledgements} 
 \lipsum
 
-\chapter{Introduction: Science and Analogy} 
+\chapter{Abbreviations} 
+\section*{Archival Sources}
+
+\begin{labeling}[:]{HSMC} 
+\item[HSCM] Herbert Simon Papers, Carnegie Mellon University Archives.
+\end{labeling}
+
+\chapter[Preface]{Preface:\\ Science and Analogy} 
 
 \lipsum
 \mainmatter
 \pagestyle{scrheadings}
 \chapter{Did Adam Smith Invent the Computer?}
-\label{sec:org8a25a05}
+\label{sec:org761dd6b}
 A story that although was present for a long time, seems today relegated to
 the confines of a few books on the history of computing. 
 \section{What is a Computer?}
-\label{sec:orgf2f096f}
+\label{sec:org2edf4ac}
 \lipsum
 \section{Simon and Babbage}
-\label{sec:orgf0e314b}
+\label{sec:orga12f388}
 \lipsum
 \section{De Prony's Tables}
-\label{sec:orgaa8cd25}
+\label{sec:orgf1ed8fe}
 \lipsum
 \chapter{Economy of the Body; Economy of the Machine}
-\label{sec:orgdcd6fe4}
+\label{sec:org8d9fdbf}
 \section{Does Labor Exist?}
-\label{sec:org6356e5b}
+\label{sec:orgda5341e}
 \section{Society and Nature}
-\label{sec:org6623df1}
+\label{sec:org4b418a9}
 \section{Historicizing Efficiency}
-\label{sec:org67fb676}
+\label{sec:org307abdb}
 \chapter{UnDemocratic Machines}
-\label{sec:org944142c}
+\label{sec:org8d9952f}
 \section{What is Industrial Democracy?}
-\label{sec:org128bc0e}
+\label{sec:orgee7432d}
 I want to talk about economic democracy as Alain Supiot does.  
+
+Sample entry.\footcite{babbage1832}
+
+Sample entry.\footcite{simon2001b}
 
 \lipsum
 \section{Administrative Behavior}
-\label{sec:orgd75fe7d}
+\label{sec:org55fe848}
 \lipsum
 \section{Artificial Intelligence}
-\label{sec:orgba34f0f}
+\label{sec:org725f443}
 \lipsum
 
 \backmatter
 \chapter{Conclusion} 
 \lipsum
 \chapter{References} 
-\lipsum
+\printbibliography[heading=none]
 \end{document}

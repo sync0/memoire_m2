@@ -23,8 +23,8 @@
  {\large 2018-2019 \par}
 \end{french}
  \vspace{6\baselineskip}
- {\huge\sffamily \textsc{vers la machine à gouverner}  \par}
- {\Large\sffamily Herbert Simon and the Impossibility of a Democratic Computer \par}
+ {\huge \textsc{vers la machine à gouverner}  \par}
+ {\Large Herbert Simon and the Impossibility of a Democratic Computer \par}
 \vfill
 \begin{french}
  {\large Présenté et sountenu par : \par}
@@ -71,7 +71,7 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \newpage 
 \begin{FlushRight}
 \begin{italian}
-\textit{Per il professore Giorgio Israel. \newline Benché i nostri destini fossero uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Sono arrivato in ritardo, come la coscienza della nostra generazione. \linebreak I campi sanguinanti sono così prossimi, \linebreak ma nessuno vede niente. \linebreak Nell'era dell'informazione, diventiamo più ignoranti. \linebreak Questo è il prezzo del biglietto d'ingresso. \linebreak Grazie a Lei l'ho capito, maestro.}
+\textit{Per il professore Giorgio Israel. \newline Benché i nostri destini fossero uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Sono arrivato in ritardo, come la coscienza della nostra generazione. \linebreak Nell'era dell'informazione, diventiamo più ignoranti. \linebreak Grazie a Lei l'ho capito, maestro.}
 \end{italian}
 \end{FlushRight}
 
@@ -103,7 +103,14 @@ Dans le deuxième chapitre je raconte \ldots
 \lipsum
 # \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 
-\chapter{Introduction: Science and Analogy} 
+\chapter{Abbreviations} 
+\section*{Archival Sources}
+
+\begin{labeling}[:]{HSMC} 
+\item[HSCM] Herbert Simon Papers, Carnegie Mellon University Archives.
+\end{labeling}
+
+\chapter[Preface]{Preface:\\ Science and Analogy} 
 # \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 # \mainmatter
 
@@ -127,6 +134,10 @@ the confines of a few books on the history of computing.
 ** What is Industrial Democracy?
 I want to talk about economic democracy as Alain Supiot does.  
 
+Sample entry.footcite:babbage1832
+
+Sample entry.footcite:simon2001b
+
 \lipsum
 ** Administrative Behavior
 \lipsum
@@ -137,8 +148,7 @@ I want to talk about economic democracy as Alain Supiot does.
 \chapter{Conclusion} 
 \lipsum
 \chapter{References} 
-\lipsum
-# \printbibliography[heading=none]
+\printbibliography[heading=none]
 * Settings                                   :noexport:ARCHIVE:
 #+STARTUP: indent nostars logdrawer showeverything
 ** LaTeX Export Settings
@@ -148,7 +158,7 @@ I want to talk about economic democracy as Alain Supiot does.
 #+OPTIONS: LaTeX:t pri:nil p:nil tags:nil todo:nil prop:nil d:nil
 # Use KOMA script classes instead of LaTeX's defaults
 #+LATEX_CLASS: sync0book
-#+LATEX_CLASS_OPTIONS: [version=last,draft=true,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=20mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]
+#+LATEX_CLASS_OPTIONS: [version=last,draft=true,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=20mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]
 # Use LuaLaTeX instead of default export engine; this is a custom command. 
 #+LATEX_COMPILER: lualatex
 #+EXPORT_SELECT_TAGS: export
@@ -173,12 +183,12 @@ I want to talk about economic democracy as Alain Supiot does.
 #+LATEX_HEADER:\AtBeginEnvironment{quote}{\itshape}
 *** Biblatex
 # Configure bibliography management with biblatex. 
-# #+LATEX_HEADER: \usepackage[backend=biber,bibstyle=verbose,citestyle=verbose-trad1,doi=false,isbn=false,url=true]{biblatex}
+#+LATEX_HEADER: \usepackage[backend=biber,bibstyle=verbose,citestyle=verbose-trad1,doi=false,isbn=false,url=true]{biblatex}
 # Set bibliography file. 
-# #+LATEX_HEADER: \addbibresource{~/Documents/mendeley/sync0_library.bib}
+#+LATEX_HEADER: \addbibresource{~/Documents/mendeley/sync0_library.bib}
 # Print the original date of publication (only works for verbose-style
 # bibliographies).
-# #+LATEX_HEADER: \renewbibmacro*{date}{\printdate\iffieldundef{origyear}{}{\setunit*{\addspace}\printtext[parens]{\printorigdate}}}
+#+LATEX_HEADER: \renewbibmacro*{date}{\printdate\iffieldundef{origyear}{}{\setunit*{\addspace}\printtext[parens]{\printorigdate}}}
 *** Ams
 # Settings for typesetting math, symbols, and formulae. 
 #+LATEX_HEADER: \usepackage{amsmath}
@@ -250,13 +260,15 @@ I want to talk about economic democracy as Alain Supiot does.
 #+LATEX_HEADER: \usepackage{fontspec}
 #+LATEX_HEADER: \usepackage{unicode-math}
 # Use Linux Libertine and Linux Biolinum fonts.
-#+LATEX_HEADER: \usepackage[oldstyle]{libertine}
+#+LATEX_HEADER: \usepackage[oldstyle,libertine]{libertine}
 # Have all fonts use the same x-height.
 #+LATEX_HEADER: \defaultfontfeatures{Scale=MatchLowercase}
 # Typeset math using Linux Libertine. 
 #+LATEX_HEADER :\setmathfont[Scale=MatchUppercase]{libertinusmath-regular.otf}
+#+LATEX_HEADER :\setmonofont[Scale=MatchUppercase]{Myriad Pro}
+# #+LATEX_HEADER :\setmonofont{Myriad Pro}
 # Define a font family for titles.
-#+LATEX_HEADER:\newfontfamily\titlefamily[Scale=2]{Linux Biolinum O}
+# #+LATEX_HEADER:\newfontfamily\titlefamily[Scale=2]{Linux Biolinum O}
 # Define the '\HUGE' macro. 
 #+LATEX_HEADER:\newcommand\HUGE{\fontsize{30}{33}\selectfont}
 ** Page Design
@@ -277,20 +289,20 @@ I want to talk about economic democracy as Alain Supiot does.
 # Set different line spacing after table of contents
 #+LATEX_HEADER: \AfterTOCHead{\singlespacing}
 # Set font for 'labeling' environment.
-#+LATEX_HEADER: \setkomafont{labelinglabel}{\normalfont\sffamily\bfseries}
+#+LATEX_HEADER: \setkomafont{labelinglabel}{\normalfont\bfseries}
 # Set font for 'minisec' titles.
-#+LATEX_HEADER: \setkomafont{minisec}{\usekomafont{subsection}}
+#+LATEX_HEADER: \setkomafont{minisec}{\usekomafont{section}}
 # Set font for page headings. 
-#+LATEX_HEADER: \setkomafont{pagehead}{\normalfont\sffamily\mdseries\scshape}
+#+LATEX_HEADER: \setkomafont{pagehead}{\normalfont\mdseries\scshape}
 # Set font for page numbers.
 #+LATEX_HEADER: \setkomafont{pagenumber}{\large\rmfamily\upshape}
 # Set font for sectioning numbers.
-#+LATEX_HEADER:\setkomafont{sectioning}{\sffamily\mdseries}
+#+LATEX_HEADER:\setkomafont{sectioning}{\mdseries}
 *** Figures
 # Set font for caption text.
 #+LATEX_HEADER: \setkomafont{caption}{\small}
 # Set font for caption titles.
-#+LATEX_HEADER: \setkomafont{captionlabel}{\sffamily\mdseries\scshape\lowercase}
+#+LATEX_HEADER: \setkomafont{captionlabel}{\mdseries\scshape\lowercase}
 *** Part
 # Set font for 'part'. 
 #+LATEX_HEADER: \setkomafont{part}{\HUGE\scshape\lowercase}
@@ -300,7 +312,7 @@ I want to talk about economic democracy as Alain Supiot does.
 #+LATEX_HEADER:\renewcommand\partmarkformat{}
 *** Chapter 
 # Set font for 'chapter'. 
-#+LATEX_HEADER: \setkomafont{chapter}{\Huge\scshape\lowercase}
+#+LATEX_HEADER: \setkomafont{chapter}{\huge\scshape\lowercase}
 # Center chapter title.
 #+LATEX_HEADER:\renewcommand{\raggedchapter}{\centering}
 # Add vertical space between chapter number and chapter title.
@@ -320,7 +332,7 @@ I want to talk about economic democracy as Alain Supiot does.
 #+LATEX_HEADER: \setkomafont{subsection}{\large}
 *** Subsubsection
 # Change subsubsection number font independently of its title.
-#+LATEX_HEADER: \renewcommand*{\subsubsectionformat}{\sffamily\mdseries\upshape \thesubsubsection\autodot\enskip}
+#+LATEX_HEADER: \renewcommand*{\subsubsectionformat}{\mdseries\upshape \thesubsubsection\autodot\enskip}
 # Set font for 'subsubsection'.
 #+LATEX_HEADER: \setkomafont{subsubsection}{\large\itshape}
 *** Table of Contents
@@ -328,9 +340,10 @@ I want to talk about economic democracy as Alain Supiot does.
 # Change TOC title to lowercase (needed for small caps). 
 #+LATEX_HEADER:\AtBeginDocument{\renewcaptionname{english}\contentsname{contents}}
 # Delete 'part' from TOC entry.
-# #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\large\sffamily\mdseries\scshape\lowercase{#2}}}
+# #+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\large\mdseries\scshape\lowercase{#2}}}
 # Set font for chapter entry.
-#+LATEX_HEADER: \addtokomafont{chapterentry}{\large\sffamily\mdseries\scshape\lowercase}
+#+LATEX_HEADER: \addtokomafont{chapterentry}{\mdseries\scshape\lowercase}
+#+LATEX_HEADER: \setkomafont{chapterentrypagenumber}{\normalfont}
 # Customize table of contents. 
 #+LATEX_HEADER: \usepackage{tocstyle}
 #+LATEX_HEADER: \settocfeature{raggedhook}{\raggedright}
@@ -347,11 +360,11 @@ I want to talk about economic democracy as Alain Supiot does.
 # #+LATEX_HEADER: \newcommand{\annotation}[1]{\marginline{\small\itshape #1}}
 *** Environments 
 # #+LATEX_HEADER: \newenvironment{box}{\begin{center}\begin{tabular}{|p{0.9\textwidth}|}\hline\\}{\\\\\hline\end{tabular}\end{center}}
-# #+LATEX_HEADER: \newenvironment{note}{\par\noindent {\sffamily\bfseries Comment:}}{\medskip}
+# #+LATEX_HEADER: \newenvironment{note}{\par\noindent {\bfseries Comment:}}{\medskip}
 # #+LATEX_HEADER: \newenvironment{note}{\bigskip\setlength\arrayrulewidth{4pt}\begin{tabular}{|m{0.8\columnwidth}}}{\end{tabular}\bigskip}
-#+LATEX_HEADER:\newtcolorbox{note}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{lightgrey},title={#2},coltitle={black},fonttitle={\sffamily},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
-#+LATEX_HEADER:\newtcolorbox{question}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{darkgrey},title={#2},coltitle={black},fonttitle={\sffamily},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
-#+LATEX_HEADER:\newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{midgrey},title={#2},coltitle={black},fonttitle={\sffamily\bfseries},fontupper={\normalfont},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
+#+LATEX_HEADER:\newtcolorbox{note}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{lightgrey},title={#2},coltitle={black},fonttitle={},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+#+LATEX_HEADER:\newtcolorbox{question}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{darkgrey},title={#2},coltitle={black},fonttitle={},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+#+LATEX_HEADER:\newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{midgrey},title={#2},coltitle={black},fonttitle={\bfseries},fontupper={\normalfont},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
 # #+LATEX_HEADER:\newtcolorbox{note}{colback=block-gray,grow to right by=-10mm,grow to left by=-10mm,boxrule=0pt,boxsep=0pt,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{gray}}
 # #+LATEX_HEADER: \newenvironment{note}{\setlength\arrayrulewidth{4pt}\extracolsep{\quad}\begin{tabular}{|p{0.3\textwidth}}}{\end{tabular}}
 *** Itemize symbols
