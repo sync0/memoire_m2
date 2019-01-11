@@ -84,41 +84,53 @@ Copyright \textcopyright \textsc{sync0} 2018.
 
 \frontmatter
 \pagestyle{plain}
-\chapter{Note aux lecteurs français} 
+\chapter{Note aux lecteurs francophones} 
+Le fait que ce mémoire fut préparé au sein d'une université française
+m'oblige moralement à \ldots aux lecteurs francophones. 
+
+Ce mémoire traite de la relation entre l'histoire du concept de travail,
+l'histoire de l'orinateur, l'histoire de l'intelligence, et la pensée de
+Herbert Simon. J'essai de replacer l'histoire de travail au sein des
+questions sur  l'application des analogies entre les sciences sociales et
+les sciences naturelles.  
+
+Dans le premier chapitre je raconte \ldots 
+
+Dans le deuxième chapitre je raconte \ldots 
+
 \lipsum
 \chapter{Acknowledgements} 
 \lipsum
 # \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 
-\chapter{Introduction} 
+\chapter{Introduction: Science and Analogy} 
 # \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 # \mainmatter
-
-A story that although was present for a long time, seems today relegated to
-the confines of a few books on the history of computing. 
-
- De Prony's Tables
-
- Simon and Babbage
-
- Simon and Industrial Democracy
 
 \lipsum
 \mainmatter
 \pagestyle{scrheadings}
-* Introduction
-** De Prony's Tables
+* Did Adam Smith Invent the Computer?
+A story that although was present for a long time, seems today relegated to
+the confines of a few books on the history of computing. 
+** What is a Computer? 
+\lipsum
 **  Simon and Babbage
-** Simon and Industrial Democracy
-* A History of the Concept of Labor
-** From Political Economy to Mechanics 
 \lipsum
-* Herbert Simon and the Thinking Machines
-** The Cold War and the Computer
+** De Prony's Tables
 \lipsum
-** Artificial Intelligence
+* Economy of the Body; Economy of the Machine
+** Does Labor Exist?
+** Society and Nature 
+** Historicizing Efficiency 
+* UnDemocratic Machines
+** What is Industrial Democracy?
+I want to talk about economic democracy as Alain Supiot does.  
+
 \lipsum
 ** Administrative Behavior
+\lipsum
+** Artificial Intelligence
 \lipsum
 
 \backmatter
@@ -136,7 +148,7 @@ the confines of a few books on the history of computing.
 #+OPTIONS: LaTeX:t pri:nil p:nil tags:nil todo:nil prop:nil d:nil
 # Use KOMA script classes instead of LaTeX's defaults
 #+LATEX_CLASS: sync0book
-#+LATEX_CLASS_OPTIONS: [version=last,draft=true,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=15mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]
+#+LATEX_CLASS_OPTIONS: [version=last,draft=true,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=20mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]
 # Use LuaLaTeX instead of default export engine; this is a custom command. 
 #+LATEX_COMPILER: lualatex
 #+EXPORT_SELECT_TAGS: export
