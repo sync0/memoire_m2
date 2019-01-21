@@ -1,181 +1,130 @@
-#   This program is free software: you can redistribute it and/or modify
-#   it under the terms of the GNU General Public License as published by
-#   the Free Software Foundation, either version 3 of the License, or
-#   (at your option) any later version.
-
-#   This program is distributed in the hope that it will be useful,
-#   but WITHOUT ANY WARRANTY; without even the implied warranty of
-#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-#   GNU General Public License for more details.
-
-#   You should have received a copy of the GNU General Public License
-#   along with this program. If not, see <http://www.gnu.org/licenses/>.
-\begin{titlepage}
- \centering
- \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
- \vspace{4\baselineskip}
- {\huge\sffamily\titlefamily \textsc{forschungsnotizbuch}\par}
- \vspace{4\baselineskip}
- {\LARGE \textsc{mii} $\cdot$ \textsc{i}\par}
- \vspace{4\baselineskip}
- {\Large \textsc{sync0}\par}
- \vfill
-\end{titlepage}
-
-\vspace*{\fill}
-\noindent
-\includegraphics[height=1.5cm]{gpl3.png}\par
-\vspace{1\baselineskip}
-This text is free: you can redistribute it and/or modify it
-under the terms of the \textsc{gnu} General Public License as published by
-the Free Software Foundation, either version 3 of the License or any later
-version.
-
-This text is distributed in the hope that it will be useful, but \textbf{without
-any warranty}; without even the implied warranty of \textbf{merchantability or 
-fitness for a particular purpose}. See the \textsc{gnu} General 
-Public License for more details.
-
-You should have received a copy of the \textsc{gnu} General Public License along
-with this text. If not, see \url{http://www.gnu.org/licenses/}.
-
-\vspace{1\baselineskip}
-\noindent
-Copyright \textcopyright \textsc{sync0} 2018. 
-# \clearpage 
-\thispagestyle{empty}
-
-\newpage
-\tableofcontents 
-\pagestyle{empty}
-
-\newpage
-\pagestyle{scrheadings}
-* Preparatory Research Stage                                                                       :noexport:
-** \ordinalnum{1} Week 
-*** 17/09/2018 
-*** 18/09/2018 
-*** 19/09/2018 
-*** 20/09/2018 
-*** 21/09/2018 
-*** 22/09/2018 
-*** 23/09/2018 
-** \ordinalnum{2} Week 
-*** 24/09/2018 
-*** 25/09/2018 
-*** 26/09/2018 
-*** 27/09/2018 
-*** 28/09/2018 
-*** 29/09/2018 
-*** 30/09/2018 
-** \ordinalnum{3} Week 
-*** 01/10/2018 
-*** 02/10/2018 
-*** 03/10/2018 
-*** 04/10/2018 
-*** 05/10/2018 
-*** 06/10/2018 
-*** 07/10/2018 
-** \ordinalnum{4} Week 
-*** 08/10/2018 
-*** 09/10/2018 
-*** 10/10/2018 
-*** 11/10/2018 
-*** 12/10/2018 
-*** 13/10/2018 
-*** 14/10/2018 
-** \ordinalnum{5} Week 
-*** 15/10/2018 
-*** 16/10/2018 
-*** 17/10/2018 
-*** 18/10/2018 
-*** 19/10/2018 
-*** 20/10/2018 
-*** 21/10/2018 
-** \ordinalnum{6} Week 
-*** 22/10/2018 
-*** 23/10/2018 
-*** 24/10/2018 
-*** 25/10/2018 
-*** 26/10/2018 
-*** 27/10/2018  
-*** 28/10/2018 
-** \ordinalnum{7} Week - Toussaint 
-*** 29/10/2018 
-*** 30/10/2018 
-*** 31/10/2018 
-*** 01/11/2018 
-*** 02/11/2018 
-*** 03/11/2018 
-*** 04/11/2018 
-** \ordinalnum{8} Week 
-*** 05/11/2018 
-*** 06/11/2018 
-*** 07/11/2018 
-*** 08/11/2018 
-*** 09/11/2018 
-*** 10/11/2018 
-*** 11/11/2018 
-** \ordinalnum{9} Week 
-*** 12/11/2018 
-*** 13/11/2018 
-*** 14/11/2018 
-*** 15/11/2018 
-*** 16/11/2018 
-*** 17/11/2018 
-*** 18/11/2018 
-** \ordinalnum{10} Week 
-*** 19/11/2018 
-*** 20/11/2018 
-*** 21/11/2018 
-*** 22/11/2018 
-*** 23/11/2018 
-*** 24/11/2018 
-*** 25/11/2018 
-** \ordinalnum{11} Week 
-*** 26/11/2018 
-*** 27/11/2018 
-*** 28/11/2018 
-*** 29/11/2018 
-*** 30/11/2018 
-*** 01/12/2018 
-*** 02/12/2018 
-** \ordinalnum{12} Week 
-*** 03/12/2018 
-*** 04/12/2018 
-*** 05/12/2018 
-*** 06/12/2018 
-*** 07/12/2018 
-*** 08/12/2018 
-*** 09/12/2018 
-** \ordinalnum{13} Week 
-*** 10/12/2018 
-*** 11/12/2018 
-*** 12/12/2018 
-*** 13/12/2018 
-*** 14/12/2018 
-*** 15/12/2018 
-*** 16/12/2018 
-** \ordinalnum{14} Week 
-*** 17/12/2018 
-*** 18/12/2018 
-*** 19/12/2018 
-*** 20/12/2018 
-*** 21/12/2018 
-*** 22/12/2018 
-*** 23/12/2018 
-* Research Stage
-** \ordinalnum{15} Week - Noël                                                                     :noexport:
-*** 24/12/2018 
-*** 25/12/2018 
-*** 26/12/2018 
-*** 27/12/2018 
-*** 28/12/2018 
-*** 29/12/2018 
-*** 30/12/2018 
-** \ordinalnum{16} Week - Noël 
-*** 31/12/2018                                                                                     :noexport:
-*** 01/01/2019 
+#+STARTUP: indent nostars logdrawer showeverything
+#+SETUPFILE: "./notes_settings.org" 
+#+INCLUDE: "./license.tex" export latex
+#+INCLUDE: "./notes_title_pages.tex" export latex
+* 取 \ordinalnum{1} Week 
+** 17/09/2018 
+** 18/09/2018 
+** 19/09/2018 
+** 20/09/2018 
+** 21/09/2018 
+** 22/09/2018 
+** 23/09/2018 
+* 取 \ordinalnum{2} Week 
+** 24/09/2018 
+** 25/09/2018 
+** 26/09/2018 
+** 27/09/2018 
+** 28/09/2018 
+** 29/09/2018 
+** 30/09/2018 
+* 取 \ordinalnum{3} Week 
+** 01/10/2018 
+** 02/10/2018 
+** 03/10/2018 
+** 04/10/2018 
+** 05/10/2018 
+** 06/10/2018 
+** 07/10/2018 
+* 取 \ordinalnum{4} Week 
+** 08/10/2018 
+** 09/10/2018 
+** 10/10/2018 
+** 11/10/2018 
+** 12/10/2018 
+** 13/10/2018 
+** 14/10/2018 
+* 取 \ordinalnum{5} Week 
+** 15/10/2018 
+** 16/10/2018 
+** 17/10/2018 
+** 18/10/2018 
+** 19/10/2018 
+** 20/10/2018 
+** 21/10/2018 
+* 取 \ordinalnum{6} Week 
+** 22/10/2018 
+** 23/10/2018 
+** 24/10/2018 
+** 25/10/2018 
+** 26/10/2018 
+** 27/10/2018  
+** 28/10/2018 
+* 取 \ordinalnum{7} Week - Toussaint 
+** 29/10/2018 
+** 30/10/2018 
+** 31/10/2018 
+** 01/11/2018 
+** 02/11/2018 
+** 03/11/2018 
+** 04/11/2018 
+* 取 \ordinalnum{8} Week 
+** 05/11/2018 
+** 06/11/2018 
+** 07/11/2018 
+** 08/11/2018 
+** 09/11/2018 
+** 10/11/2018 
+** 11/11/2018 
+* 取 \ordinalnum{9} Week 
+** 12/11/2018 
+** 13/11/2018 
+** 14/11/2018 
+** 15/11/2018 
+** 16/11/2018 
+** 17/11/2018 
+** 18/11/2018 
+* 取 \ordinalnum{10} Week 
+** 19/11/2018 
+** 20/11/2018 
+** 21/11/2018 
+** 22/11/2018 
+** 23/11/2018 
+** 24/11/2018 
+** 25/11/2018 
+* 取 \ordinalnum{11} Week 
+** 26/11/2018 
+** 27/11/2018 
+** 28/11/2018 
+** 29/11/2018 
+** 30/11/2018 
+** 01/12/2018 
+** 02/12/2018 
+* 取 \ordinalnum{12} Week 
+** 03/12/2018 
+** 04/12/2018 
+** 05/12/2018 
+** 06/12/2018 
+** 07/12/2018 
+** 08/12/2018 
+** 09/12/2018 
+* 取 \ordinalnum{13} Week 
+** 10/12/2018 
+** 11/12/2018 
+** 12/12/2018 
+** 13/12/2018 
+** 14/12/2018 
+** 15/12/2018 
+** 16/12/2018 
+* 取 \ordinalnum{14} Week 
+** 17/12/2018 
+** 18/12/2018 
+** 19/12/2018 
+** 20/12/2018 
+** 21/12/2018 
+** 22/12/2018 
+** 23/12/2018 
+* 取 \ordinalnum{15} Week - Noël                                                                  :noexport:
+** 24/12/2018 
+** 25/12/2018 
+** 26/12/2018 
+** 27/12/2018 
+** 28/12/2018 
+** 29/12/2018 
+** 30/12/2018 
+* 完 \ordinalnum{16} Week - Noël 
+** 取 31/12/2018                                                                                  
+** 01/01/2019 
  I am thinking about how to structure the thesis to limit the reading list
  to a manageable expression.  
 
@@ -324,10 +273,10 @@ Cosmopolitan Civil Socities Research Centre and the Australian Working
 Group on Financialisation at the University of Sydney (24-\ordinalnum{25}
 July 2012). 
 #+END_QUOTE
-*** 取 02/01/2019 
-*** 取 03/01/2019 
-*** 取 04/01/2019 
-*** 05/01/2019 
+** 取 02/01/2019 
+** 取 03/01/2019 
+** 取 04/01/2019 
+** 05/01/2019 
 The corpus must not be delimited arbitrarily. Instead, the research
 question must be thinkered with to reflect upon a corpus. In other words,
 the research question will be the one to determine the corpus. I must
@@ -338,12 +287,12 @@ I believe that some way of combining history of ideas (Rabinbach),
 sociology of science (Vatin, Meda, Castel), and the work of Herbert Simon
 would be nice for a PhD thesis but not for a Master's thesis. For now, we
 should reduce our ambitions and \ldots
-*** 06/01/2019 
-** \ordinalnum{17} Week 
-*** 07/01/2019 
-*** 08/01/2019 
-*** 09/01/2019 
-*** 10/01/2019 
+** 取 06/01/2019 
+* 完 \ordinalnum{17} Week 
+** 取 07/01/2019 
+** 取 08/01/2019 
+** 取 09/01/2019 
+** 10/01/2019 
 Taking into accoun the little time left for research, I have decided to
 stick to Mendeley for managing pdfs, and instead use a custom bibliography
 file to use BibLaTeX's 'origdate' field. As of today, none of BibLaTeX's
@@ -369,398 +318,252 @@ could accomplish the same thing, I prefer having all that in one neat
 package that includes pdf highlighting, pdf search, etc. Until a better
 alternative arises, Mendeley stays, if only for its powerful organizing
 tools.
-*** 11/01/2019 
-*** 12/01/2019 
-*** 13/01/2019 
-** \ordinalnum{18} Week 
-*** 14/01/2019 
-*** 15/01/2019 
-*** 16/01/2019 
-*** 17/01/2019 
-*** 18/01/2019 
-*** 19/01/2019 
-*** 20/01/2019 
-** \ordinalnum{19} Week 
-*** 21/01/2019 
-*** 22/01/2019 
-*** 23/01/2019 
-*** 24/01/2019 
-*** 25/01/2019 
-*** 26/01/2019 
-*** 27/01/2019 
-** \ordinalnum{20} Week 
-*** 28/01/2019 
-*** 29/01/2019 
-*** 30/01/2019 
-*** 31/01/2019 
-*** 01/02/2019 
-*** 02/02/2019 
-*** 03/02/2019 
-** \ordinalnum{21} Week 
-*** 04/02/2019 
-*** 05/02/2019 
-*** 06/02/2019 
-*** 07/02/2019 
-*** 08/02/2019 
-*** 09/02/2019 
-*** 10/02/2019 
-** \ordinalnum{22} Week 
-*** 11/02/2019 
-*** 12/02/2019 
-*** 13/02/2019 
-*** 14/02/2019 
-*** 15/02/2019 
-*** 16/02/2019 
-*** 17/02/2019 
-** \ordinalnum{23} Week 
-*** 18/02/2019 
-*** 19/02/2019 
-*** 20/02/2019 
-*** 21/02/2019 
-*** 22/02/2019 
-*** 23/02/2019 
-*** 24/02/2019 
-* Preparatory Writing Stage
-** \ordinalnum{24} Week 
-*** 25/02/2019 
-*** 26/02/2019 
-*** 27/02/2019 
-*** 28/02/2019 
-*** 01/03/2019 
-*** 02/03/2019 
-*** 03/03/2019 
-** \ordinalnum{25} Week - Hiver
-*** 04/03/2019 
-*** 05/03/2019 
-*** 06/03/2019 
-*** 07/03/2019 
-*** 08/03/2019 
-*** 09/03/2019 
-*** 10/03/2019 
-** \ordinalnum{26} Week 
-*** 11/03/2019 
-*** 12/03/2019 
-*** 13/03/2019 
-*** 14/03/2019 
-*** 15/03/2019 
-*** 16/03/2019 
-*** 17/03/2019 
-** \ordinalnum{27} Week 
-*** 18/03/2019 
-*** 19/03/2019 
-*** 20/03/2019 
-*** 21/03/2019 
-*** 22/03/2019 
-*** 23/03/2019 
-*** 24/03/2019 
-** \ordinalnum{28} Week 
-*** 25/03/2019 
-*** 26/03/2019 
-*** 27/03/2019 
-*** 28/03/2019 
-*** 29/03/2019 
-*** 30/03/2019 
-*** 31/03/2019 
-** \ordinalnum{29} Week 
-*** 01/04/2019 
-*** 02/04/2019 
-*** 03/04/2019 
-*** 04/04/2019 
-*** 05/04/2019 
-*** 06/04/2019 
-*** 07/04/2019 
-** \ordinalnum{30} Week 
-*** 08/04/2019 
-*** 09/04/2019 
-*** 10/04/2019 
-*** 11/04/2019 
-*** 12/04/2019 
-*** 13/04/2019 
-*** 14/04/2019 
-* Writing Stage
-** \ordinalnum{31} Week 
-*** 15/04/2019 
-*** 16/04/2019 
-*** 17/04/2019 
-*** 18/04/2019 
-*** 19/04/2019 
-*** 20/04/2019 
-*** 21/04/2019 
-** \ordinalnum{32} Week 
-*** 22/04/2019 
-*** 23/04/2019 
-*** 24/04/2019 
-*** 25/04/2019 
-*** 26/04/2019 
-*** 27/04/2019 
-*** 28/04/2019 
-** \ordinalnum{33} Week 
-*** 29/04/2019 
-*** 30/04/2019 
-*** 01/05/2019 
-*** 02/05/2019 
-*** 03/05/2019 
-*** 04/05/2019 
-*** 05/05/2019 
-** \ordinalnum{34} Week 
-*** 06/05/2019 
-*** 07/05/2019 
-*** 08/05/2019 
-*** 09/05/2019 
-*** 10/05/2019 
-*** 11/05/2019 
-*** 12/05/2019 
-* Jury Stage
-** \ordinalnum{35} Week 
-*** 12/05/2019 
-*** 13/05/2019 
-*** 14/05/2019 
-*** 15/05/2019 
-*** 16/05/2019 
-*** 17/05/2019 
-*** 18/05/2019 
-*** 19/05/2019 
-* Settings  :noexport:ARCHIVE:
- #+STARTUP: noindent nostars logdrawer showeverything
-** LaTeX Export Settings
-# Typesetting language. 
-#+LANGUAGE: en
-# Org mode export settings.
-#+OPTIONS: \n:nil |:t ^:t f:t *:t ':t pro:nil H:5 timestamp:nil date:nil toc:nil
-#+OPTIONS: LaTeX:t pri:t p:nil tags:nil todo:nil 
-# Use KOMA script classes instead of LaTeX defaults
-#+LATEX_CLASS: scrbook
-#+LATEX_CLASS_OPTIONS: [paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=10,BCOR=15mm,DIV=13,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]
-# Use XeTeX instead of default export engine; this is a custom command. 
-#+LATEX_COMPILER: lualatex
-#+EXPORT_SELECT_TAGS: export
-# Set tag for non-exportable org sub-trees (useful for comments). 
-#+EXPORT_EXCLUDE_TAGS: noexport
-** LaTeX Packages
-*** Languages
- #+LATEX_HEADER: \usepackage{polyglossia} 
-# Set main typesetting language.
- #+LATEX_HEADER: \setmainlanguage{english} 
-# Set secondary typesetting languages.
- #+LATEX_HEADER: \setotherlanguages{french} 
-# Configure typesetting of Chinese, Japanese, and Korean.
- # #+LATEX_HEADER: \usepackage{xeCJK}
-# Set font to typeset Korean. 
- # #+LATEX_HEADER: \setCJKmainfont{Baekmuk Batang}
-*** Csquotes
-# Set threshold for turning an in-text quote into a block quote.
- #+LATEX_HEADER: \usepackage[french=guillemets,thresholdtype=words,threshold=3]{csquotes}
-# Set symbol to automatically recognize quotes. 
-#+LATEX_HEADER: \MakeAutoQuote{«}{»}
-# Italicize all quotes.
-#+LATEX_HEADER:\AtBeginEnvironment{quote}{\itshape}
-*** Biblatex
-# Configure bibliography management with biblatex. 
-# #+LATEX_HEADER: \usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=true]{biblatex}
-# Set bibliography file. 
-# #+LATEX_HEADER: \addbibresource{~/Documents/mendeley/library.bib}
-*** Ams
-# Settings for typesetting math, symbols, and formulae. 
-#+LATEX_HEADER: \usepackage{amsmath}
-#+LATEX_HEADER: \usepackage{amsthm}
-#+LATEX_HEADER: \usepackage{amssymb}
-# Cross out symbols and arrows with \centernot command. 
-#+LATEX_HEADER: \usepackage{centernot}
-*** Hyperref
-# Allow hyperlinks. 
-#+LATEX_HEADER: \usepackage{hyperref}
-#+LATEX_HEADER: \hypersetup{colorlinks,urlcolor=blue,linkcolor=blue,citecolor=red,filecolor=black}
-*** Typography
-# Prevent ugly typesetting in two-column mode.
- #+LATEX_HEADER: \usepackage{balance}
-# Improve typesetting of tables.
-#+LATEX_HEADER: \usepackage{array}
-#+LATEX_HEADER: \usepackage{tabularx}
-#+LATEX_HEADER: \usepackage{booktabs}
-#+LATEX_HEADER:\usepackage[most]{tcolorbox}
-# Adds macros to typeset 1st, 2nd, etc., in different languages.
-#+LATEX_HEADER: \usepackage[french]{fmtcount} 
-#+LATEX_HEADER: \fmtcountsetoptions{french=france}
-# Set interline spacing.
- #+LATEX_HEADER: \usepackage[singlespacing]{setspace}
-# Alternative to 'fmtcount' without multilingual support. 
- #+LATEX_HEADER: \usepackage[super]{nth}
-# Configure microtypographic settings. 
-#+LATEX_HEADER: \usepackage[protrusion=true,tracking=true]{microtype}
-# Configure language-specific microtype settings. 
-# #+LATEX_HEADER: \microtypecontext{kerning=french}
-# Correctly typeset ragged text
-#+LATEX_HEADER: \usepackage{ragged2e}
-# Prevent widows (dangling lines at the top or bottom of pages).
-#+LATEX_HEADER: \usepackage[all]{nowidow}
-# Correctly typeset lists with 'itemize' environment.
-#+LATEX_HEADER: \usepackage{enumitem}
-# Beautify the page with typographic symbols.
-#+LATEX_HEADER: \usepackage{adforn}
-# #+LATEX_HEADER: \usepackage[object=vectorian]{pgfornament}
-# Correctly typeset floats.
-#+LATEX_HEADER: \usepackage{float}
-*** Graphics
-# Allow colors. 
-#+LATEX_HEADER: \usepackage{xcolor}
-# Allow colored tables.
-# #+LATEX_HEADER: \usepackage{colortbl}
-# Allow graphics.
- #+LATEX_HEADER: \usepackage{graphicx}
-# Choose graphics folder.
- #+LATEX_HEADER: \graphicspath{ {/home/sync0/Dropbox/paris_1/} }
-# Allow footnotes in tables.
-# #+LATEX_HEADER: \usepackage{tablefootnote}
-# Color code blocks.
-# #+LATEX_HEADER: \usepackage{minted}
-# Insert dummy text (typesetting aid).
-# #+LATEX_HEADER: \usepackage{lipsum}
-*** TiKz
-# Add TiKz graphics in LaTeX.
-# #+LATEX_HEADER:\usepackage{tikz}
-# #+LATEX_HEADER:\usetikzlibrary{calc,trees,positioning,arrows,chains,shapes.geometric,decorations.pathreplacing,decorations.pathmorphing,shapes,matrix,shapes.symbols}
-# #+LATEX_HEADER:\tikzset{>=stealth',punktchain/.style={rectangle,rounded corners,draw=black, very thick,text width=10em,minimum height=3em,text centered,on chain},line/.style={draw, thick, <-},element/.style={tape,top color=white,bottom color=blue!50!black!60!,minimum width=8em,draw=blue!40!black!90, very thick,text width=10em,minimum height=3.5em,text centered,on chain},every join/.style={->, thick,shorten >=1pt},decoration={brace},tuborg/.style={decorate},tubnode/.style={midway, right=2pt},}
-*** Editing
-# Add TODO margin notes.
-# #+LATEX_HEADER: \usepackage[textsize=scriptsize, linecolor=soothing_green, backgroundcolor=soothing_green]{todonotes}
-** Fonts
-# Configure XeTeX fonts.
-# #+LATEX_HEADER: \usepackage{xunicode}
-#+LATEX_HEADER: \usepackage{fontspec}
-# #+LATEX_HEADER: \usepackage{xltxtra}
-#+LATEX_HEADER: \usepackage{unicode-math}
-# Use Linux Libertine and Linux Biolinum fonts.
-#+LATEX_HEADER: \usepackage[oldstyle]{libertine}
-# Have all fonts use the same x-height.
-#+LATEX_HEADER: \defaultfontfeatures{Scale=MatchLowercase}
-# Typeset math using Linux Libertine. 
-#+LATEX_HEADER :\setmathfont[Scale=MatchUppercase]{libertinusmath-regular.otf}
-# Define a font family for titles.
-#+LATEX_HEADER:\newfontfamily\titlefamily[Scale=2]{Linux Biolinum O}
-# Define the '\HUGE' macro. 
-#+LATEX_HEADER:\newcommand\HUGE{\fontsize{30}{30}\selectfont}
-** Page Design
-# Customize page design.
-#+LATEX_HEADER:\usepackage{scrlayer-scrpage}
-#+LATEX_HEADER:\pagestyle{scrheadings}
-#+LATEX_HEADER:\clearscrheadfoot
-# Set 'part' as left and 'chapter' as right page headings.  
-#+LATEX_HEADER:\automark[chapter]{part}
-# Center page headings.
-#+LATEX_HEADER:\chead{\MakeLowercase{\headmark}} 
-# Place page numbers in the outer heading.
-#+LATEX_HEADER:\ohead{\pagemark} 
-** Typographic settings
-# Set different line spacing after table of contents
-#+LATEX_HEADER: \AfterTOCHead{\singlespacing}
-# Set font for 'labeling' environment.
-#+LATEX_HEADER: \setkomafont{labelinglabel}{\normalfont\sffamily\bfseries}
-# Set font for 'minisec' titles.
-#+LATEX_HEADER: \setkomafont{minisec}{\usekomafont{subsection}}
-# Set font for page headings. 
-#+LATEX_HEADER: \setkomafont{pagehead}{\normalfont\sffamily\mdseries\scshape}
-# Set font for page numbers.
-#+LATEX_HEADER: \setkomafont{pagenumber}{\large\rmfamily\upshape}
-# Set font for sectioning numbers.
-#+LATEX_HEADER:\setkomafont{sectioning}{\sffamily\mdseries}
-*** Figures
-# Set font for caption text.
-#+LATEX_HEADER: \setkomafont{caption}{\small}
-# Set font for caption titles.
-#+LATEX_HEADER: \setkomafont{captionlabel}{\sffamily\mdseries\scshape\lowercase}
-*** Dictum
-# Configure KOMA script 'dictum' environment
-# #+LATEX_HEADER: \renewcommand*{\dictumwidth}{.8\textwidth}
-# #+LATEX_HEADER: \renewcommand*{\raggeddictum}{\centering}
-# #+LATEX_HEADER: \renewcommand*{\raggeddictumtext}{\centering}
-# Set font for KOMA script 'dictum' environment
-# #+LATEX_HEADER: \setkomafont{dictum}{\large\rmfamily}
-*** Part
-# Set font for 'part'. 
-#+LATEX_HEADER: \setkomafont{part}{\HUGE\scshape\lowercase}
-# Remove 'part' numbering from 'part' pages.
-#+LATEX_HEADER: \renewcommand*{\partformat}{}
-# Remove 'First Part', 'Second Part', etc.
-#+LATEX_HEADER:\renewcommand\partmarkformat{}
-*** Chapter 
-# Set font for 'chapter'. 
-#+LATEX_HEADER: \setkomafont{chapter}{\Huge\scshape\lowercase}
-# Center chapter title.
-#+LATEX_HEADER:\renewcommand{\raggedchapter}{\centering}
-# Remove chapter numbering. 
-#+LATEX_HEADER:\renewcommand*\chapterformat{\thechapter\autodot\par\enskip}
-# Remove chapter numbering from chapter mark (heading). 
-#+LATEX_HEADER:\renewcommand*\chaptermarkformat{}
-# Increase vertical space between chapter and text body.
-# Beware! A bug arises when '\RedeclareSectionCommand' appears after package
-# tocbasic or tocstyle.
-#+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0pt,afterskip=8\baselineskip,innerskip=\baselineskip]{chapter} 
-*** Section
-# Set font for 'section'.
-#+LATEX_HEADER: \setkomafont{section}{\large\scshape\lowercase}
-*** Subsection
-# Set font for 'subsection'.
-#+LATEX_HEADER: \setkomafont{subsection}{\large}
-*** Subsubsection
-# Change subsubsection number font independently of its title.
-#+LATEX_HEADER: \renewcommand*{\subsubsectionformat}{\sffamily\mdseries\upshape \thesubsubsection\autodot\enskip}
-# Set font for 'subsubsection'.
-#+LATEX_HEADER: \setkomafont{subsubsection}{\large\itshape}
-*** Table of Contents
-# Set fonts for table of contents.
-# Change TOC title to lowercase (needed for small caps). 
-#+LATEX_HEADER:\AtBeginDocument{\renewcaptionname{english}\contentsname{contents}}
-# Delete 'part' from TOC entry.
-#+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\rmfamily\mdseries\scshape\lowercase{#2}}}
-# Set font for chapter entry.
-#+LATEX_HEADER: \addtokomafont{chapterentry}{\normalsize\sffamily\bfseries}
-# Customize table of contents. 
-#+LATEX_HEADER: \usepackage{tocstyle}
-#+LATEX_HEADER: \settocfeature{raggedhook}{\raggedright}
-#+LATEX_HEADER: \selecttocstyleoption{tocgraduated}
-# Remove dots. 
-#+LATEX_HEADER: \usetocstyle{nopagecolumn}
-# Set two-column table of contents. 
-#+LATEX_HEADER: \unsettoc{toc}{onecolumn}
-*** Code blocks
-# Set fonts used in code blocks (requires 'minted' package).
-# #+LATEX_HEADER:\usemintedstyle{borland}
-** User-defined elements
-*** Environments
-#+LATEX_HEADER:\newtcolorbox{note}{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{gray}}
-#+LATEX_HEADER:\newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{gray},title={#2},coltitle={black},fonttitle={\sffamily\bfseries},fontupper={\normalfont},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
-*** Itemize symbols
- # Use 'adforn' symbols instead of 'itemize' symbols. 
- #+LATEX_HEADER:\renewcommand*\labelitemi{\adforn{33}}
- #+LATEX_HEADER:\renewcommand*\labelitemii{\adforn{73}}
- #+LATEX_HEADER:\renewcommand*\labelitemiii{\adforn{73}}
- #+LATEX_HEADER:\renewcommand*\labelitemiv{\adforn{73}}
- # Reduce indent of 'itemize' items. 
- # #+LATEX_HEADER:\setlist[itemize]{leftmargin=*}
-*** Colors
-# Define color for hyperlinks. 
-#+LATEX_HEADER:\definecolor{bibleblue}{HTML}{00339a}
-# Define color for TODO notes. 
-#+LATEX_HEADER: \definecolor{soothing_green}{HTML}{E1F7DB}
-*** Mathematics
-# Define custom environments for amsmath. 
-#+LATEX_HEADER:\theoremstyle{definition}
-#+LATEX_HEADER:\newtheorem{lecture}{Lecture}
-#+LATEX_HEADER:\newtheorem*{lecture*}{Lecture}
-#+LATEX_HEADER:\newtheorem{problem}{Problème}
-#+LATEX_HEADER:\newtheorem*{problem*}{Problème}
-#+LATEX_HEADER:\newtheorem{interpretation}{Interpretation}
-#+LATEX_HEADER:\newtheorem*{interpretation*}{Interpretation}
-# Define '\notimplies' macro. Requires 'centernot' package.  
-#+LATEX_HEADER:\newcommand{\notimplies}{\centernot\implies}
-** Coda
-# Limit numbering to parts, chapters, sections, etc.
-#+LATEX_HEADER: \setcounter{secnumdepth}{\partnumdepth}
-# Limits table of contents entries. 
-#+LATEX_HEADER: \setcounter{tocdepth}{1}
-# Recalculate type area; required for spacing two-column pages correctly.
-#+LATEX_HEADER: \recalctypearea
-# Set spacing of 'itemize' items.
-# #+LATEX_HEADER: \setlist[1]{itemsep=\parskip}
-# Set separation between columns for two-column pages.
-#+LATEX_HEADER: \setlength{\columnsep}{0.5cm}
+** 取 11/01/2019 
+** 取 12/01/2019 
+** 取 13/01/2019 
+* 中 \ordinalnum{18} Week 
+** 取 14/01/2019 
+** 取 15/01/2019 
+** 16/01/2019 
+I feel that centering the thesis around Herbert Simon sort of forces the
+argument in unnatural ways. The past few days, I have almost finished
+creating the snippets to speed up collecting bibliographic data. It seems
+to me that it is not very efficient to collect absolutely everything in
+BibTeX format: Even with current technology, it still takes too much time
+to classify everything. 
+
+The strategy for the meantime is as follows: To prevent spending too much
+time reading primary sources with only a tenous connection to the argument,
+we have to identify a /feiulle de route/ to guide our approach to the primary
+sources. That is, to avoid spending weeks perusing archival material, we
+let a connoisseur of the archive guide us to the relevant primary sources.
+We consult the primary sources, we extract what we need, and only then,
+should something be missing, we go back to the archives. Otherwise, one
+risks trying to reinvent the computer a second time. The whole point of
+scholarly research is to build upon the shoulders of giants. In this point,
+I disagree profoundly with the advice of two professors against approaching
+primary sources from secondary sources: They are wrong in thinking that
+doing so /colors/ one's perspective on the primary sources to the point where
+developing an original reading is made more difficult. It is necessary to
+consult the secondary sources /first/, in order to check whether one's
+hunches   about a particular point of view have been explored in the
+literature already. Only by knowing /that,/ can one have an original point of
+view. Otherwise, the risk is too high of ignoring an important primary
+source that has been already studied. Briefly, attack secondary sources
+first; then, go for primary sources! 
+
+​Regarding the actual thesis work, I had originally planned several planning
+stages before undertaking actual writing, but this approach seems laughably
+unpractical. Rather, I already finished the actual Emacs org mode file to
+use for writing the thesis. The typesetting and the title pages are all
+complete. Now, we can focus for the most part in writing \ldots more or
+less. There are a few BibLaTeX macros I haven't coded, but I will code them
+as I go. 
+
+Regarding the subject matter, I am reorienting the whole edifice towards
+the reading that Simon makes of Babbage, and the reading Babbage makes of
+Prony. I am thinking about the difference between several levels: What the
+actions and texts of these authors represented for the people at the time,
+that is to say, how people living at the time, including the author
+himself, interpreted the significance of their actions (works, texts,
+etc.). The other level is how other people \ldots one could call them
+commentators, have interpreted these actions later on, because it is
+usually the views of famous commentators that becomes the standard way of
+interpreting (one could even say /reading/) the event. Thus, in order to
+evaluate an event, we must be aware of these three dimensions: how the
+authors interpreted his own actions, how the people at the time of the
+author interpreted them, and how the commentators have successively
+interpreted the event. This questioning will in fact open the way for our
+own interpretation. 
+
+Regarding, M. Prony, his contribution is well known, and it is still known
+in circles dedicated to the history of computing and the history of
+mathematics. So, in the first part, I could, in fact, list the different
+readings of de Prony's project, to try to differentiate how it has been
+interpreted by Prony himself, by living people at the time, by Babbage, and
+by other scholars. Of course, the idea is to focus on the interpretation
+that Babbage makes of the significance of the project. And then, we can use
+this, to discuss the interpretation that Simon makes of Babbage. In other
+words, we could just discuss the texts where Simon discusses Babbage's
+project to glance at what his interpretation was. But, we must be careful
+to avoid focusing too much on issues on interpretation because the whole
+point of the thesis is not to simply discuss interpretations of this one
+event in post-revolutionary France; the whole point is to discuss these
+interpretations in the context of thought on work and the organization of
+work. 
+
+Essentially, my goal with the thesis is to open the way to rethink the
+place, the importance, and the conceptualization of work within economics,
+all in the context of the transformation of labor in the 21st century,
+which will be shaped by ICTs. What I want to discuss is that ICTs transform
+labor not just because they suddenly appeared, and there's lots of them
+today. I want to claim that they have been shaped by particular conceptions
+of what labor is, and they in turn now shape what labor will be. But, the
+point is not to encourage a technological determinism /a la/ Marshall
+McLuhan. The idea is to claim that technical objects can embody certain
+conceptions, but changing conceptions can also transform technological
+objects. 
+
+In the case of the computer, what would it be like to interact with the
+computer, as if it was a conversation? What would it be like to interact
+with a computer democratically? 
+
+On a different note, this is some idea I drafted while on the \textsc{rer} today: 
+
+#+BEGIN_QUOTE
+How Can the history of the computer clarify the transformation of labor in
+the 21st century? Can this history help us understand the way the
+relationship between artificial intelligence and the changes it portends
+over work? Could an understanding of this history clarify the way to
+question the definition of what work should be and the way it shoube
+evaluated in the 21st century?
+
+With this thesis I would like to \ldots 
+
+In the first part of the thesis, I will discuss and retell the history of
+the origins of the computer in political economy and the engineering
+mentality. 
+
+In the second part of the thesis, I will discuss the \ldots 
+#+END_QUOTE
+** 17/01/2019 
+** 18/01/2019 
+** 19/01/2019 
+** 20/01/2019 
+* 無 \ordinalnum{19} Week 
+** 21/01/2019 
+** 22/01/2019 
+** 23/01/2019 
+** 24/01/2019 
+** 25/01/2019 
+** 26/01/2019 
+** 27/01/2019 
+* \ordinalnum{20} Week 
+** 28/01/2019 
+** 29/01/2019 
+** 30/01/2019 
+** 31/01/2019 
+** 01/02/2019 
+** 02/02/2019 
+** 03/02/2019 
+* \ordinalnum{21} Week 
+** 04/02/2019 
+** 05/02/2019 
+** 06/02/2019 
+** 07/02/2019 
+** 08/02/2019 
+** 09/02/2019 
+** 10/02/2019 
+* \ordinalnum{22} Week 
+** 11/02/2019 
+** 12/02/2019 
+** 13/02/2019 
+** 14/02/2019 
+** 15/02/2019 
+** 16/02/2019 
+** 17/02/2019 
+* \ordinalnum{23} Week 
+** 18/02/2019 
+** 19/02/2019 
+** 20/02/2019 
+** 21/02/2019 
+** 22/02/2019 
+** 23/02/2019 
+** 24/02/2019 
+* \ordinalnum{24} Week 
+** 25/02/2019 
+** 26/02/2019 
+** 27/02/2019 
+** 28/02/2019 
+** 01/03/2019 
+** 02/03/2019 
+** 03/03/2019 
+* \ordinalnum{25} Week - Hiver
+** 04/03/2019 
+** 05/03/2019 
+** 06/03/2019 
+** 07/03/2019 
+** 08/03/2019 
+** 09/03/2019 
+** 10/03/2019 
+* \ordinalnum{26} Week 
+** 11/03/2019 
+** 12/03/2019 
+** 13/03/2019 
+** 14/03/2019 
+** 15/03/2019 
+** 16/03/2019 
+** 17/03/2019 
+* \ordinalnum{27} Week 
+** 18/03/2019 
+** 19/03/2019 
+** 20/03/2019 
+** 21/03/2019 
+** 22/03/2019 
+** 23/03/2019 
+** 24/03/2019 
+* \ordinalnum{28} Week 
+** 25/03/2019 
+** 26/03/2019 
+** 27/03/2019 
+** 28/03/2019 
+** 29/03/2019 
+** 30/03/2019 
+** 31/03/2019 
+* \ordinalnum{29} Week 
+** 01/04/2019 
+** 02/04/2019 
+** 03/04/2019 
+** 04/04/2019 
+** 05/04/2019 
+** 06/04/2019 
+** 07/04/2019 
+* \ordinalnum{30} Week 
+** 08/04/2019 
+** 09/04/2019 
+** 10/04/2019 
+** 11/04/2019 
+** 12/04/2019 
+** 13/04/2019 
+** 14/04/2019 
+* \ordinalnum{31} Week 
+** 15/04/2019 
+** 16/04/2019 
+** 17/04/2019 
+** 18/04/2019 
+** 19/04/2019 
+** 20/04/2019 
+** 21/04/2019 
+* \ordinalnum{32} Week 
+** 22/04/2019 
+** 23/04/2019 
+** 24/04/2019 
+** 25/04/2019 
+** 26/04/2019 
+** 27/04/2019 
+** 28/04/2019 
+* \ordinalnum{33} Week 
+** 29/04/2019 
+** 30/04/2019 
+** 01/05/2019 
+** 02/05/2019 
+** 03/05/2019 
+** 04/05/2019 
+** 05/05/2019 
+* \ordinalnum{34} Week 
+** 06/05/2019 
+** 07/05/2019 
+** 08/05/2019 
+** 09/05/2019 
+** 10/05/2019 
+** 11/05/2019 
+** 12/05/2019 
+* \ordinalnum{35} Week 
+** 12/05/2019 
+** 13/05/2019 
+** 14/05/2019 
+** 15/05/2019 
+** 16/05/2019 
+** 17/05/2019 
+** 18/05/2019 
+** 19/05/2019 

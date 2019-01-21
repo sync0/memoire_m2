@@ -15,26 +15,27 @@
 % \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
  \vspace{4\baselineskip}
 \begin{french}
- {\large Université Paris I Panthéon Sorbonne \par}
- {\large \textsc{ufr} 02 : Sciences économiques  \par}
- {\normalsize Master 2 : Économie et sciences humaines \par}
- {\normalsize 2018 \par}
+ {\Large Université Paris I Panthéon Sorbonne \par}
+ {\Large \textsc{ufr} 02 : Sciences économiques  \par}
+ {\large Master 2 : Économie et sciences humaines \par}
+ {\large 2018-2019 \par}
 \end{french}
  \vspace{2\baselineskip}
- {\huge The Quest for the Governing Machine \par}
- {\large The Rationality of Governance and the Governance of Irrationality \par}
+ {\huge Vers la machine à gouverner  \par}
+ {\Large Herbert Simon and the Impossibility of a Democratic Computer \par}
 \vspace*{\fill}
 \begin{french}
- {\normalsize Présenté et sountenu par : \par}
+ {\large Présenté et sountenu par : \par}
 \end{french}
- {\normalsize \textsc{carlos alberto rivera carreño}\par}
+ {\large \textsc{carlos alberto rivera carreño}\par}
  \vspace{1\baselineskip}
 \begin{french}
- {\normalsize Directeur de mémoire : \par}
+ {\large Directeur de mémoire : \par}
 \end{french}
- {\normalsize \textsc{jean sébastien lenfant}\par}
+ {\large \textsc{jean-sébastien lenfant}\par}
 \end{titlepage}
 
+\onecolumn
 \pagestyle{empty}
 
 \begin{french}
@@ -48,7 +49,6 @@ considérées comme propres à leur auteur.
 \noindent
 \includegraphics[height=1.5cm]{gpl3.png}\par
 \vspace{1\baselineskip}
-\begin{english}
 This text is free: you can redistribute it and/or modify it
 under the terms of the \textsc{gnu} General Public License as published by
 the Free Software Foundation, either version 3 of the License or any later
@@ -65,72 +65,33 @@ with this text. If not, see \url{http://www.gnu.org/licenses/}.
 \vspace{1\baselineskip}
 \noindent
 Copyright \textcopyright \textsc{sync0} 2018. 
-\end{english}
 
 \newpage 
 # \vspace*{\fill}
 \begin{FlushRight}
-\begin{spanish}
-\textit{Para una lectora lejana.}
-\end{spanish}
+\begin{italian}
+% \textit{Para una lectora lejana.}
+% \textit{Per il professore Giorgio Israel. \newline Mi dispiace, ho mancato il nostro incontro. \linebreak Sono in ritardo, come la coscienza della nostra generazione. \linebreak I campi sanguinano. Tutti lo sanno, ma a nessuno importa.}
+% \textit{Per il professore Giorgio Israel. \newline Benché i nostri destini fossero uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Sono arrivato in ritardo, come la coscienza della nostra generazione. \linebreak I campi sanguinanti sono così prossimi \linebreak che le gocce accarezzerebbero gli occhi. \linebreak Eppure, nessuno vede niente. \linebreak Tante informazione, ma così poca conoscenza. \linebreak Anche le lacrime non bastano per addolcire i cuori. \linebreak Nel fratempo, riposa in pace, maestro.}
+\textit{Per il professore Giorgio Israel. \newline Benché i nostri destini fossero uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Sono arrivato in ritardo, come la coscienza della nostra generazione. \linebreak I campi sanguinanti sono così prossimi, \linebreak ma nessuno vede niente. \linebreak Nell'era dell'informazione, diventiamo più ignoranti. \linebreak Questo è il prezzo del biglietto d'ingresso. \linebreak Grazie a Lei l'ho capito, maestro.}
+\end{italian}
 \end{FlushRight}
 
 \newpage
 \tableofcontents 
 
 \frontmatter
+\twocolumn
 \pagestyle{plain}
-\chapter{Acknowledgements} 
-# \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
-\lipsum
-
-\chapter{Preface} 
+# \chapter{Acknowledgements} 
 # \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 
-Even when applying different techniques of interpretation to texts, I have
-tried to understand how the circumstances of their production could inform
-their interpretation. Even just for the sake of consistency, shouldn't I
-apply the same standard to this Master's thesis? Shouldn't I provide the
-reader with the tools, the context, etc. that informed this research?
-
-Pace Barthes, the author of these words is very alive. Knowing the tragedy
-of my country, one might ask me: Why do I wield the pen, as the Colombian
-fields bleed? Why not wield the sword? Or, perhaps, why not wield both?
-This text was written, certainly, to satisfy an earthly requirement: to
-obtain a Master's degree. But beyond that, what is the interest of writing
-for me?
-
-Although this thesis is not a political pamphlet, it is grounded in
-political perplexities. To the recule of the state, who not only does not
-want to fund nor organize vast sections of economic activities, my
-generations witnesses a strange mix of ``innovation'',
-``entrepreneurship'', and . If the political Left, of my parent's
-generation had an iron faith in the working class and the peasants to
-change society, today's politically dissafected youth has all hopes in
-private enterprise to solve the evils of the world.
-
-As Oscar Wilde once remarked, ``it is easier to have sympathy with
-suffering, than it is to have sympathy with thought''. Even thought,
-
-As much as this document is intended to an academic audience, it is also
-intended to them and to my father: This is the beginning of a lifelong
-attempt to explain /¿Cómo fue que se jodio el país?/ 
-
-# \blockcquote{Alvarez2013}{The designation of the NPE [Nobel Prize in Economics] yesterday teaches us again the richness of economic theory, capable of producing  alternative points of view, and the risk that it represents to a society that does not know whom to follow. The power of this discipline is unusual, but just as it creates irrational exuberance, it also explains our own irrational behavior.}
-
-Should they be right, this article is wrong. 
-
+# \chapter{Preface} 
+# \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 \mainmatter
 \pagestyle{scrheadings}
-* Notes                                                                         :noexport:
-The history of the relation between rationality and governance in 20th century american
-ecomics. 
-
-There is very little interest in discussoins of methodology of science, it
-seem due to the hegemony of instrumentalist or operationalist view of the
-progress of science. 
-* Preparatory Research
-** 無 First Sifting
+* 取 Preparatory Research
+** 取 First Sifting
 :PROPERTIES:
 :CATEGORY: 1stSifting
 :END:
@@ -1103,110 +1064,298 @@ progress of science.
   - [ ] Rational Mechanics, Marginalist Economics, and Rational Choice
   - [ ] Consolidating Rational Choice Liberalism 1970-2000
   - [ ] From the Panopticon to the Prisoner's Dilemma 
-** 無 Draft: Framework
-:PROPERTIES:
-:CATEGORY: D-Framework   
-:END:
-*** 無 Main question 
-In this thesis, I will study the genealogy of Simon's ideas on the computer
-and computation, and their importance for his views on automation. 
-*** 無 Motivation
-The motivation for this thesis is a deep feeling that there is something
-wrong with today's society and that given that economics plays such an
-important cultural role in mediating people's understanding of the nature
-of political problems, it is necessary to understand what is wrong with
-economics to understand what is wrong with society at large. 
+** 取 Draft: Research Proposal 
+   :PROPERTIES:
+   :CATEGORY: D-Framework
+   :END:
+*** 取 Motivation
+ Generally speaking, I am interested in questions of methodology in the
+ social sciences. More specifically, I am interested in the role of
+ metaphors in the construction of social theories, and the place that these
+ have accorded to determinism. Thus, I would like to explore the parallels
+ between the understandings---about the essence of nature, society, the
+ mind, and the universe---in economics and those in the other natural and
+ social sciences. Without any ambition to elevate the regime of truth of
+ economics, I am genuinely puzzled by its acceptance by the general public,
+ as if economics was a type of discourse about a certain reality with
+ portentous social consequences. But what is this social reality that is the
+ object of economics? How and why have economists come to think about social
+ reality in this way? With this master's thesis, I want to contribute a tiny
+ bit towards a better comprehension of this impasse.
 
-Given this, I am interested in the context in which economic ideas
-originate; I am interested in the interactions between economic ideas,
-ideas in other sciences, utopian political ideas, and wider "pop-culture"
-understandings and receptions of those ideas.
+ As we have discussed previously, I want to focus my master's thesis around
+ Henry Simon; therefore, the question of how he fits into the picture I just
+ painted requires an answer. For the record, I am neither sympathetic to
+ Simon's vision of the social world nor to his project of a general /science
+ of the artificial/. Rather, I decided to structure the thesis around him
+ because unlike many neoclassicals of his generation, Simon fully drank the
+ cyborg Kool-Aid of the postwar systems sciences, and thus, he took to heart
+ the man-machine analogy to its final consequences---to the point where he
+ was one of the founders of the field of artificial intelligence. Given that
+ today artificial intelligence presents itself as the next holy grail of
+ science, I find it valuable to write about Simon also as an excuse to study
+ more about computer science and its ontology.[fn:2] 
 
-In today's society, in which the future utopia is construed as the
-apotheosis of technological revolution---and /not/ political revolution---,
-and in which the utopian discourse of trans-humanism joins corporate
-discourses on innovation and neoliberal panegyrics on entrepreneurship, we
-can see a relation between a certain conception of politics and the place
-and role that machines will play there, and in getting us there.
+ # Following the intellectual debacle of the economics profession after the
+ # 2008 global financial crisis, behavioral economics presents itself as a
+ # credible alternative to the lack of realism of mainstream neoclassical
+ # theory. According to this view, behavioral economics incorporates certain
+ # results from psychology that would allow a more realistic mathematical
+ # modeling of human behavior. Since Henry Simon was the most important
+ # postwar neoclassical economist who kept a close eye on psychology (before
+ # it became again fashionable with the profession), I think it is worth to
+ # dedicate a thesis to his ideas. 
 
-In the case of economics, following the intellectual debacle of the 2008
-global financial crisis, in which those economists who gleefully took 
-refuge in baroque mathematics were scorned for the empiric irrelevance of
-their theories, behavioral economics was presented as an alternative
-version to mainstream economics that would finally present a more realistic
-version of economics, by integrating certain ideas from Psychology, to
-better understand economic problems, or more simply, reality.  
+ # I believe that one aspect worth discussing of Simon is an ontological
+ # understanding of his idea of nature, society, the human, and the artificial. 
+ # Being a cyborg, these domains blur in his work, and I believe this has
+ # important consequences for his vision of organization, and its political
+ # and economic consequences. 
+*** 取 Subject-matter 
+I would like to write about the computer as a political technology,
+specially in its guise as the so-called /machine à gouverner/: the ultimate
+delegation of political authority and responsibility to machines---or more
+generally, to automatic decision mechanisms.[fn:1] Therefore, in this
+thesis, I will trace the genealogy of Simon's ideas on the computer and
+computation to understand their influence on his views on social
+organization. By doing this, I wish to inquire about Simon's pessimism on
+the prospects of human rationality and his delegation of decision-making to
+"more capable" systems such as machines and organizations.
 
-The reason for writing a thesis on Henry Simon is /not/ to write another
-thesis on bounded rationality. Rather, the reason for focusing on Simon is
-because he was one of the first economists to embrace the postwar cyborg
-sciences, and because he played a key role in the foundation of the field
-of artificial intelligence. Given that artificial intelligence presents
-itself as the next holy grail of science in our generation, I think that it
-is worth to study Simon, due to the foundational role he played.
+My opinion, so far, on Simon is that his idea of bounded rationality served
+as a kind of excuse to subordinate and reduce the individual to play a very
+minor role in social organizations and the conduct of human affairs in
+general. And, from what I have read, Simon's epistemic pessimism---which,
+by the way, is not too distant from Hayek's---has roots both on a kind of
+personal obsession of his with the relation between individual
+responsibility and ethical choice,[fn:4] and on his fascination with the
+fledgling computer technologies and their prospects. Therefore, in this
+master's thesis, I would like to dedicate an important part to Simon's
+relation to the computer. This is necessary to account for the importance
+of the treatment of information in his theories of organization. In
+fact, I surmise that what really preoccupied Simon wasn't 
+rationality per se, but information.
 
-Particularly, I am interested in Simon because he was more /cyborg/ than
-other postwar economists. Even though the economists close to the Cowles
-Commission embraced certain aspects of the cyborg sciences, such as a
-version of Game Theory, they were more conservative in their willingness to
-question to the Walrasian model, to which Simon wasn't attached. 
+In the second part of the thesis, I would like to discuss the political
+implications of Simon's ideas on the computer and
+computation. Unfortunately, I cannot say more about this, since my reading
+hasn't taken me that far, but I will very likely base this section on
+Philip Mirowski's /Machine Dreams/ and Paul Edwards's /The Closed
+World/. Moreover, in Simon's article /Heuristic Problem Solving: The Next
+Advance in Operations Research/, he discusses the relation between Charles
+Babbage and Adam Smith's ideas, which echoes a discussion in the second
+chapter of /Machine Dreams/ on these same men. I surmise that there could be
+some insightful material therein to construct this section. Although, I
+would like to mention Babbage and Jevons at some point to compare their
+thinking to Simon's, it is unlikely that time will allow for this.
 
-In the end, Simon distanced himself from mainstream economics, to build a
-project of the sciences of the artificial, in which new modes of organizing
-society were envisioned based on his theories on artificial intelligence. 
+# Since one of the important aspects of Simon's vision of a /Science of the
+# Artificial/ is the computer---understood not just as a technology, but as an
+# ontology, a vision, a political project, etc.---, this thesis will explore
+# Simon's concept of the computer. Hence, the provisional title of the thesis:
+# The Automata & the Engineer.
 
-I believe that one aspect worth discussing of Simon is an ontological
-understanding of his idea of nature, society, the human, and the artificial. 
-Being a cyborg, these domains blur in his work, and I believe this has
-important consequences for his vision of organization, and its political
-and economic consequences. 
+# My aim is to project this thesis into a Ph.D dissertation around the theme
+# of the governing machine: the automation of political decision making and
+# the delegation of all political responsibility to machines.
 
-Since one of the important aspects of his vision is his idea of the
-computer, this thesis will explore Simon's vision of the computer. Thus the
-title of the thesis: The computer in the thought of Henry Simon.
+# What is interesting is that, just like Hayek's solution to his
+# epistemic pessimism was to subordinate mankind to the Market,[fn:3] Simon
+# wanted to subordinate mankind to organizations. I could be wrong about it,
+# but I do think there are some interesting similarities between these two
+# authors. 
+**** 完 Main question 
+ What is Herbert Simon's definition of the computer? How did this concept
+ influence his ideas of /the human/? And, what are the consequences for the
+ organization of labor of this vision of man and machine?
+**** 完 Secondary Questions 
+What was the relation between the natural and the artificial for Simon, and
+how does this relation relate to his late-life project of a Science of
+the Artificial?
 
-The idea is to project this thesis into a Ph.D dissertation around the
-theme of the governing machine: the automation of political decision making
-and the delegation of all political responsibility to machines.
+# How does Simon's Science of the Artificial relate to his views on
+# economics? And, is his Science of the Artificial compatible with
+# neoclassical economics? 
 
- I am interested in
-the wider cultural influence of the ideas of economists.
+How do Simon's ideas on automation relate to his political views?
 
-Particularly, today's futuristic utopias, in which technological change,
-but not political change, is wished seem to me to be very problematic. c
+# Did Simon draw a clear line between the natural and the artificial, and between
+# the human and the inhuman? Likewise, did he subscribe to the unity of
+# science thesis?
 
-Generally speaking, I am interested in ideas; specially, in the way that
-people come to understand and define their political utopias, and their
-definitions of nature and society.  
-
-Roughly speaking, with this thesis, I expect to understand better the
-épistémè of our time.
-
-*** 無 Thesis Outline 
-**** Introduction
-In the introduction, I will discuss the importance of economic metaphors 
-**** Chapter 1: What is the importance of the computer for economic theory?
-I will discuss the importance of the computer for economic theory in the
-twentieth century, specially in the work of Simon. 
-****  Chapter 2: The genealogy of Computer (Metaphor) in Simon's Work
-In this chapter, I will trace the genealogy of the computer concept in
-Simon's work, and how it evolved. 
-**** Chapter 3: The influence of the computer for Simon's thought on automation 
-In this chapter, I will discuss the influence of the computer concept in
-Simon's work, particularly in its relation with Simon's ideas on
-automation.
-**** Conclusion
-*** 無 Research hypotheses.
-\lipsum
-*** 無 Methodology
+Did Simon subscribe to the unity of science thesis?
+*** 取 Methodology
 I would like to write a history of ideas in the style of Philip Mirowski. 
+
+
 *** 取 Debates & Controversies
 \lipsum
-*** 無 Axes d'interpretation
+*** 取 Axes d'interpretation
+\lipsum
+*** 取 Bibliography 
+This is a thematic bibliography organized around keywords. To facilitate
+reading, the book titles are highlighted in blue. 
+ 
+# \nocite{*}
+**** The Brain
+\printbibliography[heading=none,keyword=memoire,keyword=brain]
+# \printbibliography[heading=none,type=book,keyword=memoire,keyword=brain]
+# \printbibliography[heading=none,type=article,keyword=memoire,keyword=brain]
+**** The Cold War
+\printbibliography[heading=none,keyword=memoire,keyword=cold-war,notkeyword=brain]
+**** The Computer
+\printbibliography[heading=none,keyword=memoire,keyword=computer,notkeyword=brain,notkeyword=cold-war]
+**** 取 Cyborgs
+\printbibliography[heading=none,keyword=memoire,keyword=cyborg,notkeyword=brain,notkeyword=computer,notkeyword=cold-war]
+**** Metaphors
+\printbibliography[heading=none,keyword=memoire,keyword=metaphors,notkeyword=brain,notkeyword=cold-war,notkeyword=computer,notkeyword=cyborg]
+**** Herbert Simon
+\printbibliography[heading=none,keyword=memoire,keyword=herbert-simon,notkeyword=brain,notkeyword=cold-war,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors]
+**** The Social Sciences
+\printbibliography[heading=none,keyword=memoire,keyword=social-science,notkeyword=brain,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors,notkeyword=herbert-simon,notkeyword=cold-war]
+* 中 Research
+** 完 Research Proposal 
+   :PROPERTIES:
+   :CATEGORY: Framework
+   :END:
+ - [ ] Main question.
+- [ ] Secondary questions.
+- [ ] Scope and interrelations.
+- [ ] Research hypotheses.
+- [ ] Methodology.
+ - [ ] Keywords.
+ - [ ] Debates & controversies.
+ - [ ] Axes d'interpretation.
+- [ ] Sources.
+ - [ ] Update list of key texts.
+ - [ ] Update list of key authors.
+*** 完 Motivation
+ Generally speaking, I am interested in questions of methodology in the
+ social sciences. More specifically, I am interested in the role of
+ metaphors in the construction of social theories, and the place that these
+ have accorded to determinism. Thus, I would like to explore the parallels
+ between the understandings---about the essence of nature, society, the
+ mind, and the universe---in economics and those in the other natural and
+ social sciences. Without any ambition to elevate the regime of truth of
+ economics, I am genuinely puzzled by its acceptance by the general public,
+ as if economics was a type of discourse about a certain reality with
+ portentous social consequences. But what is this social reality that is the
+ object of economics? How and why have economists come to think about social
+ reality in this way? With this master's thesis, I want to contribute a tiny
+ bit towards a better comprehension of this impasse.
+
+ As we have discussed previously, I want to focus my master's thesis around
+ Henry Simon; therefore, the question of how he fits into the picture I just
+ painted requires an answer. For the record, I am neither sympathetic to
+ Simon's vision of the social world nor to his project of a general /science
+ of the artificial/. Rather, I decided to structure the thesis around him
+ because unlike many neoclassicals of his generation, Simon fully drank the
+ cyborg Kool-Aid of the postwar systems sciences, and thus, he took to heart
+ the man-machine analogy to its final consequences---to the point where he
+ was one of the founders of the field of artificial intelligence. Given that
+ today artificial intelligence presents itself as the next holy grail of
+ science, I find it valuable to write about Simon also as an excuse to study
+ more about computer science and its ontology.[fn:2] 
+
+ # Following the intellectual debacle of the economics profession after the
+ # 2008 global financial crisis, behavioral economics presents itself as a
+ # credible alternative to the lack of realism of mainstream neoclassical
+ # theory. According to this view, behavioral economics incorporates certain
+ # results from psychology that would allow a more realistic mathematical
+ # modeling of human behavior. Since Henry Simon was the most important
+ # postwar neoclassical economist who kept a close eye on psychology (before
+ # it became again fashionable with the profession), I think it is worth to
+ # dedicate a thesis to his ideas. 
+
+ # I believe that one aspect worth discussing of Simon is an ontological
+ # understanding of his idea of nature, society, the human, and the artificial. 
+ # Being a cyborg, these domains blur in his work, and I believe this has
+ # important consequences for his vision of organization, and its political
+ # and economic consequences. 
+*** 完 Subject-matter 
+I would like to write about the computer as a political technology,
+specially in its guise as the so-called /machine à gouverner/: the ultimate
+delegation of political authority and responsibility to machines---or more
+generally, to automatic decision mechanisms.[fn:1] Therefore, in this
+thesis, I will trace the genealogy of Simon's ideas on the computer and
+computation to understand their influence on his views on social
+organization. By doing this, I wish to inquire about Simon's pessimism on
+the prospects of human rationality and his delegation of decision-making to
+"more capable" systems such as machines and organizations.
+
+My opinion, so far, on Simon is that his idea of bounded rationality served
+as a kind of excuse to subordinate and reduce the individual to play a very
+minor role in social organizations and the conduct of human affairs in
+general. And, from what I have read, Simon's epistemic pessimism---which,
+by the way, is not too distant from Hayek's---has roots both on a kind of
+personal obsession of his with the relation between individual
+responsibility and ethical choice,[fn:4] and on his fascination with the
+fledgling computer technologies and their prospects. Therefore, in this
+master's thesis, I would like to dedicate an important part to Simon's
+relation to the computer. This is necessary to account for the importance
+of the treatment of information in his theories of organization. In
+fact, I surmise that what really preoccupied Simon wasn't 
+rationality per se, but information.
+
+In the second part of the thesis, I would like to discuss the political
+implications of Simon's ideas on the computer and
+computation. Unfortunately, I cannot say more about this, since my reading
+hasn't taken me that far, but I will very likely base this section on
+Philip Mirowski's /Machine Dreams/ and Paul Edwards's /The Closed
+World/. Moreover, in Simon's article /Heuristic Problem Solving: The Next
+Advance in Operations Research/, he discusses the relation between Charles
+Babbage and Adam Smith's ideas, which echoes a discussion in the second
+chapter of /Machine Dreams/ on these same men. I surmise that there could be
+some insightful material therein to construct this section. Although, I
+would like to mention Babbage and Jevons at some point to compare their
+thinking to Simon's, it is unlikely that time will allow for this.
+
+# Since one of the important aspects of Simon's vision of a /Science of the
+# Artificial/ is the computer---understood not just as a technology, but as an
+# ontology, a vision, a political project, etc.---, this thesis will explore
+# Simon's concept of the computer. Hence, the provisional title of the thesis:
+# The Automata & the Engineer.
+
+# My aim is to project this thesis into a Ph.D dissertation around the theme
+# of the governing machine: the automation of political decision making and
+# the delegation of all political responsibility to machines.
+
+# What is interesting is that, just like Hayek's solution to his
+# epistemic pessimism was to subordinate mankind to the Market,[fn:3] Simon
+# wanted to subordinate mankind to organizations. I could be wrong about it,
+# but I do think there are some interesting similarities between these two
+# authors. 
+**** 完 Main question 
+ What is Herbert Simon's definition of the computer? How did this concept
+ influence his ideas of /the human/? And, what are the consequences for the
+ organization of labor of this vision of man and machine?
+**** 完 Secondary Questions 
+What was the relation between the natural and the artificial for Simon, and
+how does this relation relate to his late-life project of a Science of
+the Artificial?
+
+# How does Simon's Science of the Artificial relate to his views on
+# economics? And, is his Science of the Artificial compatible with
+# neoclassical economics? 
+
+How do Simon's ideas on automation relate to his political views?
+
+# Did Simon draw a clear line between the natural and the artificial, and between
+# the human and the inhuman? Likewise, did he subscribe to the unity of
+# science thesis?
+
+Did Simon subscribe to the unity of science thesis?
+*** 取 Methodology
+I would like to write a history of ideas in the style of Philip Mirowski. 
+
+
+*** 取 Debates & Controversies
+\lipsum
+*** 取 Axes d'interpretation
 \lipsum
 *** 完 Bibliography 
 This is a thematic bibliography organized around keywords. To facilitate
-reading, the booktitles are highlighted in blue. 
+reading, the book titles are highlighted in blue. 
  
 \nocite{*}
 **** The Brain
@@ -1225,30 +1374,52 @@ reading, the booktitles are highlighted in blue.
 \printbibliography[heading=none,keyword=memoire,keyword=herbert-simon,notkeyword=brain,notkeyword=cold-war,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors]
 **** The Social Sciences
 \printbibliography[heading=none,keyword=memoire,keyword=social-science,notkeyword=brain,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors,notkeyword=herbert-simon,notkeyword=cold-war]
-* 取 Research
-** Framework
-- [ ] Main question.
-- [ ] Secondary questions.
-- [ ] Scope and interrelations.
-- [ ] Research hypotheses.
-- [ ] Methodology.
- - [ ] Keywords.
- - [ ] Debates & controversies.
- - [ ] Axes d'interpretation.
-- [ ] Sources.
- - [ ] Update list of key texts.
- - [ ] Update list of key authors.
 ** Research Plan
+Look up into the history of Herbert Simon's 
+** Thesis Plan
+*** Skeleton 
+| *Section*     |           | *Length* |
+| Introduction |           |     20 |
+| Chapter 1    |           |     25 |
+|              | Section 1 |        |
+|              | Section 2 |        |
+|              | Section 3 |        |
+| Chapter 2    |           |     25 |
+|              | Section 1 |        |
+|              | Section 2 |        |
+|              | Section 3 |        |
+| Conclusion   |           |      5 |
+| *Total*        |           |     80 |
+*** Draft Outline
+**** Introduction
+**** Chapter 1
+Discuss, historically, the relations between 
+
+\begin{labeling}[~]{Section 1} 
+\item[Section 1] Background on the cold war and the computer. 
+\item[Section 2] Simon's place in the context just given. That is, historical information on Simon.
+\item[Section 3] Simon's history with the computer and artifical intelligence.
+\end{labeling}
+**** Chapter 2
+Discuss Simon's article on economic democracy and his views of the
+organization of labor. 
+\begin{labeling}[~]{Section 1} 
+\item[Section 1] 
+\item[Section 2] 
+\item[Section 3] 
+\end{labeling}
+**** Conclusion 
+** Task list
 - [ ] Check with adviser.
 - [ ] Check with selected readers.
-- [ ] Update the Framework.
+- [ ] Update the Research Proposal.
 ** Research
 - [ ] Final Sifting.
  - [ ] Update list of key texts.
  - [ ] Update list of key authors.
-- [ ] If necessary, update any component of the Framework.
+- [ ] If necessary, update any component of the Research Proposal.
 * 取 Preparatory Writing 
-** Draft: Outline
+** Draft: Writing Proposal
 - [ ] Update Main Question.
 - [ ] Write the Directing Idea.
 - [ ] Write the Argument.
@@ -1258,7 +1429,7 @@ reading, the booktitles are highlighted in blue.
 * 取 Writing 
 ** Exploratory Draft: Thesis
 - [ ] Check with thesis adviser.
-** Outline
+** Writing Proposal
 - [ ] Check with thesis adviser.
 - [ ] Check with selected readers.
 ** Writing Plan
@@ -1280,239 +1451,236 @@ reading, the booktitles are highlighted in blue.
 - [ ] Check for mood & consistency.
 - [ ] Check with thesis adviser.
 - [ ] Check with selected readers.
-
-* Settings                  :noexport:ARCHIVE:
-#+STARTUP: noindent showstars logdrawer showeverything
+* Settings  :noexport:ARCHIVE:
+ #+STARTUP: noindent nostars logdrawer showeverything
 ** LaTeX Export Settings
-# Choose which language to use for typesetting org settings
+# Typesetting language. 
 #+LANGUAGE: en
-#+OPTIONS: \n:nil ::t |:t ^:t f:t *:t ':t pro:nil H:5 timestamp:nil date:nil toc:nil
-#+OPTIONS: LaTeX:t d:nil pri:t p:t inline:nil tags:nil todo:nil 
-# Use KOMA script classes instead of LaTeX's defaults
+# Org mode export settings.
+#+OPTIONS: \n:nil |:t ^:t f:t *:t ':t pro:nil H:5 timestamp:nil date:nil toc:nil
+#+OPTIONS: LaTeX:t pri:t p:nil tags:nil todo:nil 
+# Use KOMA script classes instead of LaTeX defaults
 #+LATEX_CLASS: scrbook
-#+LATEX_CLASS_OPTIONS: [paper=B6,portrait,twoside=true,twocolumn=false,headinclude=true,footinclude=false,fontsize=12,BCOR=10mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,headings=normal,headings=twolinechapter,open=right,toc=graduated,chapterprefix=false,numbers=endperiod,parskip=half+]
-# Custom section to choose latex export engine (XeTeX). Can't believe this
-# feature does not exist by default. Check Emacs' configuration for the relevant configurations
-#+LATEX_CMD: xelatex
+#+LATEX_CLASS_OPTIONS: [paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=10,BCOR=15mm,DIV=13,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]
+# Use XeTeX instead of default export engine; this is a custom command. 
+#+LATEX_COMPILER: lualatex
 #+EXPORT_SELECT_TAGS: export
-# Create tag to allow for non-exportable org sub-trees (useful for keeping notes) 
+# Set tag for non-exportable org sub-trees (useful for comments). 
 #+EXPORT_EXCLUDE_TAGS: noexport
 ** LaTeX Packages
 *** Languages
  #+LATEX_HEADER: \usepackage{polyglossia} 
-# Choose typesetting language 
+# Set main typesetting language.
  #+LATEX_HEADER: \setmainlanguage{english} 
-# Choose secondary typesetting languages
- #+LATEX_HEADER: \setotherlanguages{french,spanish} 
-# Configure typesetting of Chinese, Japanese, and Korean
+# Set secondary typesetting languages.
+ #+LATEX_HEADER: \setotherlanguages{french,italian} 
+# Configure typesetting of Chinese, Japanese, and Korean.
  # #+LATEX_HEADER: \usepackage{xeCJK}
-# Choose font to typeset Korean 
+# Set font to typeset Korean. 
  # #+LATEX_HEADER: \setCJKmainfont{Baekmuk Batang}
 *** Csquotes
-# Choose threshold for turning an in-text quote into a block quote
+# Set threshold for turning an in-text quote into a block quote.
  #+LATEX_HEADER: \usepackage[french=guillemets,thresholdtype=words,threshold=3]{csquotes}
+# Set symbol to automatically recognize quotes. 
 #+LATEX_HEADER: \MakeAutoQuote{«}{»}
-# Italicize all quotes
+# Italicize all quotes.
 #+LATEX_HEADER:\AtBeginEnvironment{quote}{\itshape}
 *** Biblatex
-# Set up bibliography management through biblatex
-#+LATEX_HEADER: \usepackage[backend=biber,style=authoryear,arxiv=false,doi=false,isbn=false,url=false]{biblatex}
-# #+LATEX_HEADER: \usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=true]{biblatex}
-# Color the title in the bibliography
-# #+LATEX_HEADER: \DeclareFieldFormat{title}{\color{darkblue}\mkbibemph{#1}}
-#+LATEX_HEADER: \DeclareFieldFormat{booktitle}{\color{blue}\mkbibemph{#1}}
-#+LATEX_HEADER: \DeclareFieldFormat{title}{\color{blue}\mkbibemph{#1}}
-# #+LATEX_HEADER: \DeclareFieldFormat{title}{\color{darkblue}\mkbibemph{#1}}
-# Color those entries in the bibliography that are books 
-# #+LATEX_HEADER:\AtEveryBibitem{\ifentrytype{book}{\color{blue}}{}}
-# Choose bibliography file
+# Configure bibliography management with biblatex. 
+#+LATEX_HEADER: \usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=false]{biblatex}
+# Set bibliography file. 
 #+LATEX_HEADER: \addbibresource{~/Documents/mendeley/library.bib}
 *** Ams
-# Necessary settings for typesetting math, symbols, and formulae
+# Settings for typesetting math, symbols, and formulae. 
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amsthm}
 #+LATEX_HEADER: \usepackage{amssymb}
-# Easily cross out symbols and arrows with \centernot command
+# Cross out symbols and arrows with \centernot command. 
 #+LATEX_HEADER: \usepackage{centernot}
 *** Hyperref
-# Add hyperlinks wihin the document (sections, table of contents, etc.)
+# Allow hyperlinks. 
 #+LATEX_HEADER: \usepackage{hyperref}
-#+LATEX_HEADER: \hypersetup{colorlinks,urlcolor=blue,linkcolor=red,citecolor=red,filecolor=black}
+#+LATEX_HEADER: \hypersetup{colorlinks,urlcolor=bibleblue,linkcolor=bibleblue,citecolor=red,filecolor=black}
 *** Typography
-# Prevent ugly typesetting when using two-column setup
- # #+LATEX_HEADER: \usepackage{balance}
-# Improves typesetting of tables
+# Prevent ugly typesetting in two-column mode.
+ #+LATEX_HEADER: \usepackage{balance}
+# Improve typesetting of tables.
+#+LATEX_HEADER: \usepackage{array}
+ #+LATEX_HEADER: \usepackage{tabularx}
  #+LATEX_HEADER: \usepackage{booktabs}
-# Adds macros to typeset 1^st 2^nd, etc. in different languages
+#+LATEX_HEADER:\usepackage[most]{tcolorbox}
+# Adds macros to typeset 1st, 2nd, etc., in different languages.
 #+LATEX_HEADER: \usepackage[french]{fmtcount} 
 #+LATEX_HEADER: \fmtcountsetoptions{french=france}
-# Typeset according to selection of single space, double space, etc. 
+# Set interline spacing.
  #+LATEX_HEADER: \usepackage[singlespacing]{setspace}
-# Kinda same as fmtcount but less flexible
+# Alternative to 'fmtcount' without multilingual support. 
  #+LATEX_HEADER: \usepackage[super]{nth}
-# Glorious typesetting of microtypographic details
-#+LATEX_HEADER: \usepackage{microtype}
-# Choose language specific microtype settings
+# Configure microtypographic settings. 
+#+LATEX_HEADER: \usepackage[protrusion=true,tracking=true]{microtype}
+# Configure language-specific microtype settings. 
 # #+LATEX_HEADER: \microtypecontext{kerning=french}
 # Correctly typeset ragged text
 #+LATEX_HEADER: \usepackage{ragged2e}
-# Prevent widows (danggling lines at the top or bottom of pages)
+# Prevent widows (dangling lines at the top or bottom of pages).
 #+LATEX_HEADER: \usepackage[all]{nowidow}
-# Correctly typeset lists, etc. with itemize environment 
+# Correctly typeset lists with 'itemize' environment.
 #+LATEX_HEADER: \usepackage{enumitem}
-# Beautify the page with nice typographic symbols 
+# Beautify the page with typographic symbols.
 #+LATEX_HEADER: \usepackage{adforn}
 # #+LATEX_HEADER: \usepackage[object=vectorian]{pgfornament}
-# Correctly typeset floats
+# Correctly typeset floats.
 #+LATEX_HEADER: \usepackage{float}
-*** Graphicx
-# Add color to documents
-#+LATEX_HEADER: \usepackage[svgnames]{xcolor}
-# Allow colored tables
+*** Graphics
+# Allow colors. 
+#+LATEX_HEADER: \usepackage{xcolor}
+# Allow colored tables.
 # #+LATEX_HEADER: \usepackage{colortbl}
-# Add graphics to documents
+# Allow graphics.
  #+LATEX_HEADER: \usepackage{graphicx}
-# Choose graphics' folder
+# Choose graphics folder.
  #+LATEX_HEADER: \graphicspath{ {/home/sync0/Dropbox/paris_1/} }
-# Allow footnotes in tables 
+# Allow footnotes in tables.
 # #+LATEX_HEADER: \usepackage{tablefootnote}
-# Correctly color code blocks
+# Color code blocks.
 # #+LATEX_HEADER: \usepackage{minted}
-# Insert dummy text (typesetting aid) 
-#+LATEX_HEADER: \usepackage{lipsum}
+# Insert dummy text (typesetting aid).
+# #+LATEX_HEADER: \usepackage{lipsum}
 *** TiKz
-# Add simple graphics in latex
+# Add TiKz graphics in LaTeX.
 # #+LATEX_HEADER:\usepackage{tikz}
 # #+LATEX_HEADER:\usetikzlibrary{calc,trees,positioning,arrows,chains,shapes.geometric,decorations.pathreplacing,decorations.pathmorphing,shapes,matrix,shapes.symbols}
 # #+LATEX_HEADER:\tikzset{>=stealth',punktchain/.style={rectangle,rounded corners,draw=black, very thick,text width=10em,minimum height=3em,text centered,on chain},line/.style={draw, thick, <-},element/.style={tape,top color=white,bottom color=blue!50!black!60!,minimum width=8em,draw=blue!40!black!90, very thick,text width=10em,minimum height=3.5em,text centered,on chain},every join/.style={->, thick,shorten >=1pt},decoration={brace},tuborg/.style={decorate},tubnode/.style={midway, right=2pt},}
 *** Editing
-# Add margin TODO notes.
+# Add TODO margin notes.
 # #+LATEX_HEADER: \usepackage[textsize=scriptsize, linecolor=soothing_green, backgroundcolor=soothing_green]{todonotes}
 ** Fonts
-# Set up XeTeX
-#+LATEX_HEADER: \usepackage{xunicode}
+# Configure XeTeX fonts.
+# #+LATEX_HEADER: \usepackage{xunicode}
 #+LATEX_HEADER: \usepackage{fontspec}
-#+LATEX_HEADER: \usepackage{xltxtra}
-# Adjust all used fonts to the same x-height.
+# #+LATEX_HEADER: \usepackage{xltxtra}
+#+LATEX_HEADER: \usepackage{unicode-math}
+# Use Linux Libertine and Linux Biolinum fonts.
+#+LATEX_HEADER: \usepackage[oldstyle]{libertine}
+# Have all fonts use the same x-height.
 #+LATEX_HEADER: \defaultfontfeatures{Scale=MatchLowercase}
-# Use Linux Libertine font.
-#+LATEX_HEADER:\setmainfont[Mapping=tex-text,Numbers=OldStyle,SmallCapsFeatures={LetterSpace=4,Ligatures=NoCommon}]{Linux Libertine O}
-#+LATEX_HEADER:\setsansfont[Mapping=tex-text]{Linux Biolinum O}
-#+LATEX_HEADER:\setmonofont[Mapping=tex-text]{Inconsolata}
-# Define a font family to use in the title.
-#+LATEX_HEADER:\newfontfamily\titlefamily[Scale=1.5]{Linux Biolinum O}
-# Define a bigger face size than \Huge to use in the part and chapter titles.
+# Typeset math using Linux Libertine. 
+#+LATEX_HEADER :\setmathfont[Scale=MatchUppercase]{libertinusmath-regular.otf}
+# Define a font family for titles.
+#+LATEX_HEADER:\newfontfamily\titlefamily[Scale=2]{Linux Biolinum O}
+# Define the '\HUGE' macro. 
 #+LATEX_HEADER:\newcommand\HUGE{\fontsize{30}{30}\selectfont}
 ** Page Design
-# Customize page desing 
+# Customize page design.
 #+LATEX_HEADER:\usepackage{scrlayer-scrpage}
 #+LATEX_HEADER:\pagestyle{scrheadings}
 #+LATEX_HEADER:\clearscrheadfoot
-# Automatically add Chapter as heading 
+# Set 'part' as left and 'chapter' as right page headings.  
 #+LATEX_HEADER:\automark[chapter]{part}
-# Center headings 
-# #+LATEX_HEADER:\cehead{\headmark} 
-# #+LATEX_HEADER:\cohead{\headmark} 
-#+LATEX_HEADER:\chead{\headmark} 
-# Put headings in the outermost part of the page
-# #+LATEX_HEADER:\lehead{\headmark} 
-# #+LATEX_HEADER:\rohead{\headmark} 
-# Put numbers in the outermost part of the page
-# #+LATEX_HEADER:\lehead{\thepage} 
-# #+LATEX_HEADER:\rohead{\thepage} 
-#+LATEX_HEADER:\ohead{\thepage} 
-# Add numbering in the outer footer (margin) of pages
-# #+LATEX_HEADER:\ofoot*{\thepage} 
-# Remove annoying "First Part" from headings 
-#+LATEX_HEADER:\renewcommand\partmarkformat{}
+# Center page headings.
+#+LATEX_HEADER:\chead{\MakeLowercase{\headmark}} 
+# Place page numbers in the outer heading.
+#+LATEX_HEADER:\ohead{\pagemark} 
 ** Typographic settings
-# Add different spacing for things after table of contents
+# Set different line spacing after table of contents
 #+LATEX_HEADER: \AfterTOCHead{\singlespacing}
-# Set default settings for document font
-#+LATEX_HEADER: \setkomafont{disposition}{\normalfont\normalcolor}
-# Change font settings of labeling environment
+# Set font for 'labeling' environment.
 #+LATEX_HEADER: \setkomafont{labelinglabel}{\normalfont\bfseries}
-# Change font settings of minisec titles
+# Set font for 'minisec' titles.
 #+LATEX_HEADER: \setkomafont{minisec}{\usekomafont{subsection}}
-# Change font settings page number.
-# #+LATEX_HEADER: \addtokomafont{pagenumber}{\bfseries}
-# Change font settings page head & foot.
-# #+LATEX_HEADER: \addtokomafont{pageheadfoot}{\bfseries\sffamily\upshape}
-#+LATEX_HEADER: \addtokomafont{pageheadfoot}{\sffamily\upshape}
+# Set font for page headings. 
+#+LATEX_HEADER: \setkomafont{pagehead}{\normalfont\sffamily\mdseries\scshape}
+# Set font for page numbers.
+#+LATEX_HEADER: \setkomafont{pagenumber}{\large\rmfamily\upshape}
+# Set font for sectioning numbers.
+#+LATEX_HEADER:\setkomafont{sectioning}{\sffamily\mdseries}
 *** Figures
-#+LATEX_HEADER: \addtokomafont{caption}{\sffamily\small}
-#+LATEX_HEADER: \addtokomafont{captionlabel}{\sffamily\bfseries}
-# Remove labels and delimiters from captions
-# #+LATEX_HEADER: \renewcommand*{\figureformat}{}
-# #+LATEX_HEADER: \renewcommand*{\tableformat}{}
-# #+LATEX_HEADER: \renewcommand*{\captionformat}{}
+# Set font for caption text.
+#+LATEX_HEADER: \setkomafont{caption}{\small}
+# Set font for caption titles.
+#+LATEX_HEADER: \setkomafont{captionlabel}{\sffamily\mdseries\scshape\lowercase}
+*** Dictum
+# Configure KOMA script 'dictum' environment
+# #+LATEX_HEADER: \renewcommand*{\dictumwidth}{.8\textwidth}
+# #+LATEX_HEADER: \renewcommand*{\raggeddictum}{\centering}
+# #+LATEX_HEADER: \renewcommand*{\raggeddictumtext}{\centering}
+# Set font for KOMA script 'dictum' environment
+# #+LATEX_HEADER: \setkomafont{dictum}{\large\rmfamily}
 *** Part
-# Customize fonts used in Part 
-#+LATEX_HEADER: \addtokomafont{part}{\HUGE\scshape\sffamily\lowercase}
-# # Remove the part numbering from part pages
-#+LATEX_HEADER: \renewcommand*{\partformat}{\partname}
+# Set font for 'part'. 
+#+LATEX_HEADER: \setkomafont{part}{\HUGE\scshape\lowercase}
+# Remove 'part' numbering from 'part' pages.
+#+LATEX_HEADER: \renewcommand*{\partformat}{}
+# Remove 'First Part', 'Second Part', etc.
+#+LATEX_HEADER:\renewcommand\partmarkformat{}
 *** Chapter 
-# Customize fonts used in Chapter
-# #+LATEX_HEADER: \addtokomafont{chapter}{\HUGE\scshape\sffamily\bfseries\lowercase}
-#+LATEX_HEADER: \addtokomafont{chapter}{\huge\scshape\bfseries\sffamily\lowercase}
-# Center chapter 
-# #+LATEX_HEADER:\renewcommand{\raggedchapter}{\centering}
+# Set font for 'chapter'. 
+#+LATEX_HEADER: \setkomafont{chapter}{\Huge\scshape\lowercase}
+# Center chapter title.
+#+LATEX_HEADER:\renewcommand{\raggedchapter}{\centering}
+# Add vertical space between chapter number and chapter title.
+#+LATEX_HEADER:\renewcommand*\chapterformat{\thechapter\autodot\par\enskip}
+# Remove chapter numbering from chapter mark (heading). 
+#+LATEX_HEADER:\renewcommand*\chaptermarkformat{}
 # Increase vertical space between chapter and text body.
-# A bug arises when \RedeclareSectionCommand appears before package
-# tocbasic or tocstyle
-#+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter} 
+# Beware! A bug arises when '\RedeclareSectionCommand' appears after package
+# tocbasic or tocstyle.
+# #+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0cm,afterskip=1.5cm]{chapter} 
+#+LATEX_HEADER: \RedeclareSectionCommand[beforeskip=0pt,afterskip=8\baselineskip,innerskip=\baselineskip]{chapter} 
 *** Section
-# Customize fonts used in Section
-#+LATEX_HEADER: \addtokomafont{section}{\LARGE\scshape\sffamily\lowercase}
-# #+LATEX_HEADER: \addtokomafont{section}{\huge\scshape\sffamily\lowercase}
+# Set font for 'section'.
+#+LATEX_HEADER: \setkomafont{section}{\large\scshape\lowercase}
 *** Subsection
-# Customize fonts used in Subsection
-# #+LATEX_HEADER: \addtokomafont{subsection}{\LARGE\scshape\sffamily\lowercase}
-#+LATEX_HEADER: \addtokomafont{subsection}{\large\sffamily\bfseries}
-# #+LATEX_HEADER: \addtokomafont{subsection}{\sffamily\Large}
+# Set font for 'subsection'.
+#+LATEX_HEADER: \setkomafont{subsection}{\large}
 *** Subsubsection
-# Customize fonts used in Subsubsection
-# #+LATEX_HEADER: \addtokomafont{subsubsection}{\scshape\sffamily\Large\lowercase}
-# #+LATEX_HEADER: \addtokomafont{subsubsection}{\large\sffamily\bfseries}
-#+LATEX_HEADER: \addtokomafont{subsubsection}{\large\sffamily\itshape}
+# Change subsubsection number font independently of its title.
+#+LATEX_HEADER: \renewcommand*{\subsubsectionformat}{\sffamily\mdseries\upshape \thesubsubsection\autodot\enskip}
+# Set font for 'subsubsection'.
+#+LATEX_HEADER: \setkomafont{subsubsection}{\large\itshape}
 *** Table of Contents
-# Customize fonts used in the table of contents
-# Delete "Part" to TOC entry.
-#+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\scshape\sffamily\lowercase{#2}}}
-#+LATEX_HEADER: \addtokomafont{chapterentry}{\normalsize\sffamily\bfseries}
-#+LATEX_HEADER: \usepackage[tocflat,tocindentauto]{tocstyle}
-# Remove dots after section title.
+# Set fonts for table of contents.
+# Change TOC title to lowercase (needed for small caps). 
+#+LATEX_HEADER:\AtBeginDocument{\renewcaptionname{english}\contentsname{contents}}
+# Delete 'part' from TOC entry.
+#+LATEX_HEADER:\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\rmfamily\mdseries\scshape\lowercase{#2}}}
+# Set font for chapter entry.
+#+LATEX_HEADER: \addtokomafont{chapterentry}{\normalsize\rmfamily\bfseries}
+# Customize table of contents. 
+#+LATEX_HEADER: \usepackage{tocstyle}
+#+LATEX_HEADER: \settocfeature{raggedhook}{\raggedright}
+#+LATEX_HEADER: \selecttocstyleoption{tocgraduated}
+# Remove dots. 
 #+LATEX_HEADER: \usetocstyle{nopagecolumn}
-# Have a two-column table of contents. 
+# Set two-column table of contents. 
 # #+LATEX_HEADER: \unsettoc{toc}{onecolumn}
 *** Code blocks
-# Customize fonts used in code blocks (requires minted package)
+# Set fonts used in code blocks (requires 'minted' package).
 # #+LATEX_HEADER:\usemintedstyle{borland}
-*** Bibliography
-# Change font size for bibliography
-# #+LATEX_HEADER: \renewcommand*{\bibfont}{\small}
 ** User-defined elements
+*** Environments 
+# #+LATEX_HEADER: \newenvironment{box}{\begin{center}\begin{tabular}{|p{0.9\textwidth}|}\hline\\}{\\\\\hline\end{tabular}\end{center}}
+# #+LATEX_HEADER: \newenvironment{note}{\par\noindent {\sffamily\bfseries Comment:}}{\medskip}
+# #+LATEX_HEADER: \newenvironment{note}{\bigskip\setlength\arrayrulewidth{4pt}\begin{tabular}{|m{0.8\columnwidth}}}{\end{tabular}\bigskip}
+#+LATEX_HEADER:\newtcolorbox{note}{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{gray}}
+#+LATEX_HEADER:\newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{gray},title={#2},coltitle={black},fonttitle={\sffamily\bfseries},fontupper={\normalfont},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
+# #+LATEX_HEADER:\newtcolorbox{note}{colback=block-gray,grow to right by=-10mm,grow to left by=-10mm,boxrule=0pt,boxsep=0pt,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{gray}}
+# #+LATEX_HEADER: \newenvironment{note}{\setlength\arrayrulewidth{4pt}\extracolsep{\quad}\begin{tabular}{|p{0.3\textwidth}}}{\end{tabular}}
 *** Itemize symbols
- # Replace adforn's typographic symbols for itemize items
+ # Use 'adforn' symbols instead of 'itemize' symbols. 
  #+LATEX_HEADER:\renewcommand*\labelitemi{\adforn{33}}
  #+LATEX_HEADER:\renewcommand*\labelitemii{\adforn{73}}
  #+LATEX_HEADER:\renewcommand*\labelitemiii{\adforn{73}}
  #+LATEX_HEADER:\renewcommand*\labelitemiv{\adforn{73}}
- # reduce the indent of "itemize" items 
+ # Reduce indent of 'itemize' items. 
  # #+LATEX_HEADER:\setlist[itemize]{leftmargin=*}
-*** Dictum
-# Customize KOMA script's dictum environment
-#+LATEX_HEADER: \renewcommand*{\dictumwidth}{.8\textwidth}
-#+LATEX_HEADER: \renewcommand*{\raggeddictum}{\centering}
-#+LATEX_HEADER: \renewcommand*{\raggeddictumtext}{\centering}
-#+LATEX_HEADER: \addtokomafont{dictum}{\large\rmfamily}
 *** Colors
-# Nice color to add to hyperlinks
+# Define color for hyperlinks. 
 #+LATEX_HEADER:\definecolor{bibleblue}{HTML}{00339a}
-# Define color to use in TODO notes. 
+# Define color for TODO notes. 
 #+LATEX_HEADER: \definecolor{soothing_green}{HTML}{E1F7DB}
-*** LaTeX theorems
-# This is something I use for adding figure or table interpretations 
+*** Mathematics
+# Define custom environments for amsmath. 
 #+LATEX_HEADER:\theoremstyle{definition}
 #+LATEX_HEADER:\newtheorem{lecture}{Lecture}
 #+LATEX_HEADER:\newtheorem*{lecture*}{Lecture}
@@ -1520,15 +1688,34 @@ reading, the booktitles are highlighted in blue.
 #+LATEX_HEADER:\newtheorem*{problem*}{Problème}
 #+LATEX_HEADER:\newtheorem{interpretation}{Interpretation}
 #+LATEX_HEADER:\newtheorem*{interpretation*}{Interpretation}
-** Etc
-# Set limits for numbering (parts, chapters, sections, etc.)
-#+LATEX_HEADER: \setcounter{secnumdepth}{\partnumdepth}
-# Set limits for table of contents entries
+# Define '\notimplies' macro. Requires 'centernot' package.  
+#+LATEX_HEADER:\newcommand{\notimplies}{\centernot\implies}
+** Coda
+# Limit numbering to parts, chapters, sections, etc.
+#+LATEX_HEADER: \setcounter{secnumdepth}{3}
+# Limits table of contents entries. 
 #+LATEX_HEADER: \setcounter{tocdepth}{1}
-# Recalculate type area based on new settings (required for corectly
-# spacing two-column pages)
+# Recalculate type area; required for spacing two-column pages correctly.
 #+LATEX_HEADER: \recalctypearea
-# Change spacing of itemize environment items
+# Set spacing of 'itemize' items.
 # #+LATEX_HEADER: \setlist[1]{itemsep=\parskip}
-# Set separation between columns for two-column pages
-# #+LATEX_HEADER: \setlength{\columnsep}{1cm}
+# Set separation between columns for two-column pages.
+#+LATEX_HEADER: \setlength{\columnsep}{0.5cm}
+* Footnotes
+
+[fn:4] I am not aware that Simon was a particularly religious man, but these
+concerns are quite clearly influenced by christian morality and Simon's
+American-style liberal values. 
+
+[fn:3] Or, more precisely, to the products of spontaneously evolving orders
+tending towards greater and greater degrees of complexity. 
+
+[fn:2] As Mirowski shows in /Machine Dreams/ (2002), the development of the
+computer and its entourage of systems sciences have had profound
+consequences for postwar neoclassical economics.
+
+[fn:1] The idea is certainly not Simon's. In fact, as far as I know, the
+term /machine à gouverner/ comes from a 1948 article in the newspaper /Le
+Monde/, in which a Dominican friar, Père Dubarle, reviewed Norbert Wiener's
+book /Cybernetics/. In fact, in his latter book /The Human Use of Human
+Beings/ (1950), Wiener explicitly cites and discusses Dubarle's idea.

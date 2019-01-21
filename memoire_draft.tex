@@ -1,31 +1,41 @@
-% Intended LaTeX compiler: pdflatex
-\documentclass[paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=10,BCOR=15mm,DIV=13,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
-\usepackage{fontspec}
-\usepackage{xunicode}
-\usepackage{url}
-\usepackage{soul}
+% Intended LaTeX compiler: lualatex
+\documentclass[version=last,draft=true,paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=10,BCOR=20mm,DIV=13,pagesize=auto,titlepage=false,mpinclude=false,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
 \usepackage{polyglossia}
 \setmainlanguage{english}
 \setotherlanguages{french,italian}
-\usepackage[french=guillemets,thresholdtype=words,threshold=3]{csquotes}
-\MakeAutoQuote{«}{»}
+\usepackage[autostyle=true,english=american,french=guillemets,thresholdtype=words,threshold=3]{csquotes}
+\MakeOuterQuote{"}
+\MakeForeignQuote{french}{«}{»}
 \AtBeginEnvironment{quote}{\itshape}
-\usepackage[backend=biber,style=authoryear,doi=false,isbn=false,url=false]{biblatex}
-\addbibresource{~/Documents/mendeley/library.bib}
+\usepackage[backend=biber,style=reading,eprint=false,abstract=false,library=false,file=false,entrykey=false,doi=false,isbn=false,url=false]{biblatex}
+\addbibresource{~/Documents/mendeley/sync0_library.bib}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{centernot}
 \usepackage{hyperref}
-\hypersetup{colorlinks,urlcolor=bibleblue,linkcolor=bibleblue,citecolor=red,filecolor=black}
+\hypersetup{colorlinks,urlcolor=bibleblue,linkcolor=bibleblue,citecolor=bibleblue,filecolor=black}
 \usepackage{balance}
+\usepackage{array}
+\usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage[most]{tcolorbox}
 \usepackage[french]{fmtcount}
 \fmtcountsetoptions{french=france}
 \usepackage[singlespacing]{setspace}
 \usepackage[super]{nth}
-\usepackage{microtype}
-\microtypecontext{kerning=french}
+\usepackage[protrusion=true,tracking=true]{microtype}
 \usepackage{ragged2e}
 \usepackage[all]{nowidow}
 \usepackage{enumitem}
@@ -34,57 +44,61 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \graphicspath{ {/home/sync0/Dropbox/paris_1/} }
-\usepackage{xunicode}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\tikzset{main node/.style={circle,fill=gray!45,draw,minimum size=0.5cm,inner sep=0pt},}
 \usepackage{fontspec}
-\usepackage{xltxtra}
 \usepackage{unicode-math}
 \usepackage[oldstyle,libertine]{libertine}
-\newfontfamily\titlefamily[Scale=2]{Linux Libertine O}
-\newcommand\HUGE{\fontsize{30}{30}\selectfont}
+\defaultfontfeatures{Scale=MatchLowercase}
+\newcommand\HUGE{\fontsize{30}{33}\selectfont}
 \usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
 \clearscrheadfoot
 \automark[chapter]{part}
-\chead{\headmark}
+\cehead{vers la machine à gourverner}
+\cohead{\MakeLowercase{\headmark}}
 \ohead{\pagemark}
 \AfterTOCHead{\singlespacing}
 \setkomafont{labelinglabel}{\normalfont\bfseries}
-\setkomafont{minisec}{\usekomafont{subsection}}
-\setkomafont{pagehead}{\normalfont\itshape}
+\setkomafont{minisec}{\usekomafont{section}}
+\setkomafont{pagehead}{\normalfont\mdseries\scshape}
 \setkomafont{pagenumber}{\large\rmfamily\upshape}
-\setkomafont{sectioning}{\rmfamily}
+\setkomafont{sectioning}{\mdseries}
 \setkomafont{caption}{\small}
 \setkomafont{captionlabel}{\mdseries\scshape\lowercase}
-\setkomafont{part}{\HUGE\mdseries\scshape\lowercase}
+\setkomafont{part}{\HUGE\scshape\lowercase}
 \renewcommand*{\partformat}{}
 \renewcommand\partmarkformat{}
-\setkomafont{chapter}{\Huge\mdseries\scshape\lowercase}
+\setkomafont{chapter}{\huge\scshape\lowercase}
 \renewcommand{\raggedchapter}{\centering}
 \renewcommand*\chapterformat{\thechapter\autodot\par\enskip}
 \renewcommand*\chaptermarkformat{}
-\RedeclareSectionCommand[beforeskip=0pt,afterskip=8\baselineskip,innerskip=\baselineskip]{chapter}
-\setkomafont{section}{\large\mdseries\scshape\lowercase}
+\setkomafont{section}{\large\scshape\lowercase}
 \setkomafont{subsection}{\large}
-\setkomafont{subsubsection}{\large\mdseries\itshape}
-\renewcommand*{\addparttocentry}[2]{\addtocentrydefault{part}{}{\Large\rmfamily\mdseries\scshape\lowercase{#2}}}
-\addtokomafont{chapterentry}{\normalsize\rmfamily\bfseries}
+\renewcommand*{\subsubsectionformat}{\mdseries\upshape \thesubsubsection\autodot\enskip}
+\setkomafont{subsubsection}{\large\itshape}
+\AtBeginDocument{\renewcaptionname{english}\contentsname{contents}}
+\addtokomafont{chapterentry}{\mdseries\scshape\lowercase}
+\setkomafont{chapterentrypagenumber}{\normalfont}
 \usepackage{tocstyle}
 \settocfeature{raggedhook}{\raggedright}
 \selecttocstyleoption{tocgraduated}
 \usetocstyle{nopagecolumn}
+\newtcolorbox{note}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{lightgrey},title={#2},coltitle={black},fonttitle={},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+\newtcolorbox{question}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{darkgrey},title={#2},coltitle={black},fonttitle={},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+\newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{midgrey},title={#2},coltitle={black},fonttitle={\bfseries},fontupper={\normalfont},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
 \renewcommand*\labelitemi{\adforn{33}}
 \renewcommand*\labelitemii{\adforn{73}}
 \renewcommand*\labelitemiii{\adforn{73}}
 \renewcommand*\labelitemiv{\adforn{73}}
 \definecolor{bibleblue}{HTML}{00339a}
-\definecolor{soothing_green}{HTML}{E1F7DB}
-\theoremstyle{definition}
-\newtheorem{lecture}{Lecture}
-\newtheorem*{lecture*}{Lecture}
-\newtheorem{problem}{Problème}
-\newtheorem*{problem*}{Problème}
-\newtheorem{interpretation}{Interpretation}
-\newtheorem*{interpretation*}{Interpretation}
+\definecolor{whitegrey}{HTML}{f7f7f7}
+\definecolor{lightgrey}{HTML}{cccccc}
+\definecolor{midgrey}{HTML}{969696}
+\definecolor{darkgrey}{HTML}{636363}
+\definecolor{blackgrey}{HTML}{252525}
 \newcommand{\notimplies}{\centernot\implies}
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{1}
@@ -98,283 +112,92 @@
  pdftitle={},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 26.1 (Org mode 9.1.14)}, 
+ pdfcreator={Emacs 26.1 (Org mode 9.2)}, 
  pdflang={English}}
 \begin{document}
 
-\begin{titlepage}
- \centering
-% \includegraphics[width=0.5\textwidth]{logo_noir_fr.png}\par
- \vspace{4\baselineskip}
-\begin{french}
- {\Large Université Paris I Panthéon Sorbonne \par}
- {\Large \textsc{ufr} 02 : Sciences économiques  \par}
- {\large Master 2 : Économie et sciences humaines \par}
- {\large 2018-2019 \par}
-\end{french}
- \vspace{2\baselineskip}
- {\huge Vers la machine à gouverner  \par}
- {\Large Herbert Simon and the Impossibility of a Democratic Computer \par}
-\vspace*{\fill}
-\begin{french}
- {\large Présenté et sountenu par : \par}
-\end{french}
- {\large \textsc{carlos alberto rivera carreño}\par}
- \vspace{1\baselineskip}
-\begin{french}
- {\large Directeur de mémoire : \par}
-\end{french}
- {\large \textsc{jean-sébastien lenfant}\par}
-\end{titlepage}
-
-\onecolumn
-\pagestyle{empty}
-
-\begin{french}
-L'Université Paris 1 Panthéon Sorbonne n'entend donner aucune approbation,
-ni désapprobation aux opinions émises dans ce mémoire ; elle doivent être
-considérées comme propres à leur auteur. 
-\end{french}
-
-\newpage
-\vspace*{\fill}
-\noindent
-\includegraphics[height=1.5cm]{gpl3.png}\par
-\vspace{1\baselineskip}
-\begin{english}
-This text is free: you can redistribute it and/or modify it
-under the terms of the \textsc{gnu} General Public License as published by
-the Free Software Foundation, either version 3 of the License or any later
-version.
-
-This text is distributed in the hope that it will be useful, but \textbf{without
-any warranty}; without even the implied warranty of \textbf{merchantability or 
-fitness for a particular purpose}. See the \textsc{gnu} General 
-Public License for more details.
-
-You should have received a copy of the \textsc{gnu} General Public License along
-with this text. If not, see \url{http://www.gnu.org/licenses/}.
-
-\vspace{1\baselineskip}
-\noindent
-Copyright \textcopyright \textsc{sync0} 2018. 
-\end{english}
-
-\newpage 
-
-\begin{FlushRight}
-\begin{italian}
-% \textit{Para una lectora lejana.}
-% \textit{Per il professore Giorgio Israel. \newline Mi dispiace, ho mancato il nostro incontro. \linebreak Sono in ritardo, come la coscienza della nostra generazione. \linebreak I campi sanguinano. Tutti lo sanno, ma a nessuno importa.}
-% \textit{Per il professore Giorgio Israel. \newline Benché i nostri destini fossero uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Sono arrivato in ritardo, come la coscienza della nostra generazione. \linebreak I campi sanguinanti sono così prossimi \linebreak che le gocce accarezzerebbero gli occhi. \linebreak Eppure, nessuno vede niente. \linebreak Tante informazione, ma così poca conoscenza. \linebreak Anche le lacrime non bastano per addolcire i cuori. \linebreak Nel fratempo, riposa in pace, maestro.}
-\textit{Per il professore Giorgio Israel. \newline Benché i nostri destini fossero uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Sono arrivato in ritardo, come la coscienza della nostra generazione. \linebreak I campi sanguinanti sono così prossimi, \linebreak ma nessuno vede niente. \linebreak Nell'era dell'informazione, diventiamo più ignoranti. \linebreak Questo è il prezzo del biglietto d'ingresso. \linebreak Grazie a Lei l'ho capito, maestro.}
-\end{italian}
-\end{FlushRight}
-
-\newpage
-\tableofcontents 
-
-\frontmatter
-\twocolumn
-\pagestyle{plain}
-
-\mainmatter
-\pagestyle{scrheadings}
-\part{Research}
-\label{sec:org0ce425b}
-\chapter{Research Proposal}
-\label{sec:org43c8467}
-\begin{itemize}
-\item[{$\square$}] Main question.
-\end{itemize}
-\begin{itemize}
-\item[{$\square$}] Secondary questions.
-\item[{$\square$}] Scope and interrelations.
-\item[{$\square$}] Research hypotheses.
-\item[{$\square$}] Methodology.
-\begin{itemize}
-\item[{$\square$}] Keywords.
-\item[{$\square$}] Debates \& controversies.
-\item[{$\square$}] Axes d'interpretation.
-\end{itemize}
-\item[{$\square$}] Sources.
-\begin{itemize}
-\item[{$\square$}] Update list of key texts.
-\item[{$\square$}] Update list of key authors.
-\end{itemize}
-\end{itemize}
-\section{Motivation}
-\label{sec:org9f06641}
-Generally speaking, I am interested in questions of methodology in the
-social sciences. More specifically, I am interested in the role of
-metaphors in the construction of social theories, and the place that these
-have accorded to determinism. Thus, I would like to explore the parallels
-between the understandings---about the essence of nature, society, the
-mind, and the universe---in economics and those in the other natural and
-social sciences. Without any ambition to elevate the regime of truth of
-economics, I am genuinely puzzled by its acceptance by the general public,
-as if economics was a type of discourse about a certain reality with
-portentous social consequences. But what is this social reality that is the
-object of economics? How and why have economists come to think about social
-reality in this way? With this master's thesis, I want to contribute a tiny
-bit towards a better comprehension of this impasse.
-
-As we have discussed previously, I want to focus my master's thesis around
-Henry Simon; therefore, the question of how he fits into the picture I just
-painted requires an answer. For the record, I am neither sympathetic to
-Simon's vision of the social world nor to his project of a general \emph{science
-of the artificial}. Rather, I decided to structure the thesis around him
-because unlike many neoclassicals of his generation, Simon fully drank the
-cyborg Kool-Aid of the postwar systems sciences, and thus, he took to heart
-the man-machine analogy to its final consequences---to the point where he
-was one of the founders of the field of artificial intelligence. Given that
-today artificial intelligence presents itself as the next holy grail of
-science, I find it valuable to write about Simon also as an excuse to study
-more about computer science and its ontology.\footnote{As Mirowski shows in \emph{Machine Dreams} (2002), the development of the
-computer and its entourage of systems sciences have had profound
-consequences for postwar neoclassical economics.} 
-\section{Subject-matter}
-\label{sec:orgdb5539b}
-I would like to write about the computer as a political technology,
-specially in its guise as the so-called \emph{machine à gouverner}: the ultimate
-delegation of political authority and responsibility to machines---or more
-generally, to automatic decision mechanisms.\footnote{The idea is certainly not Simon's. In fact, as far as I know, the
-term \emph{machine à gouverner} comes from a 1948 article in the newspaper \emph{Le
-Monde}, in which a Dominican friar, Père Dubarle, reviewed Norbert Wiener's
-book \emph{Cybernetics}. In fact, in his latter book \emph{The Human Use of Human
-Beings} (1950), Wiener explicitly cites and discusses Dubarle's idea.} Therefore, in this
-thesis, I will trace the genealogy of Simon's ideas on the computer and
-computation to understand their influence on his views on social
-organization. By doing this, I wish to inquire about Simon's pessimism on
-the prospects of human rationality and his delegation of decision-making to
-``more capable'' systems such as machines and organizations.
-
-My opinion, so far, on Simon is that his idea of bounded rationality served
-as a kind of excuse to subordinate and reduce the individual to play a very
-minor role in social organizations and the conduct of human affairs in
-general. And, from what I have read, Simon's epistemic pessimism---which,
-by the way, is not too distant from Hayek's---has roots both on a kind of
-personal obsession of his with the relation between individual
-responsibility and ethical choice,\footnote{I am not aware that Simon was a particularly religious man, but these
-concerns are quite clearly influenced by christian morality and Simon's
-American-style liberal values.} and on his fascination with the
-fledgling computer technologies and their prospects. Therefore, in this
-master's thesis, I would like to dedicate an important part to Simon's
-relation to the computer. This is necessary to account for the importance
-of the treatment of information in his theories of organization. In
-fact, I surmise that what really preoccupied Simon wasn't 
-rationality per se, but information.
-
-In the second part of the thesis, I would like to discuss the political
-implications of Simon's ideas on the computer and
-computation. Unfortunately, I cannot say more about this, since my reading
-hasn't taken me that far, but I will very likely base this section on
-Philip Mirowski's \emph{Machine Dreams} and Paul Edwards's \emph{The Closed
-World}. Moreover, in Simon's article \emph{Heuristic Problem Solving: The Next
-Advance in Operations Research}, he discusses the relation between Charles
-Babbage and Adam Smith's ideas, which echoes a discussion in the second
-chapter of \emph{Machine Dreams} on these same men. I surmise that there could be
-some insightful material therein to construct this section. Although, I
-would like to mention Babbage and Jevons at some point to compare their
-thinking to Simon's, it is unlikely that time will allow for this.
-\subsection{Main question}
-\label{sec:org2dbffb8}
-What is Herbert Simon's definition of the computer? How did this concept
-influence his ideas of \emph{the human}? And, what are the consequences for the
-organization of labor of this vision of man and machine?
-\subsection{Secondary Questions}
-\label{sec:orgb1d6440}
-What was the relation between the natural and the artificial for Simon, and
-how does this relation relate to his late-life project of a Science of
-the Artificial?
-
-How do Simon's ideas on automation relate to his political views?
-
-Did Simon subscribe to the unity of science thesis?
-\section{Bibliography}
-\label{sec:org6d4a27a}
-This is a thematic bibliography organized around keywords. To facilitate
-reading, the book titles are highlighted in blue. 
-
 \nocite{*}
-\subsection{The Brain}
-\label{sec:orgeb943e2}
-\printbibliography[heading=none,keyword=memoire,keyword=brain]
-\subsection{The Cold War}
-\label{sec:orgb09659a}
-\printbibliography[heading=none,keyword=memoire,keyword=cold-war,notkeyword=brain]
-\subsection{The Computer}
-\label{sec:orgeda5318}
-\printbibliography[heading=none,keyword=memoire,keyword=computer,notkeyword=brain,notkeyword=cold-war]
-\subsection{Metaphors}
-\label{sec:orgad8fc8d}
-\printbibliography[heading=none,keyword=memoire,keyword=metaphors,notkeyword=brain,notkeyword=cold-war,notkeyword=computer,notkeyword=cyborg]
-\subsection{Herbert Simon}
-\label{sec:org9922628}
-\printbibliography[heading=none,keyword=memoire,keyword=herbert-simon,notkeyword=brain,notkeyword=cold-war,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors]
-\subsection{The Social Sciences}
-\label{sec:orgbe5f372}
-\printbibliography[heading=none,keyword=memoire,keyword=social-science,notkeyword=brain,notkeyword=computer,notkeyword=cyborg,notkeyword=metaphors,notkeyword=herbert-simon,notkeyword=cold-war]
-\chapter{Research Plan}
-\label{sec:orgdbe11bb}
-Look up into the history of Herbert Simon's 
-\chapter{Thesis Plan}
-\label{sec:org7b548e9}
-\section{Skeleton}
-\label{sec:orgd2bfb93}
-\begin{center}
-\begin{tabular}{llr}
-\textbf{Section} &  & \textbf{Length}\\
-Introduction &  & 20\\
-Chapter 1 &  & 25\\
- & Section 1 & \\
- & Section 2 & \\
- & Section 3 & \\
-Chapter 2 &  & 25\\
- & Section 1 & \\
- & Section 2 & \\
- & Section 3 & \\
-Conclusion &  & 5\\
-\textbf{Total} &  & 80\\
-\end{tabular}
-\end{center}
-\section{Draft Outline}
-\label{sec:org3ed55ba}
-\subsection{Introduction}
-\label{sec:org98283b6}
-\subsection{Chapter 1}
-\label{sec:orgd91d449}
-\begin{labeling}[~]{Section 1} 
-\item[Section 1] Background on the cold war and the computer. 
-\item[Section 2] Simon's place in the context just given. That is, historical information on Simon.
-\item[Section 3] Simon's history with the computer and artifical intelligence.
-\end{labeling}
-\subsection{Chapter 2}
-\label{sec:org2d7659e}
-Discuss Simon's article on economic democracy and his views of the
-organization of labor. 
-\begin{labeling}[~]{Section 1} 
-\item[Section 1] 
-\item[Section 2] 
-\item[Section 3] 
-\end{labeling}
-\subsection{Conclusion}
-\label{sec:org098cd12}
-\chapter{Task list}
-\label{sec:orgf630b15}
-\begin{itemize}
-\item[{$\square$}] Check with adviser.
-\item[{$\square$}] Check with selected readers.
-\item[{$\square$}] Update the Research Proposal.
-\end{itemize}
-\chapter{Research}
-\label{sec:orgdf8a695}
-\begin{itemize}
-\item[{$\square$}] Final Sifting.
-\begin{itemize}
-\item[{$\square$}] Update list of key texts.
-\item[{$\square$}] Update list of key authors.
-\end{itemize}
-\item[{$\square$}] If necessary, update any component of the Research Proposal.
-\end{itemize}
+\chapter{Introduction: Economy of the Body; Economy of the Machine}
+\label{sec:orgb850f14}
+\printbibliography[heading=none,keyword=introduction]
+\section{Accroche: The Vagaries of the Concept of Work}
+\label{sec:org42e9ac6}
+\printbibliography[heading=none,keyword=introduction-1]
+\section{Problematique: Society and Nature, Rethinking Work in the 21st Century}
+\label{sec:org426f684}
+\printbibliography[heading=none,keyword=introduction-2]
+\section{Structure of the Thesis}
+\label{sec:org7179436}
+\chapter{Chapter 1}
+\label{sec:org76c1ee6}
+\section{Did Adam Smith Invent the Computer?}
+\label{sec:org5055576}
+The introduction to this section describes the computer as a technical
+object. The idea is to questoin the belief that the way to define a
+computer is to think of it in terms of its components. 
+
+A story that although was present for a long time, seems today relegated to
+the confines of a few books on the history of computing. 
+
+Test: this is an article from diderot encyclopedia:
+
+A document from the imprimerie Firmin Didot describes the process.
+
+\printbibliography[heading=none,keyword=chapter-1]
+\section{De Prony's Tables}
+\label{sec:orge09dc5d}
+This section describes de Prony' project in a holistic way. 
+
+The documents used in this section are:
+
+\printbibliography[heading=none,keyword=chapter-1.1]
+\subsection{Short historical context}
+\label{sec:org0950f0e}
+Describe the way de Prony's project was interpreted in the context of the
+French revolution. This is how is done 
+\subsection{Short technical description}
+\label{sec:org1ef6fa7}
+What was de Prony actually doing
+\section{Can Machine Labor Replace Human Labor?}
+\label{sec:org254f578}
+This section describes the reading that Charles Babbage makes of de Prony. 
+
+\printbibliography[heading=none,keyword=chapter-1.2]
+\section{Chapter Conclusion}
+\label{sec:org949ebd2}
+\chapter{Chapter 2}
+\label{sec:org5fe0715}
+\section{Herbert Simon Reads Babbage}
+\label{sec:org47523dd}
+This section discusses Herbert Simon's reading of Charles Babbage. If
+possible, we should look for Simon's reading of de Prony's project. After
+all, his article from 1958 discusses Babbage's citing of the project in his
+book on European manufactures.
+
+This section should discuss how the description of the organization of work
+as a simple technical matter has undemocratic undertones. 
+
+It could be interesting to look at what he has written on the organization
+of the workplace by machines and artificial intelligence. Should we be able
+to draw a parallel between his writing on organization and his views on
+democracy, we are all set. 
+
+\printbibliography[heading=none,keyword=chapter-2]
+\section{Simon on Organization}
+\label{sec:orgf0b029e}
+\printbibliography[heading=none,keyword=chapter-2.1]
+\section{What is Industrial Democracy?}
+\label{sec:org4b96d0f}
+Has Simon discussed the issue of democracy at the workplace besides the one
+article on industrial democracy?
+
+I want to talk about economic democracy as Alain Supiot does.  
+
+\printbibliography[heading=none,keyword=chapter-2.2]
+\section{Chapter Conclusion}
+\label{sec:orgf787f9c}
+\printbibliography[heading=none,keyword=chapter-2.3]
+\chapter{Conclusion}
+\label{sec:orgca4f913}
+\lipsum
 \end{document}

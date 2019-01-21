@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: lualatex
-\documentclass[version=last,draft=false,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=20mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
+\documentclass[version=last,draft=true,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=20mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
@@ -18,9 +18,10 @@
 \MakeOuterQuote{"}
 \MakeForeignQuote{french}{«}{»}
 \AtBeginEnvironment{quote}{\itshape}
-\usepackage[backend=biber,bibstyle=verbose,citestyle=verbose-trad1,doi=false,isbn=false,url=true]{biblatex}
+\usepackage[backend=biber,bibstyle=verbose,citestyle=verbose-trad1,doi=false,isbn=false,url=false]{biblatex}
 \addbibresource{~/Documents/mendeley/sync0_library.bib}
 \renewbibmacro*{date}{\printdate\iffieldundef{origyear}{}{\setunit*{\addspace}\printtext[parens]{\printorigdate}}}
+\renewcommand{\subtitlepunct}{\addcolon\addspace}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
@@ -116,6 +117,18 @@
  pdflang={English}}
 \begin{document}
 
+%   This program is free software: you can redistribute it and/or modify
+%   it under the terms of the GNU General Public License as published by
+%   the Free Software Foundation, either version 3 of the License, or
+%   (at your option) any later version.
+
+%   This program is distributed in the hope that it will be useful,
+%   but WITHOUT ANY WARRANTY; without even the implied warranty of
+%   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+%   GNU General Public License for more details.
+
+%   You should have received a copy of the GNU General Public License
+%   along with this program. If not, see <http://www.gnu.org/licenses/>.
 \begin{titlepage}
  \centering
 \begin{french}
@@ -161,9 +174,9 @@ under the terms of the \textsc{gnu} General Public License as published by
 the Free Software Foundation, either version 3 of the License or any later
 version.
 
-This text is distributed in the hope that it will be useful, but \textbf\{without
-any warranty\}; without even the implied warranty of \textbf\{merchantability or 
-fitness for a particular purpose\}. See the \textsc{gnu} General 
+This text is distributed in the hope that it will be useful, but \textbf{without
+any warranty}; without even the implied warranty of \textbf{merchantability or 
+fitness for a particular purpose}. See the \textsc{gnu} General 
 Public License for more details.
 
 You should have received a copy of the \textsc{gnu} General Public License along
@@ -173,18 +186,45 @@ with this text. If not, see \url{http://www.gnu.org/licenses/}.
 \noindent
 Copyright \textcopyright \textsc{sync0} 2018. 
 
-\newpage 
+% \newpage 
+\newpage\null\newpage
+
 \begin{FlushRight}
 \begin{italian}
-\textit{Per il professore Giorgio Israel. \newline Benché i nostri destini fossero uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Sono arrivato in ritardo, come la coscienza della nostra generazione. \linebreak Nell'era dell'informazione, diventiamo più ignoranti. \linebreak Grazie a Lei l'ho capito, maestro.}
+\textit{Per il professore Giorgio Israel. \newline Benché fossimo uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Come la coscienza della nostra generazione, \linebreak sono arrivato in ritardo. \linebreak Nell'era dell'informazione, diventiamo più ignoranti. \linebreak Grazie a Lei l'ho capito, maestro.}
 \end{italian}
 \end{FlushRight}
 
 \newpage
 \tableofcontents 
-
 \frontmatter
 \pagestyle{plain}
+\chapter*{Abbreviations} 
+\section*{Archival Sources}
+
+When citing archival materials, I indicate their location within the
+following archives:
+
+\begin{labeling}[:]{HSMC} 
+\item[HSCM] Herbert Simon Papers, Carnegie Mellon University Archives.
+\item[ENPC] École nationale des ponts et chaussées.
+\item[BNF] Bibliothèque nationale de France. 
+\end{labeling}
+
+I accessed them through their respective on-line repositories.
+
+\begin{labeling}[:]{HSMC} 
+\item[HSCM] \href{https://digitalcollections.library.cmu.edu/portal/index.jsp}{Carnegie Mellon University Libraries Digital Collections.} 
+\item[ENPC] \href{https://patrimoine.enpc.fr/}{Bibliothèque numérique patrimoniale des ponts et chaussées}.
+\item[BNF] \href{https://gallica.bnf.fr/}{Gallica.}
+\end{labeling}
+
+Only the pdf version of this document includes hyperlinks to the source
+files, when available.
+
+\chapter{Acknowledgements} 
+\lipsum
+% \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 \chapter{Note aux lecteurs francophones} 
 Le fait que ce mémoire fut préparé au sein d'une université française
 m'oblige moralement à \ldots aux lecteurs francophones. 
@@ -200,58 +240,78 @@ Dans le premier chapitre je raconte \ldots
 Dans le deuxième chapitre je raconte \ldots 
 
 \lipsum
-\chapter{Acknowledgements} 
-\lipsum
 
-\chapter{Abbreviations} 
-\section*{Archival Sources}
-
-\begin{labeling}[:]{HSMC} 
-\item[HSCM] Herbert Simon Papers, Carnegie Mellon University Archives.
-\end{labeling}
-
-\chapter[Preface]{Preface:\\ Science and Analogy} 
+\chapter[Preface]{Preface:\\ Science and History} 
+% \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
+% \mainmatter
 
 \lipsum
 \mainmatter
 \pagestyle{scrheadings}
+\chapter{Introduction: Economy of the Body; Economy of the Machine}
+\label{sec:org11891c9}
+\section{Does Labor Exist?}
+\label{sec:orgeba2809}
+
+\section{Society and Nature}
+\label{sec:org91aa5eb}
 \chapter{Did Adam Smith Invent the Computer?}
-\label{sec:org761dd6b}
+\label{sec:org31178cd}
+The introduction to this section describes the computer as a technical
+object. The idea is to questoin the belief that the way to define a
+computer is to think of it in terms of its components. 
+
 A story that although was present for a long time, seems today relegated to
 the confines of a few books on the history of computing. 
-\section{What is a Computer?}
-\label{sec:org2edf4ac}
-\lipsum
-\section{Simon and Babbage}
-\label{sec:orga12f388}
-\lipsum
+
+A document from the imprimerie Firmin Didot describes the process.
+
+Test: this is an article from diderot encyclopedia:
+
 \section{De Prony's Tables}
-\label{sec:orgf1ed8fe}
-\lipsum
-\chapter{Economy of the Body; Economy of the Machine}
-\label{sec:org8d9fdbf}
-\section{Does Labor Exist?}
-\label{sec:orgda5341e}
-\section{Society and Nature}
-\label{sec:org4b418a9}
-\section{Historicizing Efficiency}
-\label{sec:org307abdb}
+\label{sec:org245fb32}
+This section describes de Prony' project in a holistic way. 
+
+The documents used in this section are:
+
+\subsection{Short historical context}
+\label{sec:orgd3bde78}
+Describe the way de Prony's project was interpreted in the context of the
+French revolution. This is how is done 
+\subsection{Short technical description}
+\label{sec:org7d2d608}
+What was de Prony actually doing
+\section{Can Machine Labor Replace Human Labor?}
+\label{sec:org8b8a21a}
+This section describes the reading that Charles Babbage makes of de Prony.\footcite{babbage1832}
+
+\section{Herbert Simon Reads Babbage}
+\label{sec:orge2c0c61}
+This section discusses Herbert Simon's reading of Charles Babbage. If
+possible, we should look for Simon's reading of de Prony's project. After
+all, his article from 1958 discusses Babbage's citing of the project in his
+book on European manufactures.
+
 \chapter{UnDemocratic Machines}
-\label{sec:org8d9952f}
+\label{sec:org41f3f8c}
+This section should discuss how the description of the organization of work
+as a simple technical matter has undemocratic undertones. 
+
+Has Simon discussed the issue of democracy at the workplace besides the one
+article on industrial democracy?
+
+It could be interesting to look at what he has written on the organization
+of the workplace by machines and artificial intelligence. Should we be able
+to draw a parallel between his writing on organization and his views on
+democracy, we are all set. 
 \section{What is Industrial Democracy?}
-\label{sec:orgee7432d}
+\label{sec:org6d0d66f}
 I want to talk about economic democracy as Alain Supiot does.  
 
-Sample entry.\footcite{babbage1832}
-
-Sample entry.\footcite{simon2001b}
 
 \lipsum
-\section{Administrative Behavior}
-\label{sec:org55fe848}
-\lipsum
-\section{Artificial Intelligence}
-\label{sec:org725f443}
+\chapter{Conclusion}
+\label{sec:orga042e6b}
 \lipsum
 
 \backmatter

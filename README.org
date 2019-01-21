@@ -1,3 +1,8 @@
+#+STARTUP: indent hidestars contents logdrawer
+#+TITLE: Master 2 Thesis
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+* In-Development
 * Description
 This repository contains most files used to prepare my Master's thesis.
 
@@ -134,20 +139,20 @@ system, in which a M2 Master's thesis should be prepared in one year.
 # Since the table is coded with Emacs' ~org-mode~, it is interactive. Just type
 # the number of weeks spent in each stage under the ~Spent~ column, and the
 # rest will adjust (with ~C-c C-c~) to display the remaining weeks and months.
-* 無 Administration                                                                                 :Administration: 
+* 無 Administration                                                                                :Administration: 
 :PROPERTIES:
 :CATEGORY: Administration   
 :END:
-** Dépôt du mémoire
+** 無 Dépôt du mémoire
 SCHEDULED: <2019-05-16 Thu>
 - [ ] 1 exemplaire papier au Bureau des M2 Recherche à l'attention de Mme
   Gemain-Haguy au 90, rue de Tolbiac 75013 Paris - Bureau B.15-08
 - [ ] 1 copie sur Clé USB
 - [ ] 2 exemplaires directement au Directeur de soutenance à la MSE au
   106-112 Bd de l'hopital 75013 Paris 
-** Soutenance
+** 無 Soutenance
 SCHEDULED: <2019-05-24 Fri>
-** Délibération
+** 無 Délibération
 SCHEDULED: <2019-06-05 Wed>
 * 無 Stages :Étapes:
 :PROPERTIES:
@@ -164,43 +169,43 @@ SCHEDULED: <2018-10-28 Sun>
 DEADLINE: <2018-10-31 Wed>
 - [X] Main question.
 - [X] Scope and interrelations.
-- [ ] Research hypotheses.
-- [-] Methodology.
+- [X] Research hypotheses.
+- [X] Methodology.
   - [X] Keywords.
-  - [ ] Debates & controversies.
-  - [ ] Axes d'interpretation.
+  - [X] Debates & controversies.
+  - [X] Axes d'interpretation.
 - [X] Check with adviser.
-** 中 Research Stage
+** 完 Research Stage
 SCHEDULED: <2018-11-01 Thu>
-*** 中 Research Proposal
-- [ ] Main question.
-- [ ] Secondary questions.
-- [ ] Scope and interrelations.
-- [ ] Research hypotheses.
-- [ ] Methodology.
-  - [ ] Keywords.
-  - [ ] Axes d'interpretation.
-  - [ ] Debates & controversies.
-- [ ] Sources.
-  - [ ] Update list of key texts.
-  - [ ] Update list of key authors.
-*** 中 Research Plan
-- [ ] Check with adviser.
-- [ ] Check with selected readers.
-- [ ] Update the Framework.
-*** 中 Research
- - [ ] Final Sifting.
-  - [ ] Update list of key texts.
-  - [ ] Update list of key authors.
- - [ ] If necessary, update any component of the Framework.
-** 待 Preparatory Writing Stage
-*** Draft: Writing Proposal
+*** 完 Research Proposal
+- [X] Main question.
+- [X] Secondary questions.
+- [X] Scope and interrelations.
+- [X] Research hypotheses.
+- [X] Methodology.
+  - [X] Keywords.
+  - [X] Axes d'interpretation.
+  - [X] Debates & controversies.
+- [X] Sources.
+  - [X] Update list of key texts.
+  - [X] Update list of key authors.
+*** 完 Research Plan
+- [X] Check with adviser.
+- [X] Check with selected readers.
+- [X] Update the Framework.
+*** 完 Research
+ - [X] Final Sifting.
+   - [X] Update list of key texts.
+   - [X] Update list of key authors.
+ - [X] If necessary, update any component of the Framework.
+** 中 Preparatory Writing Stage
+*** 中 Draft: Writing Proposal
 - [ ] Update Main Question.
 - [ ] Write the Directing Idea.
 - [ ] Write the Argument.
-*** Draft: Writing Plan
+*** 無 Draft: Writing Plan
 - [ ] Check with thesis adviser.
-*** Additional Research
+*** 無 Additional Research
 ** 待 Writing Stage
 SCHEDULED: <2019-01-20 Sun>
 *** Exploratory Draft: Thesis
@@ -227,7 +232,7 @@ SCHEDULED: <2019-01-20 Sun>
 - [ ] Check for mood & consistency.
 - [ ] Check with thesis adviser.
 - [ ] Check with selected readers.
-** 阻 Jury Stage
+** 無 Jury Stage
     SCHEDULED: <2019-05-13 Mon>
 *** Adviser Agreement: Jury
 *** Fine Tuning
@@ -615,17 +620,10 @@ SCHEDULED: <2018-11-05 Mon>
 *** 阻 Purcell, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
 *** 阻 Ross, Modernist Impulses in the Human Sciences, 1870-1930
 *** 阻 Ross, The Origins of American Social Science 
-* 無 [3/3] Advisor                                                                          :Directeur:
+* 完 [1/1] Advisor                                                                                 :Directeur:
 :PROPERTIES:
 :CATEGORY: Directeur   
 :END:
-** 完 Écrire cinq pages 
-- Il faut avoir des intuitions.
-- Il faut prendre des notes pour avoir de l'ordre jusqu'à ce que l'on
-  puisse dire: «Mon projet est ceci et cela». 
-- Il faut commencer à écrire. Sa permet d'être en dialogue avec les
-  matériaux.  
-- On peut écrire en anglais. 
 ** 完 Trouver une bibliographie de Simon
 La plus a jour sur Simon, pour choisir le corpus
 
@@ -642,15 +640,3 @@ Simon, Theories of decision making in economics and behavioral science. AER
 1949 no. 3
 
 fichier nationale des theses, Herbert Simon. 
-** 完 Lire les mémoires des doctorants 
-- [ ] Francesco Sergi,
-- [ ] Cléo Chassonnéry-Zaïgouche: histoire de économie des discrimination. 
-* Settings                                                                      :noexport:ARCHIVE:
-#+STARTUP: indent hidestars contents logdrawer
- #+TITLE: Master 2 Thesis
-#+LANGUAGE: en
-#+EXPORT_SELECT_TAGS: export
-#+EXPORT_EXCLUDE_TAGS: noexport
-# Local Variables:
-# eval: (orwell-mode) 
-# End:
