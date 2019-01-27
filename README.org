@@ -203,7 +203,7 @@ SCHEDULED: <2018-11-01 Thu>
 - [ ] Update Main Question.
 - [ ] Write the Directing Idea.
 - [ ] Write the Argument.
-*** 無 Draft: Writing Plan
+*** 中 Draft: Writing Plan
 - [ ] Check with thesis adviser.
 *** 無 Additional Research
 ** 待 Writing Stage
@@ -240,12 +240,111 @@ SCHEDULED: <2019-01-20 Sun>
 *** Printing
 *** Due Diligence: Jury
 *** Jury
-* 無 Lectures                                                                                       :Lectures: 
-** 無 [4/57] Key Text                                                                             :Key:
+* Writing Plan
 :PROPERTIES:
-:CATEGORY: KeyText   
+:CATEGORY: Mémoire
 :END:
-*** 次 [0/15] Heyck, Herbert Simon: The Bounds of Reason in Modern America
+** [0/13] Introduction
+*** 無 Rabinbach, The Utopias of Labor
+*** 無 [0/2] Maas, William Stanley Jevons and the Making of Modern Economics
+:Notes:
+Use chapter one. If possible the last chapter as well. 
+:END:
+  1. [ ] The Prying Eyes of the Natural Scientist
+  5. [ ] The Image of Economics
+     - Bridging the natural and the social
+     - Mechanical dreams
+     - Economics as natural science
+*** 無 Schaffer, Enlightened Automata 
+*** 無 Dubarle, Vers la machine à gouverner
+*** 無 Oliveira, A History of the Work Concept
+*** 無 Peaucelle, Vices et vertus du travail spécialisé 
+*** 無 Supiot, Le droit du travail 
+*** 無 Supiot, La technique 
+*** 無 Supiot, Critique du droit du travail 
+*** 無 Vatin, Le travail et ses valeurs 
+*** 無 Thompson, Time, Work-Discipline, and Industrial Capitalism 
+*** 無 Brenner, Quelle épistémologie historique?
+*** 無 Maas, The Historical Epistemology of Economics
+*** 無 [0/5] Supiot, 2012, La gouvernance par les nombres
+:Notes:
+Maybe read only chapter 3 and 7. 
+:END:
+  1. [ ] En quête de la machine à gouverner
+     - Poétique du gouvernement 
+     - L'homme machine
+     - Du gouvernement à la gouvernance
+  4. [ ] Le rêve de l'harmonie par le calcul
+     - Les accords parfaits du nombre
+     - La fonction instituante de la discorde 
+  5. [ ] L'essor des usages normatifs de la quantification
+     - Rendre compte
+     - Administrer
+     - Juger
+     - Légiférer 
+  6. [ ] L’asservissement de la Loi au Nombre: du Gosplan au Marché total
+     - Le renversement du règne de la loi
+     - Le droit, outil de planification
+     - L'hybridation du communisme et capitalisme 
+  12. [ ] De la mobilisation totale à la crise du Fordisme
+      - Le compromis Fordiste
+      - La déconstruction du droit du travail
+      - Les voies d'un nouveau compromis 
+** Chapter 1
+*** [0/8] Chapter 1 : Introduction : Did Adam Smith Invent the Computer
+**** 無 Campbell-Kelly, Computer: A History of the Information Machine
+**** 無 Delaire, Épingle 
+**** 無 Grier, Human Comptuers
+**** 無 Peaucelle, La division du travail
+**** 無 Peaucelle, Les innovations techniques et organisationelles dans la fabrication des épingles 
+**** 無 Peaucelle, Raisonner sur les épingles, l'exemple d'Adam Smith sur la division du travail
+**** 無 Perronet, Épinglier 
+**** 無 Réaumur, Art de l’épinglier 
+*** [0/10] Chapter 1 : Section 1 : De Prony's Tables and Human Computers
+**** 無 Gaspard-Clair-François-Marie Riche de Prony, Constructeur de ponts
+**** 無 Gaspard Riche de Prony, ou le génie appliqué
+**** 無 Didot, Note sur la publication proposée par le gouvernement anglais des grandes tables 
+**** 無 Grabiner, The Centrality of Mathematics in the History of Western Thought 
+**** 無 Grattan-Guinness, Work for the Hairdressers
+**** 無 Lefort, Description des grandes tables logarithmiques et trigonometriques 
+**** 無 Peaucelle, Le détail du calendrier de calcul des tables de Prony 1791 à 1802
+**** 無 Peaucelle, Un «éléphant blanc» en pleine Révolution Française
+**** 無 Roegel, The Great Logarithmic and Trigonometric Tables of the French Cadastre
+**** 無 Ycart, La manufacture à logarithmes comme des épingles 
+*** [0/8] Chapter 1 : Section 2 : Can Machine Labor Replace Human Labor?
+**** 無 Babbage, On the Economy of Machinery and Manufactures 
+- [ ] Chapter XVI 
+- [ ] Chapter XVII
+**** 無 Schaffer, Babbage's Intelligence: Calculating Engines and the Factory System
+**** 無 Dasgupta, It Began with Babbage
+**** 無 Daston, Enlightenment Calculations
+**** 無 [0/3] Maas, William Stanley Jevons and the Making of Modern Economics
+:Notes:
+Use chapter's 2 and 3.
+:END:
+  2. [ ] Engines of Discovery
+     - Babbage and his calculating engines
+     - God is a programmer
+     - An intelligent machine
+     - Is the mind a reasoning machine?
+  3. [ ] The Machinery of the Mind
+     - The Logical Abacus
+     - The Logical Machine
+     - The machine of the mind
+     - Induction - the inverse of deduction
+     - To decide what things are similar
+  4. [ ] The Laws of Human Enjoyment
+     - The factory system and the division of labor
+     - Ruskin's aesthetic-driven criticism of the factory system
+     - Mill and the gospel of work
+     - Work and fatigue
+**** 無 Miller, Charles Babbage and the Design of Intelligence 
+**** 無 Purbrick, The Dream Machine 
+**** 無 Romano, The Economic Ideas of Charles Babbage
+*** [0/0] Chapter 1 : Conclusion
+** Chapter 2
+*** [2/15] Chapter 2 : Introduction : Herbert Simon: Computer as Mind; Mind as Computer
+**** 無 [0/15] Heyck, Herbert Simon: The Bounds of Reason in Modern America
   - [ ] Unbounded rationality
   - [ ] The garden of forking paths
   - [ ] The Chicago school and the sciences of control
@@ -261,17 +360,162 @@ SCHEDULED: <2019-01-20 Sun>
   - [ ] /Homo adaptativus/, the Finite problem solver
   - [ ] Scientist of the artificial
   - [ ] The expert problem solver 
-*** 次 Heyck Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 2
+**** 無 Heyck, Georges Miller, language, and the computer metaphor of mind
+**** 無 Heyck, Mind and Network
+**** 無 Heyck Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 2
      DEADLINE: <2018-11-18 Sun>
-*** 完 Heyck, Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 1
-     DEADLINE: <2018-11-18 Sun>
-*** 次 Heyck, Georges Miller, language, and the computer metaphor of mind
-*** 次 Heyck, Mind and Network
+**** 完 Heyck, Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 1
+**** 無 Mirowski, Core Wars
+**** 無 Gigerenzer, Mind as Computer: Birth of a Metaphor
+**** 無 Simon, Artificial Intelligence: An Empirical Science
+**** 無 Marshall, Minds, Machines and Metaphors
+**** 無 Simon, Mind as Machine: The Cognitive Révolution in Behavioral Science
+**** 無 Simon, The Patterned Matter that is Mind
+**** 完 Simon, Heuristic Problem Solving: The Next Advance in Operations Research 
+**** 無 Simon, Interview in OMNI
+**** 無 Simon, AI's Greatest Trends and Controversies
+**** 無 Simon, The Patterned Matter that is Mind
+*** [0/12] Chapter 2 : Section 1 : Simon on Organization
+**** 無 Simon, Public Administration in Today's World of Organizations and Markets
+Recommended by Jean-Sébastien Lenfant for the Economics and Psychology class.
+**** 無 Simon, Discovering Explanations
+**** 無 Simon, Invariants of Human Behavior
+**** 無 Simon, Rational Decision-making in Business Organizations
+**** 無 Simon, Information 101: It is Not What You Know, It is How you Know It
+**** 無 Simon, Human Nature in Politics: The Dialogue of Psychology with Political Science
+**** 無 Simon, Rational Choice and the Structure of the Environment                             
+**** 無 Simon, Freedom and Discipline
+**** 無 Simon, Psychology and Economics
+**** 無 Simon, Rational Decision-Making in Business Organizations
+**** 無 Simon, Theories of Decision-Making in Economics and Behavioral Science
+**** 無 Simon, Administrative Behavior
+*** [0/9] Chapter 2 : Section 2 : Could Computers Be Democratic? 
+**** 無 Simon, Prometheus or Pandora: The Influence of Automation on Society 
+**** 無 Simon, Management by Machine
+**** 無 Simon, A Computer for Everyman
+**** 無 Simon, Artificial Intelligence: Where Has It Been, and Where is It Going?
+**** 無 Simon, Robots: Who Wants Them and Why
+**** 無 Waring, Taylorism Transformed
+**** 無 Simon, What Computers Mean for Man and Society
+**** 無 Simon, What is Industrial Democracy?
+**** 無 Simon, The Shape of Automation 
+:PROPERTIES:
+:LOCATION: Bibliothèque Broca
+:END:
+***** 無 Simon, The Economic Effects of Automation
+***** 無 Simon, The Corporation: Will it Be Manage by Machines?
+***** 無 Simon, The New Science of Management Decisions
+*** [0/0] Chapter 2 : Conclusion
+** [0/0] Conclusion
+* 無 Lectures                                                                                       :Lectures: 
+** 無 [4/57] Key Text                                                                             :Key:
+:PROPERTIES:
+:CATEGORY: KeyText   
+:END:
+*** 無 [0/15] Heyck, Herbert Simon: The Bounds of Reason in Modern America
+  - [ ] Unbounded rationality
+  - [ ] The garden of forking paths
+  - [ ] The Chicago school and the sciences of control
+  - [ ] Mathematics, logic, and the sciences of choice
+  - [ ] Research and reform
+  - [ ] /Homo administrativus/, or Choice under control
+  - [ ] Decisions and revisions
+  - [ ] Structuring his environment
+  - [ ] Islands of theory
+  - [ ] A new model of mind and machine
+  - [ ] The program /is/ the theory
+  - [ ] The cognitive revolution
+  - [ ] /Homo adaptativus/, the Finite problem solver
+  - [ ] Scientist of the artificial
+  - [ ] The expert problem solver 
+*** 無 [0/15] Supiot, 2012, La gouvernance par les nombres
+:Notes:
+Maybe read only chapter 3 and 7. 
+:END:
+  1. [ ] En quête de la machine à gouverner
+     - Poétique du gouvernement 
+     - L'homme machine
+     - Du gouvernement à la gouvernance
+  2. [ ] Les aventures d'un idéal: le règne de la loi
+     - Le /nomos/ grec
+     - La /lex/ en droit romain
+     - La révolution gregorienne
+     - /Common Law/ et droit continental
+     - La tradition juridique occidental 
+  3. [ ] Autres points de vue sur les lois
+  4. [ ] Le rêve de l'harmonie par le calcul
+     - Les accords parfaits du nombre
+     - La fonction instituante de la discorde 
+  5. [ ] L'essor des usages normatifs de la quantification
+     - Rendre compte
+     - Administrer
+     - Juger
+     - Légiférer 
+  6. [ ] L’asservissement de la Loi au Nombre: du Gosplan au Marché total
+     - Le renversement du règne de la loi
+     - Le droit, outil de planification
+     - L'hybridation du communisme et capitalisme 
+  7. [ ] Calculer l'incalculable: la doctrine Law and Economics
+     - La théorie des jeux
+     - La théorie de l'agence
+     - Le théorème de Coase et la théorie des /property rights/
+     - La /New Comparative Analysis/ et le marché du droit 
+  8. [ ] La dynamique juridique de la gouvernance par les nombres
+     - La gouvernance individuelle 
+     - La gouvernance de l’entreprise 
+     - La gouvernance étatique 
+     - La gouvernance européenne 
+     - La gouvernance mondiale 
+  9. [ ] Les impasses de la gouvernance par les nombres
+     - Les effets de structure de la gouvernance par les nombres 
+     - Les résistances du Droit à la gouvernance par les nombres
+  10. [ ] Le dépérissement de l'état
+      - La sacralité de la chose publique
+      - La direction scientifique des hommes
+      - L'inversion de la hiérarchie publique/privé
+      - La loi pour soi et soi pour la loi
+      - Sans foi ni loi: la société insoutenable 
+  11. [ ] La résurgence du gouvernement par les hommes
+  12. [ ] De la mobilisation totale à la crise du Fordisme
+      - Le compromis Fordiste
+      - La déconstruction du droit du travail
+      - Les voies d'un nouveau compromis 
+  13. [ ] De l'échange quantifié à l’allégeance des personnes
+      - La mobilisation totale au travail
+      - Les nouveaux droits attachés à la personne 
+  14. [ ] La structure des liens d’allégeance
+      - L'allégeance dans les réseaux d'entreprises
+      - L'allégeance des multinationales aux États impériaux
+  15. [ ] Comment en sortir
+*** 無 [0/7] Maas, William Stanley Jevons and the Making of Modern Economics
+:Notes:
+Use chapter one. If possible the last chapter as well. 
+:END:
+  1. [ ] The Prying Eyes of the Natural Scientist
+  2. [ ] Engines of Discovery
+     - Babbage and his calculating engines
+     - God is a programmer
+     - An intelligent machine
+     - Is the mind a reasoning machine?
+  3. [ ] The Machinery of the Mind
+     - The Logical Abacus
+     - The Logical Machine
+     - The machine of the mind
+     - Induction - the inverse of deduction
+     - To decide what things are similar
+  4. [ ] The Laws of Human Enjoyment
+     - The factory system and the division of labor
+     - Ruskin's aesthetic-driven criticism of the factory system
+     - Mill and the gospel of work
+     - Work and fatigue
+  5. [ ] The Image of Economics
+     - Bridging the natural and the social
+     - Mechanical dreams
+     - Economics as natural science
 *** 完 Heyck, Producing Reason 
 [[Solovey, Cold War Social Science: Knowledge Production, Liberal]]
 [[file:master.org::Producing Reason]]
 *** 無 Heyck, The Organizational Revolution and the Human Sciences
-*** 次 Mirowski, Core Wars
 *** 次 Mirowski, Machines that Buy to Machines that Sell
 *** 無 Sent, Behavioral Economics: How Psychology Made Its (Limited) Way Back Into Economics
 *** 次 Sent, Herbert A. Simon as a Cyborg Scientist
@@ -280,57 +524,21 @@ SCHEDULED: <2019-01-20 Sun>
 *** 無 Sent, The Economics of the Crisis and the Crisis of Economics: Lessons from Behavioral Economics
 Probably good for writing the introduction. 
 *** 次 Simon, A Behavioral Model of Rational choice
-*** 無 Simon, A Computer for Everyman
-*** 無 Simon, AI's Greatest Trends and Controversies
 *** 無 Simon, Anecdotes: A Very Early Expert System
-*** 無 Simon, Artificial Intelligence: An Empirical Science
-*** 無 Simon, Artificial Intelligence: Where Has It Been, and Where is It Going?
 *** 無 Simon, Cognitive Science: The Newest Science of the Artificial
 *** 次 Simon, Economics and Psychology                                      
-     DEADLINE: <2018-11-18 Sun>
 *** 無 Simon, Economics, Bounded Rationality and the Cognitive Revolution
 *** 無 Simon, Editorial: Cognitive Modeling in Perspective
-*** 次 Simon, Freedom and Discipline
-*** 完 Simon, Heuristic Problem Solving: The Next Advance in Operations Research 
-*** 無 Simon, Human Nature in Politics: The Dialogue of Psychology with Political Science
-*** 無 Simon, Information 101: It is Not What You Know, It is How you Know It
-*** 無 Simon, Interview in OMNI
-*** 無 Simon, Invariants of Human Behaivor
-*** 次 Simon, Management by Machine
 *** 無 Simon, Models of Discovery: and Other Topics in the Methods of Science
 *** 無 Simon, On the Behavioral and Ratuional Foundations of Economic Theory
+*** 無 Simon, The Failure of Armchair Economics 
 *** 無 Simon, Organization Man: Rational or Self-Actualizing?
 *** 無 Simon, Organizations and Markets
 *** 完 Simon, Pro- and Anti-Lists of the Most Significant Contributions to Economic Theory
-*** 次 Simon, Prometheus or Pandora: The Influence of Automation on Society 
-*** 次 Simon, Psychology and Economics
-*** 無 Simon, Public Administration in Today's World of Organizations and Markets
 *** 無 Simon, Radical Constructivims and Cognitive Psychology
-*** 次 Simon, Rational Choice and the Structure of the Environment                                :print:
-*** 無 Simon, Rational Decision-Making in Business Organizations
-*** 無 Simon, Robots: Who Wants Them and Why
-*** 次 Simon, The Failure of Armchair Economics 
-*** 無 Simon, The Patterned Matter that is Mind
-*** 次 Simon, The Shape of Automation 
-:PROPERTIES:
-:LOCATION: Bibliothèque Broca
-:END:
-**** 無 Simon, The Economic Effects of Automation
-**** 無 Simon, The Corporation: Will it Be Manage by Machines?
-**** 無 Simon, The New Science of Management Decisions
-*** 次 Simon, Theories of Decision-Making in Economics and Behavioral Science
-     DEADLINE: <2018-11-18 Sun>
-Recommended by Jean-Sébastien Lenfant for the Economics and Psychology class.
-*** 無 Simon, What Computers Mean for Man and Society
-*** 次 Simon, What is Industrial Democracy?
 *** 阻 Mayr, Authority, Liberty and Automatic Machinery in Early Modern Europe
-*** 阻 Schaffer, Babbage's Intelligence: Calculating Engines and the Factory System
-*** 阻 Schaffer, Enlightened Automata 
 *** 阻 Riskin, The Defecating Duck, or the Ambiguous Origins of Artificial Life 
-*** 阻 Thompson, Time, Work-Discipline, and Industrial Capitalism 
-*** 無 Rabinbach, The Utopias of Labor
 *** 無 Rabinbach, The Human Motor
-*** 無 Taylorism Transformed
 ** 無 [0/33] Important Text                                                                       :Important:
 :PROPERTIES:
 :CATEGORY: ImportantText   
@@ -385,15 +593,11 @@ Recommended by Jean-Sébastien Lenfant for the Economics and Psychology class.
     - [ ] Contingency, Irony, and Computation
 *** 無 Ando, On the Contributions of Herbert Simon to Economics
 *** 無 Mirowski, Interaction and Market Structure
-*** 阻 Campbell-Kelly, Computer: A History of the Information Machine
 *** 阻 Dasgupta, It Began with Babbage: The Genesis of Computer Science
 *** 無 Callon, Economization, part 1: Shifting Attention from the Economy towards Processes of Economization
 *** 無 Callon, Economization, part 2: A Research Programme for the Study of Markets
-*** 無 Dubarle, Vers la machine à gouverner
 *** 阻 Dupuy, Aux origines des sciences cognitives 
 *** 阻 Edwards, The Closed World: Computers and the Politics of Discourse in Cold War America
-*** 阻 Gigerenzer, Mind as Computer: Birth of a Metaphor
-*** 阻 Marshall, Minds, Machines and Metaphors
 *** 阻 Miller, Toward a general theory for the behavioral sciences
 *** 無 Muniesa, Peripheral Vision Economic Markets as Calculative Collective Devices
 *** 無 Muniesa, An Introduction to Market Devices
@@ -423,62 +627,6 @@ Cannot read it all; too lon
 :PROPERTIES:
 :CATEGORY: AncillaryText   
 :END:
-*** 阻 [0/15] Supiot, 2012, La gouvernance par les nombres
-  - [ ] En quête de la machine à gouverner
-    - Poétique du gouvernement 
-    - L'homme machine
-    - Du gouvernement à la gouvernance
-  - [ ] Les aventures d'un idéal: le règne de la loi
-    - Le /nomos/ grec
-    - La /lex/ en droit romain
-    - La révolution gregorienne
-    - /Common Law/ et droit continental
-    - La tradition juridique occidental 
-  - [ ] Autres points de vue sur les lois
-  - [ ] Le rêve de l'harmonie par le calcul
-    - Les accords parfaits du nombre
-    - La fonction instituante de la discorde 
-  - [ ] L'essor des usages normatifs de la quantification
-    - Rendre compte
-    - Administrer
-    - Juger
-    - Légiférer 
-  - [ ] L’asservissement de la Loi au Nombre: du Gosplan au Marché total
-    - Le renversement du règne de la loi
-    - Le droit, outil de planification
-    - L'hybridation du communisme et capitalisme 
-  - [ ] Calculer l'incalculable: la doctrine Law and Economics
-    - La théorie des jeux
-    - La théorie de l'agence
-    - Le théorème de Coase et la théorie des /property rights/
-    - La /New Comparative Analysis/ et le marché du droit 
-  - [ ] La dynamique juridique de la gouvernance par les nombres
-    - La gouvernance individuelle 
-    - La gouvernance de l’entreprise 
-    - La gouvernance étatique 
-    - La gouvernance européenne 
-    - La gouvernance mondiale 
-  - [ ] Les impasses de la gouvernance par les nombres
-    - Les effets de structure de la gouvernance par les nombres 
-    - Les résistances du Droit à la gouvernance par les nombres
-  - [ ] Le dépérissement de l'état
-    - La sacralité de la chose publique
-    - La direction scientifique des hommes
-    - L'inversion de la hiérarchie publique/privé
-    - La loi pour soi et soi pour la loi
-    - Sans foi ni loi: la société insoutenable 
-  - [ ] La résurgence du gouvernement par les hommes
-  - [ ] De la mobilisation totale à la crise du Fordisme
-    - Le compromis Fordiste
-    - La déconstruction du droit du travail
-    - Les voies d'un nouveau compromis 
-  - [ ] De l'échange quantifié à l’allégeance des personnes
-    - La mobilisation totale au travail
-    - Les nouveaux droits attachés à la personne 
-  - [ ] La structure des liens d’allégeance
-    - L'allégeance dans les réseaux d'entreprises
-    - L'allégeance des multinationales aux États impériaux
-  - [ ] Comment en sortir
 *** 阻 Morton, The Revolt Against Formalism in American Social Thought of the Twentieth Century
 *** 阻 [0/17] Mirowski, The Knowledge We Lost in Information
   - [ ] It's not Rational 
@@ -565,31 +713,7 @@ Cannot read it all; too lon
   - [ ] Les philosophes et la machine
     - L'appreciation du machinisme
     - Les origines du machinisme 
-*** 阻 [0/7] Maas, William Stanley Jevons and the Making of Modern Economics
-  - [ ] The Prying Eyes of the Natural Scientist
-  - [ ] Engines of Discovery
-    - Babbage and his calculating engines
-    - God is a programmer
-    - An intelligent machine
-    - Is the mind a reasoning machine?
-  - [ ] The Machinery of the Mind
-    - The Logical Abacus
-    - The Logical Machine
-    - The machine of the mind
-    - Induction - the inverse of deduction
-    - To decide what things are similar
-  - [ ] The Laws of Human Enjoyment
-    - The factory system and the division of labor
-    - Ruskin's aesthetic-driven criticism of the factory system
-    - Mill and the gospel of work
-    - Work and fatigue
-  - [ ] The Image of Economics
-    - Bridging the natural and the social
-    - Mechanical dreams
-    - Economics as natural science
-SCHEDULED: <2018-11-05 Mon>
-- [ ] Ch. 1: The prying eyes of the natural scientist.
-- [ ] Ch. 10. The Image of Economics 
+*** 阻 Lallement, Le travail
 *** 阻 [1/3] Backhouse, They History of the Social Sciences since 1945
   - [ ] Ash, Psychology
   - [X] Backhouse, Economics

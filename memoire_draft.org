@@ -4,73 +4,123 @@
 # #+INCLUDE: "./title_pages.tex" export latex
 # #+INCLUDE: "./front_matter.tex" export latex
 \nocite{*}
-* 無 Introduction: Economy of the Body; Economy of the Machine
+* 完 Introduction 
 :PROPERTIES:
 :PAGECOUNT: 15
 :END:
-\printbibliography[heading=none,keyword=introduction]
-** Accroche: The Vagaries of the Concept of Work
+** 完 Accroche: ``The Concept of Work between Society and Nature''
 :PROPERTIES:
 :PAGECOUNT: 5
 :END:
+In the /accroche/, I will describe how something as self-evident as the work
+concept is in fact an ideological construct (ideological in the sense of
+the anthropologist Louis Dumont, and not in the Marxist sense). Therefore,
+I will briefly indicate that the concept of work begins in political
+economy and is then appropriated by natural science to be reimported into
+economic science.  
+
+Likewise, I will indicate that the motivation for the the thesis is to
+rethink what work is in the 21st century, taking into account the ubiquity
+of information technologies. 
+
 \printbibliography[heading=none,keyword=introduction-1]
-** Problematique: Society and Nature, Rethinking Work in the 21st Century
+** 完 Main Argument: ``Rethinking Work in the 21st Century''
 :PROPERTIES:
 :PAGECOUNT: 7
 :END:
+In this section, I will state the main argument of the thesis: namely, that
+the origin of the computer is a particular conception of the organization
+of work, which we should take into account to understand the transformation
+of work (its forms, its meaning, its formal definition in law, etc.) in the
+21st century. As such, this argument calls into question the ``popular''
+understanding of the one-sided transformation of work by the appeareance
+and dissemination of information and communication technologies (ICTs) in
+the late \ordinalnum{20} century. Instead, this thesis proposes to read the
+computer as a technology for organizing labor, to then use this reading to
+understand the transformation of labor that ICTs are supposedly pushing
+for. 
+
 \printbibliography[heading=none,keyword=introduction-2]
-** Structure of the Thesis
+** 完 Structure of the Thesis
 :PROPERTIES:
 :PAGECOUNT: 2
 :END:
+
+In this section, I simply describe the contents of the two chapters of the
+thesis and hint at the conclusion. 
+
+The first chapter traces the origins of the computer in de Prony and
+Babbage. The idea is to provide the reader with enough background knowledge
+to understand that the computer is not a thing but a concept, and that the
+definition of this concept has to be approached historically. This chapter
+will define the early computer as a conception of the organization of work
+that reflects an engineering and managerial mentality. Likewise, this
+chapter will hint at the link between this conception of work and its
+definition in law as a relation of subordination.
+
+The second chapter will describe Herbert Simon's interest in Babbage, and
+will speculate on how this reading shaped Simon's conception of the
+computer, the relation between the natural and the artificial, the changes
+in work produced by new technologies (artificial intellgence, computers,
+and automation), and the organization of work in society. Moreover, this
+chapter will criticize Simon's idea that the organization of work is a
+purely technical problem to propose an alternative view of work that
+emphases other criteria for organization such as justice, etc.
+
+\section*{References}
+\printbibliography[heading=none,keyword=introduction]
 * 無 Chapter 1
 :PROPERTIES:
 :PAGECOUNT: 30
 :END:
-** Did Adam Smith Invent the Computer?
+This chapter introduces the definition of the early computer as a
+technology for organizing work. The first objective of this chapter is to
+question the belief that the appropriate definition of the computer is in
+terms of its components. The second objective is to acquaint the reader
+with the history of the early computer by describing the project of the
+calculation of the logarithmic tables at the /Bureau du cadastre/, and the
+importance that this project had for Charles Babbage's calculating
+machines.
+** 中 Did Adam Smith Invent the Computer?
 :PROPERTIES:
 :PAGECOUNT: 5
 :END:
-The introduction to this section describes the computer as a technical
-object. The idea is to questoin the belief that the way to define a
-computer is to think of it in terms of its components. 
+This section shakes the reader off of the belief that a computer can be
+best described in terms of its parts by proposing the interpretation of the
+computer was in the beginning a technology for organizing labor. The point
+to emphasize is not that this story is unknown in the literature---it is
+not---, but that its significance for understanding the transformation of
+work in the age of the new economy. 
 
-A story that although was present for a long time, seems today relegated to
-the confines of a few books on the history of computing. 
-
-Test: this is an article from diderot encyclopedia:
-
-A document from the imprimerie Firmin Didot describes the process.
-
+\subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-1]
-** 完 De Prony's Tables
+** 無 De Prony's Tables and Human Computers 
 :PROPERTIES:
 :PAGECOUNT: 10
 :END:
-This section describes de Prony' project in a holistic way. 
 
-The documents used in this section are:
-
+\subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-1.1]
-*** Short historical context
+*** 取 Short historical context
 :PROPERTIES:
 :PAGECOUNT: 3
 :END:
 Describe the way de Prony's project was interpreted in the context of the
 French revolution. This is how is done 
-*** Short technical description
+*** 取 Short technical description
 :PROPERTIES:
 :PAGECOUNT: 3
 :END:
 What was de Prony actually doing
-** 完 Can Machine Labor Replace Human Labor?
+** 無 Can Machine Labor Replace Human Labor?
 :PROPERTIES:
 :PAGECOUNT: 10
 :END:
 This section describes the reading that Charles Babbage makes of de Prony. 
 
+\subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-1.2]
-** Chapter Conclusion
+** 完 Chapter Conclusion
 :PROPERTIES:
 :PAGECOUNT: 5
 :END:
@@ -95,13 +145,15 @@ of the workplace by machines and artificial intelligence. Should we be able
 to draw a parallel between his writing on organization and his views on
 democracy, we are all set. 
 
+\subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-2]
 ** 無 Simon on Organization
 :PROPERTIES:
 :PAGECOUNT: 10
 :END:
+\subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-2.1]
-** 無 What is Industrial Democracy?
+** 無 Could Computers Be Democratic?
 :PROPERTIES:
 :PAGECOUNT: 10
 :END:
@@ -110,8 +162,9 @@ article on industrial democracy?
 
 I want to talk about economic democracy as Alain Supiot does.  
 
+\subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-2.2]
-** Chapter Conclusion
+** 完 Chapter Conclusion
 :PROPERTIES:
 :PAGECOUNT: 5
 :END:
@@ -120,6 +173,12 @@ I want to talk about economic democracy as Alain Supiot does.
 :PROPERTIES:
 :PAGECOUNT: 5
 :END:
+
+# This thesis only hints at the importance of the concept of information in
+# the \ordinalnum{20} century science. A more thorough understainding of this
+# is necessary to understand the conceptual changes in \ordinalnum{20}
+# century economics. 
+
 \lipsum
 
 # \backmatter

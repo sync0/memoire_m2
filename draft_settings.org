@@ -42,7 +42,8 @@
 # Replace colon for dot as separator between title and subtitle. 
 # #+LATEX_HEADER: \renewcommand{\subtitlepunct}{\addcolon\addspace}
 # #+LATEX_HEADER: \renewbibmacro*{entryhead:full}{\printfield{labeltitle}\hfill\printfield{verba}}
-#+LATEX_HEADER:\renewbibmacro*{entryhead:true}{\printfield{labeltitle}}
+#+LATEX_HEADER: \renewbibmacro*{entryhead:full}{\printfield{labeltitle}}
+# #+LATEX_HEADER:\renewbibmacro*{entryhead:true}{\printfield{labeltitle}}
 # #+LATEX_HEADER: \urlstyle{same}
 # #+LATEX_HEADER: \urlstyle{sf}
 *** Ams
