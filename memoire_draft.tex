@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: lualatex
-\documentclass[version=last,draft=true,paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=10,BCOR=20mm,DIV=13,pagesize=auto,titlepage=false,mpinclude=false,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
+\documentclass[version=last,draft=false,paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=12,BCOR=20mm,DIV=13,pagesize=auto,titlepage=false,mpinclude=false,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
@@ -12,15 +12,9 @@
 \usepackage{capt-of}
 \usepackage{hyperref}
 \usepackage{polyglossia}
-\setmainlanguage{english}
-\setotherlanguages{french,italian}
 \usepackage[autostyle=true,english=american,french=guillemets,thresholdtype=words,threshold=3]{csquotes}
-\MakeOuterQuote{"}
-\MakeForeignQuote{french}{«}{»}
 \AtBeginEnvironment{quote}{\itshape}
-\usepackage[backend=biber,style=reading,eprint=false,abstract=false,library=false,file=false,entrykey=false,doi=false,isbn=false,url=false]{biblatex}
-\addbibresource{~/Documents/mendeley/sync0_library.bib}
-\renewbibmacro*{entryhead:full}{\printfield{labeltitle}}
+\AtBeginEnvironment{foreigndisplayquote}{\itshape}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
@@ -36,60 +30,60 @@
 \fmtcountsetoptions{french=france}
 \usepackage[singlespacing]{setspace}
 \usepackage[super]{nth}
-\usepackage[protrusion=true,tracking=true]{microtype}
 \usepackage{ragged2e}
 \usepackage[all]{nowidow}
 \usepackage{enumitem}
 \usepackage{adforn}
 \usepackage{float}
+\usepackage{titling}
 \usepackage{xcolor}
 \usepackage{graphicx}
 \graphicspath{ {/home/sync0/Dropbox/paris_1/} }
-\usepackage{lipsum}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 \tikzset{main node/.style={circle,fill=gray!45,draw,minimum size=0.5cm,inner sep=0pt},}
-\usepackage{fontspec}
-\usepackage{unicode-math}
-\usepackage[oldstyle,libertine]{libertine}
-\defaultfontfeatures{Scale=MatchLowercase}
-\newcommand\HUGE{\fontsize{30}{33}\selectfont}
+\usepackage{lipsum}
+\usepackage[backend=biber,bibstyle=reading,defernumbers=true,eprint=false,abstract=false,library=false,file=false,entryhead=full,entrykey=false,annotation=false,doi=false,isbn=false,url=false]{biblatex}
+\addbibresource{~/Documents/pdfs/bibliography.bib}
+\renewbibmacro*{date}{\printdate\iffieldundef{origyear}{}{\setunit*{\addspace}\printtext[brackets]{\printorigdate}}}
+\urlstyle{sf}
 \usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
 \clearscrheadfoot
 \automark[chapter]{part}
-\cehead{vers la machine à gourverner}
+\cehead{\MakeLowercase{\thetitle}}
 \cohead{\MakeLowercase{\headmark}}
 \ohead{\pagemark}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\usepackage[oldstyle]{libertine}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmonofont{Source Code Pro}
+\setmathfont[Scale=MatchUppercase]{libertinusmath-regular.otf}
+\newfontfamily{\titlefamily}[Scale=2]{Linux Biolinum O}
+\newfontfamily{\sbfseries}[UprightFont={* Semibold}]{Linux Libertine O}
+\newcommand\hugetitle{\fontsize{45}{50}\selectfont}
+\newcommand\HUGE{\fontsize{40}{40}\selectfont}
+\newcommand\hugechapter{\fontsize{30}{35}\selectfont}
 \AfterTOCHead{\singlespacing}
-\setkomafont{labelinglabel}{\normalfont\bfseries}
-\setkomafont{minisec}{\usekomafont{section}}
-\setkomafont{pagehead}{\normalfont\mdseries\scshape}
-\setkomafont{pagenumber}{\large\rmfamily\upshape}
-\setkomafont{sectioning}{\mdseries}
+\setkomafont{labelinglabel}{\normalsize\itshape}
+\setkomafont{minisec}{\usekomafont{subsection}}
+\setkomafont{pagehead}{\normalsize\mdseries\scshape}
+\setkomafont{pagenumber}{\normalsize\rmfamily\upshape}
+\setkomafont{sectioning}{\rmfamily\mdseries}
 \setkomafont{caption}{\small}
-\setkomafont{captionlabel}{\mdseries\scshape\lowercase}
-\setkomafont{part}{\HUGE\scshape\lowercase}
-\renewcommand*{\partformat}{}
-\renewcommand\partmarkformat{}
-\setkomafont{chapter}{\huge\scshape\lowercase}
+\setkomafont{captionlabel}{\sffamily\mdseries\scshape\lowercase}
+\setkomafont{chapter}{\hugechapter\rmfamily}
 \renewcommand{\raggedchapter}{\centering}
 \renewcommand*\chapterformat{\thechapter\autodot\par\enskip}
-\renewcommand*\chaptermarkformat{}
-\setkomafont{section}{\large\scshape\lowercase}
+\RedeclareSectionCommand[afterskip=5\baselineskip]{chapter}
+\setkomafont{section}{\Large\scshape\lowercase}
 \setkomafont{subsection}{\large}
-\renewcommand*{\subsubsectionformat}{\mdseries\upshape \thesubsubsection\autodot\enskip}
 \setkomafont{subsubsection}{\large\itshape}
-\AtBeginDocument{\renewcaptionname{english}\contentsname{contents}}
-\addtokomafont{chapterentry}{\mdseries\scshape\lowercase}
-\setkomafont{chapterentrypagenumber}{\normalfont}
-\usepackage{tocstyle}
-\settocfeature{raggedhook}{\raggedright}
-\selecttocstyleoption{tocgraduated}
-\usetocstyle{nopagecolumn}
-\newtcolorbox{note}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{lightgrey},title={#2},coltitle={black},fonttitle={},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
-\newtcolorbox{question}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{darkgrey},title={#2},coltitle={black},fonttitle={},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
-\newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{midgrey},title={#2},coltitle={black},fonttitle={\bfseries},fontupper={\normalfont},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
+\newtcolorbox{modified}[1][]{grow to right by=0mm,grow to left by=-1em,boxrule=1pt,boxsep=0pt,breakable,enhanced jigsaw,borderline west={0pt}{0pt}{lightgrey},lower separated=false,arc=00mm,colframe=white, #1}
+\newtcolorbox{note}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{lightgrey},title={#2},coltitle={black},fonttitle={\sffamily},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+\newtcolorbox{question}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{darkgrey},title={#2},coltitle={black},fonttitle={\sffamily},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+\newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{midgrey},title={#2},coltitle={black},fonttitle={\sffamily\bfseries},fontupper={\normalsize},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
 \renewcommand*\labelitemi{\adforn{33}}
 \renewcommand*\labelitemii{\adforn{73}}
 \renewcommand*\labelitemiii{\adforn{73}}
@@ -101,27 +95,32 @@
 \definecolor{darkgrey}{HTML}{636363}
 \definecolor{blackgrey}{HTML}{252525}
 \newcommand{\notimplies}{\centernot\implies}
-\setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{1}
-\recalctypearea
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{0}
 \setlength{\columnsep}{0.5cm}
+\setmainlanguage{english}
+\setotherlanguages{french,italian,spanish}
+\MakeOuterQuote{"}
+\MakeForeignQuote{french}{«}{»}
+\usepackage[protrusion=true,tracking=true]{microtype}
 \author{Carlos Alberto Rivera Carreño}
 \date{}
-\title{}
+\title{Vers la machine à gouverner}
 \hypersetup{
  pdfauthor={Carlos Alberto Rivera Carreño},
- pdftitle={},
+ pdftitle={Vers la machine à gouverner},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 26.1 (Org mode 9.2)}, 
+ pdfcreator={Emacs 26.1 (Org mode 9.2.2)}, 
  pdflang={English}}
 \begin{document}
 
+\maketitle
 \nocite{*}
 \chapter{Introduction}
-\label{sec:org722e8fb}
+\label{sec:org2bedf22}
 \section{Accroche: ``The Concept of Work between Society and Nature''}
-\label{sec:orgf760722}
+\label{sec:org2308320}
 In the \emph{accroche}, I will describe how something as self-evident as the work
 concept is in fact an ideological construct (ideological in the sense of
 the anthropologist Louis Dumont, and not in the Marxist sense). Therefore,
@@ -130,27 +129,27 @@ economy and is then appropriated by natural science to be reimported into
 economic science.  
 
 Likewise, I will indicate that the motivation for the the thesis is to
-rethink what work is in the 21st century, taking into account the ubiquity
+rethink what work is in the \ordinalnum{21} century, taking into account the ubiquity
 of information technologies. 
 
 \printbibliography[heading=none,keyword=introduction-1]
 \section{Main Argument: ``Rethinking Work in the 21st Century''}
-\label{sec:orgbbf1c41}
+\label{sec:org85454dd}
 In this section, I will state the main argument of the thesis: namely, that
 the origin of the computer is a particular conception of the organization
 of work, which we should take into account to understand the transformation
 of work (its forms, its meaning, its formal definition in law, etc.) in the
-21st century. As such, this argument calls into question the ``popular''
+\ordinalnum{21} century. As such, this argument calls into question the ``popular''
 understanding of the one-sided transformation of work by the appeareance
 and dissemination of information and communication technologies (ICTs) in
-the late \ordinalnum{20} century. Instead, this thesis proposes to read the
+the mid \ordinalnum{20} century. Instead, this thesis proposes to read the
 computer as a technology for organizing labor, to then use this reading to
 understand the transformation of labor that ICTs are supposedly pushing
 for. 
 
 \printbibliography[heading=none,keyword=introduction-2]
 \section{Structure of the Thesis}
-\label{sec:orga322746}
+\label{sec:orgc4926e9}
 In this section, I simply describe the contents of the two chapters of the
 thesis and hint at the conclusion. 
 
@@ -175,8 +174,8 @@ emphases other criteria for organization such as justice, etc.
 \section*{References}
 \printbibliography[heading=none,keyword=introduction]
 \chapter{Chapter 1}
-\label{sec:org76238a5}
-This chapter introduces the definition of the early computer as a
+\label{sec:org75e08b6}
+The first chapter introduces the definition of the early computer as a
 technology for organizing work. The first objective of this chapter is to
 question the belief that the appropriate definition of the computer is in
 terms of its components. The second objective is to acquaint the reader
@@ -185,68 +184,93 @@ calculation of the logarithmic tables at the \emph{Bureau du cadastre}, and the
 importance that this project had for Charles Babbage's calculating
 machines.
 \section{Did Adam Smith Invent the Computer?}
-\label{sec:orgd3b731e}
-A story that although was present for a long time, seems today relegated to
-the confines of a few books on the history of computing. 
+\label{sec:org161fe11}
+The introduction to this chapter presents the reader with the story of how
+Gaspard-Clair-François-Marie Riche de Prony was inspired by Adam Smith's
+concept of the division of labor---as it appears in the pin factory example
+of the ``Wealth of Nations''---to organize a group of hairdressers to
+produce mathematical tables for the French \emph{Bureau du cadastre}, during the
+aftermath of the French Revolution. The point is to show that the
+``computer'' is in fact an organization of labor, in which complex
+calculation tasks are divided into simpler calculation tasks, which are
+then carried out by unqualified ``specialized'' workers (or in computer
+science lingo, by \emph{sub-processes}).
 
-Test: this is an article from diderot encyclopedia:
-
-A document from the imprimerie Firmin Didot describes the process.
-
-\subsection*{References}
+\subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-1]
 \section{De Prony's Tables and Human Computers}
-\label{sec:orga99870b}
-This section describes de Prony' project in a holistic way. 
+\label{sec:org604100f}
+The first section of this chapter contextualizes the story of De Prony, by
+providing some background information on him and on the project of the
+calculation of the logarithmic tables. The idea is to provide an
+understanding of the significance of the project at the time, and the
+subsequent significance that it had for Charles Babbage.
 
-The documents used in this section are:
-
-\subsection*{References}
+\subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-1.1]
 \section{Can Machine Labor Replace Human Labor?}
-\label{sec:org78b52c3}
-This section describes the reading that Charles Babbage makes of de Prony. 
+\label{sec:org47eeb70}
+The second section of this chapter connects De Prony's story with Babbage's
+design of the Difference and the Analytical Engine. The idea is to connect
+Babbage's ideas on the organization of work and industry with his thought
+on calculating devices. Therefore, the concept of \emph{mental labor} will be
+discussed, as it relates to the \ordinalnum{20} century analogy between
+mind and computer---which is key to the thought of Herbert Simon.   
 
-\subsection*{References}
+\subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-1.2]
 \section{Chapter Conclusion}
-\label{sec:org82e422f}
+\label{sec:org41cb18c}
 \chapter{Chapter 2}
-\label{sec:orge211475}
-\section{Herbert Simon Reads Babbage}
-\label{sec:org9e2d3ce}
-This section discusses Herbert Simon's reading of Charles Babbage. If
-possible, we should look for Simon's reading of de Prony's project. After
-all, his article from 1958 discusses Babbage's citing of the project in his
-book on European manufactures.
+\label{sec:orge6ac0cc}
+The second chapter describes Herbert Simon's thinking on the computer and
+organizations to trace the consequences of these ideas into his thinking
+about the role of artificial systems in shaping the workplace and worker
+self-determination. Therefore, this chapter will introduce the reader to
+the importance of Herbert Simon to the field of artificial intelligence,
+which has been more-or-less ignored by economists---who often only focus on
+his concept of \emph{bounded rationality}.
 
-This section should discuss how the description of the organization of work
-as a simple technical matter has undemocratic undertones. 
+\section{Herbert Simon: Computer as Mind; Mind as Computer}
+\label{sec:orge4cbc35}
+The introduction of this chapter discusses the ambiguous relation between
+nature and artifice in the thought of Herbert Simon---specially, as it
+manifests in his understanding of the mind as a computer. The idea is to
+give the reader enough background information on Simon's general vision of
+\emph{things} to, then, discuss his thinking on the nature of organizations (in
+the first section).
 
-It could be interesting to look at what he has written on the organization
-of the workplace by machines and artificial intelligence. Should we be able
-to draw a parallel between his writing on organization and his views on
-democracy, we are all set. 
-
-\subsection*{References}
+\subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-2]
-\section{Simon on Organization}
-\label{sec:orgac0b1a3}
-\subsection*{References}
+\section{Simon on Organizations}
+\label{sec:org875cff7}
+The first section of this chapter connects Simon's ideas on the computer
+and the mind to his general thinking on organizations. The idea is to pave
+the way for a political understanding of Simon's more abstract writings on
+organizations by presenting Simon's own thinking on the concrete social
+consequences of his vision---which is done in the second section.
+
+\subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-2.1]
 \section{Could Computers Be Democratic?}
-\label{sec:org2ba0200}
-Has Simon discussed the issue of democracy at the workplace besides the one
-article on industrial democracy?
+\label{sec:org8ed4785}
+The second section of this chapter connects Simon's general ideas on
+organizations to his thought on the role of artificial systems (machines,
+automation, ICTs, artificial intelligence, etc.) in shaping the workplace.
+Moreover, this section will discuss his problematic concept of a ``science
+of the artificial'' as it relates to the organization of labor---after all,
+there's nothing more artificial than the institution of wage earning. The
+idea is to show that the description of the organization of labor as a
+purely technical matter has terrible consequences for worker
+self-determination, and that this understanding of the worker as a just a
+cog in the production process is not questioned by Simon, and thus,
+unlikely to change under the new information technologies.
 
-I want to talk about economic democracy as Alain Supiot does.  
-
-\subsection*{References}
+\subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-2.2]
 \section{Chapter Conclusion}
-\label{sec:org4ed2cea}
+\label{sec:orgeab0b8e}
 \printbibliography[heading=none,keyword=chapter-2.3]
 \chapter{Conclusion}
-\label{sec:org5d79c36}
-\lipsum
+\label{sec:org6e2cd91}
 \end{document}

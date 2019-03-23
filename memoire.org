@@ -1,5 +1,7 @@
 #+STARTUP: indent nostars logdrawer showeverything
-#+SETUPFILE: "./settings.org" 
+#+SETUPFILE: "~/Dropbox/typography/memoire.org" 
+#+INCLUDE: "~/Dropbox/typography/layouts.org::*Memoire" :only-contents t
+#+INCLUDE: "~/Dropbox/typography/settings.org::*English" :only-contents t
 #+INCLUDE: "./license.tex" export latex
 #+INCLUDE: "./title_pages.tex" export latex
 #+INCLUDE: "./front_matter.tex" export latex
@@ -34,7 +36,7 @@ Test: this is an article from diderot encyclopedia:
 
 # \printbibliography[heading=none,keyword=memoire,keyword=smith]
 
-** De Prony's Tables
+** De Prony's Tables and Human Computers
 :PROPERTIES:
 :PAGECOUNT: 6
 :END:
@@ -78,25 +80,31 @@ book on European manufactures.
 :PROPERTIES:
 :PAGECOUNT: 25
 :END:
+** Herbert Simon: Computer as Mind: Mind as Computer
 
-This section should discuss how the description of the organization of work
-as a simple technical matter has undemocratic undertones. 
+Simon sought a synthesis in the form of a mathematical,
+behavioral-functional, and problem centered social science that would bring
+together not just choice and control but also theory and practice, research
+and reform
 
-Has Simon discussed the issue of democracy at the workplace besides the one
-article on industrial democracy?
+The next step towards that synthesis was a new model of man that would
+replace the homo oeconomicus of the sciences of choice and the homo
+administrativus of the sciences of control. This new model of man is what
+Heyck terms homo adaptivus: the bounded, rational, limited but capable,
+problem-solver, with problem-solving understood as a process of adaptation
+to the environment. 
 
-It could be interesting to look at what he has written on the organization
-of the workplace by machines and artificial intelligence. Should we be able
-to draw a parallel between his writing on organization and his views on
-democracy, we are all set. 
-** What is Industrial Democracy?
-I want to talk about economic democracy as Alain Supiot does.  
+In Simon's new model of man he synthesized his previous work on
+administrative decision-making, contemporary cybernetics and sevomechanism
+theory, and the work of Gestalt psychology of problem-solving and
+productive thinking.[[footcite:heyck2005][p. 185, par. 2]] 
+
+From
 
 
-\lipsum
-** 取 Administrative Behavior
-\lipsum
-** 取 Artificial Intelligence
+
+** Simon on Organizations
+** Could Computers Be Democratic?
 * Conclusion
 :PROPERTIES:
 :PAGECOUNT: 10

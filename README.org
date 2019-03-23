@@ -245,7 +245,7 @@ SCHEDULED: <2019-01-20 Sun>
 :CATEGORY: Mémoire
 :END:
 ** [0/13] Introduction
-*** 無 Rabinbach, The Utopias of Labor
+*** 無 Rabinbach, The End of the Utopias of Labor
 *** 無 [0/2] Maas, William Stanley Jevons and the Making of Modern Economics
 :Notes:
 Use chapter one. If possible the last chapter as well. 
@@ -260,7 +260,7 @@ Use chapter one. If possible the last chapter as well.
 *** 無 Oliveira, A History of the Work Concept
 *** 無 Peaucelle, Vices et vertus du travail spécialisé 
 *** 無 Supiot, Le droit du travail 
-*** 無 Supiot, La technique 
+*** 無 Séris, La technique 
 *** 無 Supiot, Critique du droit du travail 
 *** 無 Vatin, Le travail et ses valeurs 
 *** 無 Thompson, Time, Work-Discipline, and Industrial Capitalism 
@@ -294,7 +294,7 @@ Maybe read only chapter 3 and 7.
 *** [0/8] Chapter 1 : Introduction : Did Adam Smith Invent the Computer
 **** 無 Campbell-Kelly, Computer: A History of the Information Machine
 **** 無 Delaire, Épingle 
-**** 無 Grier, Human Comptuers
+**** 無 Grier, Human Computers
 **** 無 Peaucelle, La division du travail
 **** 無 Peaucelle, Les innovations techniques et organisationelles dans la fabrication des épingles 
 **** 無 Peaucelle, Raisonner sur les épingles, l'exemple d'Adam Smith sur la division du travail
@@ -305,7 +305,7 @@ Maybe read only chapter 3 and 7.
 **** 無 Gaspard Riche de Prony, ou le génie appliqué
 **** 無 Didot, Note sur la publication proposée par le gouvernement anglais des grandes tables 
 **** 無 Grabiner, The Centrality of Mathematics in the History of Western Thought 
-**** 無 Grattan-Guinness, Work for the Hairdressers
+**** 無 Grattan-Guinness, The computation factory: de Prony's project for making tables in the 1790s
 **** 無 Lefort, Description des grandes tables logarithmiques et trigonometriques 
 **** 無 Peaucelle, Le détail du calendrier de calcul des tables de Prony 1791 à 1802
 **** 無 Peaucelle, Un «éléphant blanc» en pleine Révolution Française
@@ -343,7 +343,7 @@ Use chapter's 2 and 3.
 **** 無 Romano, The Economic Ideas of Charles Babbage
 *** [0/0] Chapter 1 : Conclusion
 ** Chapter 2
-*** [2/15] Chapter 2 : Introduction : Herbert Simon: Computer as Mind; Mind as Computer
+*** [2/16] Chapter 2 : Introduction : Herbert Simon: Computer as Mind; Mind as Computer
 **** 無 [0/15] Heyck, Herbert Simon: The Bounds of Reason in Modern America
   - [ ] Unbounded rationality
   - [ ] The garden of forking paths
@@ -363,19 +363,19 @@ Use chapter's 2 and 3.
 **** 無 Heyck, Georges Miller, language, and the computer metaphor of mind
 **** 無 Heyck, Mind and Network
 **** 無 Heyck Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 2
-     DEADLINE: <2018-11-18 Sun>
 **** 完 Heyck, Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 1
 **** 無 Mirowski, Core Wars
 **** 無 Gigerenzer, Mind as Computer: Birth of a Metaphor
 **** 無 Simon, Artificial Intelligence: An Empirical Science
 **** 無 Marshall, Minds, Machines and Metaphors
 **** 無 Simon, Mind as Machine: The Cognitive Révolution in Behavioral Science
-**** 無 Simon, The Patterned Matter that is Mind
+**** 無 Simon, History of Artificial Intelligence
 **** 完 Simon, Heuristic Problem Solving: The Next Advance in Operations Research 
 **** 無 Simon, Interview in OMNI
-**** 無 Simon, AI's Greatest Trends and Controversies
 **** 無 Simon, The Patterned Matter that is Mind
-*** [0/12] Chapter 2 : Section 1 : Simon on Organization
+**** 無 Simon, Theories of Decision-Making in Economics and Behavioral Science
+**** 無 Simon, Rational Choice and the Structure of the Environment                             
+*** [0/9] Chapter 2 : Section 1 : Simon on Organizations
 **** 無 Simon, Public Administration in Today's World of Organizations and Markets
 Recommended by Jean-Sébastien Lenfant for the Economics and Psychology class.
 **** 無 Simon, Discovering Explanations
@@ -383,28 +383,29 @@ Recommended by Jean-Sébastien Lenfant for the Economics and Psychology class.
 **** 無 Simon, Rational Decision-making in Business Organizations
 **** 無 Simon, Information 101: It is Not What You Know, It is How you Know It
 **** 無 Simon, Human Nature in Politics: The Dialogue of Psychology with Political Science
-**** 無 Simon, Rational Choice and the Structure of the Environment                             
 **** 無 Simon, Freedom and Discipline
 **** 無 Simon, Psychology and Economics
-**** 無 Simon, Rational Decision-Making in Business Organizations
-**** 無 Simon, Theories of Decision-Making in Economics and Behavioral Science
 **** 無 Simon, Administrative Behavior
-*** [0/9] Chapter 2 : Section 2 : Could Computers Be Democratic? 
+*** [0/13] Chapter 2 : Section 2 : Could Computers Be Democratic? 
 **** 無 Simon, Prometheus or Pandora: The Influence of Automation on Society 
+**** 阻 Simon, AI's Greatest Trends and Controversies
 **** 無 Simon, Management by Machine
 **** 無 Simon, A Computer for Everyman
 **** 無 Simon, Artificial Intelligence: Where Has It Been, and Where is It Going?
-**** 無 Simon, Robots: Who Wants Them and Why
+**** 無 Simon, Artificial Intelligence (simon2001b)
+**** 阻 Simon, Artificial Intelligence: Current Status and Future Potential
+**** 阻 Simon, Robots: Who Wants Them and Why
 **** 無 Waring, Taylorism Transformed
 **** 無 Simon, What Computers Mean for Man and Society
 **** 無 Simon, What is Industrial Democracy?
-**** 無 Simon, The Shape of Automation 
+**** 阻 Simon, The Shape of Automation 
 :PROPERTIES:
 :LOCATION: Bibliothèque Broca
 :END:
 ***** 無 Simon, The Economic Effects of Automation
 ***** 無 Simon, The Corporation: Will it Be Manage by Machines?
 ***** 無 Simon, The New Science of Management Decisions
+**** 無 Simon, The Sciences of the Artificial
 *** [0/0] Chapter 2 : Conclusion
 ** [0/0] Conclusion
 * 無 Lectures                                                                                       :Lectures: 

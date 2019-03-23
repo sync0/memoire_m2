@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: lualatex
-\documentclass[version=last,draft=true,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=11,BCOR=20mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
+\documentclass[version=last,draft=true,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=12,BCOR=20mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
@@ -12,16 +12,9 @@
 \usepackage{capt-of}
 \usepackage{hyperref}
 \usepackage{polyglossia}
-\setmainlanguage{english}
-\setotherlanguages{french,italian}
 \usepackage[autostyle=true,english=american,french=guillemets,thresholdtype=words,threshold=3]{csquotes}
-\MakeOuterQuote{"}
-\MakeForeignQuote{french}{«}{»}
 \AtBeginEnvironment{quote}{\itshape}
-\usepackage[backend=biber,bibstyle=verbose,citestyle=verbose-trad1,doi=false,isbn=false,url=false]{biblatex}
-\addbibresource{~/Documents/mendeley/sync0_library.bib}
-\renewbibmacro*{date}{\printdate\iffieldundef{origyear}{}{\setunit*{\addspace}\printtext[parens]{\printorigdate}}}
-\renewcommand{\subtitlepunct}{\addcolon\addspace}
+\AtBeginEnvironment{foreigndisplayquote}{\itshape}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
@@ -37,60 +30,68 @@
 \fmtcountsetoptions{french=france}
 \usepackage[singlespacing]{setspace}
 \usepackage[super]{nth}
-\usepackage[protrusion=true,tracking=true]{microtype}
 \usepackage{ragged2e}
 \usepackage[all]{nowidow}
 \usepackage{enumitem}
 \usepackage{adforn}
 \usepackage{float}
+\usepackage{titling}
 \usepackage{xcolor}
 \usepackage{graphicx}
 \graphicspath{ {/home/sync0/Dropbox/paris_1/} }
-\usepackage{lipsum}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 \tikzset{main node/.style={circle,fill=gray!45,draw,minimum size=0.5cm,inner sep=0pt},}
-\usepackage{fontspec}
-\usepackage{unicode-math}
-\usepackage[oldstyle,libertine]{libertine}
-\defaultfontfeatures{Scale=MatchLowercase}
-\newcommand\HUGE{\fontsize{30}{33}\selectfont}
+\usepackage{lipsum}
+\usepackage[backend=biber,bibstyle=authortitle,citestyle=verbose-trad1,hyperref=auto,doi=false,isbn=false,url=false]{biblatex}
+\addbibresource{~/Documents/pdfs/bibliography.bib}
+\urlstyle{sf}
+\renewcommand{\subtitlepunct}{\addcolon\addspace}
+\renewbibmacro*{date}{\printdate\iffieldundef{origyear}{}{\setunit*{\addspace}\printtext[parens]{\printorigdate}}}
 \usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
 \clearscrheadfoot
 \automark[chapter]{part}
-\cehead{vers la machine à gourverner}
+\cehead{\MakeLowercase{\thetitle}}
 \cohead{\MakeLowercase{\headmark}}
 \ohead{\pagemark}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\usepackage[oldstyle]{libertine}
+\defaultfontfeatures{Scale=MatchLowercase}
+\setmonofont{Source Code Pro}
+\setmathfont[Scale=MatchUppercase]{libertinusmath-regular.otf}
+\newfontfamily{\titlefamily}[Scale=2]{Linux Biolinum O}
+\newfontfamily{\sbfseries}[UprightFont={* Semibold}]{Linux Libertine O}
+\newcommand\hugetitle{\fontsize{45}{50}\selectfont}
+\newcommand\HUGE{\fontsize{40}{40}\selectfont}
+\newcommand\hugechapter{\fontsize{30}{35}\selectfont}
 \AfterTOCHead{\singlespacing}
-\setkomafont{labelinglabel}{\normalfont\bfseries}
-\setkomafont{minisec}{\usekomafont{section}}
-\setkomafont{pagehead}{\normalfont\mdseries\scshape}
-\setkomafont{pagenumber}{\large\rmfamily\upshape}
-\setkomafont{sectioning}{\mdseries}
+\setkomafont{labelinglabel}{\normalsize\itshape}
+\setkomafont{minisec}{\usekomafont{subsection}}
+\setkomafont{pagehead}{\normalsize\mdseries\scshape}
+\setkomafont{pagenumber}{\normalsize\rmfamily\upshape}
+\setkomafont{sectioning}{\rmfamily\mdseries}
 \setkomafont{caption}{\small}
-\setkomafont{captionlabel}{\mdseries\scshape\lowercase}
-\setkomafont{part}{\HUGE\scshape\lowercase}
-\renewcommand*{\partformat}{}
-\renewcommand\partmarkformat{}
-\setkomafont{chapter}{\huge\scshape\lowercase}
+\setkomafont{captionlabel}{\sffamily\mdseries\scshape\lowercase}
+\setkomafont{chapter}{\hugechapter\rmfamily}
 \renewcommand{\raggedchapter}{\centering}
 \renewcommand*\chapterformat{\thechapter\autodot\par\enskip}
-\renewcommand*\chaptermarkformat{}
+\RedeclareSectionCommand[afterskip=6\baselineskip]{chapter}
 \setkomafont{section}{\Large\scshape\lowercase}
 \setkomafont{subsection}{\large}
-\renewcommand*{\subsubsectionformat}{\mdseries\upshape \thesubsubsection\autodot\enskip}
 \setkomafont{subsubsection}{\large\itshape}
-\AtBeginDocument{\renewcaptionname{english}\contentsname{contents}}
+\AtBeginDocument{\renewcaptionname{english}\contentsname{Contents}}
 \addtokomafont{chapterentry}{\mdseries\scshape\lowercase}
-\setkomafont{chapterentrypagenumber}{\normalfont}
+\setkomafont{chapterentrypagenumber}{\normalsize}
 \usepackage{tocstyle}
 \settocfeature{raggedhook}{\raggedright}
 \selecttocstyleoption{tocgraduated}
 \usetocstyle{nopagecolumn}
-\newtcolorbox{note}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{lightgrey},title={#2},coltitle={black},fonttitle={},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
-\newtcolorbox{question}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{darkgrey},title={#2},coltitle={black},fonttitle={},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
-\newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{midgrey},title={#2},coltitle={black},fonttitle={\bfseries},fontupper={\normalfont},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
+\newtcolorbox{modified}[1][]{grow to right by=0mm,grow to left by=-1em,boxrule=1pt,boxsep=0pt,breakable,enhanced jigsaw,borderline west={0pt}{0pt}{lightgrey},lower separated=false,arc=00mm,colframe=white, #1}
+\newtcolorbox{note}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{lightgrey},title={#2},coltitle={black},fonttitle={\sffamily},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+\newtcolorbox{question}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{darkgrey},title={#2},coltitle={black},fonttitle={\sffamily},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+\newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{midgrey},title={#2},coltitle={black},fonttitle={\sffamily\bfseries},fontupper={\normalsize},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
 \renewcommand*\labelitemi{\adforn{33}}
 \renewcommand*\labelitemii{\adforn{73}}
 \renewcommand*\labelitemiii{\adforn{73}}
@@ -104,7 +105,11 @@
 \newcommand{\notimplies}{\centernot\implies}
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{1}
-\recalctypearea
+\setmainlanguage{english}
+\setotherlanguages{french,italian,spanish}
+\MakeOuterQuote{"}
+\MakeForeignQuote{french}{«}{»}
+\usepackage[protrusion=true,tracking=true]{microtype}
 \author{Carlos Alberto Rivera Carreño}
 \date{}
 \title{}
@@ -113,7 +118,7 @@
  pdftitle={},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 26.1 (Org mode 9.2)}, 
+ pdfcreator={Emacs 26.1 (Org mode 9.2.2)}, 
  pdflang={English}}
 \begin{document}
 
@@ -133,22 +138,23 @@
  \centering
 \begin{french}
  {\large \textsc{université paris i panthéon sorbonne} \par}
- \vspace{0.5\baselineskip}
+  \vspace*{0.01\textheight}
  {\large \textsc{ufr} 02 : Sciences économiques  \par}
- \vspace{0.5\baselineskip}
+  \vspace*{0.01\textheight}
  {\large Master 2 : Économie et sciences humaines \par}
- \vspace{0.5\baselineskip}
- {\large 2018-2019 \par}
+  \vspace*{0.01\textheight}
+ {\large 2018--2019 \par}
 \end{french}
- \vspace{6\baselineskip}
+  \vspace*{0.3\textheight}
  {\huge \textsc{vers la machine à gouverner}  \par}
+  \vspace*{0.02\textheight}
  {\Large Herbert Simon and the Impossibility of a Democratic Computer \par}
 \vfill
 \begin{french}
  {\large Présenté et sountenu par : \par}
 \end{french}
  {\Large Carlos Alberto Rivera Carreño \par}
- \vspace{1\baselineskip}
+  \vspace*{0.05\textheight}
 \begin{french}
  {\large Directeur de mémoire : \par}
 \end{french}
@@ -190,9 +196,9 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \newpage\null\newpage
 
 \begin{FlushRight}
-\begin{italian}
-\textit{Per il professore Giorgio Israel. \newline Benché fossimo uniti da quell'anno fatale del 1492, \linebreak ho mancato il nostro incontro. \linebreak Come la coscienza della nostra generazione, \linebreak sono arrivato in ritardo. \linebreak Nell'era dell'informazione, diventiamo più ignoranti. \linebreak Grazie a Lei l'ho capito, maestro.}
-\end{italian}
+\begin{spanish}
+\textit{Al padre Camilo Torres.}
+\end{spanish}
 \end{FlushRight}
 
 \newpage
@@ -249,14 +255,14 @@ Dans le deuxième chapitre je raconte \ldots
 \mainmatter
 \pagestyle{scrheadings}
 \chapter{Introduction: Economy of the Body; Economy of the Machine}
-\label{sec:org11891c9}
+\label{sec:orgfd1c8b9}
 \section{Does Labor Exist?}
-\label{sec:orgeba2809}
+\label{sec:org2c135c3}
 
 \section{Society and Nature}
-\label{sec:org91aa5eb}
+\label{sec:orgc1bf313}
 \chapter{Did Adam Smith Invent the Computer?}
-\label{sec:org31178cd}
+\label{sec:orgd9677b7}
 The introduction to this section describes the computer as a technical
 object. The idea is to questoin the belief that the way to define a
 computer is to think of it in terms of its components. 
@@ -268,50 +274,62 @@ A document from the imprimerie Firmin Didot describes the process.
 
 Test: this is an article from diderot encyclopedia:
 
-\section{De Prony's Tables}
-\label{sec:org245fb32}
+\section{De Prony's Tables and Human Computers}
+\label{sec:org85e6235}
 This section describes de Prony' project in a holistic way. 
 
 The documents used in this section are:
 
 \subsection{Short historical context}
-\label{sec:orgd3bde78}
+\label{sec:org8c9dc0a}
 Describe the way de Prony's project was interpreted in the context of the
 French revolution. This is how is done 
 \subsection{Short technical description}
-\label{sec:org7d2d608}
+\label{sec:orgc730024}
 What was de Prony actually doing
 \section{Can Machine Labor Replace Human Labor?}
-\label{sec:org8b8a21a}
+\label{sec:org46af764}
 This section describes the reading that Charles Babbage makes of de Prony.\footcite{babbage1832}
 
 \section{Herbert Simon Reads Babbage}
-\label{sec:orge2c0c61}
+\label{sec:orge775bf6}
 This section discusses Herbert Simon's reading of Charles Babbage. If
 possible, we should look for Simon's reading of de Prony's project. After
 all, his article from 1958 discusses Babbage's citing of the project in his
 book on European manufactures.
 
 \chapter{UnDemocratic Machines}
-\label{sec:org41f3f8c}
-This section should discuss how the description of the organization of work
-as a simple technical matter has undemocratic undertones. 
+\label{sec:org61c0b09}
+\section{Herbert Simon: Computer as Mind: Mind as Computer}
+\label{sec:orgb8f98e0}
 
-Has Simon discussed the issue of democracy at the workplace besides the one
-article on industrial democracy?
+Simon sought a synthesis in the form of a mathematical,
+behavioral-functional, and problem centered social science that would bring
+together not just choice and control but also theory and practice, research
+and reform
 
-It could be interesting to look at what he has written on the organization
-of the workplace by machines and artificial intelligence. Should we be able
-to draw a parallel between his writing on organization and his views on
-democracy, we are all set. 
-\section{What is Industrial Democracy?}
-\label{sec:org6d0d66f}
-I want to talk about economic democracy as Alain Supiot does.  
+The next step towards that synthesis was a new model of man that would
+replace the homo oeconomicus of the sciences of choice and the homo
+administrativus of the sciences of control. This new model of man is what
+Heyck terms homo adaptivus: the bounded, rational, limited but capable,
+problem-solver, with problem-solving understood as a process of adaptation
+to the environment. 
+
+In Simon's new model of man he synthesized his previous work on
+administrative decision-making, contemporary cybernetics and sevomechanism
+theory, and the work of Gestalt psychology of problem-solving and
+productive thinking.\footcite[p. 185, par. 2]{heyck2005} 
+
+From
 
 
-\lipsum
+
+\section{Simon on Organizations}
+\label{sec:org4be2b9f}
+\section{Could Computers Be Democratic?}
+\label{sec:org0e29f3e}
 \chapter{Conclusion}
-\label{sec:orga042e6b}
+\label{sec:org39d6f90}
 \lipsum
 
 \backmatter

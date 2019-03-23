@@ -321,7 +321,7 @@ tools.
 ** 取 11/01/2019 
 ** 取 12/01/2019 
 ** 取 13/01/2019 
-* 中 \ordinalnum{18} Week 
+* 完 \ordinalnum{18} Week 
 ** 取 14/01/2019 
 ** 取 15/01/2019 
 ** 16/01/2019 
@@ -426,11 +426,11 @@ mentality.
 
 In the second part of the thesis, I will discuss the \ldots 
 #+END_QUOTE
-** 17/01/2019 
-** 18/01/2019 
-** 19/01/2019 
-** 20/01/2019 
-* 無 \ordinalnum{19} Week 
+** 取 17/01/2019 
+** 取 18/01/2019 
+** 取 19/01/2019 
+** 取 20/01/2019 
+* 取 \ordinalnum{19} Week 
 ** 21/01/2019 
 ** 22/01/2019 
 ** 23/01/2019 
@@ -439,13 +439,14 @@ In the second part of the thesis, I will discuss the \ldots
 ** 26/01/2019 
 ** 27/01/2019 
 * \ordinalnum{20} Week 
-** 28/01/2019 
-** 29/01/2019 
-** 30/01/2019 
-** 31/01/2019 
-** 01/02/2019 
-** 02/02/2019 
+** 取 28/01/2019 
+** 取 29/01/2019 
+** 取 30/01/2019 
+** 取 31/01/2019 
+** 取 01/02/2019 
+** 取 02/02/2019 
 ** 03/02/2019 
+The phantom of reductionism hasn't yet been banished from economics. 
 * \ordinalnum{21} Week 
 ** 04/02/2019 
 ** 05/02/2019 

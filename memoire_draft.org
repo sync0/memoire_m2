@@ -1,8 +1,9 @@
 #+STARTUP: indent nostars logdrawer showeverything
-#+SETUPFILE: "./draft_settings.org" 
-# #+INCLUDE: "./license.tex" export latex
-# #+INCLUDE: "./title_pages.tex" export latex
-# #+INCLUDE: "./front_matter.tex" export latex
+#+TITLE: Vers la machine à gouverner
+#+SETUPFILE: "~/Dropbox/typography/reading_list.org" 
+#+INCLUDE: "~/Dropbox/typography/layouts.org::*Reading List" :only-contents t
+#+INCLUDE: "~/Dropbox/typography/settings.org::*English" :only-contents t
+
 \nocite{*}
 * 完 Introduction 
 :PROPERTIES:
@@ -20,7 +21,7 @@ economy and is then appropriated by natural science to be reimported into
 economic science.  
 
 Likewise, I will indicate that the motivation for the the thesis is to
-rethink what work is in the 21st century, taking into account the ubiquity
+rethink what work is in the \ordinalnum{21} century, taking into account the ubiquity
 of information technologies. 
 
 \printbibliography[heading=none,keyword=introduction-1]
@@ -32,10 +33,10 @@ In this section, I will state the main argument of the thesis: namely, that
 the origin of the computer is a particular conception of the organization
 of work, which we should take into account to understand the transformation
 of work (its forms, its meaning, its formal definition in law, etc.) in the
-21st century. As such, this argument calls into question the ``popular''
+\ordinalnum{21} century. As such, this argument calls into question the ``popular''
 understanding of the one-sided transformation of work by the appeareance
 and dissemination of information and communication technologies (ICTs) in
-the late \ordinalnum{20} century. Instead, this thesis proposes to read the
+the mid \ordinalnum{20} century. Instead, this thesis proposes to read the
 computer as a technology for organizing labor, to then use this reading to
 understand the transformation of labor that ICTs are supposedly pushing
 for. 
@@ -73,7 +74,7 @@ emphases other criteria for organization such as justice, etc.
 :PROPERTIES:
 :PAGECOUNT: 30
 :END:
-This chapter introduces the definition of the early computer as a
+The first chapter introduces the definition of the early computer as a
 technology for organizing work. The first objective of this chapter is to
 question the belief that the appropriate definition of the computer is in
 terms of its components. The second objective is to acquaint the reader
@@ -81,23 +82,32 @@ with the history of the early computer by describing the project of the
 calculation of the logarithmic tables at the /Bureau du cadastre/, and the
 importance that this project had for Charles Babbage's calculating
 machines.
-** 中 Did Adam Smith Invent the Computer?
+** 完 Did Adam Smith Invent the Computer?
 :PROPERTIES:
 :PAGECOUNT: 5
 :END:
-This section shakes the reader off of the belief that a computer can be
-best described in terms of its parts by proposing the interpretation of the
-computer was in the beginning a technology for organizing labor. The point
-to emphasize is not that this story is unknown in the literature---it is
-not---, but that its significance for understanding the transformation of
-work in the age of the new economy. 
+The introduction to this chapter presents the reader with the story of how
+Gaspard-Clair-François-Marie Riche de Prony was inspired by Adam Smith's
+concept of the division of labor---as it appears in the pin factory example
+of the ``Wealth of Nations''---to organize a group of hairdressers to
+produce mathematical tables for the French /Bureau du cadastre/, during the
+aftermath of the French Revolution. The point is to show that the
+``computer'' is in fact an organization of labor, in which complex
+calculation tasks are divided into simpler calculation tasks, which are
+then carried out by unqualified ``specialized'' workers (or in computer
+science lingo, by /sub-processes/).
 
 \subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-1]
-** 無 De Prony's Tables and Human Computers 
+** 完 De Prony's Tables and Human Computers 
 :PROPERTIES:
 :PAGECOUNT: 10
 :END:
+The first section of this chapter contextualizes the story of De Prony, by
+providing some background information on him and on the project of the
+calculation of the logarithmic tables. The idea is to provide an
+understanding of the significance of the project at the time, and the
+subsequent significance that it had for Charles Babbage.
 
 \subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-1.1]
@@ -112,11 +122,16 @@ French revolution. This is how is done
 :PAGECOUNT: 3
 :END:
 What was de Prony actually doing
-** 無 Can Machine Labor Replace Human Labor?
+** 完 Can Machine Labor Replace Human Labor?
 :PROPERTIES:
 :PAGECOUNT: 10
 :END:
-This section describes the reading that Charles Babbage makes of de Prony. 
+The second section of this chapter connects De Prony's story with Babbage's
+design of the Difference and the Analytical Engine. The idea is to connect
+Babbage's ideas on the organization of work and industry with his thought
+on calculating devices. Therefore, the concept of /mental labor/ will be
+discussed, as it relates to the \ordinalnum{20} century analogy between
+mind and computer---which is key to the thought of Herbert Simon.   
 
 \subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-1.2]
@@ -128,39 +143,54 @@ This section describes the reading that Charles Babbage makes of de Prony.
 :PROPERTIES:
 :PAGECOUNT: 25
 :END:
-** 無 Herbert Simon Reads Babbage
+The second chapter describes Herbert Simon's thinking on the computer and
+organizations to trace the consequences of these ideas into his thinking
+about the role of artificial systems in shaping the workplace and worker
+self-determination. Therefore, this chapter will introduce the reader to
+the importance of Herbert Simon to the field of artificial intelligence,
+which has been more-or-less ignored by economists---who often only focus on
+his concept of /bounded rationality/.
+
+** 無 Herbert Simon: Computer as Mind; Mind as Computer
 :PROPERTIES:
 :PAGECOUNT: 5
 :END:
-This section discusses Herbert Simon's reading of Charles Babbage. If
-possible, we should look for Simon's reading of de Prony's project. After
-all, his article from 1958 discusses Babbage's citing of the project in his
-book on European manufactures.
-
-This section should discuss how the description of the organization of work
-as a simple technical matter has undemocratic undertones. 
-
-It could be interesting to look at what he has written on the organization
-of the workplace by machines and artificial intelligence. Should we be able
-to draw a parallel between his writing on organization and his views on
-democracy, we are all set. 
+The introduction of this chapter discusses the ambiguous relation between
+nature and artifice in the thought of Herbert Simon---specially, as it
+manifests in his understanding of the mind as a computer. The idea is to
+give the reader enough background information on Simon's general vision of
+/things/ to, then, discuss his thinking on the nature of organizations (in
+the first section).
 
 \subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-2]
-** 無 Simon on Organization
+** 無 Simon on Organizations
 :PROPERTIES:
 :PAGECOUNT: 10
 :END:
+The first section of this chapter connects Simon's ideas on the computer
+and the mind to his general thinking on organizations. The idea is to pave
+the way for a political understanding of Simon's more abstract writings on
+organizations by presenting Simon's own thinking on the concrete social
+consequences of his vision---which is done in the second section.
+
 \subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-2.1]
 ** 無 Could Computers Be Democratic?
 :PROPERTIES:
 :PAGECOUNT: 10
 :END:
-Has Simon discussed the issue of democracy at the workplace besides the one
-article on industrial democracy?
-
-I want to talk about economic democracy as Alain Supiot does.  
+The second section of this chapter connects Simon's general ideas on
+organizations to his thought on the role of artificial systems (machines,
+automation, ICTs, artificial intelligence, etc.) in shaping the workplace.
+Moreover, this section will discuss his problematic concept of a ``science
+of the artificial'' as it relates to the organization of labor---after all,
+there's nothing more artificial than the institution of wage earning. The
+idea is to show that the description of the organization of labor as a
+purely technical matter has terrible consequences for worker
+self-determination, and that this understanding of the worker as a just a
+cog in the production process is not questioned by Simon, and thus,
+unlikely to change under the new information technologies.
 
 \subsection*{References:}
 \printbibliography[heading=none,keyword=chapter-2.2]
@@ -179,7 +209,7 @@ I want to talk about economic democracy as Alain Supiot does.
 # is necessary to understand the conceptual changes in \ordinalnum{20}
 # century economics. 
 
-\lipsum
+# \lipsum
 
 # \backmatter
 # \chapter{Conclusion} 
