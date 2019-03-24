@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: lualatex
-\documentclass[version=last,draft=false,paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=12,BCOR=20mm,DIV=13,pagesize=auto,titlepage=false,mpinclude=false,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
+\documentclass[version=last,draft=false,paper=A4,portrait,twoside=true,twocolumn=true,headinclude=false,footinclude=false,fontsize=12,BCOR=20mm,DIV=13,pagesize=auto,titlepage=firstiscover,mpinclude=false,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,parskip=false]{scrbook}
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
@@ -13,8 +13,6 @@
 \usepackage{hyperref}
 \usepackage{polyglossia}
 \usepackage[autostyle=true,english=american,french=guillemets,thresholdtype=words,threshold=3]{csquotes}
-\AtBeginEnvironment{quote}{\itshape}
-\AtBeginEnvironment{foreigndisplayquote}{\itshape}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
@@ -43,10 +41,10 @@
 \usetikzlibrary{positioning}
 \tikzset{main node/.style={circle,fill=gray!45,draw,minimum size=0.5cm,inner sep=0pt},}
 \usepackage{lipsum}
-\usepackage[backend=biber,bibstyle=reading,defernumbers=true,eprint=false,abstract=false,library=false,file=false,entryhead=full,entrykey=false,annotation=false,doi=false,isbn=false,url=false]{biblatex}
+\usepackage[backend=biber,bibstyle=numeric,defernumbers=true,eprint=false,doi=false,isbn=false,url=false]{biblatex}
 \addbibresource{~/Documents/pdfs/bibliography.bib}
-\renewbibmacro*{date}{\printdate\iffieldundef{origyear}{}{\setunit*{\addspace}\printtext[brackets]{\printorigdate}}}
 \urlstyle{sf}
+\renewcommand{\subtitlepunct}{\addcolon\addspace}
 \usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
 \clearscrheadfoot
@@ -65,7 +63,6 @@
 \newcommand\hugetitle{\fontsize{45}{50}\selectfont}
 \newcommand\HUGE{\fontsize{40}{40}\selectfont}
 \newcommand\hugechapter{\fontsize{30}{35}\selectfont}
-\AfterTOCHead{\singlespacing}
 \setkomafont{labelinglabel}{\normalsize\itshape}
 \setkomafont{minisec}{\usekomafont{subsection}}
 \setkomafont{pagehead}{\normalsize\mdseries\scshape}
@@ -76,13 +73,20 @@
 \setkomafont{chapter}{\hugechapter\rmfamily}
 \renewcommand{\raggedchapter}{\centering}
 \renewcommand*\chapterformat{\thechapter\autodot\par\enskip}
-\RedeclareSectionCommand[afterskip=5\baselineskip]{chapter}
+\RedeclareSectionCommand[afterskip=6\baselineskip]{chapter}
 \setkomafont{section}{\Large\scshape\lowercase}
 \setkomafont{subsection}{\large}
 \setkomafont{subsubsection}{\large\itshape}
+\AtBeginDocument{\renewcaptionname{english}\contentsname{Contents}}
+\addtokomafont{chapterentry}{\mdseries\scshape\lowercase}
+\setkomafont{chapterentrypagenumber}{\normalsize}
+\usepackage{tocstyle}
+\settocfeature{raggedhook}{\raggedright}
+\selecttocstyleoption{tocgraduated}
+\usetocstyle{nopagecolumn}
 \newtcolorbox{modified}[1][]{grow to right by=0mm,grow to left by=-1em,boxrule=1pt,boxsep=0pt,breakable,enhanced jigsaw,borderline west={0pt}{0pt}{lightgrey},lower separated=false,arc=00mm,colframe=white, #1}
-\newtcolorbox{note}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{lightgrey},title={#2},coltitle={black},fonttitle={\sffamily},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
-\newtcolorbox{question}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{darkgrey},title={#2},coltitle={black},fonttitle={\sffamily},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+\newtcolorbox{note}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{lightgrey},title={#2},coltitle={black},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
+\newtcolorbox{question}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{darkgrey},title={#2},coltitle={black},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
 \newtcolorbox{definition}[3][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,enhanced jigsaw,borderline west={4pt}{0pt}{midgrey},title={#2},coltitle={black},fonttitle={\sffamily\bfseries},fontupper={\normalsize},fontlower={\itshape},lower separated=false,attach title to upper={},after title={\hspace{1em}{\rmfamily\mdseries\itshape #3}\par}#1}
 \renewcommand*\labelitemi{\adforn{33}}
 \renewcommand*\labelitemii{\adforn{73}}
@@ -96,7 +100,7 @@
 \definecolor{blackgrey}{HTML}{252525}
 \newcommand{\notimplies}{\centernot\implies}
 \setcounter{secnumdepth}{0}
-\setcounter{tocdepth}{0}
+\setcounter{tocdepth}{1}
 \setlength{\columnsep}{0.5cm}
 \setmainlanguage{english}
 \setotherlanguages{french,italian,spanish}
@@ -105,62 +109,118 @@
 \usepackage[protrusion=true,tracking=true]{microtype}
 \author{Carlos Alberto Rivera Carreño}
 \date{}
-\title{Vers la machine à gouverner}
+\title{}
 \hypersetup{
  pdfauthor={Carlos Alberto Rivera Carreño},
- pdftitle={Vers la machine à gouverner},
+ pdftitle={},
  pdfkeywords={},
  pdfsubject={},
  pdfcreator={Emacs 26.1 (Org mode 9.2.2)}, 
  pdflang={English}}
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+ \centering
+\begin{french}
+ {\large \textsc{université paris i panthéon sorbonne} \par}
+  \vspace*{0.01\textheight}
+ {\large \textsc{ufr} 02 : Sciences économiques  \par}
+  \vspace*{0.01\textheight}
+ {\large Master 2 : Économie et sciences humaines \par}
+  \vspace*{0.01\textheight}
+ {\large 2018--2019 \par}
+\end{french}
+  \vspace*{0.3\textheight}
+ {\huge \textsc{vers la machine à gouverner}  \par}
+  \vspace*{0.02\textheight}
+ {\Large Herbert Simon and the Impossibility of a Democratic Computer \par}
+\vfill
+\begin{french}
+ {\large Présenté et sountenu par : \par}
+\end{french}
+ {\Large Carlos Alberto Rivera Carreño \par}
+  \vspace*{0.05\textheight}
+\begin{french}
+ {\large Directeur de mémoire : \par}
+\end{french}
+ {\Large Jean-Sébastien Lenfant \par}
+\end{titlepage}
+
+\pagestyle{empty}
+
+\begin{french}
+L'Université Paris 1 Panthéon Sorbonne n'entend donner aucune approbation,
+ni désapprobation aux opinions émises dans ce mémoire ; elle doivent être
+considérées comme propres à leur auteur. 
+\end{french}
+\vfill
+
+\newpage
+\vspace*{\fill}
+\noindent
+\includegraphics[height=1.5cm]{gpl3.png}\par
+\vspace{1\baselineskip}
+This text is free: you can redistribute it and/or modify it
+under the terms of the \textsc{gnu} General Public License as published by
+the Free Software Foundation, either version 3 of the License or any later
+version.
+
+This text is distributed in the hope that it will be useful, but \textbf{without
+any warranty}; without even the implied warranty of \textbf{merchantability or 
+fitness for a particular purpose}. See the \textsc{gnu} General 
+Public License for more details.
+
+You should have received a copy of the \textsc{gnu} General Public License along
+with this text. If not, see \url{http://www.gnu.org/licenses/}.
+
+\vspace{1\baselineskip}
+\noindent
+Copyright \textcopyright \textsc{sync0} 2018. 
+
+% \newpage 
+
+% \newpage\null\newpage
+
+% \begin{FlushRight}
+% \begin{spanish}
+% \textit{Al padre Camilo Torres.}
+% \end{spanish}
+% \end{FlushRight}
+
+\newpage
+\tableofcontents 
 \nocite{*}
 \chapter{Introduction}
-\label{sec:org2bedf22}
-\section{Accroche: ``The Concept of Work between Society and Nature''}
-\label{sec:org2308320}
-In the \emph{accroche}, I will describe how something as self-evident as the work
-concept is in fact an ideological construct (ideological in the sense of
-the anthropologist Louis Dumont, and not in the Marxist sense). Therefore,
-I will briefly indicate that the concept of work begins in political
-economy and is then appropriated by natural science to be reimported into
-economic science.  
+\label{sec:orgbbd7125}
+\section{Accroche: A Conventionalist Epistemology}
+\label{sec:org7b0274a}
+In this section, I will briefly discuss the epistemological viewpoint of
+the thesis, which is that of a conventionalist epistemology. The idea is to
+claim that the realist epistemology fails to understand what labor is. The
+alternative is a convetionalist and historical epistemology to explain the
+construction of the concept.
 
-Likewise, I will indicate that the motivation for the the thesis is to
-rethink what work is in the \ordinalnum{21} century, taking into account the ubiquity
-of information technologies. 
+\section{Metaphors in Economics}
+\label{sec:org4dc7e4b}
+This section will introduce the topic of metaphors in economic thought,
+since the main issue of the thesis is to provide historical and conceptual
+elements to understand the transformations of labor in the age of
+artificial intelligence and computer and information technologies (ICTs). 
 
-\printbibliography[heading=none,keyword=introduction-1]
-\section{Main Argument: ``Rethinking Work in the 21st Century''}
-\label{sec:org85454dd}
-In this section, I will state the main argument of the thesis: namely, that
-the origin of the computer is a particular conception of the organization
-of work, which we should take into account to understand the transformation
-of work (its forms, its meaning, its formal definition in law, etc.) in the
-\ordinalnum{21} century. As such, this argument calls into question the ``popular''
-understanding of the one-sided transformation of work by the appeareance
-and dissemination of information and communication technologies (ICTs) in
-the mid \ordinalnum{20} century. Instead, this thesis proposes to read the
-computer as a technology for organizing labor, to then use this reading to
-understand the transformation of labor that ICTs are supposedly pushing
-for. 
+This thesis takes the position that metaphors and analogies play an
+important role in the way scientific concepts are understood such as in
+pedagogical examples and functional analogies. 
 
-\printbibliography[heading=none,keyword=introduction-2]
-\section{Structure of the Thesis}
-\label{sec:orgc4926e9}
-In this section, I simply describe the contents of the two chapters of the
-thesis and hint at the conclusion. 
-
-The first chapter traces the origins of the computer in de Prony and
-Babbage. The idea is to provide the reader with enough background knowledge
-to understand that the computer is not a thing but a concept, and that the
-definition of this concept has to be approached historically. This chapter
+I will state that both labor and the computer are not things but concepts,
+and that their definitions must be approached historically. This chapter
 will define the early computer as a conception of the organization of work
 that reflects an engineering and managerial mentality. Likewise, this
 chapter will hint at the link between this conception of work and its
 definition in law as a relation of subordination.
+\section{Structure of the Thesis}
+\label{sec:orgd0db00b}
+In the last part of the introduction, I will summarize the arguments of the
+three chapters and hint at the conclusion. 
 
 The second chapter will describe Herbert Simon's interest in Babbage, and
 will speculate on how this reading shaped Simon's conception of the
@@ -173,8 +233,41 @@ emphases other criteria for organization such as justice, etc.
 
 \section*{References}
 \printbibliography[heading=none,keyword=introduction]
-\chapter{Chapter 1}
-\label{sec:org75e08b6}
+\chapter{What is Labor?}
+\label{sec:org0839166}
+THE
+\section{Monism: Society and Nature}
+\label{sec:orgb065488}
+In the \emph{accroche}, I will describe how something as self-evident as labor is
+in fact an ideological construct (ideological in the sense of the
+anthropologist Louis Dumont, and not in the Marxist sense). Therefore, I
+will briefly indicate that the concept of Labor begins in political economy
+and is then appropriated by natural science to be reimported into economic
+science.
+
+Likewise, I will indicate that the motivation for the the thesis is to
+rethink what Labor is in the \ordinalnum{21} century, taking into account the ubiquity
+of information technologies. 
+\section{Rethinking Work in the 21st Century}
+\label{sec:orgb75519b}
+In this section, I will state the main argument of the thesis: namely, that
+the origin of the computer is a particular conception of the organization
+of labor, which we should take into account to understand the transformation
+of labor (its forms, its meaning, its formal definition in law, etc.) in the
+\ordinalnum{21} century. As such, this argument calls into question the ``popular''
+understanding of the one-sided transformation of labor by the appeareance
+and dissemination of information and communication technologies (ICTs) in
+the mid \ordinalnum{20} century. Instead, this thesis proposes to read the
+computer as a technology for organizing labor, to then use this reading to
+understand the transformation of labor that ICTs are supposedly pushing
+for. 
+
+\section{Chapter Conclusion}
+\label{sec:orgd1898f5}
+\section*{References}
+\printbibliography[heading=none,keyword=chapter-1]
+\chapter{The Conceptual Origins of the Computer}
+\label{sec:orgf7ad317}
 The first chapter introduces the definition of the early computer as a
 technology for organizing work. The first objective of this chapter is to
 question the belief that the appropriate definition of the computer is in
@@ -184,7 +277,11 @@ calculation of the logarithmic tables at the \emph{Bureau du cadastre}, and the
 importance that this project had for Charles Babbage's calculating
 machines.
 \section{Did Adam Smith Invent the Computer?}
-\label{sec:org161fe11}
+\label{sec:orga11d176}
+This chapter will open with Simon and Newell's text,
+\citetitle{simon_newell1958}, in which they discuss de Prony's project and it
+is influence on Charles Babbage.
+
 The introduction to this chapter presents the reader with the story of how
 Gaspard-Clair-François-Marie Riche de Prony was inspired by Adam Smith's
 concept of the division of labor---as it appears in the pin factory example
@@ -196,20 +293,18 @@ calculation tasks are divided into simpler calculation tasks, which are
 then carried out by unqualified ``specialized'' workers (or in computer
 science lingo, by \emph{sub-processes}).
 
-\subsection*{References:}
-\printbibliography[heading=none,keyword=chapter-1]
-\section{De Prony's Tables and Human Computers}
-\label{sec:org604100f}
 The first section of this chapter contextualizes the story of De Prony, by
 providing some background information on him and on the project of the
 calculation of the logarithmic tables. The idea is to provide an
 understanding of the significance of the project at the time, and the
 subsequent significance that it had for Charles Babbage.
 
-\subsection*{References:}
-\printbibliography[heading=none,keyword=chapter-1.1]
-\section{Can Machine Labor Replace Human Labor?}
-\label{sec:org47eeb70}
+\section{Babbage's Thinking Machines}
+\label{sec:org054296b}
+
+The second chapter will discuss the question at the heart of Babbage's
+project: Can machine labor replace human labor?
+
 The second section of this chapter connects De Prony's story with Babbage's
 design of the Difference and the Analytical Engine. The idea is to connect
 Babbage's ideas on the organization of work and industry with his thought
@@ -217,12 +312,12 @@ on calculating devices. Therefore, the concept of \emph{mental labor} will be
 discussed, as it relates to the \ordinalnum{20} century analogy between
 mind and computer---which is key to the thought of Herbert Simon.   
 
-\subsection*{References:}
-\printbibliography[heading=none,keyword=chapter-1.2]
 \section{Chapter Conclusion}
-\label{sec:org41cb18c}
-\chapter{Chapter 2}
-\label{sec:orge6ac0cc}
+\label{sec:orge796da5}
+\section*{References}
+\printbibliography[heading=none,keyword=chapter-2]
+\chapter{The Bureaucracy as Model Computer}
+\label{sec:org7049168}
 The second chapter describes Herbert Simon's thinking on the computer and
 organizations to trace the consequences of these ideas into his thinking
 about the role of artificial systems in shaping the workplace and worker
@@ -230,9 +325,8 @@ self-determination. Therefore, this chapter will introduce the reader to
 the importance of Herbert Simon to the field of artificial intelligence,
 which has been more-or-less ignored by economists---who often only focus on
 his concept of \emph{bounded rationality}.
-
-\section{Herbert Simon: Computer as Mind; Mind as Computer}
-\label{sec:orge4cbc35}
+\section{The Mind and the Computer}
+\label{sec:org3df1308}
 The introduction of this chapter discusses the ambiguous relation between
 nature and artifice in the thought of Herbert Simon---specially, as it
 manifests in his understanding of the mind as a computer. The idea is to
@@ -240,37 +334,18 @@ give the reader enough background information on Simon's general vision of
 \emph{things} to, then, discuss his thinking on the nature of organizations (in
 the first section).
 
-\subsection*{References:}
-\printbibliography[heading=none,keyword=chapter-2]
-\section{Simon on Organizations}
-\label{sec:org875cff7}
+\section{Dichotomy: Natural and Artificial}
+\label{sec:orgb384767}
 The first section of this chapter connects Simon's ideas on the computer
 and the mind to his general thinking on organizations. The idea is to pave
 the way for a political understanding of Simon's more abstract writings on
 organizations by presenting Simon's own thinking on the concrete social
 consequences of his vision---which is done in the second section.
 
-\subsection*{References:}
-\printbibliography[heading=none,keyword=chapter-2.1]
-\section{Could Computers Be Democratic?}
-\label{sec:org8ed4785}
-The second section of this chapter connects Simon's general ideas on
-organizations to his thought on the role of artificial systems (machines,
-automation, ICTs, artificial intelligence, etc.) in shaping the workplace.
-Moreover, this section will discuss his problematic concept of a ``science
-of the artificial'' as it relates to the organization of labor---after all,
-there's nothing more artificial than the institution of wage earning. The
-idea is to show that the description of the organization of labor as a
-purely technical matter has terrible consequences for worker
-self-determination, and that this understanding of the worker as a just a
-cog in the production process is not questioned by Simon, and thus,
-unlikely to change under the new information technologies.
-
-\subsection*{References:}
-\printbibliography[heading=none,keyword=chapter-2.2]
 \section{Chapter Conclusion}
-\label{sec:orgeab0b8e}
-\printbibliography[heading=none,keyword=chapter-2.3]
+\label{sec:org924af29}
+\section*{References}
+\printbibliography[heading=none,keyword=chapter-3]
 \chapter{Conclusion}
-\label{sec:org6e2cd91}
+\label{sec:org7d7f184}
 \end{document}

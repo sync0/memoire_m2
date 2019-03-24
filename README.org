@@ -205,7 +205,7 @@ SCHEDULED: <2018-11-01 Thu>
 - [ ] Write the Argument.
 *** 中 Draft: Writing Plan
 - [ ] Check with thesis adviser.
-*** 無 Additional Research
+*** 中 Additional Research
 ** 待 Writing Stage
 SCHEDULED: <2019-01-20 Sun>
 *** Exploratory Draft: Thesis
@@ -765,3 +765,21 @@ Simon, Theories of decision making in economics and behavioral science. AER
 1949 no. 3
 
 fichier nationale des theses, Herbert Simon. 
+* Tasks
+** 完 Write to Carnegie Mellon University
+Get them to photocopy:
+
+Julia Corrin
+jcorrin@andrew.cmu.edu
+Carnegie Mellon University Libraries
+
+1. Herbert Simon, The Theory of Departmentalization: Ford Working Paper #8,
+   3/8/54, HSP, Box 7, ff. 240.
+2. Herbert Simon, Functional Analysis and Organization Theory I, 4/1/54, HSP, Box 7,
+   ff 239.
+3. Herbert Simon, Functional Analysis and Organization Theory II, 4/30/54, HSP, Box 7,
+   ff 239.
+4. Herbert Simon, Some Strategic considerations in the Conscturction of Social Science
+   Models, 1951, HSP, Box 4, ff 120.
+5. Herbert Simon, Letter to Ross Ashby, 6/15/53, Box 5, ff 197.
+6. W. Ross Ashby, Letter to Herbert Simon, 7/24/53, Box 5, ff 197. 

@@ -1,63 +1,45 @@
 #+STARTUP: indent nostars logdrawer showeverything
-#+TITLE: Vers la machine à gouverner
 #+SETUPFILE: "~/Dropbox/typography/reading_list.org" 
 #+INCLUDE: "~/Dropbox/typography/layouts.org::*Reading List" :only-contents t
 #+INCLUDE: "~/Dropbox/typography/settings.org::*English" :only-contents t
-
+#+INCLUDE: "./title_pages.tex" export latex
 \nocite{*}
-* 完 Introduction 
-:PROPERTIES:
-:PAGECOUNT: 15
-:END:
-** 完 Accroche: ``The Concept of Work between Society and Nature''
-:PROPERTIES:
-:PAGECOUNT: 5
-:END:
-In the /accroche/, I will describe how something as self-evident as the work
-concept is in fact an ideological construct (ideological in the sense of
-the anthropologist Louis Dumont, and not in the Marxist sense). Therefore,
-I will briefly indicate that the concept of work begins in political
-economy and is then appropriated by natural science to be reimported into
-economic science.  
+* 無 Introduction 
+** 無 Accroche: A Conventionalist Epistemology
+In this section, I will briefly discuss the epistemological viewpoint of
+the thesis, which is that of a conventionalist epistemology. The idea is to
+claim that the realist epistemology fails to understand what labor is. The
+alternative is a convetionalist and historical epistemology to explain the
+construction of the concept.
 
-Likewise, I will indicate that the motivation for the the thesis is to
-rethink what work is in the \ordinalnum{21} century, taking into account the ubiquity
-of information technologies. 
+** 無 Metaphors in Economics
+This section will introduce the topic of metaphors in economic thought,
+since the main issue of the thesis is to provide historical and conceptual
+elements to understand the transformations of labor in the age of
+artificial intelligence and computer and information technologies (ICTs). 
 
-\printbibliography[heading=none,keyword=introduction-1]
-** 完 Main Argument: ``Rethinking Work in the 21st Century''
-:PROPERTIES:
-:PAGECOUNT: 7
-:END:
-In this section, I will state the main argument of the thesis: namely, that
-the origin of the computer is a particular conception of the organization
-of work, which we should take into account to understand the transformation
-of work (its forms, its meaning, its formal definition in law, etc.) in the
-\ordinalnum{21} century. As such, this argument calls into question the ``popular''
-understanding of the one-sided transformation of work by the appeareance
-and dissemination of information and communication technologies (ICTs) in
-the mid \ordinalnum{20} century. Instead, this thesis proposes to read the
-computer as a technology for organizing labor, to then use this reading to
-understand the transformation of labor that ICTs are supposedly pushing
-for. 
+This thesis takes the position that metaphors and analogies play an
+important role in the way scientific concepts are understood such as in
+pedagogical examples and functional analogies. 
 
-\printbibliography[heading=none,keyword=introduction-2]
-** 完 Structure of the Thesis
-:PROPERTIES:
-:PAGECOUNT: 2
-:END:
-
-In this section, I simply describe the contents of the two chapters of the
-thesis and hint at the conclusion. 
-
-The first chapter traces the origins of the computer in de Prony and
-Babbage. The idea is to provide the reader with enough background knowledge
-to understand that the computer is not a thing but a concept, and that the
-definition of this concept has to be approached historically. This chapter
+I will state that both labor and the computer are not things but concepts,
+and that their definitions must be approached historically. This chapter
 will define the early computer as a conception of the organization of work
 that reflects an engineering and managerial mentality. Likewise, this
 chapter will hint at the link between this conception of work and its
 definition in law as a relation of subordination.
+** 中 Structure of the Thesis
+In the last part of the introduction, I will summarize the arguments of the
+three chapters and hint at the conclusion. 
+
+# The first chapter traces the origins of the computer in de Prony and
+# Babbage. The idea is to provide the reader with enough background knowledge
+# to understand that the computer is not a thing but a concept, and that the
+# definition of this concept has to be approached historically. This chapter
+# will define the early computer as a conception of the organization of work
+# that reflects an engineering and managerial mentality. Likewise, this
+# chapter will hint at the link between this conception of work and its
+# definition in law as a relation of subordination.
 
 The second chapter will describe Herbert Simon's interest in Babbage, and
 will speculate on how this reading shaped Simon's conception of the
@@ -70,10 +52,35 @@ emphases other criteria for organization such as justice, etc.
 
 \section*{References}
 \printbibliography[heading=none,keyword=introduction]
-* 無 Chapter 1
-:PROPERTIES:
-:PAGECOUNT: 30
-:END:
+* 次 What is Labor? 
+** 完  Monism: Society and Nature
+In the /accroche/, I will describe how something as self-evident as labor is
+in fact an ideological construct (ideological in the sense of the
+anthropologist Louis Dumont, and not in the Marxist sense). Therefore, I
+will briefly indicate that the concept of Labor begins in political economy
+and is then appropriated by natural science to be reimported into economic
+science.
+
+Likewise, I will indicate that the motivation for the the thesis is to
+rethink what Labor is in the \ordinalnum{21} century, taking into account the ubiquity
+of information technologies. 
+** 完 Rethinking Work in the 21st Century
+In this section, I will state the main argument of the thesis: namely, that
+the origin of the computer is a particular conception of the organization
+of labor, which we should take into account to understand the transformation
+of labor (its forms, its meaning, its formal definition in law, etc.) in the
+\ordinalnum{21} century. As such, this argument calls into question the ``popular''
+understanding of the one-sided transformation of labor by the appeareance
+and dissemination of information and communication technologies (ICTs) in
+the mid \ordinalnum{20} century. Instead, this thesis proposes to read the
+computer as a technology for organizing labor, to then use this reading to
+understand the transformation of labor that ICTs are supposedly pushing
+for. 
+
+** 完 Chapter Conclusion
+\section*{References}
+\printbibliography[heading=none,keyword=chapter-1]
+* 無 The Conceptual Origins of the Computer
 The first chapter introduces the definition of the early computer as a
 technology for organizing work. The first objective of this chapter is to
 question the belief that the appropriate definition of the computer is in
@@ -83,9 +90,10 @@ calculation of the logarithmic tables at the /Bureau du cadastre/, and the
 importance that this project had for Charles Babbage's calculating
 machines.
 ** 完 Did Adam Smith Invent the Computer?
-:PROPERTIES:
-:PAGECOUNT: 5
-:END:
+This chapter will open with Simon and Newell's text,
+citetitle:simon_newell1958, in which they discuss de Prony's project and it
+is influence on Charles Babbage.
+
 The introduction to this chapter presents the reader with the story of how
 Gaspard-Clair-François-Marie Riche de Prony was inspired by Adam Smith's
 concept of the division of labor---as it appears in the pin factory example
@@ -97,35 +105,17 @@ calculation tasks are divided into simpler calculation tasks, which are
 then carried out by unqualified ``specialized'' workers (or in computer
 science lingo, by /sub-processes/).
 
-\subsection*{References:}
-\printbibliography[heading=none,keyword=chapter-1]
-** 完 De Prony's Tables and Human Computers 
-:PROPERTIES:
-:PAGECOUNT: 10
-:END:
 The first section of this chapter contextualizes the story of De Prony, by
 providing some background information on him and on the project of the
 calculation of the logarithmic tables. The idea is to provide an
 understanding of the significance of the project at the time, and the
 subsequent significance that it had for Charles Babbage.
 
-\subsection*{References:}
-\printbibliography[heading=none,keyword=chapter-1.1]
-*** 取 Short historical context
-:PROPERTIES:
-:PAGECOUNT: 3
-:END:
-Describe the way de Prony's project was interpreted in the context of the
-French revolution. This is how is done 
-*** 取 Short technical description
-:PROPERTIES:
-:PAGECOUNT: 3
-:END:
-What was de Prony actually doing
-** 完 Can Machine Labor Replace Human Labor?
-:PROPERTIES:
-:PAGECOUNT: 10
-:END:
+** 完 Babbage's Thinking Machines
+
+The second chapter will discuss the question at the heart of Babbage's
+project: Can machine labor replace human labor?
+
 The second section of this chapter connects De Prony's story with Babbage's
 design of the Difference and the Analytical Engine. The idea is to connect
 Babbage's ideas on the organization of work and industry with his thought
@@ -133,16 +123,10 @@ on calculating devices. Therefore, the concept of /mental labor/ will be
 discussed, as it relates to the \ordinalnum{20} century analogy between
 mind and computer---which is key to the thought of Herbert Simon.   
 
-\subsection*{References:}
-\printbibliography[heading=none,keyword=chapter-1.2]
 ** 完 Chapter Conclusion
-:PROPERTIES:
-:PAGECOUNT: 5
-:END:
-* 無 Chapter 2 
-:PROPERTIES:
-:PAGECOUNT: 25
-:END:
+\section*{References}
+\printbibliography[heading=none,keyword=chapter-2]
+* 無 The Bureaucracy as Model Computer
 The second chapter describes Herbert Simon's thinking on the computer and
 organizations to trace the consequences of these ideas into his thinking
 about the role of artificial systems in shaping the workplace and worker
@@ -150,11 +134,7 @@ self-determination. Therefore, this chapter will introduce the reader to
 the importance of Herbert Simon to the field of artificial intelligence,
 which has been more-or-less ignored by economists---who often only focus on
 his concept of /bounded rationality/.
-
-** 無 Herbert Simon: Computer as Mind; Mind as Computer
-:PROPERTIES:
-:PAGECOUNT: 5
-:END:
+** 無 The Mind and the Computer
 The introduction of this chapter discusses the ambiguous relation between
 nature and artifice in the thought of Herbert Simon---specially, as it
 manifests in his understanding of the mind as a computer. The idea is to
@@ -162,24 +142,14 @@ give the reader enough background information on Simon's general vision of
 /things/ to, then, discuss his thinking on the nature of organizations (in
 the first section).
 
-\subsection*{References:}
-\printbibliography[heading=none,keyword=chapter-2]
-** 無 Simon on Organizations
-:PROPERTIES:
-:PAGECOUNT: 10
-:END:
+** 無 Dichotomy: Natural and Artificial
 The first section of this chapter connects Simon's ideas on the computer
 and the mind to his general thinking on organizations. The idea is to pave
 the way for a political understanding of Simon's more abstract writings on
 organizations by presenting Simon's own thinking on the concrete social
 consequences of his vision---which is done in the second section.
 
-\subsection*{References:}
-\printbibliography[heading=none,keyword=chapter-2.1]
-** 無 Could Computers Be Democratic?
-:PROPERTIES:
-:PAGECOUNT: 10
-:END:
+** 取 Could Computers Be Democratic?
 The second section of this chapter connects Simon's general ideas on
 organizations to his thought on the role of artificial systems (machines,
 automation, ICTs, artificial intelligence, etc.) in shaping the workplace.
@@ -192,17 +162,10 @@ self-determination, and that this understanding of the worker as a just a
 cog in the production process is not questioned by Simon, and thus,
 unlikely to change under the new information technologies.
 
-\subsection*{References:}
-\printbibliography[heading=none,keyword=chapter-2.2]
 ** 完 Chapter Conclusion
-:PROPERTIES:
-:PAGECOUNT: 5
-:END:
-\printbibliography[heading=none,keyword=chapter-2.3]
+\section*{References}
+\printbibliography[heading=none,keyword=chapter-3]
 * Conclusion
-:PROPERTIES:
-:PAGECOUNT: 5
-:END:
 
 # This thesis only hints at the importance of the concept of information in
 # the \ordinalnum{20} century science. A more thorough understainding of this
