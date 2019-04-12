@@ -4,15 +4,26 @@
 #+INCLUDE: "~/Dropbox/typography/settings.org::*English" :only-contents t
 #+INCLUDE: "./title_pages.tex" export latex
 \nocite{*}
-* 無 Introduction 
-** 無 Accroche: A Conventionalist Epistemology
-In this section, I will briefly discuss the epistemological viewpoint of
-the thesis, which is that of a conventionalist epistemology. The idea is to
-claim that the realist epistemology fails to understand what labor is. The
-alternative is a convetionalist and historical epistemology to explain the
-construction of the concept.
 
-** 無 Metaphors in Economics
+* 無 Introduction 
+** 無 Accroche : Metaphors in Economics
+# In this section, I will briefly discuss the epistemological viewpoint of
+# the thesis, which is that of a conventionalist epistemology. The idea is to
+# claim that the realist epistemology fails to understand what labor is. The
+# alternative is a convetionalist and historical epistemology to explain the
+# construction of the concept.
+
+In the /accroche/, I will describe how something as self-evident as labor is
+in fact an ideological construct (ideological in the sense of the
+anthropologist Louis Dumont, and not in the Marxist sense). Therefore, I
+will briefly indicate that the concept of Labor begins in political economy
+and is then appropriated by natural science to be reimported into economic
+science.
+
+Likewise, I will indicate that the motivation for the the thesis is to
+rethink what Labor is in the \ordinalnum{21} century, taking into account the ubiquity
+of information technologies. 
+
 This section will introduce the topic of metaphors in economic thought,
 since the main issue of the thesis is to provide historical and conceptual
 elements to understand the transformations of labor in the age of
@@ -28,10 +39,23 @@ will define the early computer as a conception of the organization of work
 that reflects an engineering and managerial mentality. Likewise, this
 chapter will hint at the link between this conception of work and its
 definition in law as a relation of subordination.
-** 中 Structure of the Thesis
 In the last part of the introduction, I will summarize the arguments of the
 three chapters and hint at the conclusion. 
 
+** 完 Rethinking Work in the 21st Century
+In this section, I will state the main argument of the thesis: namely, that
+the origin of the computer is a particular conception of the organization
+of labor, which we should take into account to understand the transformation
+of labor (its forms, its meaning, its formal definition in law, etc.) in the
+\ordinalnum{21} century. As such, this argument calls into question the ``popular''
+understanding of the one-sided transformation of labor by the appeareance
+and dissemination of information and communication technologies (ICTs) in
+the mid \ordinalnum{20} century. Instead, this thesis proposes to read the
+computer as a technology for organizing labor, to then use this reading to
+understand the transformation of labor that ICTs are supposedly pushing
+for. 
+
+** 中 Structure of the Thesis
 # The first chapter traces the origins of the computer in de Prony and
 # Babbage. The idea is to provide the reader with enough background knowledge
 # to understand that the computer is not a thing but a concept, and that the
@@ -52,34 +76,6 @@ emphases other criteria for organization such as justice, etc.
 
 \section*{References}
 \printbibliography[heading=none,keyword=introduction]
-* 次 What is Labor? 
-** 完  Monism: Society and Nature
-In the /accroche/, I will describe how something as self-evident as labor is
-in fact an ideological construct (ideological in the sense of the
-anthropologist Louis Dumont, and not in the Marxist sense). Therefore, I
-will briefly indicate that the concept of Labor begins in political economy
-and is then appropriated by natural science to be reimported into economic
-science.
-
-Likewise, I will indicate that the motivation for the the thesis is to
-rethink what Labor is in the \ordinalnum{21} century, taking into account the ubiquity
-of information technologies. 
-** 完 Rethinking Work in the 21st Century
-In this section, I will state the main argument of the thesis: namely, that
-the origin of the computer is a particular conception of the organization
-of labor, which we should take into account to understand the transformation
-of labor (its forms, its meaning, its formal definition in law, etc.) in the
-\ordinalnum{21} century. As such, this argument calls into question the ``popular''
-understanding of the one-sided transformation of labor by the appeareance
-and dissemination of information and communication technologies (ICTs) in
-the mid \ordinalnum{20} century. Instead, this thesis proposes to read the
-computer as a technology for organizing labor, to then use this reading to
-understand the transformation of labor that ICTs are supposedly pushing
-for. 
-
-** 完 Chapter Conclusion
-\section*{References}
-\printbibliography[heading=none,keyword=chapter-1]
 * 無 The Conceptual Origins of the Computer
 The first chapter introduces the definition of the early computer as a
 technology for organizing work. The first objective of this chapter is to
@@ -125,7 +121,7 @@ mind and computer---which is key to the thought of Herbert Simon.
 
 ** 完 Chapter Conclusion
 \section*{References}
-\printbibliography[heading=none,keyword=chapter-2]
+\printbibliography[heading=none,keyword=chapter-1]
 * 無 The Bureaucracy as Model Computer
 The second chapter describes Herbert Simon's thinking on the computer and
 organizations to trace the consequences of these ideas into his thinking
@@ -164,7 +160,7 @@ unlikely to change under the new information technologies.
 
 ** 完 Chapter Conclusion
 \section*{References}
-\printbibliography[heading=none,keyword=chapter-3]
+\printbibliography[heading=none,keyword=chapter-2]
 * Conclusion
 
 # This thesis only hints at the importance of the concept of information in

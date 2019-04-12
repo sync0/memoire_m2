@@ -41,10 +41,11 @@
 \usetikzlibrary{positioning}
 \tikzset{main node/.style={circle,fill=gray!45,draw,minimum size=0.5cm,inner sep=0pt},}
 \usepackage{lipsum}
-\usepackage[backend=biber,bibstyle=numeric,defernumbers=true,eprint=false,doi=false,isbn=false,url=false]{biblatex}
+\usepackage[backend=biber,bibstyle=draft,eprint=false,doi=false,isbn=false,url=false]{biblatex}
 \addbibresource{~/Documents/pdfs/bibliography.bib}
 \urlstyle{sf}
 \renewcommand{\subtitlepunct}{\addcolon\addspace}
+\renewbibmacro*{date}{\printdate\iffieldundef{origyear}{}{\setunit*{\addspace}\printtext[brackets]{\printorigdate}}}
 \usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
 \clearscrheadfoot
@@ -190,18 +191,22 @@ Copyright \textcopyright \textsc{sync0} 2018.
 \newpage
 \tableofcontents 
 \nocite{*}
-\chapter{Introduction}
-\label{sec:orgbbd7125}
-\section{Accroche: A Conventionalist Epistemology}
-\label{sec:org7b0274a}
-In this section, I will briefly discuss the epistemological viewpoint of
-the thesis, which is that of a conventionalist epistemology. The idea is to
-claim that the realist epistemology fails to understand what labor is. The
-alternative is a convetionalist and historical epistemology to explain the
-construction of the concept.
 
-\section{Metaphors in Economics}
-\label{sec:org4dc7e4b}
+\chapter{Introduction}
+\label{sec:org764ffd0}
+\section{Accroche : Metaphors in Economics}
+\label{sec:org778b8fe}
+In the \emph{accroche}, I will describe how something as self-evident as labor is
+in fact an ideological construct (ideological in the sense of the
+anthropologist Louis Dumont, and not in the Marxist sense). Therefore, I
+will briefly indicate that the concept of Labor begins in political economy
+and is then appropriated by natural science to be reimported into economic
+science.
+
+Likewise, I will indicate that the motivation for the the thesis is to
+rethink what Labor is in the \ordinalnum{21} century, taking into account the ubiquity
+of information technologies. 
+
 This section will introduce the topic of metaphors in economic thought,
 since the main issue of the thesis is to provide historical and conceptual
 elements to understand the transformations of labor in the age of
@@ -217,39 +222,11 @@ will define the early computer as a conception of the organization of work
 that reflects an engineering and managerial mentality. Likewise, this
 chapter will hint at the link between this conception of work and its
 definition in law as a relation of subordination.
-\section{Structure of the Thesis}
-\label{sec:orgd0db00b}
 In the last part of the introduction, I will summarize the arguments of the
 three chapters and hint at the conclusion. 
 
-The second chapter will describe Herbert Simon's interest in Babbage, and
-will speculate on how this reading shaped Simon's conception of the
-computer, the relation between the natural and the artificial, the changes
-in work produced by new technologies (artificial intellgence, computers,
-and automation), and the organization of work in society. Moreover, this
-chapter will criticize Simon's idea that the organization of work is a
-purely technical problem to propose an alternative view of work that
-emphases other criteria for organization such as justice, etc.
-
-\section*{References}
-\printbibliography[heading=none,keyword=introduction]
-\chapter{What is Labor?}
-\label{sec:org0839166}
-THE
-\section{Monism: Society and Nature}
-\label{sec:orgb065488}
-In the \emph{accroche}, I will describe how something as self-evident as labor is
-in fact an ideological construct (ideological in the sense of the
-anthropologist Louis Dumont, and not in the Marxist sense). Therefore, I
-will briefly indicate that the concept of Labor begins in political economy
-and is then appropriated by natural science to be reimported into economic
-science.
-
-Likewise, I will indicate that the motivation for the the thesis is to
-rethink what Labor is in the \ordinalnum{21} century, taking into account the ubiquity
-of information technologies. 
 \section{Rethinking Work in the 21st Century}
-\label{sec:orgb75519b}
+\label{sec:org8deb127}
 In this section, I will state the main argument of the thesis: namely, that
 the origin of the computer is a particular conception of the organization
 of labor, which we should take into account to understand the transformation
@@ -262,12 +239,21 @@ computer as a technology for organizing labor, to then use this reading to
 understand the transformation of labor that ICTs are supposedly pushing
 for. 
 
-\section{Chapter Conclusion}
-\label{sec:orgd1898f5}
+\section{Structure of the Thesis}
+\label{sec:org25c77eb}
+The second chapter will describe Herbert Simon's interest in Babbage, and
+will speculate on how this reading shaped Simon's conception of the
+computer, the relation between the natural and the artificial, the changes
+in work produced by new technologies (artificial intellgence, computers,
+and automation), and the organization of work in society. Moreover, this
+chapter will criticize Simon's idea that the organization of work is a
+purely technical problem to propose an alternative view of work that
+emphases other criteria for organization such as justice, etc.
+
 \section*{References}
-\printbibliography[heading=none,keyword=chapter-1]
+\printbibliography[heading=none,keyword=introduction]
 \chapter{The Conceptual Origins of the Computer}
-\label{sec:orgf7ad317}
+\label{sec:org2a83b13}
 The first chapter introduces the definition of the early computer as a
 technology for organizing work. The first objective of this chapter is to
 question the belief that the appropriate definition of the computer is in
@@ -277,7 +263,7 @@ calculation of the logarithmic tables at the \emph{Bureau du cadastre}, and the
 importance that this project had for Charles Babbage's calculating
 machines.
 \section{Did Adam Smith Invent the Computer?}
-\label{sec:orga11d176}
+\label{sec:org46c2453}
 This chapter will open with Simon and Newell's text,
 \citetitle{simon_newell1958}, in which they discuss de Prony's project and it
 is influence on Charles Babbage.
@@ -300,7 +286,7 @@ understanding of the significance of the project at the time, and the
 subsequent significance that it had for Charles Babbage.
 
 \section{Babbage's Thinking Machines}
-\label{sec:org054296b}
+\label{sec:org53fa496}
 
 The second chapter will discuss the question at the heart of Babbage's
 project: Can machine labor replace human labor?
@@ -313,11 +299,11 @@ discussed, as it relates to the \ordinalnum{20} century analogy between
 mind and computer---which is key to the thought of Herbert Simon.   
 
 \section{Chapter Conclusion}
-\label{sec:orge796da5}
+\label{sec:org7a9c2b2}
 \section*{References}
-\printbibliography[heading=none,keyword=chapter-2]
+\printbibliography[heading=none,keyword=chapter-1]
 \chapter{The Bureaucracy as Model Computer}
-\label{sec:org7049168}
+\label{sec:org01d435a}
 The second chapter describes Herbert Simon's thinking on the computer and
 organizations to trace the consequences of these ideas into his thinking
 about the role of artificial systems in shaping the workplace and worker
@@ -326,7 +312,7 @@ the importance of Herbert Simon to the field of artificial intelligence,
 which has been more-or-less ignored by economists---who often only focus on
 his concept of \emph{bounded rationality}.
 \section{The Mind and the Computer}
-\label{sec:org3df1308}
+\label{sec:org05c8ab0}
 The introduction of this chapter discusses the ambiguous relation between
 nature and artifice in the thought of Herbert Simon---specially, as it
 manifests in his understanding of the mind as a computer. The idea is to
@@ -335,7 +321,7 @@ give the reader enough background information on Simon's general vision of
 the first section).
 
 \section{Dichotomy: Natural and Artificial}
-\label{sec:orgb384767}
+\label{sec:org3de7faf}
 The first section of this chapter connects Simon's ideas on the computer
 and the mind to his general thinking on organizations. The idea is to pave
 the way for a political understanding of Simon's more abstract writings on
@@ -343,9 +329,9 @@ organizations by presenting Simon's own thinking on the concrete social
 consequences of his vision---which is done in the second section.
 
 \section{Chapter Conclusion}
-\label{sec:org924af29}
+\label{sec:orgca0227c}
 \section*{References}
-\printbibliography[heading=none,keyword=chapter-3]
+\printbibliography[heading=none,keyword=chapter-2]
 \chapter{Conclusion}
-\label{sec:org7d7f184}
+\label{sec:orgaa71b09}
 \end{document}
