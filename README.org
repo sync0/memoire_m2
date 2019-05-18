@@ -139,10 +139,7 @@ system, in which a M2 Master's thesis should be prepared in one year.
 # Since the table is coded with Emacs' ~org-mode~, it is interactive. Just type
 # the number of weeks spent in each stage under the ~Spent~ column, and the
 # rest will adjust (with ~C-c C-c~) to display the remaining weeks and months.
-* 無 Administration                                                                                :Administration: 
-:PROPERTIES:
-:CATEGORY: Administration   
-:END:
+* 無 Administration   
 ** 無 Dépôt du mémoire
 SCHEDULED: <2019-05-16 Thu>
 - [ ] 1 exemplaire papier au Bureau des M2 Recherche à l'attention de Mme
@@ -154,10 +151,7 @@ SCHEDULED: <2019-05-16 Thu>
 SCHEDULED: <2019-05-24 Fri>
 ** 無 Délibération
 SCHEDULED: <2019-06-05 Wed>
-* 無 Stages :Étapes:
-:PROPERTIES:
-:CATEGORY: Étapes  
-:END:
+* 無 Stages 
 ** 完 Preparatory Research Stage
 DEADLINE: <2018-10-31 Wed>
 *** 完 Choice of Subject-matter
@@ -198,7 +192,7 @@ SCHEDULED: <2018-11-01 Thu>
    - [X] Update list of key texts.
    - [X] Update list of key authors.
  - [X] If necessary, update any component of the Framework.
-** 中 Preparatory Writing Stage
+** 完 Preparatory Writing Stage
 *** 中 Draft: Writing Proposal
 - [ ] Update Main Question.
 - [ ] Write the Directing Idea.
@@ -208,20 +202,20 @@ SCHEDULED: <2018-11-01 Thu>
 *** 中 Additional Research
 ** 待 Writing Stage
 SCHEDULED: <2019-01-20 Sun>
-*** Exploratory Draft: Thesis
+*** 取 Exploratory Draft: Thesis
 - [ ] Check with thesis adviser.
-*** Writing Proposal
-- [ ] Check with thesis adviser.
-- [ ] Check with selected readers.
-*** Writing Plan
+*** 取 Writing Proposal
 - [ ] Check with thesis adviser.
 - [ ] Check with selected readers.
-- [ ] Classification of documents.
+*** 完 Writing Plan
+- [X] Check with thesis adviser.
+- [X] Check with selected readers.
+- [X] Classification of documents.
 *** First Draft: Thesis
 - [ ] Check with thesis adviser.
 - [ ] Check with selected readers.
 - [ ] Rewriting including their comments.
-*** Last Draft: Thesis
+*** 取 Last Draft: Thesis
 - [ ] Revise each introduction and conclusion.
 - [ ] Revise the general introduction and the general conclusion.
 - [ ] Check with thesis adviser.
@@ -241,110 +235,131 @@ SCHEDULED: <2019-01-20 Sun>
 *** Due Diligence: Jury
 *** Jury
 * Writing Plan
-:PROPERTIES:
-:CATEGORY: Mémoire
-:END:
-** [0/13] Introduction
-*** 無 Rabinbach, The End of the Utopias of Labor
-*** 無 [0/2] Maas, William Stanley Jevons and the Making of Modern Economics
-:Notes:
-Use chapter one. If possible the last chapter as well. 
-:END:
-  1. [ ] The Prying Eyes of the Natural Scientist
-  5. [ ] The Image of Economics
+** [14/15] Introduction
+*** 完 Simon, Heuristic Problem Solving: The Next Advance in Operations Research 
+*** 無 Schaffer, Enlightened Automata 
+*** 取 Rabinbach, The End of the Utopias of Labor
+*** 取 [0/2] Maas, William Stanley Jevons and the Making of Modern Economics
+**** 無 The Prying Eyes of the Natural Scientist
+**** 無 The Image of Economics
      - Bridging the natural and the social
      - Mechanical dreams
      - Economics as natural science
-*** 無 Schaffer, Enlightened Automata 
-*** 無 Dubarle, Vers la machine à gouverner
-*** 無 Oliveira, A History of the Work Concept
-*** 無 Peaucelle, Vices et vertus du travail spécialisé 
-*** 無 Supiot, Le droit du travail 
-*** 無 Séris, La technique 
-*** 無 Supiot, Critique du droit du travail 
-*** 無 Vatin, Le travail et ses valeurs 
-*** 無 Thompson, Time, Work-Discipline, and Industrial Capitalism 
-*** 無 Brenner, Quelle épistémologie historique?
-*** 無 Maas, The Historical Epistemology of Economics
-*** 無 [0/5] Supiot, 2012, La gouvernance par les nombres
+*** 取 Dubarle, Vers la machine à gouverner
+*** 取 Oliveira, A History of the Work Concept
+*** 取 Peaucelle, Vices et vertus du travail spécialisé 
+*** 取 Supiot, Le droit du travail 
+*** 取 Séris, La technique 
+*** 取 Supiot, Critique du droit du travail 
+*** 取 Vatin, Le travail et ses valeurs 
+*** 取 Thompson, Time, Work-Discipline, and Industrial Capitalism 
+*** 取 Brenner, Quelle épistémologie historique?
+*** 取 Maas, The Historical Epistemology of Economics
+*** 取 [0/5] Supiot, 2012, La gouvernance par les nombres
 :Notes:
 Maybe read only chapter 3 and 7. 
 :END:
-  1. [ ] En quête de la machine à gouverner
+**** 無 En quête de la machine à gouverner
      - Poétique du gouvernement 
      - L'homme machine
      - Du gouvernement à la gouvernance
-  4. [ ] Le rêve de l'harmonie par le calcul
+**** 無 Le rêve de l'harmonie par le calcul
      - Les accords parfaits du nombre
      - La fonction instituante de la discorde 
-  5. [ ] L'essor des usages normatifs de la quantification
+**** 無 L'essor des usages normatifs de la quantification
      - Rendre compte
      - Administrer
      - Juger
      - Légiférer 
-  6. [ ] L’asservissement de la Loi au Nombre: du Gosplan au Marché total
+**** 無 L’asservissement de la Loi au Nombre: du Gosplan au Marché total
      - Le renversement du règne de la loi
      - Le droit, outil de planification
      - L'hybridation du communisme et capitalisme 
-  12. [ ] De la mobilisation totale à la crise du Fordisme
+**** 無 De la mobilisation totale à la crise du Fordisme
       - Le compromis Fordiste
       - La déconstruction du droit du travail
       - Les voies d'un nouveau compromis 
-** Chapter 1
-*** [0/8] Chapter 1 : Introduction : Did Adam Smith Invent the Computer
-**** 無 Campbell-Kelly, Computer: A History of the Information Machine
-**** 無 Delaire, Épingle 
-**** 無 Grier, Human Computers
-**** 無 Peaucelle, La division du travail
-**** 無 Peaucelle, Les innovations techniques et organisationelles dans la fabrication des épingles 
-**** 無 Peaucelle, Raisonner sur les épingles, l'exemple d'Adam Smith sur la division du travail
-**** 無 Perronet, Épinglier 
-**** 無 Réaumur, Art de l’épinglier 
-*** [0/10] Chapter 1 : Section 1 : De Prony's Tables and Human Computers
-**** 無 Gaspard-Clair-François-Marie Riche de Prony, Constructeur de ponts
-**** 無 Gaspard Riche de Prony, ou le génie appliqué
-**** 無 Didot, Note sur la publication proposée par le gouvernement anglais des grandes tables 
-**** 無 Grabiner, The Centrality of Mathematics in the History of Western Thought 
-**** 無 Grattan-Guinness, The computation factory: de Prony's project for making tables in the 1790s
-**** 無 Lefort, Description des grandes tables logarithmiques et trigonometriques 
-**** 無 Peaucelle, Le détail du calendrier de calcul des tables de Prony 1791 à 1802
-**** 無 Peaucelle, Un «éléphant blanc» en pleine Révolution Française
-**** 無 Roegel, The Great Logarithmic and Trigonometric Tables of the French Cadastre
-**** 無 Ycart, La manufacture à logarithmes comme des épingles 
-*** [0/8] Chapter 1 : Section 2 : Can Machine Labor Replace Human Labor?
-**** 無 Babbage, On the Economy of Machinery and Manufactures 
-- [ ] Chapter XVI 
-- [ ] Chapter XVII
-**** 無 Schaffer, Babbage's Intelligence: Calculating Engines and the Factory System
-**** 無 Dasgupta, It Began with Babbage
-**** 無 Daston, Enlightenment Calculations
-**** 無 [0/3] Maas, William Stanley Jevons and the Making of Modern Economics
-:Notes:
-Use chapter's 2 and 3.
-:END:
-  2. [ ] Engines of Discovery
-     - Babbage and his calculating engines
-     - God is a programmer
-     - An intelligent machine
-     - Is the mind a reasoning machine?
-  3. [ ] The Machinery of the Mind
-     - The Logical Abacus
-     - The Logical Machine
-     - The machine of the mind
-     - Induction - the inverse of deduction
-     - To decide what things are similar
-  4. [ ] The Laws of Human Enjoyment
-     - The factory system and the division of labor
-     - Ruskin's aesthetic-driven criticism of the factory system
-     - Mill and the gospel of work
-     - Work and fatigue
-**** 無 Miller, Charles Babbage and the Design of Intelligence 
-**** 無 Purbrick, The Dream Machine 
-**** 無 Romano, The Economic Ideas of Charles Babbage
-*** [0/0] Chapter 1 : Conclusion
-** Chapter 2
-*** [2/16] Chapter 2 : Introduction : Herbert Simon: Computer as Mind; Mind as Computer
-**** 無 [0/15] Heyck, Herbert Simon: The Bounds of Reason in Modern America
+** [15/15] Chapter 1
+*** 完 Peaucelle, Un «éléphant blanc» en pleine Révolution Française
+DEADLINE: <2019-04-19 Fri>
+*** 完 Picon, Gaspard Riche de Prony, ou le génie appliqué
+DEADLINE: <2019-04-19 Fri>
+*** 完 Peaucelle, La division du travail
+DEADLINE: <2019-04-20 Sat>
+*** 完 Friedmann, L'encyclopédie et le travail humain 
+DEADLINE: <2019-04-21 Sun>
+*** 完 Dupin, Éloge de M. le Baron de Prony
+This text mentions Smith and the division of labor. 
+*** 完 Prony, Notice sur les grandes tables logarithmiques et trigonométriques 
+Only in this text does Prony mention the intervention of Smith's division
+of labour. 
+*** 完 Prony, Éclaircissements sur un point de l'histoire des tables trigonométriques 
+*** 完 Delambre, Rapport sur les grandes tables trigonométriques décimales du cadastre 
+*** 完 Daston, Enlightenment Calculations
+*** 完 Delaire, Épingle 
+*** 完 Perronet, Épinglier 
+*** 完 Firmin-Didot, Note sur la publication proposée par le gouvernement anglais des grandes tables 
+*** 完 Grattan-Guinness, The computation factory: de Prony's project for making tables in the 1790s
+*** 完 Lefort, Description des grandes tables logarithmiques et trigonometriques 
+*** 取 Roegel, The Great Logarithmic and Trigonometric Tables of the French Cadastre
+This text has one of the most comprehensive multi-language bibliographies
+on the project of the computation of the logarithmic tables at the Bureau
+du cadastre. 
+**** 無 Chapter 1
+**** 無 Bibliography
+** [5/13] Chapter 2
+*** 中 [1/3] Maas, William Stanley Jevons and the Making of Modern Economics
+**** 阻 Engines of Discovery
+DEADLINE: <2019-04-19 Fri>
+***** 完 Babbage and his calculating engines
+***** 完 God is a programmer
+***** 無 An intelligent machine
+***** 無 Is the mind a reasoning machine?
+**** 取 The Machinery of the Mind
+***** 取 The Logical Abacus
+***** 取 The Logical Machine
+***** 取 The machinery of the mind
+***** 取 Induction - the inverse of deduction
+***** 取 To decide what things are similar
+**** 無  The Laws of Human Enjoyment
+***** 無 The factory system and the division of labor
+***** 無 Ruskin's aesthetic-driven criticism of the factory system
+***** 無 Mill and the gospel of work
+***** 無 Work and fatigue
+*** 待 Schaffer, Babbage's Intelligence: Calculating Engines and the Factory System
+DEADLINE: <2019-04-23 Tue>
+*** 完 Babbage, On the Economy of Machinery and Manufactures 
+DEADLINE: <2019-04-24 Wed>
+**** 無 Chapter XIII: On the Difference between Making and Manufacturing 
+**** 完 Chapter XVI: On the Division of Labor
+**** 完 Chapter XVII: On the Division of Mental Labor
+**** 無 Chapter XXVIII: On Combination amongst Masters or Workmen against Each Other
+**** 無 Chapter XXIX: On Combinations of Masters against the Public
+*** 無 Miller, Charles Babbage and the Design of Intelligence 
+*** 待 Wise & Smith, Work and Waste: Political Economy and Natural Philosophy
+DEADLINE: <2019-04-26 Fri>
+*** 完 Babbage, A Letter to Sir Humphry Davy
+*** 無 Babbage, On a Method of Expressign by Signs, the Action of Machinery
+*** 無 Colebrook, On Presenting the Gold Medal to Babbage
+*** 無 Lardner, Babbage's Calculating Engine
+*** 取 Lovelace, Notes upon the Memoir by the Translator
+*** 取 Menabrea, Notions sur la machine analytique de M. Charles Babbage
+*** 取 Purbrick, The Dream Machine 
+*** 無 Romano, The Economic Ideas of Charles Babbage
+** [0/0] Conclusion
+* Lectures 
+** Discarded 
+*** 取 Grabiner, The Centrality of Mathematics in the History of Western Thought 
+*** 取 Peaucelle, Le détail du calendrier de calcul des tables de Prony 1791 à 1802
+*** 取 Ycart, La manufacture à logarithmes comme des épingles 
+*** 取 Dasgupta, It Began with Babbage
+*** 取 Peaucelle, Les innovations techniques et organisationelles dans la fabrication des épingles 
+*** 取 Peaucelle, Raisonner sur les épingles, l'exemple d'Adam Smith sur la division du travail
+*** 取 Campbell-Kelly, Computer: A History of the Information Machine
+*** 取 Réaumur, Art de l’épinglier 
+*** 取 Gaspard-Clair-François-Marie Riche de Prony, Constructeur de ponts
+*** 取 Grier, Human Computers
+*** 取 [0/15] Heyck, Herbert Simon: The Bounds of Reason in Modern America
   - [ ] Unbounded rationality
   - [ ] The garden of forking paths
   - [ ] The Chicago school and the sciences of control
@@ -360,59 +375,50 @@ Use chapter's 2 and 3.
   - [ ] /Homo adaptativus/, the Finite problem solver
   - [ ] Scientist of the artificial
   - [ ] The expert problem solver 
-**** 無 Heyck, Georges Miller, language, and the computer metaphor of mind
-**** 無 Heyck, Mind and Network
-**** 無 Heyck Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 2
-**** 完 Heyck, Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 1
-**** 無 Mirowski, Core Wars
-**** 無 Gigerenzer, Mind as Computer: Birth of a Metaphor
-**** 無 Simon, Artificial Intelligence: An Empirical Science
-**** 無 Marshall, Minds, Machines and Metaphors
-**** 無 Simon, Mind as Machine: The Cognitive Révolution in Behavioral Science
-**** 無 Simon, History of Artificial Intelligence
-**** 完 Simon, Heuristic Problem Solving: The Next Advance in Operations Research 
-**** 無 Simon, Interview in OMNI
-**** 無 Simon, The Patterned Matter that is Mind
-**** 無 Simon, Theories of Decision-Making in Economics and Behavioral Science
-**** 無 Simon, Rational Choice and the Structure of the Environment                             
-*** [0/9] Chapter 2 : Section 1 : Simon on Organizations
-**** 無 Simon, Public Administration in Today's World of Organizations and Markets
+*** 取 Heyck, Georges Miller, language, and the computer metaphor of mind
+*** 取 Heyck, Mind and Network
+*** 取 Heyck Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 2
+*** 完 Heyck, Defining the Computer: Herbert Simon and the Bureaucratic Mind, Part 1
+*** 取 Mirowski, Core Wars
+*** 取 Gigerenzer, Mind as Computer: Birth of a Metaphor
+*** 取 Simon, Artificial Intelligence: An Empirical Science
+*** 取 Marshall, Minds, Machines and Metaphors
+*** 取 Simon, Mind as Machine: The Cognitive Révolution in Behavioral Science
+*** 取 Simon, History of Artificial Intelligence
+*** 取 Simon, Interview in OMNI
+*** 取 Simon, The Patterned Matter that is Mind
+*** 取 Simon, Theories of Decision-Making in Economics and Behavioral Science
+*** 無 Simon, Rational Choice and the Structure of the Environment                             
+*** 取 Simon, Public Administration in Today's World of Organizations and Markets
 Recommended by Jean-Sébastien Lenfant for the Economics and Psychology class.
-**** 無 Simon, Discovering Explanations
-**** 無 Simon, Invariants of Human Behavior
-**** 無 Simon, Rational Decision-making in Business Organizations
-**** 無 Simon, Information 101: It is Not What You Know, It is How you Know It
-**** 無 Simon, Human Nature in Politics: The Dialogue of Psychology with Political Science
-**** 無 Simon, Freedom and Discipline
-**** 無 Simon, Psychology and Economics
-**** 無 Simon, Administrative Behavior
-*** [0/13] Chapter 2 : Section 2 : Could Computers Be Democratic? 
-**** 無 Simon, Prometheus or Pandora: The Influence of Automation on Society 
-**** 阻 Simon, AI's Greatest Trends and Controversies
-**** 無 Simon, Management by Machine
-**** 無 Simon, A Computer for Everyman
-**** 無 Simon, Artificial Intelligence: Where Has It Been, and Where is It Going?
-**** 無 Simon, Artificial Intelligence (simon2001b)
-**** 阻 Simon, Artificial Intelligence: Current Status and Future Potential
-**** 阻 Simon, Robots: Who Wants Them and Why
-**** 無 Waring, Taylorism Transformed
-**** 無 Simon, What Computers Mean for Man and Society
-**** 無 Simon, What is Industrial Democracy?
-**** 阻 Simon, The Shape of Automation 
+*** 取 Simon, Discovering Explanations
+*** 取 Simon, Invariants of Human Behavior
+*** 取 Simon, Rational Decision-making in Business Organizations
+*** 取 Simon, Information 101: It is Not What You Know, It is How you Know It
+*** 取 Simon, Human Nature in Politics: The Dialogue of Psychology with Political Science
+*** 取 Simon, Freedom and Discipline
+*** 取 Simon, Psychology and Economics
+*** 取 Simon, Administrative Behavior
+*** 取 Simon, Prometheus or Pandora: The Influence of Automation on Society 
+*** 取 Simon, AI's Greatest Trends and Controversies
+*** 取 Simon, Management by Machine
+*** 取 Simon, A Computer for Everyman
+*** 取 Simon, Artificial Intelligence: Where Has It Been, and Where is It Going?
+*** 取 Simon, Artificial Intelligence (simon2001b)
+*** 取 Simon, Artificial Intelligence: Current Status and Future Potential
+*** 取 Simon, Robots: Who Wants Them and Why
+*** 取 Waring, Taylorism Transformed
+*** 取 Simon, What Computers Mean for Man and Society
+*** 取 Simon, What is Industrial Democracy?
+*** 取 Simon, The Shape of Automation 
 :PROPERTIES:
 :LOCATION: Bibliothèque Broca
 :END:
-***** 無 Simon, The Economic Effects of Automation
-***** 無 Simon, The Corporation: Will it Be Manage by Machines?
-***** 無 Simon, The New Science of Management Decisions
-**** 無 Simon, The Sciences of the Artificial
-*** [0/0] Chapter 2 : Conclusion
-** [0/0] Conclusion
-* 無 Lectures                                                                                       :Lectures: 
-** 無 [4/57] Key Text                                                                             :Key:
-:PROPERTIES:
-:CATEGORY: KeyText   
-:END:
+**** 無 Simon, The Economic Effects of Automation
+**** 無 Simon, The Corporation: Will it Be Manage by Machines?
+**** 無 Simon, The New Science of Management Decisions
+**** 取 Simon, The Sciences of the Artificial
+** [4/57] Key Text                                                                             
 *** 無 [0/15] Heyck, Herbert Simon: The Bounds of Reason in Modern America
   - [ ] Unbounded rationality
   - [ ] The garden of forking paths
@@ -540,10 +546,7 @@ Probably good for writing the introduction.
 *** 阻 Mayr, Authority, Liberty and Automatic Machinery in Early Modern Europe
 *** 阻 Riskin, The Defecating Duck, or the Ambiguous Origins of Artificial Life 
 *** 無 Rabinbach, The Human Motor
-** 無 [0/33] Important Text                                                                       :Important:
-:PROPERTIES:
-:CATEGORY: ImportantText   
-:END:
+** [0/33] Important Text                                                                       
 *** 中 [1/8] Mirowski, Machine Dreams
   - [X] Cyborg Agonists
     - [X] Rooms with a view
@@ -624,10 +627,7 @@ Cannot read it all; too lon
 *** 無 Simon, Programs as Factors of Production 
 *** 無 Simon,  Remebering John von Neumann
 *** 無 Simon, Whether Software Engineering Needs to Be Artificially Intelligent
-** 無 [0/12] Ancillary Text                                                                       :Ancillary:
-:PROPERTIES:
-:CATEGORY: AncillaryText   
-:END:
+** [0/12] Ancillary Text                                                                       
 *** 阻 Morton, The Revolt Against Formalism in American Social Thought of the Twentieth Century
 *** 阻 [0/17] Mirowski, The Knowledge We Lost in Information
   - [ ] It's not Rational 
@@ -703,10 +703,7 @@ Cannot read it all; too lon
 *** 阻 Heyck, The Organizational Revolution and the Human Sciences
 *** 阻 Klaes, A Conceptual History of the Emergence of Bounded Rationality 
 *** 阻 Porter, The Cambridge History of Science: The Modern Social Sciences 
-** 無 [0/25] Boundary Text                                                                        :Boundary:
-:PROPERTIES:
-:CATEGORY: BoundaryText   
-:END:
+** [0/25] Boundary Text                                                                        
 *** 阻 [0/1] Koyré, Études d'histoire de la pensée philosophique
 :PROPERTIES:
   :LOCATION: BU PMF, Sous-sol Sciences Humaines, Z 12865, ex. 03
@@ -745,10 +742,7 @@ Cannot read it all; too lon
 *** 阻 Purcell, The Crisis of Democratic Theory: Scientific Naturalism and the Problem of Value
 *** 阻 Ross, Modernist Impulses in the Human Sciences, 1870-1930
 *** 阻 Ross, The Origins of American Social Science 
-* 完 [1/1] Advisor                                                                                 :Directeur:
-:PROPERTIES:
-:CATEGORY: Directeur   
-:END:
+* 完 [1/1] Advisor
 ** 完 Trouver une bibliographie de Simon
 La plus a jour sur Simon, pour choisir le corpus
 
