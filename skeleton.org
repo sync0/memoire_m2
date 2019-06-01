@@ -1,0 +1,277 @@
+#+STARTUP: indent nostars logdrawer showeverything
+#+SETUPFILE: "~/Dropbox/typography/draft_scrartcl.org" 
+#+INCLUDE: "~/Dropbox/typography/layouts.org::*Draft: Two Column" :only-contents t
+#+INCLUDE: "~/Dropbox/typography/settings.org::*English" :only-contents t
+* Notes & Tasks                                                                                    :noexport:
+The organization of part one of chapter one is not very clear.  I must work
+it out to reflect Autor's position accurately, so the best thing to do
+would be to just mention certain points in his argument that are related to
+the counterpoints I will mobilize in the following section. 
+
+The summary for the technicist view is done. 
+
+
+* 取 Introduction 
+#+ATTR_LATEX: :options [:]{} 
+#+BEGIN_labeling
+\item[TS] The dominant "technicist" view of the influence of ICTs on the
+future of work and its organization is inadequate because it ignores that
+thoughts on machine intelligence, automation, and sociotechnical systems
+for the conduct of workers have been strongly connected since at least the
+nineteenth century.
+#+END_labeling
+
+
+That said, fears of human redundancy are not new, since already in the
+\ordinalnum{19} Sismondi was preoccupied at the unemployment caused by the
+greater productivity of automatic machinery, he was outraged at the
+possibility that ``the King, alone in an island constantly turning a
+handle, carry out with automatons all the work of England.''
+[[cite:sismondi1819_2][p. 330, my translation]].
+
+
+# As the recurring interest in de Prony's project for the calculation of
+# the logarithmic tables shows, the dominant "technicist" view of the
+# influence of ICTs on the future of work and its organization is
+# inadequate because it ignores that thoughts on machine intelligence,
+# automation, and sociotechnical systems for the conduct of workers have
+# been strongly connected since at least the nineteenth century.
+
+
+# To show this, I will analyze a paper by David Autor, a reputed mainstream
+# economist who has treated the questions of the influence of artificial
+# intelligence and automatoin on jobs and the economy, and then I will
+
+# The core of Schaffer's argument is that the factory system wasn't simply a
+# technological change but a technology of discipline and surveillance. He
+# shows that this implication of discipline and surveillance of the factory
+# system wasn't an unintended consequence---those dear to latter-day
+# advocates of the /Harmonies economiques/---of technical changes. On the
+# contrary, the philosophy of the machine was from the very beginning an
+# embodiment of an organization of labor: a way to discipline the laboring
+# body. 
+** 無 Structure of the thesis 
+As the recurring interest in de Prony's project for the calculation of the
+logarithmic tables shows, the dominant "technicist" view of the influence
+of ICTs on the future of work and its organization is inadequate because it
+ignores that thoughts on machine intelligence, automation, and
+sociotechnical systems for the conduct of workers have been strongly
+connected since at least the nineteenth century.
+
+In chapter one, I (1) explain what the dominant "technicist" view is, and
+(2) criticize it the best I can to show that it is inadequate. The first
+part of chapter one explains what the technicist view is, and uses the
+example of Autor's article as an ideal-type of this view. The second part
+of chapter one criticizes the technicist view by showing that it ignores
+the conventionalist dimension of the wage relation. This is done by
+discussing the social embeddedness of work in history, culture, and western
+ideology and discussing the example of the work contract by Supiot. 
+
+# The dominant technicist view, which analyses the perils of ICTs for the
+# future of work in terms of the possibilities to automate different
+# (categories of) tasks, is inadequate because it ignores the conventionalist
+# dimension of the wage relation by construing work from a realist
+# epistemology.
+
+In chapter two, I should sketch a different view (to the dominant
+technicist one) by explaining how the recurring interest in de Prony's
+project shows that thoughts on machine intelligence, automation, and
+sociotechnical systems for the conduct of workers have been connected since
+at least the nineteenth century. The first part of chapter two shows that
+the origins of the computer lie in a technical organization of labor that
+is related to the factory system and the concept of the division of
+(mental) labor. The second part of chapter two shows that this fact is not
+related to technological backwardness or something intimately related to
+industrial production (as the technicist view would have it), but that
+since it appear in the thought of Herbert Simon in his opposition to
+industrial democracy, there is a relation between a concept of the role of
+man in society, and the crafting of these technologies.
+
+
+
+# The recurring interest in de Prony's project suggests a connection between
+# thoughts on machine intelligence, automation, and sociotechnical systems
+# for the conduct of workers, which contributes to a better understanding of
+# the influence of ICTs on the future of work than the technicist view.
+
+* 無 Would You Bet Against Sex Robots? 
+In the first chapter, (1) I explain what the dominant "technicist" view is,
+and then, (2) I criticize it the best I can to show that it is inadequate.
+
+** 取 Introduction
+The dominant technicist view, which analyses the perils of ICTs for the
+future of work in terms of the possibilities to automate different
+(categories of) tasks, is inadequate because it ignores the conventionalist
+dimension of the wage relation by construing work from a realist
+epistemology.
+
+** 待 The Technicist View 
+The first part of chapter one explains the technicist view by discussing
+Autor's article as an ideal type. This will be done by picking certain
+points from his argument and discussing them in depth. Briefly said, in
+this article, Autor tries to explain why if automation is supposed to
+``automate'' so many jobs, why is it that there are still so many jobs. His
+answer is that while automation does substitute for labor, it also
+complements it by raising output in ways that demand greater labor, raise
+earnings and increase productivity. This is so because he believes that
+there are tasks that require flexibility, judgment, and common sense that
+are still too difficult to automate, thus jobs that require them will see
+their numbers increase. Autor does discuss the problem of polarization in
+the United States at the top and the bottom of the skill distribution:
+namely, the reduction in middle skill---skilled blue collar, clerical, and
+sales---and the increase in high skill--- professional, managerial,
+technical---and low skill---low paid personal services---jobs. 
+
+He believes that for workers in the top of the skill distribution they can
+benefit from ICTs since they can be more productive due to
+complementarities with these technologies and benefit from multiple venues
+to employ their skills (i.e., elastic demand for services), and from their
+safety from competition due to high barriers to entry in relation to the
+many years of education required to exercise their profession (i.e.,
+inelastic labor supply). As for those at the bottom of the skill
+distribution, Autor claims that these jobs benefit little from advances in
+ICTs because their final demand is relatively inelastic, advances in
+productivity change little in their everyday execution of tasks, and face
+competition due to low entry barriers (i.e., elastic labor supply) that
+temper their possible wage increases. That said, he claims that he does not
+believe that job polarization would translate in wage polarization, except
+in certain times and certain labor markets. [In this part, he cites several
+studies, but the problem is that they depend on the way the different jobs
+are categorized, and the comparability among different studies, due to
+precisely this same problem: data is not comparable (which he
+acknowledges). He does acknowledge that the quality of the jobs might be
+affected, but he does not explore the problem any further.
+
+He then discusses Polanyi's paradox and how machine learning might be able
+to circumvent it.
+
+** 中 The Historicity of the Wage Relation 
+The second part of chapter one criticizes the technicist view by showing
+that it ignores the conventionalist dimension of the concept of work. I
+will not criticize specific points of Autor's paper, as the goal of part
+one was just to show how mainstream economists think the question of the
+impact of ICTs on work. 
+
+Firstly, I will point out the historicity of the concept of work by
+criticizing the concept of the labor market. I claim that Autor should have
+cited the other Polanyi and his concept of fictitious commodities---labor,
+land, and money. I will mention the example of Supiot and the work contract
+in the tradition of French Constitutional Law. I will claim that the fact
+that people are even willing to work is dependent on the social
+organization and institutional configuration.
+
+Then, I will propose the alternative view, based on Schaffer (1994) that
+the problem of automation is that of the place that humans will have in
+that vision of the world and in the social conditions of production. In
+other words, it is wrong to think that with ICTs we will do more of the
+same but faster. I will argue that the important question will be of where
+we put people in that world, which, thinking in terms of a labor market
+that moves around people as if moving around potatoes, does not help
+answer. I will argue then, than to appreciate this changes, the best way is
+not to look at what ICTs can do concretely, but rather to see the
+inscription of these changes within broader cultural and historical trends.
+As if it where, to listen to the contrapuntal polyphony of changes in
+thinking, in institutions, in technologies, etc. This I believe will
+capture better the changes brought on by the ICTs, which shouldn't be
+understood as changes brought on by these objects by themselves, but as
+changes brought on by the institutions, the ideas, and the people
+advocating them.
+
+It is not to say, that is it foolish to envision a certain autonomy of
+these technologies, but, if we ever let a machine govern, it is not because
+the machines take power as in /Terminator/. If we let an algorithm take
+control, it is because we put it there, as in the movie Dr. Strangelove,
+where control of the missile defense systems of the United States and the
+Soviet Union are given to computers in order to avoid human error, with the
+telling fatal consequence that their ridiculous efficiency result in
+nuclear war. For a computer to become American president, that computer
+would have to be first recognized as being a United States citizen. Again,
+it is not to say that this will never be possible, but that society would
+have to first recognize it as such.
+
+* 無 Did Adam Smith Invent the Digital Computer?
+After establishing, in part two chapter one, that the technicist view
+ignores the historical specificity of the concept of work and labor, in the
+second chapter, I sketch the historical relation between the history of the
+artificial intelligence and the concept of labor to suggest that thinking
+about the possibility of thinking machines and the construction of
+sociotechnical systems for the conduct of workers have been related since
+at least the nineteenth century.
+** Manufacturing Logarithms and Weaving Algebraical Patterns 
+The way this history will be sketched is by analyzing the importance of the
+project for the calculation of the logarithmic tables by de Prony by two
+pioneers in the history of the computer: Babbage and Simon. My argument is
+that Babbage, when interpreting the significance of de Prony's project, is
+reading an event of eighteenth century revolutionary France through the
+lens of the nineteenth century nascent factory system of Great Britain.
+Babbage's interpretation was that de Prony's division of mental labor
+embodied the possibility of mechanizing thought. So he conceived of a
+project to at least some operations of the mind were simply mechanic. 
+
+This produced not only a change in our conception of intelligence
+(prodigious calculation was no longer the province of precocious
+mathematical talents but that of the idiot savant) but also a change our
+thinking about the place of subordinate work in the execution and the
+organization of labor. 
+
+This is shown by Schaffer's analysis of the reconfiguration of the workshop
+to produce the pieces for Babbage's engines: control over production was
+wrested away from workers and engineers over to Babbage. Automation, in
+Schaffer's interpretation, was present in the production of the precision
+tooling necessary for the production of the Engine's pieces, but this
+wasn't an innocent technical improvement: it was also a reconfiguration of
+the social relations of productions, the opaque organization and knowledge
+of the production process was rendered visible and amenable to control by
+Babbage. In other words, the production of the Engines required technical
+advances that presupposed a reconfiguration of the working space in which
+control of the production process was wrested away from workers and master
+craftsmen. [It must be mentioned that Babbage didn't think that /all/ the
+operations of the mind were mechanical; the top section of de Prony's
+project was, for Babbage, still done by humans]
+** The Impossibility of a Democratic Computer
+
+In the second part of chapter two, this story will be analyzed in the
+context of the thought of Herbert Simon about computing and the
+organization of labor. As Babbage did, Simon knew about de Prony's project,
+which he read using the lens of the mid-twentieth century. In particular,
+he read de Prony, and he read Babbage reading de Prony, in the context of
+his thinking about a general mathematical science of systems. Unlike
+Babbage, Simon thought that machines could literally ``simulate'' human
+thinking and human actions to the point where they could replace a lot of
+things that humans do. Thinking in the context of a deterministic universe,
+Simon thought that humans are no less determined than computers in doing
+what they are programmed to do. Thinking that the structure of all systems
+is complex and hierarchical, when applied to work, Simon concedes that
+worker control over the production process is misguided, and I claim that
+this is one of the consequences of his concept of bounded rationality that
+is not usually discussed. 
+
+From this perspective, Simon blurred the lines between natural and
+artificial systems: using one to describe the other, and vice versa. I
+claim that this causes a very dangerous naturalization of the social, which
+in the context of discussion about worker control over the productive
+process, is perilous for democratic revindications. The fact that epistemic
+handicaps are used to argue for worker subordination to the bureaucratic
+organization is mistaken, but this is the general ontology that undergirds
+thinking about artificial intelligence. 
+
+My point is that to have artificial intelligence really change things for
+the better of workers, it is necessary to challenge this naturalization of
+the social. As shown in the article of the encyclopedie, technical change
+can free workers from toil, and free them to do other activities, but
+thinking that what will determine this activity, be it philosophical
+contemplation or delivering food on a bicycle depends not exclusively nor
+even mostly on the technical feasibility of the tasks in question. Rather,
+what this thesis sought was to show that the place and the course of
+technical change is also inscribed in the context of social conditions, and
+on the thinking about these conditions: thinking about what a worker is,
+and their place in society. Whatever has prevented thinking about
+technology within broad social context and the thinking about this context,
+be it a ``broad church'' positivism among social scientists or the idea
+that ``facts'' speak for themselves, the transformations on the future of
+labor by the development of artificial intelligence has to be thought about
+in this way. Whatever the real technical possibilities of automation due to
+artificial intelligence, they can only be realized by questioning also our
+thinking about the organization of labor, about the status of subordination
+within the working relations, about what it means to be a human, etc.
+
