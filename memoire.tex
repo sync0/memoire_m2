@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: lualatex
-\documentclass[version=last,draft=true,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=12,BCOR=20mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=true,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,headings=twolinechapter,parskip=false]{scrbook}
+\documentclass[version=last,draft=false,paper=A4,portrait,twoside=true,twocolumn=false,headinclude=false,footinclude=false,fontsize=12,BCOR=20mm,DIV=calc,pagesize=auto,titlepage=firstiscover,mpinclude=false,open=right,chapterprefix=true,numbers=autoendperiod,headsepline=false,headings=twolinechapter,parskip=false]{scrbook}
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
@@ -23,38 +23,38 @@
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage[most]{tcolorbox}
-\usepackage[french]{fmtcount}
-\fmtcountsetoptions{french=france}
-\usepackage[singlespacing]{setspace}
-\usepackage[super]{nth}
 \usepackage{ragged2e}
 \usepackage[all]{nowidow}
 \usepackage{enumitem}
 \usepackage{adforn}
 \usepackage[object=vectorian]{pgfornament}
 \usepackage{float}
-\usepackage{titling}
-\usepackage{hologo}
+\usepackage[french]{fmtcount}
+\fmtcountsetoptions{french=france}
+\usepackage[super]{nth}
+\usepackage[singlespacing]{setspace}
 \usepackage{xcolor}
 \usepackage{graphicx}
-\graphicspath{ {/home/sync0/Dropbox/paris_1/} }
+\graphicspath{ {/home/sync0/Dropbox/images/} }
+\usepackage{fontawesome}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 \tikzset{main node/.style={circle,fill=gray!45,draw,minimum size=0.5cm,inner sep=0pt},}
+\usepackage{hologo}
 \usepackage{lipsum}
-\usepackage[backend=biber,bibstyle=authoryear,citestyle=authoryear,autocite=inline,hyperref=auto,doi=false,isbn=false,url=true]{biblatex}
+\usepackage[backend=biber,bibstyle=authoryear,citestyle=authoryear-icomp,autocite=inline,hyperref=auto,doi=false,isbn=false,url=false]{biblatex}
 \addbibresource{~/Dropbox/research/bibliography.bib}
 \urlstyle{sf}
 \renewcommand{\subtitlepunct}{\addcolon\addspace}
+\DeclareDataInheritance{collection}{incollection}{\noinherit{origdate}}
 \DeclareFieldFormat{origdate}{\mkbibbrackets{#1}}
-\renewbibmacro*{cite:labeldate+extradate}{\iffieldundef{origyear}{}{\printorigdate\setunit{\addspace}}\iffieldundef{labelyear}{}{\printtext[bibhyperref]{\printlabeldateextra}}}
 \DeclareCiteCommand{\citeorigyear}{\boolfalse{citetracker}\boolfalse{pagetracker}\usebibmacro{prenote}}{\printfield{origyear}}{\multicitedelim}{\usebibmacro{postnote}}
 \renewbibmacro*{date+extradate}{\iffieldundef{origyear}{}{\printorigdate\setunit{\addspace}}\iffieldundef{labelyear}{}{\printtext[parens]{\iflabeldateisdate{\printdateextra}{\printlabeldateextra}}}}
 \usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
 \clearscrheadfoot
-\automark[chapter]{section}
-\cehead{\MakeLowercase{Mémoire}}
+\automark[chapter]{chapter}
+\cehead{watched over by machines of loving grace?}
 \cohead{\MakeLowercase{\headmark}}
 \ohead{\pagemark}
 \usepackage[autostyle=true,english=american,french=guillemets,thresholdtype=words,threshold=3]{csquotes}
@@ -63,9 +63,8 @@
 \usepackage{unicode-math}
 \usepackage[oldstyle]{libertine}
 \defaultfontfeatures{Scale=MatchLowercase}
-\setmonofont{Source Code Pro}
 \setmathfont[Scale=MatchUppercase]{libertinusmath-regular.otf}
-\newfontfamily{\titlefamily}[Scale=2]{Linux Biolinum O}
+\setmonofont{Source Code Pro}
 \newfontfamily{\sbfseries}[UprightFont={* Semibold}]{Linux Libertine O}
 \newcommand\hugetitle{\fontsize{45}{50}\selectfont}
 \newcommand\HUGE{\fontsize{40}{40}\selectfont}
@@ -73,17 +72,24 @@
 \newcommand\largechapter{\fontsize{25}{30}\selectfont}
 \setkomafont{labelinglabel}{\normalsize\itshape}
 \setkomafont{minisec}{\usekomafont{subsection}}
-\setkomafont{pagehead}{\small\mdseries\scshape}
+\setkomafont{pagehead}{\normalsize\mdseries\scshape}
 \setkomafont{pagenumber}{\normalsize\rmfamily\upshape}
 \setkomafont{sectioning}{\rmfamily\mdseries}
 \setkomafont{caption}{\small}
 \setkomafont{captionlabel}{\mdseries\scshape\lowercase}
+\setlist[description]{font=\sffamily\scshape\mdseries}
+\renewcommand*{\dictumwidth}{.8\textwidth}
+\renewcommand*{\dictumauthorformat}[1]{#1}
+\renewcommand*{\dictumrule}{\vskip 2ex\par}
+\setkomafont{dictumauthor}{\normalsize\upshape}
+\setkomafont{dictum}{\normalsize\itshape}
 \setkomafont{chapter}{\largechapter\rmfamily}
 \renewcommand{\raggedchapter}{\centering}
-\renewcommand*\chapterformat{\thechapter\autodot\par\medskip\pgfornament[width=1cm,color=lightgrey]{6}}
-\RedeclareSectionCommand[afterskip=6\baselineskip]{chapter}
+\renewcommand*\chapterformat{\thechapter\autodot\par\pgfornament[width=1cm,color=lightgrey]{6}}
+\renewcommand*\chaptermarkformat{}
+\RedeclareSectionCommand[afterskip=3\baselineskip]{chapter}
 \setkomafont{section}{\Large\scshape\lowercase}
-\setkomafont{subsection}{\large}
+\setkomafont{subsection}{\large\sbfseries}
 \setkomafont{subsubsection}{\large\itshape}
 \AtBeginDocument{\renewcaptionname{english}\contentsname{Contents}}
 \addtokomafont{chapterentry}{\mdseries\scshape\lowercase}
@@ -92,6 +98,8 @@
 \settocfeature{raggedhook}{\raggedright}
 \selecttocstyleoption{tocgraduated}
 \usetocstyle{nopagecolumn}
+\newcommand{\sie}[1]{\textsc{\romannumeral #1}\textsuperscript{e} siècle}
+\newenvironment{summary}{\begin{addmargin}{2em}\begin{minipage}{\linewidth}\begin{itshape}}{\end{itshape}\end{minipage}\end{addmargin}}
 \newtcolorbox{modified}[1][]{grow to right by=0mm,grow to left by=-1em,boxrule=1pt,boxsep=0pt,breakable,enhanced jigsaw,borderline west={0pt}{0pt}{lightgrey},lower separated=false,arc=00mm,colframe=white, #1}
 \newtcolorbox{note}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{lightgrey},title={#2},coltitle={black},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
 \newtcolorbox{question}[2][]{grow to right by=0mm,grow to left by=-1em,boxrule=0pt,boxsep=0pt,opacityback=0.0,breakable,parbox=false,enhanced jigsaw,borderline west={4pt}{0pt}{darkgrey},title={#2},coltitle={black},attach title to upper={},halign title=right,after title={\smallskip\par}#1}
@@ -108,11 +116,10 @@
 \definecolor{darkgrey}{HTML}{636363}
 \definecolor{blackgrey}{HTML}{252525}
 \newcommand{\notimplies}{\centernot\implies}
-\setcounter{secnumdepth}{3}
+\setcounter{secnumdepth}{0}
 \setcounter{tocdepth}{1}
 \setmainlanguage{english}
-\setotherlanguages{french,italian,spanish}
-\MakeOuterQuote{"}
+\setotherlanguages{french}
 \MakeForeignQuote{french}{«}{»}
 \usepackage[protrusion=true,tracking=true]{microtype}
 \author{Carlos Alberto Rivera Carreño}
@@ -151,17 +158,17 @@
  {\large 2018--2019 \par}
 \end{french}
   \vspace*{0.3\textheight}
- {\huge \textsc{vers la machine à gouverner}  \par}
+ {\huge \textsc{watched over by machines of loving grace?}  \par}
   \vspace*{0.02\textheight}
- {\Large Herbert Simon and the Impossibility of a Democratic Computer \par}
+ {\Large Prolegomenon to a Historical Epistemolgy of  Labor, Intelligence, and the Machine \par}
 \vfill
 \begin{french}
- {\large Présenté et sountenu par : \par}
+ {\large\itshape présenté par  \par}
 \end{french}
  {\Large Carlos Alberto Rivera Carreño \par}
   \vspace*{0.05\textheight}
 \begin{french}
- {\large Directeur de mémoire : \par}
+ {\large\itshape sous la direction de \par}
 \end{french}
  {\Large Jean-Sébastien Lenfant \par}
 \end{titlepage}
@@ -182,9 +189,9 @@ considérées comme propres à leur auteur.
 \includegraphics[height=1.5cm]{gpl3.png}\par
 \vspace{1\baselineskip}
 
-As a commitment to free software, this text was composed in \textsc{gnu}
-Emacs, typeset in 12 pt. Linux Libertine with \hologo{\fmtname}
-and \KOMAScript, and compiled in \hologo{LuaTeX}.\\
+As a commitment to free software, this text used  \textsc{gnu}
+Emacs for writing, Linux Libertine as font,  \hologo{\fmtname}
+and \KOMAScript for typesetting, and  \hologo{LuaTeX} for compilation.\\
 \vspace{1\baselineskip}
 This text and its source files are free and available for download at:\\
 \vspace{1\baselineskip}
@@ -204,11 +211,11 @@ See the \textsc{gnu} General Public License for more details at:\\
 
 \vspace{1\baselineskip}
 \noindent
-Copyright \textcopyright \textsc{sync0} 2018.
+\textcopyright Carlos Alberto Rivera Carreño 2019.
 \end{center}
 
-% \newpage 
 
+% \newpage 
 % \newpage\null\newpage
 
 % \begin{FlushRight}
@@ -216,6 +223,19 @@ Copyright \textcopyright \textsc{sync0} 2018.
 % \textit{Al padre Camilo Torres.}
 % \end{spanish}
 % \end{FlushRight}
+
+\newpage 
+
+\dictum[Thomas Hobbes, {\itshape Leviathan}]{Nature (the art whereby God hath made and
+  governs the world) is by the art of man, as in many other things, so in
+  this also imitated, that it can make an artificial animal. For seeing
+  life is but a motion of limbs, the beginning whereof is in some principal
+  part within, why may we not say that all automata (engines that move
+  themselves by springs and wheels as doth a watch) have an artificial
+  life? For what is the heart, but a spring; and the nerves, but so many
+  strings; and the joints, but so many wheels, giving motion to the whole
+  body, such as was intended by the Artificer? Art goes yet further,
+  imitating that rational and most excellent work of Nature, man.}
 
 \newpage
 \tableofcontents 
@@ -228,7 +248,7 @@ When citing archival materials, I indicate their location within the
 following archives:
 
 \begin{labeling}[:]{HSMC} 
-\item[HSCM] Herbert Simon Papers, Carnegie Mellon University Archives.
+% \item[HSCM] Herbert Simon Papers, Carnegie Mellon University Archives.
 \item[ENPC] École nationale des ponts et chaussées.
 \item[BNF] Bibliothèque nationale de France. 
 \end{labeling}
@@ -236,35 +256,34 @@ following archives:
 I accessed them through their respective on-line repositories.
 
 \begin{labeling}[:]{HSMC} 
-\item[HSCM] \href{https://digitalcollections.library.cmu.edu/portal/index.jsp}{Carnegie Mellon University Libraries Digital Collections.} 
+% \item[HSCM] \href{https://digitalcollections.library.cmu.edu/portal/index.jsp}{Carnegie Mellon University Libraries Digital Collections.} 
 \item[ENPC] \href{https://patrimoine.enpc.fr/}{Bibliothèque numérique patrimoniale des ponts et chaussées}.
 \item[BNF] \href{https://gallica.bnf.fr/}{Gallica.}
 \end{labeling}
 
-Only the pdf version of this document includes hyperlinks to the source
-files, when available.
+% Only the pdf version of this document includes hyperlinks to the source
+% files, when available.
 
 \chapter{Acknowledgements} 
 This Master's thesis, even with all its shortcomings, would have been
 impossible to write without the help of many people.
 
-I would like to thank my Master's thesis adviser, Professor Jean-Sébastien
-Lenfant, for his patience and dedication, and Professor Annie L. Cot and
-Professor Jérôme Llalement for their support to all students at the
-\textit{Réseau en Épistémologie et en Histoire de la Pensée Économique
-  Récente} (\textsc{rehpere}) at Paris 1 University.
+I would like to thank my Master's thesis adviser, professor Jean-Sébastien
+Lenfant, for his patience and dedication, and professors Annie L. Cot and
+Jérôme Lallement for their support to all the students at the
+\textit{Réseau en Épistémologie et en Histoire de la Pensée Économique Récente} (\textsc{rehpere}) at Paris 1 University.
 
-The arguments expounded in this text have been chiseled by the insighfult
-comments and suggestions of Justine Loulergue, Guillaume, Noblet, Guillaume
+The arguments presented herein have been chiseled by the insighfult
+comments and suggestions of Justine Loulergue, Guillaume Noblet, Guillaume
 Lancereau, Pedro Javier Ortiz, Seung Hoon Hahm, and my fellow students of
-the M2 \textit{Ëconomie et sciences humaines} at Paris 1.
+the M2 \textit{Économie et sciences humaines} at Paris 1.
 
-Rummaging and consulting the Herbert Simon Papers would have been
-impossible without the assitance of Emily Davis at Carnegie Mellon
-University Libraries.
+% Moreover, rummaging through the Herbert Simon Papers would have been
+% impossible without the assitance of Emily Davis at Carnegie Mellon
+% University Libraries.
 
 I would like to thank my wife's family and my own for their love and
-support. Last but not least, I would like to thank my wife, Min Jung; this
+support. Last but not least, I would like to thank my wife, Min Jung. This
 text is dedicated to her.
 
 \vspace{2\baselineskip}
@@ -277,722 +296,813 @@ text is dedicated to her.
 
 % \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 
-\chapter{Note aux lecteurs francophones} 
-Le fait que ce mémoire fut préparé au sein d'une université française
-m'oblige moralement à \ldots aux lecteurs francophones. 
+% \chapter{Note aux lecteurs francophones} 
+% Le fait que ce mémoire fut préparé au sein d'une université française
+% m'oblige moralement à \ldots aux lecteurs francophones. 
 
-Ce mémoire traite de la relation entre l'histoire du concept de travail,
-l'histoire de l'orinateur, l'histoire de l'intelligence, et la pensée de
-Herbert Simon. J'essai de replacer l'histoire de travail au sein des
-questions sur  l'application des analogies entre les sciences sociales et
-les sciences naturelles.  
 
-Dans le premier chapitre je raconte \ldots 
-
-Dans le deuxième chapitre je raconte \ldots 
-
-\lipsum
-
-\chapter[Preface]{Preface:\\ Science and History} 
+\chapter[Preface]{Preface:\\ Technicism as Presentism} 
 % \markboth{\MakeMarkcase{Preface}}{\MakeMarkcase{Préface}}
 % \mainmatter
 
-\lipsum
+
+Sunday night September 23, 1962, the animated sitcom \textit{The Jetsons}
+aired for the first time, introducing audiences across the United States to
+the futuristic life of the Jetson family. The show celebrated the American
+way of life in a future of \textit{private} flying cars, nuclear family
+arrangements, and---oddly enough---salaried work. George Jetson, the
+American \textit{family man}, worked three-hour shifts three times a week
+only pressing a button at a company, while his wife Jane Jetson, relieved
+from drudgery by her robot maid and automated apartment, was an obedient
+homemaker. The problem with the Jetsons's depiction of the future is its
+presentism: Neither political nor social, but only \textit{technological}
+change is possible. With all the technological advances presented in the
+show, why would George, or anybody, work ? If automation holds the key to a
+lifetime of leisure, why would there be vacations? For the Jetson family,
+\textit{stuff} has changed, but the old world stays the same.
+
+Contrary to this technicist dream, this thesis seeks to show that technical
+changes are embedded in wider social and ideological discussions: What is
+work? What is the place of work in society? What is the nature of
+subordinated work? What is a worker? Whatever has prevented thinking about
+these issues, be it the resilience of a ``broad church'' positivism in the
+social sciences or the belief in the transparency and self-sufficiency of
+``facts,'' they must be addressed in present discussions about the
+influence of artificial intelligence on the future of labor. Therefore,
+this thesis sketches an epistemological history of the relation between
+thinking about the possibility of machine intelligence an changes in the
+status of work and workers. My main argument is that the dominant
+technicist view of the influence of automation technology on the future of
+labor is inadequate because it ignores that discussions on machine
+intelligence, automation, and sociotechnical systems for disciplining
+workers have been connected since at least the nineteenth century.
+
+\section{Organization of the Thesis}
+
+
+In the first chapter, I will argue that the dominant technicist view, which
+analyzes the influence of technology on the future of labor in terms of the
+possibilities to automate different (categories of) tasks, is inadequate
+because it ignores the conventionalist dimension of labor relations. After
+discussing two examples that show the historical specificity of labor, in
+the second chapter, I sketch the history of the relation between machine
+intelligence and the organization of labor by discussing the influence of
+de Prony's project for the calculation of the Cadastre tables in the
+construction of Charles Babbage's calculating machines. My goal is to
+contribute to a different perspective on the influence of technology on
+labor by showing that the project to build the first ``computer'' was
+inspired by the application of the \textit{mental} division of labor to the
+first great calculation project, with the consequence that workers were
+progressively deprived of knowledge and control over the production
+process.
+
+% \lipsum
+
 \mainmatter
 \pagestyle{scrheadings}
-\chapter{Thoughts}
-\label{sec:org72b9502}
-I want to advance certain ideas regarding the consequences of automation on
-work and employment from the perspective of historical epistemology. 
+\chapter{Would You Bet Against Sex Robots?}
+\label{sec:org6ab0bfd}
+From the victory of \textsc{ibm}'s Deep Blue over Gary Kasparov at chess in
+1997 to the victory of AlphaGo over Lee Sedol at go in 2016, the progress
+of artificial intelligence in the past two decades has reignited
+controversies over the substitutions of humans by machines. Does
+technological progress lead us into a world, where ``men are absolutely
+nothing'', while the ``king, turning a handwheel alone in an island,
+carries through automatons all the work of
+England''\autocite[330]{sismondi1819_2}?\footnote{My translation.} Regarding the effects on
+labor, the disappearance of obsolete jobs and the alleged impoverishment of
+the laboring masses preoccupy the optimists in the prospects of automation
+\autocite{ford2009}.
 
-Aristotle, who had justified slavery on the seeming impossibility of
-instruments operating themselves,\footnote{``For if each instrument could perform its own function on command
-or by anticipating instructions, and if---like the statues of Daedalus or
-the tripods of Hephaestus (which the poet describes as having ``entered the
-assembly of the gods of their own accord'')---shuttles wove cloth by
-themselves, and plectra played the lyre, an architectonic craftsman would
-not need assistants and masters would not need slaves.'' (Politics, 15).} would have been baffled by current
-fears that artificial intelligence wipe out thousands of jobs. 
+The problem with contemporary debates about the automation of human
+activity, both lay and academic, is their naively ``technicist''
+perspective: Could we mechanize this or that task, and at what cost? What
+would be the effect of increasing ``computer capital'' on productivity
+\autocite{frey_osborne2013}? Can we estimate the impact on the rate of
+unemployment \autocite{acemoglu_restrepo2018}? In this chapter, I will
+present what I call the \emph{technicist view} by discussing a paper by economist
+David Autor. Then, I will discuss the limitations of this perspective to
+understand the influence of technology on labor.
+
+\section{The Technicist View}
+\label{sec:org0ded153}
+For the purposes of this thesis, the technicist view is defined as the
+application of a realist epistemology to the question of the influence of
+technology on labor. This view construes \emph{labor} as a historical and
+transcultural universal, whose technical characteristics are improved upon
+by technology; these changes are thought in terms of the technical
+possibilities to automatize a particular task.\footnote{For a discussion of historical universals see the first two chapters
+of \textcite{foucault2004}.} Moreover, since jobs
+are understood as collections of tasks, if all the tasks composing a job
+can be automatized by a firm in a cost-efficient manner, this job is then
+believed to disappear in the near future. I contend that many mainstream
+economists and many computer scientists who discuss the problem of the
+influence of artificial intelligence on the future of labor, be they
+pessimists or optimists, hold either this view or one that resembles it.
+Since MIT economist David Autor is one of the mainstream economists that
+has studied the longest the question of the consequences of automation on
+labor, I will analyze his paper \citetitle{autor2015} as an ideal type of the
+way mainstream neoclassical economists understand the problem.\footnote{I decided to present the view of an economists and not of, say, a
+computer scientist because contemporary society grants economists the last
+word on matters of labor.}
 
 
-The fear of human redundancy is not new. 
+In \citetitle{autor2015}, Autor tries to explain the reasons for the secular
+high levels of aggregate employment, despite the advances in labor-saving
+technologies. Autor believes that focusing exclusively on job losses is
+misguided because understanding the relation between technology and
+employment requires thinking about the complementarities of different tasks
+with these technologies, the price and income elasticities of different
+kinds of outputs, and the labor supply responses. His argument is that
+there are certain tasks that cannot be automated but benefit from the
+productivity rise of new technologies. Automation, thus, complements and
+raises the value of jobs composed primarily of un-automatable tasks by
+increasing the demand for labor and raising earnings. Consequently, Autor
+believes that commentators often overstate ``the extent of machine
+substitution for human labor'' because they ``ignore the strong
+complementarities between automation and labor'' \autocite[5]{autor2015}.
 
- in the \ordinalnum{19} century, Sismondi was outraged at the
-possibility that ``the King, alone in an island constantly turning a
-handle, carry out with automatons all the work of England.''
-\cite[p. 330, my translation]{sismondi1819_2}.
+To understand how automation affects different jobs in the skills
+hierarchy, Autor distinguishes between two sets of tasks that have ``proven
+stubbornly challenging to computerize'': ``Abstract'' tasks are those
+placed higher in the skills hierarchy, which characterize professional,
+technical and managerial occupations that require high education levels,
+problem-solving capabilities, inductive reasoning, communication ability,
+expert mastery, intuition, and creativity. ``Manual'' tasks, on the other
+hand, are those placed lower in the skills hierarchy, which characterize
+unskilled occupations (serving, cleaning, janitorial work, in-person health
+assistance, etc.) that require situational adaptability, visual and
+language recognition, and in-person interactions \autocite[9]{autor2015}.
 
-From a cursory view of how 
+Autor believes that abstract task-intensive occupations are strongly
+complemented by computer technologies because these enable them ``to
+further specialize in their area of comparative advantage'' by spending
+less time on ``acquiring and crunching information''
+\autocite[15]{autor2015}. Even if wage gains could be mitigated due to
+lower expenditures on the outputs of abstract task-intensive activities,
+Autor believes that evidence suggests that demand for these services has
+kept pace with income increases. Most importantly, workers in abstract
+task-intensive occupations benefit from the high barriers, such as college
+and graduate degrees, that require long years to prepare (i.e., inelastic
+labor supply).
+
+As for manual task-intensive occupations, which hardly rely on information
+or data processing, Autor believes that they benefit from advances in
+computer technologies mostly indirectly. For example, high income
+elasticity of demand for manual tasks-intensive work and rising aggregate
+incomes thanks to productivity growth in other areas could raise demand for
+manual tasks-intensive occupations. In other words, as people get richer,
+they spend more on luxuries and leisure, which often employ manual
+task-intensive jobs. Following \textcite{baumol1967}, Autor believes that
+``wages in these occupations \emph{must} rise over time'' to compensate workers
+because otherwise they would choose a different occupation.\footnote{This claim only holds assuming that demand for manual task-intensive
+occupations is relatively inelastic \autocite[17]{autor2015}.} That
+said, Autor recognizes these wage increases will be limited by the low
+barriers to entry in these occupations and the labor supply increase from
+workers affected by automation and offshoring \autocite[17]{autor2015}.
+
+Autor discusses these two categories of tasks in the context of ``job
+polarization'' \autocite{goos_manning2003}, which refers to the simultaneous
+growth of high-education high-wage jobs (professional, managerial,
+technical) and low-education low-wage jobs (low paid personal services), at
+the expense of middle-wage middle education jobs (skilled blue collar,
+clerical, sales). He finds evidence for this phenomenon in the United
+States, where middle-skill occupations (sales, office and administrative
+workers, production workers, and operatives) have declined from 60 percent
+of employment in 1979 to 46 percent in 2012. Citing \textcite{nordhaus2007},
+Autor claims that the dramatic fall in the cost of computing since 1980
+rose the incentives to substitute computers for human labor at the explicit
+codifiable tasks---which, he labels ``routine tasks''---that characterize
+many middle-skilled cognitive and manual activities. It is precisely these
+tasks, Autor believes, that are increasingly performed by machines, which
+explains the decline in clerical and administrative support. Job
+polarization, however, is unlikely to erase all middle-skill jobs because,
+Autor conjectures, many of the tasks that compose them cannot be unbundled
+and outsourced to machinery. As a result, middle skill jobs that combine
+routine technical tasks and non-routine tasks where humans still hold a
+comparative advantage (interpersonal interaction, flexibility,
+adaptability, and problem solving) are likely to persist in the following
+decades. As for the problem of job polarization leading to wage
+polarization, Autor believes that, while possible, that trend would not
+continue indefinitely, except in certain times and specific labor markets.
+
+Furthermore, citing Michael Polanyi's concept of ``tacit knowledge'', Autor
+tries to explain the difficulties faced by automation. This concept refers
+to a type of knowledge that, while necessary to accomplish certain tasks,
+cannot be consciously recalled by whoever possesses it---we don't know what
+we know. Autor, then, mobilizes this concept to explain why tasks
+``demanding flexibility, judgment, and common sense'' have proved the most
+difficult to automate \autocite[11]{autor2015}. Nevertheless, he
+acknowledges that ``environmental control'' and machine learning could
+bypass ``Polanyi's Paradox'' and, thus, facilitate the penetration of
+automation in heretofore untouched areas: the former by simplifying the
+complex environment in which machines operate, and the latter by inferring
+heuristic rules of conduct through data analysis---hence, dispensing with
+the need to know these rules in advance.
+
+Autor concludes that even though in the last few decades technology has led
+to job polarization, this trend is unlikely to continue because machines
+raise the value of the tasks that humans uniquely provide---problem
+solving, adaptability, and creativity---through complementarity effects.
+Therefore, focusing exclusively on substitution effects is misguided. He
+ends the article by claiming that the economic problem of the future will
+be one of distribution and not of scarcity.
 
 
-My point of view is that many of the various analysis on this matter are
-marred by their narrow scope that only focuses on the possible impact of
-new technologies on what economista call macroeconomic varibales. Briefly
-put, the videws of neocalssical or mainstream economists, whether optimists
-or pessimists are decided on whatever the economist thinkgs that the impact
-of these technologies will be on macroeconomic variables such as
-investment, consumption, employments, wages, etc.
+\section{The Historicity of Labor}
+\label{sec:org78cfd62}
+
+Autor's article was presented to understand the way mainstream economists
+think about the impact of technology on labor. I claim that the technicist
+view is problematic because, by relying on a realist epistemology, it
+ignores the crucial conventionalist character of social representations and
+institutions. For example, the English word \emph{work} refers to both the act of
+working and the thing produced, \emph{labor} refers to work in relation to the
+``social question,'' and \emph{job} or \emph{occupation} refer (mostly) to the
+recognition of a productive social role by law.\footnote{These definitions are provided in loose form precisely to highlight
+their polysemy.} Therefore, by
+interpreting a job as simply a collection of tasks, Autor ignores that jobs
+are codified in laws that institute certain status, rights, and
+responsibilities. And, as is the case for all matters in jurisprudence,
+definitions, interpretations, and representations are crucial.
 
 
-\chapter{Introduction}
-\label{sec:org954f451}
-Sunday night September 23, 1962, the \emph{The Jetsons}, an animated sitcom, aired
-for the first time, introducing audiences across the United States to the
-futuristic life of the Jetson family. Just like \emph{The Flintstones} had done
-for the Stone Age, William Hanna and Joseph Barbera celebrated the American
-way of life in a future of private flying cars, nuclear family
-arrangements, and---oddly enough---salary work. George Jetson, the
-proverbial American \emph{everyman}, , while his wife Jane Jetson, relieved from
-the drudgery of house chores thanks to the robot maid and automated
-apartment, is nonetheless relegated to the house. It is quite strange to
-think that in this future, despite all the automation, neither George nor
-Jane are free from work. In fact, they still have vacations in their
-future, something one would think irrelevant in a time of leisure.
+To think about the conventionalist character of labor, it is useful to
+ mobilize Karl Polanyi's concept of fictitious commodities. Polanyi
+ introduced this concept to explain how in capitalism \emph{labor}, \emph{land}, and
+ \emph{money} became commoditized \autocite{polanyi1944_2001}. This concept is
+ important because many mainstream economists proceed to analyze the market
+ ``dynamics'' of the factors of production, without inquiring about the
+ social conditions of possibility that have granted them their status as
+ commodities. For example, when Autor claims that ``the elasticity of labor
+ supply can mitigate wage gains'', one is left to wonder why there should
+ be a labor supply at all. Contemporary economic analyses takes for granted
+ that there will be people willing to work for a wage, but as studies of
+ labor in bronze age Mesopotamian society have shown, getting others to
+ work for one's account is an extraordinarily complex matter
+ \autocite[5]{steinkeller2015}. In fact, Steinkeller claims that in
+ ancient Mesopotamia, the problem was often lack of population to do all
+ the work (demanded mostly by the palaces and temples) and not, as it is
+ today, \emph{unemployment} \autocite[9--19]{steinkeller2015}. The reason is to
+ be found in a social and institutional configuration in which most of the
+ peasant citizenry was not alienated from their means of
+ subsistence---specifically, arable land. By linking citizenship to
+ landownership, Mesopotamian institutions secured for the peasantry a
+ certain independence from both public authorities and potential
+ ``employers.'' Except for the annual corvee labor, provided as is today's
+ military service---a mostly non-remunerated public duty---, the peasantry
+ had few incentives to work for others, when they could rely on themselves
+ and their households.\footnote{Regarding the importance of corvee labor in ancient Mesopotamia and
+ancient Egypt, Hudson remarks that the ``Hollywood'' image of slaves
+building the pyramids is mistaken because the majority of the labor needed
+to build these infrastructures was provided more-or-less voluntarily
+through the institution of the corvee. He claims that although slaves and
+other dependents \emph{did} exist, they were never numerous enough to furnish all
+the necessary labor \autocite[649]{hudson2015}.}
 
-The problem with the Jetsons is that the horrible message it depicts: the
-only change in the future is technical change but not political nor social.
-The \emph{apories} of this conception of the possibilities of the future only in
-terms of technical possibilities is, however  problematic. 
-\section{Automation, AI and the Future of Work}
-\label{sec:org475337e}
-That said, fears of human redundancy are not new, since already in the
-\ordinalnum{19} Sismondi was preoccupied at the unemployment caused by the
-greater productivity of automatic machinery, he was outraged at the
-possibility that ``the King, alone in an island constantly turning a
-handle, carry out with automatons all the work of England.''
-\cite[p. 330, my translation]{sismondi1819_2}.
+Another example of the conventionalist character of labor is the origins of
+the work contract. Despite its contemporary ubiquity, the work contract is
+a very recent institution, even in Western civilization. As
+\textcite{supiot2004_2016} shows for French Civil Law, the ancestor of the
+modern work contract (\emph{contrat de travail}) is a lease agreement (\emph{contrat de
+louage}), whose origins lie in the Roman \emph{locatio operarum}. Supiot claims
+that Roman Law understood the \emph{locatio operarum} by analogy to the
+institution of slavery: Since freemen sold the products of their labor but
+not \emph{their} labor, the destitute who worked for the account of others were
+thought to lease themselves (\emph{locat se}) as if they leased their slave (\emph{locat
+servum}) \autocite[8]{supiot2004_2016}. A few years after the introduction
+of the principles of freedom of business (\emph{liberté du commerce}) and freedom
+of industry (\emph{liberté de l'industry}) by the Decree d'Allarde (16 February
+1791), the French civil code assimilated the labor relation to a type of
+lease. As for the phantasmic object of the work contrat---Is it the \emph{worker}?
+Is it the \emph{work}?---, Supiot claims that the possibility to contractualize
+work derives from the application of the concept of property (\emph{patrimoine})
+to describe the relation of \emph{work} to the worker: Since work is the private
+property of workers, they have the right to freely dispose of it on the
+market \autocite[45--66]{supiot1994_2011}.\footnote{This discussion provides only an intuition, but not an accurate
+description of the significance of these terms in the context of the
+jurisprudence. The differences between Civil Law and Common Law compound
+the difficulty of discussing these terms unambiguously since they are not
+equivalent across legal systems. As an example of the challenge of cross
+country comparisons in the European Union, Supiot remarks that even the
+concept of work contract differs from country to country
+\autocite{supiot_et_al1999_2016}.}
 
-Since the last years of the \ordinalnum{20} century, advances in AI, from 
-the defeat of then World Chess Champion Garry Kasparov by IBM's Deep Blue
-computer in 1997 to the recent advances in self-driving cars, fears of
-human redundancy in an age of more powerful and intelligent computers have
-been up for over two decades, especially since the publishing of the famous
-Jeremy Rifkin's book \citetitle{rifkin1996}. 
+As these examples show, the social conditions that push the majority of the
+population to sell their labor in exchanges for wages require an
+explanation. These social conditions are what french sociology of work
+(\emph{sociologie du travail}) calls the \emph{salariat} (the institution of wage
+earning). I content that the \emph{salariat} is often elided in mainstream
+economic analyses of the influence of technology on work. But, this
+omission is unfortunate because the kernel of the problem of automation is
+the relocation of humans within the social conditions of production. An
+analysis in terms of the concrete tasks that can (or cannot) be automated
+misses the point. Certainly, the technical aspect of new technologies is
+crucial, but the discussions about the technical possibilities have to be
+inscribed within broader legal, social, and political issues. Thinking that
+technological change is simply more of the same but faster, while people
+are juggled around by the caprices of the job market is both naive and
+wrong. After all, changes in ideas, institutions, and social
+representations accompany the introduction of new technologies and their
+applications in the workplace.
 
+
+Although Autor raises some important points such as his discussion of
+substitutions and complementarities, his analysis is marred by the
+\emph{epistemological realism} with which he addresses the question of the
+influence of technology on labor. Thinking about labor in realist
+terms---i.e., as if it existed \emph{out there}, independently of our ideas and
+representations of it---only apprehends its technical dimension, leaving
+aside its embeddedness in the ideological and institutional fabric of
+society. The technical aspect is but one melody in a polyphonic chant.
+Therefore, the influence of technology on labor cannot be understood by
+appealing to the economists' idea of social change, as represented by the
+mechanical analogy of a market \emph{mechanism} that shuffles people from job to
+job as potatoes and ramps up compensation to janitors to prevent them from
+optimizing and becoming doctors. As computer scientist Moshe Vardi's joke
+about the advent of ``sex robots'' shows, new technologies change the way
+we relate to \emph{stuff}, but also to other human beings \autocite{yuhas2016}. Far
+from being automatic, these changes are always contested issues that
+crystallize into conventions that are sometimes reopened for debate. The
+answer to the question ``what is the role of humans in a world of
+intelligent machines?'' wont be answered by robots, but by ourselves.
+
+ As recent discussions of the replacement of judges by algorithms show, the
+issue is not just of the prowess of machine intelligence, but of our own
+understanding of what constitutes the ``production'' of justice: For
+example, if we understand the work of a judge to consist \emph{exclusively} in the
+comparison of an input---i.e., a case of law---to an existing corpus of
+law, the possibility is opened for a textometry algorithm to don the gown
+and the wig. Nevertheless, this automation of judges depends on our
+\emph{convening} about the right way to produce justice. Undeniably, new
+automation technologies will change work for judges by speeding up
+information retrieval, but the debate over the complete replacement of
+these jobs by machines is also a conceptual question about the nature of
+this work. Without a modicum of reflexivity, passing the baton to machines
+to eliminate ``human-error'' can only portend disaster. We could risk
+creating dangerous sociotechnical systems as in the 1964 movie \emph{Dr.
+Strangelove}, in which control of the missile defenses of the United States
+and the Soviet Union are automated, resulting in the escalation of nuclear
+war due to their ``efficient'' retaliation out of human control. If
+machines should ever govern, this will not result from a coup, as in the
+1984 movie \emph{Terminator}, but from voluntary regime change.
+
+\chapter{Did Adam Smith Invent the Digital Computer?}
+\label{sec:org60e0f0d}
 
 On November 14, 1957, in an address to the Twelfth National Meeting of the
 Operations Research Society of America, Herbert Simon advanced the
 provocative proposition that ``physicists and electrical engineers had
-little to do with the invention of the digital computer'', for ``the real
-inventor was the economist Adam Smith, whose idea was translated into
+little to do with the invention of the digital computer'' because ``the
+real inventor was the economist Adam Smith, whose idea was translated into
 hardware through successive stage of development by two mathematicians,
-Prony and Babbage.'' \cite{simon_newell1958}. 
+Prony and Babbage.'' \autocite[2]{simon_newell1958}. This statement was
+no less controversial then, but is it accurate?
 
-\section{Outline of the Thesis}
-\label{sec:org13401f7}
-This thesis is invitation to think the challenges of automation and
-artificial intelligence from the point of view of the epistemology of
-labor. To do so, this thesis will present a historical epistemology of the
-relation between de Prony's project of the calculation of the logarithmic
-tables at the \emph{Bureau du cadastre}, Babbage's calculating Engines, and the
-ideas at the time about of labor.
+To contribute to an alternative to the technicist view, this chapter will
+analyze the historical specificity of labor as it manifests in Gaspard
+Riche de Prony's project for the calculation of the Cadastre tables and
+Charles Babbage's construction of the Difference and Analytical Engines.
+What this history shows is that, at least since the nineteenth century,
+thinking about the possibility of intelligent machines has accompanied the
+construction of sociotechnical systems for disciplining workers. 
 
-The first chapter discusses the relation between Adam Smith's concept of
-the division of labor and Gaspard de Prony's project of the calculation of
-the logarithmic tables. This story will be contextualized for it took place
-at a time of great changes in French society. What will be emphasized is
-that this vast computing project was, above all, the reflect of a
-particular organization of \emph{mental} work. The idea is to provide an
-understanding of the significance of the project at the time, and the
-subsequent significance that it had for Charles Babbage.
-
-The introduction to this chapter presents the reader with the story of how
-Gaspard-Clair-François-Marie Riche de Prony was inspired by Adam Smith's
-concept of the division of labor---as it appears in the pin factory example
-of the ``Wealth of Nations''---to organize a group of hairdressers to
-produce mathematical tables for the French \emph{Bureau du cadastre}, during the
-aftermath of the French Revolution. The point is to show that the
-``computer'' is in fact an organization of labor, in which complex
-calculation tasks are divided into simpler calculation tasks, which are
-then carried out by unqualified ``specialized'' workers (or in computer
-science lingo, by \emph{sub-processes}).
-
-In the second chapter, I will discuss the interpretation of the importance
-of this project by Charles Babbage. I will show that Babbage interpreted
-this project as providing a sort of proof that mental labor too could be
-subject to the division of labor. The important thing to note is that
-Babbage recognized the importance of this, and coupled it with the
-intellectual developments at the time in the Great Britain around the
-controversies of the interpretation of the algebraic developments of Boole
-and De Morgan. After all, for Babbage the importance of Boole's algebra was
-that it showed that thought could be reduced to symbolic operations, and
-these could be mechanized through devices such as his Engines. 
-\chapter{Trifling Pins \& Untutored Calculators}
-\label{sec:orgfdb1c32}
-\section{Introduction}
-\label{sec:org5ea05cf}
-
-A Revolutionary monument to Reason was under construction at the nearby
-Bureau de Longitudes to supplement the metric system (which had been
-inaugurated as nature's own measure, eternal and immutable). Although
-originally commissioned as part of the Cadastre of France, launched in
-1791, with Prony as director, the logarithmic tables were in fact never
-used for that purpose, having been expressly designed for the decimal
-division of the angles of the quadrant, which, along with the decimal
-division of time was later abandoned as part of the metric system.
-
-Calculation had not yet become mechanical, the paradigmatic example of
-preocesses that were mental but not intelligent. Allied with the higher
-mental faculties of speculative reason and moral judgment, calculation was
-remote from the realm of menial labor, of the automatic and the habitual.
-
-Astonishing feats of mental arithmetic were soon to beocme the province of
-the idiot savant and the sideshow attraction, no longer the first augury of
-profound mathematical gifts
-
-Calculation took on the dull, patient associatoins of repetitive and
-ill-paid bodily labor, ranked as the lowest of the mental faculties.
-
-\section{Prony background}
-\label{sec:org903147d}
+\section{Manufacturing Logarithms}
+\label{sec:org1c90d43}
 Gaspard Clair Francois Marie Riche de Prony (1755--1839) was born in
-Cahmelet in the Beaujolais region of Southern France to a family of the
+Chamelet in the Beaujolais region of Southern France to a family of the
 provincial middle bourgeoisie---the social class that would fill the ranks
-of the Revolution and Empire's bureaucracy \cite{picon_et_al1984}. After an
-education in the Classics, in 1776, when he was twenty-one, he entered the
-École des ponts et chaussées in Paris.\footnote{At that time, the École's tyros arrived with only the rudiments of
-arithmetic and geometry. Furthermore, instead of a definite curriculum and
-lectures, learning was done through self-instruction and direct practice in
-construction sites \cite{picon_et_al1984}.} Prony's life coincides with a
-period of the institutionalization of French sciences and techniques with
-the foundation in 1794 of the École polytechnique---where he was appointed
-professor of analysis and mechanics with Joseph-Louis Lagrange---and the
-École normale supérieure, and a growing interest of the savants for applied
-problems, and the generalization of the application of mathematical
-formalisms.
-\section{Bureau du cadastre background}
-\label{sec:org2662171}
+of the Revolution and Empire's bureaucracy \autocite{picon_et_al1984}. After
+an education in the Classics, in 1776, at twenty-one, he entered the École
+des ponts et chaussées in Paris---the institution that educated His
+Majesty's engineers. Prony's life coincides with a period of the
+institutionalization of French sciences and techniques with the foundation
+in 1794 of the École polytechnique---where he was appointed professor of
+analysis and mechanics with Joseph-Louis Lagrange---and the École normale
+supérieure. Moreover, this was a time of growing interest among the savants
+for applied problems, and the generalization of the application of
+mathematical formalisms.
 
-En 1790, l’Assemblée nationale décida de remplacer les anciens impôts par
-une contribution foncière assise sur le revenu net des propriétés (6). Elle
-suivait en cela les idées de l’économiste François Quesnay.
+Following the French Revolution, the recently constituted Assemblée
+nationale decided in 1790 to replace the ancient taxes by a land tax
+\autocite[6]{peaucelle2012a}.\footnote{According to \textcite{peaucelle2012a}, the Assemblée was inspired in
+this regard by the ideas of physiocratic economist François Quesnay.} Therefore, in 1791, the Assemblée
+founded the Bureau du Cadastre, with de Prony as director, to conduct a
+land survey that would draw the boundaries of landed property in every
+French commune.\footnote{Although the Cadastre's initial objective was to assist fiscal
+policy by levying land taxes, under Prony's direction, the production of
+maps and statistical tables took precedence \autocite[76]{peaucelle2012a}.} In connection with this plan, the revolutionary
+government decided that a very large set of logarithmic and trigonometric
+tables would be produced to supplement the decimal-based metric system.
+This was necessary because the traditional sexagesimal division of the
+circle---now regarded as quaint and irrational---was replaced by a decimal
+division, which rendered obsolete the older trigonometric tables used by
+geodesists and astronomers.\footnote{The decimal division of the circle along with the decimal division
+of time were later removed from the metric system \autocite[184]{daston1994}.} So it fell upon de Prony to direct a
+project to calculate and print these tables.
 
-Créé en 1791, le Bureau du Cadastre fut supprimé par Napoléon en 1802, qui
-créa un nouveau Bureau du Cadastre en 1807, avec la mission précise de
-faire établir des cadastres parcellaires dans chacune des communes
-françaises (les impôts fonciers furent tou- jours en arrière-plan de ces
-missions cadastrales). 
+De Prony estimated that even with the help of three or four skillful
+collaborators, the rest of his life would not suffice to finish the
+calculations needed for the tables. One day in front of a book shop, he
+spotted ``the beautiful English edition'' of Adam Smith's \emph{Wealth of Nations}
+\autocite[7]{firmin-didot1820}. As he opened the book haphazardly, he
+stumbled upon chapter one, where Smith discusses the manufacture of pins,
+and, suddenly, he conceived the idea to apply the division of labor to the
+production of the Cadastre tables ``to manufacture logarithms as one
+manufactures pins'' \autocite[35]{prony1824}.\footnote{My translation.} Drawing from his
+lessons at the École centrale des travaux publics (later École
+polytechnique) on the applications of the method of differences to
+interpolation, he conceived a plan to break up the calculation of the final
+values of the Cadastre tables into a long series of simpler steps. By using
+logarithms to simplify complex operations into additions and subtractions,
+these simplified operations could be calculated even by a hairdresser
+familiar with only the most rudimentary arithmetic. De Prony, thus,
+organized the calculation of the tables by dividing the Cadastre employees
+into three sections, following a hierarchy of skill: At the apex, the first
+section comprised five or six eminent mathematicians who carried out the
+analytical part of the work by choosing the mathematical formulae and the
+initial values of the angles. The second section comprised seven or eight
+``calculators,'' with knowledge of both arithmetic and mathematical
+analysis, who derived from the formulae of the first section the values of
+the initial logarithms and the initial differences of various
+orders.\footnote{At this time, in both French and English, ``calculator''
+(\emph{calculateur}) referred not to a calculating machine, but to a job. In
+English, the word ``computer'' was also used.} They also prepared the folio sheets used by the third
+section ``by laying out the columns of the chosen values and the first row
+of entries'' \autocite[109]{grattan-guinness2003}. Furthermore, they
+wrote on the page the instructions to be followed by the third section and
+verified their calculations. At the base, the third section comprised
+between 60 and 80 calculators who only carried out the additions and
+subtractions of the intervals between two numbers, as chosen by the second
+section. Prony remarked that ``those who knew more [arithmetic] were not
+always those subjected to less errors'' \autocite[53]{prony1804}.\footnote{In his famous article \citetitle{grattan-guinness1990},
+Grattan-Guinness claimed that ``[m]any of these workers were unemployed
+hairdressers'', but this affirmation, although now widespread, has elicited
+controversy \autocite[179]{grattan-guinness1990}. \textcite{roegel2011},
+who has closely studied the lists of the employees at the Cadastre,
+disagrees with Grattan-Guinness's emphasis on the employment of
+hairdressers because he suspects that ``there were only two or three of
+them'' \parencite[26]{roegel2011}. Nonetheless, Roegel acknowledges that
+the first mention of the hairdressers seems to be an \ordinalnum{11}
+November 1824 discourse by engineer Charles Dupin---Prony's close friend---
+from which Grattan-Guinness drew upon \parencite{dupin1824}. Moreover, Roegel
+claims that the number of computers employed probably never exceeded 20 or
+25, so Prony exaggerated his figures. See \textcite{roegel2011}, p. 27,
+footnotes 96--98. Indeed, a contemporary witness estimates them at about
+fifteen \autocite[744]{laLande1803}.}
+The calculation of the tables began in 1793, and although the core of the
+project had been completed by mid-1796, verifications took a few more
+years, so that the project was finally completed ``at the end of the 1790s
+or the beginning of the 1800s'' \autocite[37]{roegel2011}.
 
-Perhaps opportunely, therefore, early on in the new decade de Prony set up
-a Bureau de Cadastre in Paris, to prepare a detailed map of France to
-facilitate the accurate measurement of property as a basis of taxation. In
-connection with this plan, it was decided that a very large set of
-logarithmic and trigonometric tables would be prepared. 
+Despite the novel rationalization of the organization of labor that it
+promoted, the project of the Cadastre tables was isolated among French
+productive activities, which remained mostly artisanal. It was intended as
+a ``monument'' to rationality, not a mass produced commodity
+\autocite[57]{prony1804}. If the thorough industrialization of French
+production would have to wait until the twentieth century, the tables
+project was an early example of the application of the engineer mentality
+to the organization of labor. This is evidenced in its application of the
+division of labor to a hierarchical organization of skills. At the time of
+de Prony, even if attitudes towards the \emph{mechanical arts} had been changing
+beginning in the ninth century \autocite[10]{vatin_pillon2003_2007},
+these were still associated with low ranked repetitive labor devoid of
+intelligence.\footnote{In this regard, Friedmann cites the ambivalence in the \emph{Encyclopédie}
+of the definition of \emph{artist}:``we say of a good chemist that deftly
+performs the procedures that others have invented, that he is a good
+artist, with the difference that the word artist is always a praise in the
+first case, whereas in the second, it is almost a reproach of only
+possessing the subordinate part of his profession''
+\autocite[my translation, footnote 1, p. 55]{friedmann1953}.} Discussing about the workers of the third section of
+the tables project, the famous nineteenth century French engineer Charles
+Dupin remarked that they ``ended up blessing the change that removed them
+from hard work, to devote themselves to occupations that called upon the
+use of thought'' \autocite[211]{dupin1824}.\footnote{My translation.} Nevertheless,
+according to \textcite{daston1994}, by pooling the talent of mathematical
+genius with the brute force of mindless calculation, de Prony's project
+contributed to demote calculation to the lowest of mental faculties. In
+fact, until the mid-nineteenth century, in both French and English usage,
+\emph{work} and \emph{mechanical} were associated by referring to the laboring body, so
+that mechanizing calculation degraded this activity from its previous
+status as a manifestation of mathematical gifts.\footnote{As an example of the importance of calculation, the German-Dutch
+mathematician, Ludolph van Ceulen (1540-1610), devoted long years to the
+calculation of \(\pi\) to thirty-five decimal places. This was considered such an
+accomplishment that \(\pi\) is sometimes referred to in German as Ludolph's
+number (\emph{Ludolphsche Zahl}) \autocite[50]{maor1994}.} In this regard,
+Daston considers that de Prony's project is a landmark in the history of
+intelligence because ``it pushed calculation away from intelligence and
+towards work'' \autocite[190]{daston1994}.
 
-Durant onze années, le Cadastre a réalisé deux sortes de travaux : des
-cartes et des tables. Nous montrerons ci-après comment ces tâches se sont
-substituées à l’objectif initial qui était de nature fiscale : établir la
-répartition de la contribution foncière. 
+Although the mechanization of intelligence began with de Prony's project,
+its contemporary significance comes from Charles Babbage's interpretation
+of it to design a series of powerful mechanical calculators: the Difference
+Engine I and II, and the Analytical Engine. Specifically, Babbage's
+Analytical Engine is considered the precursor to the modern programmable
+computer.
 
-On peut distinguer cinq étapes dans les onze années d’existence du Bureau
-du Cadastre. Lors de la première étape, le but du calcul de l’impôt foncier
-resta primordial – on a calculé la surface des départements. Lors d’une
-deuxième étape, on a calculé les grandes tables. Ce calcul s’acheva en
-mars 1795. À ce moment-là, Prony répondit à une demande d’édition de tables
-trigonométriques réduites, qui furent termi- nées en juillet 1795. La
-quatrième étape a été celle de la détection des erreurs de calcul et de
-leur correction. Les grandes tables furent calculées une deuxième fois. Les
-vérifications se terminèrent au début de l’année 1798. Dans une cinquième
-étape, Prony fit encore calculer quelques tables, graver diverses cartes et
-dresser des exemples de cadastres communaux par type de culture.
+\section{Weaving Algebraical Patterns}
+\label{sec:org4430d83}
+
+Charles Babbage (1791--1871) was born in Walworth, Surrey close to London,
+at a time when the capital was the commercial and industrial center of
+Great Britain. Although he never secured an employment for very long, he
+inherited a large estate from his goldsmith-turned-banker father, which
+allowed him to pursue his scientific interests more-or-less independently
+of financial constraints. Babbage was one of the eminent nineteenth century
+Romantic gentlemen scientists,\footnote{This figure would disappear with the advent of twentieth century
+Big Science: massive personnel, lavish government budgets, and hierarchical
+organization. See \textcite{mirowski2011}.} joining numerous clubs and societies
+to advocate the application of science to different domains. For example,
+he co-founded the Analytical Society (1811), the Royal Astronomical Society
+(1820), the British Association for the Advancement of Science (1831), and
+the Royal Statistical Society (1834). During his life---and even today---he
+was regarded primarily as a gifted mathematician, graduating from Cambridge
+in 1814, and becoming there professor of mathematics in 1828.\footnote{According to Romano, Babbage neither moved to Cambridge nor ever
+deliver a lecture there as professor of mathematics
+\autocite[387]{romano1982}.} In
+fact, one of his most important contributions is his campaign to introduce
+French ``abstract'' mathematics to Great Britain.\footnote{One of the likely reasons for Great Britain's resistance to
+Continental advances in mathematical abstraction was the priority debate
+over the discovery of the calculus between Newton and Leibniz. According to
+Maor, this controversy discouraged the introduction of Leibniz's notation
+in Great Britain. See \textcite{maor1994}, chapter 9.}
+
+At some point, in the year 1820 or 1821, the Astronomical Society appointed
+a committee consisting of John Herschel and Babbage to prepare statistical
+tables for astronomical calculations. One evening, while the two men were
+tediously verifying the numbers produced by two hired ``computers,''
+Babbage exclaimed that he wished ``we could calculate by steam.'' Babbage
+decided to embark in the construction of a series of calculating machines
+to automate the production of statistical tables, the first of which was
+called the Difference Engine.\footnote{Although the most widely known are Babbage's Difference Engines (I
+and II) and the Analytical Engine, he had plans for more calculating
+machines.} This machine derived its name from the
+method of differences discussed earlier, which Babbage had \emph{translated} into
+mechanism through a complex system of wheels and gears. The Difference
+Engine was a massive and heavy machine that received its ``input'' by
+setting the initial values on the toothed number wheels, which were, then,
+activated by a human turning a crank.\footnote{The machine consisted of several parallel columns of rotating piled
+up toothed number wheels. Each column containing \(n\) wheels could represent
+a number with  \(n - 1\) decimal places.}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=7cm]{/home/sync0/Pictures/research/difference_engine_1_woodcut.jpg}
+\captionbelow{Section from the Difference Engine I as assembled in 1833 (Source: Wikipedia).}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=13cm]{/home/sync0/Pictures/research/difference_engine_2_diagram.jpg}
+\captionbelow{Difference Engine II Diagram (Source: Wikipedia).}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=11cm]{/home/sync0/Pictures/research/difference_engine_2_drawing.jpg}
+\captionbelow{Difference Engine II Drawing (Source: Wikipedia).}
+\end{figure}
 
 
- Prony gave some details of the project in a 'Notice' read to the classe
-des sciences mathematiques et physiques in 1801, soon after it was
-finished. The personnel were divided into three sections according to the
-work they did. The first section contained a handful of mathematicians,
-including A. M. Legendre, C. A. Prieur de la Cote d'Or, and Lazare Carnot;
-the former two were also involved with the reform of weights and measures,
-and latter two also acted as influential political figures. They chose the
-mathematical formulae to be used for calculation and checking, and also
-considered the choice of initial values of the numbers or angles, the
-number of decimal places to be adopted in each table, and so on. The second
-section comprised several `Calculators', including the
-mathematicians A. M. Parseval (of the well-known formula in infinite
-series) and the textbook writer J. G. Gamier, who determined the values,
-and the differences of various orders, that needed to be calculated. They
-also prepared a page of tables for the numerical work by laying out the
-columns of the chosen values and the first row of entries, and preparing
-the instructions on the preparation of the remaining entries on the page.
-These calculations were done by the third section, a large team of between
-60 and 80 assistants. Many of these workers were unemployed hairdressers;
-one of the most hated symbols of the ancien regime had been the hair-styles
-of the aristocracy, and the obligatory reduction of coiffure 'as the
-geometers say, to its most simplest expression' left the hairdressing trade
-in a severe state of recession.Thus these artists were converted into
-elementary arithmeticians, executing only additions and subtractions.
+After completing a working model with six figure-wheels in 1822, he
+published an open a letter to Sir Humphry Davy---then President of the
+Royal society---to secure government financial assistance. In this letter,
+Babbage sketches for the first time the concept of the \emph{mental} division of
+labor, citing de Prony's tables project as evidence of the possibility to
+mechanize calculation. Babbage explains that the third section of de
+Prony's project, whom ``the most laborious part of the operations
+devolved'' \autocite[214]{babbage1822}, could be reduced in number of
+employees to only twelve by the use of calculating machines: Their labor
+would be to write down the numbers displayed by the Engine's wheels, after
+the machine had finished the calculations.
 
-When a page was completed, it was returned to the second section, to
-check the figures using formulae chosen by the first section. The project
-was run twice, in that two sets of each table were produced from different
-equations, so that each set could be checked against the other. By 1794
-seven hundred results were being produced each day.
-
-\section{Technical description}
-\label{sec:org8de8630}
-What was de Prony actually doing
-
-The pivotal moment of this transformation was Prony's project. 
-
-Sous la Révolution, on a introduit la division centési- male du cercle en
-grades : il a donc fallu calculer les tables correspondantes. Prony,
-directeur du Bureau du Cadastre de 1791 à 1802, a dirigé le calcul des
-logarithmes rithmes des fonctions trigonométriques de 100 000 divisions du
-quart de cercle (avec quatorze décimales) et ceux des 200 000 premiers
-nombres. Cette œuvre gigantesque est consignée dans seize volumes in-folio,
-établis en deux exemplaires restés à l’état manuscrit.
-
-With the adoption of the decimal-based metric system, the Revolutionary
-government rendered all older trigonometric tables computed using
-traditional sexagesimal divisions of the circle suddenly unusable, at least
-for French geodesists and astronomers bound to the new system. 
-
-In his capacity as director of the French cadastre, Prony was charged in
-1791 to create new tables to compliment the French metric system, tables
-which would awe contemporaries and posterity as ``the vastest and most
-imposing monument of calculation ever executed or even conceived.''
-
-By his own account inspired by Adam Smith's paean to the division of labor
-in the first chapters of \citetitle{smith1904_1}, Prony organized the pyramidlike
-``monument of calculation'' by means of a pyramid of tasks. 
-
-At the apex were a handful of ``excellent mathematicians'' [ \emph{géomètres d'un
-très grand mérite} ] who would devise the analytic formulae to be used of
-the calculation; below them seven or eight ``calculators'' [ \emph{calculateurs};
-sometimes also called \emph{algébristes} ] trained in analysis who would deduce
-form these formulas the numbers needed to begin actual computations; and at
-the base were seventy or eghty perons [ \emph{individus}; also \emph{ouvriers} ] knowing
-only the rudiments of arithmetic who would perform millions of additions
-and subtractions and enter the values by hand into ruled folio volumes
-specially laid out of the purpose. By means of these ``manufacturing''
-methods, as Prony later called them, two copies of the tables, each
-consisting of seventeen manuscript volumes plus instructions, were
-completed by 1801.
-
-In so doing, it pushed calculation away from intelligence and towards work. 
-
-Eighteenth-century usage of the term intelligence overlaps but odes not
-coincide with its twentieth-century meaning. Both denote mental agility,
-particularly in problem solving and learning. 
-
-For Condillac and his followers, analysis was simultaneously a method for
-investigating the minds' operations and a description of those operations.
-The healthy mind, unperturbed by passions or an unruly imagination, was
-endlessly taking apart its ideas and sensation into their minimal elements,
-then comparing and rearranging these elements into novel combinations and
-permutations. 
-
-\begin{quote}
-For Condillac, d'Alembert, Condorcet and other philosophes, thought was
-a combinatorial calculus, and intelligence therefore proficient calculation
-\end{quote}
-
-Force of mind, individual or collective, was at the bottom the ability to
-analyze, compare, and recombine ideas, just as arithmetic was ``the art of
-combining [numerical] relations.'' 
-
-Calculation set off moral as well as intellectual resonances for
-Enlightenment philosophers. Key to the moral revaluation of the interests
-was the belief that they involved self-discipline as well as
-self-interested calculations and therefore produced reassuringly calculable
-conduct. Avarice might not be noble, but it was at least predictable and
-therefore reinforced the orderliness of the social order.
-
-\begin{displayquote}[{\cite[192]{daston1994}}]
-Some Enlightenment writers fortified this faint praise and attempted to
-recast all moral judgments, even the most laudable, as calculations.
-Francis Hutcheson thought the ``Moment of Good'' produced by any given act
-might be reckoned as the product of benevolence and ability; Jeremy Bentham
-insisted that his sums and differences of pleasure and pain were ``nothing
-but what is the practice of mankind, wheresoever they have a clear view of
-their own interest.''. 
+\begin{displayquote}[{\cite[212]{babbage1822}}]
+The intolerable labour and fatiguing monotony of a continued repetition of
+similar arithmetical calculations, first excited the desire, and afterwards
+suggested the idea, of a machine, which, by the aid of gravity or any other
+moving power, should become a substitute for one of the lowest operations
+of human intellect.
 \end{displayquote}
 
-Work and mechanical were closely linked in both French and English usage
-until the middle decades of the nineteenth century, and the middle term
-that joined them was the laboring body. Work taxed the body but not the
-mind; even the most deft manipulations of ``rude mechanicals'' were
-ascribed to habit and instinct rather than thought.
+As this quote shows, Babbage believed that de Prony's project incorporated
+a hierarchy of tasks. Although calculation was a mental operation, it
+required the least application of intelligence. If \textcite{daston1994} is
+correct, the association of mechanism with the laboring body of low-skilled
+low-paid laborers was the main factor behind the loss of prestige of
+calculation. Daston's claim is important because there is an ``economic''
+tendency to explain away this change in status by appealing to \emph{scarcity} and
+the \emph{laws} of supply and demand, but this argument is misleading. Despite all
+the rhetoric, if Babbage's machine had been completed, only large
+organizations would have employed it (as was the case with the first
+mass-produced electronic computers in the twentieth century), for, as Maas
+argues, its sheer size rendered it impractical for most everyday scientific
+applications \autocite[103]{maas2005}.\footnote{During Babbage's lifetime, only functioning sections of the Engines
+were produced, but not a single one was completed. In 1991, a group of
+researchers constructed a full size Difference Engine II to prove that such
+a machine could be built using the materials and engineering tolerances
+available to Babbage. See \textcite{swade2000}.} Instead, the Engine
+contributed to shape nineteenth century ideas in Great Britain about
+intelligence by showing that what had been thought to be the prerogative of
+the mind could be accomplished by mechanism. It was, thus, the lack of
+social prestige of mechanism---and its association with the low class of
+citizens that would soon become the proletariat---that undermined the
+social status of calculation.
 
-\begin{displayquote}[{\cite[194]{daston1994}}]
-Most of those who engage in the mechanical arts have embraced them only by
-necessity and work only by instinct. Hardly a dozen among a thousand can be
-found who are in a position to express themselves with some clarity upon
-the instrument  they use and the things they manufacture.
+Another important aspect of Babbage's work, with major implications for the
+construction of his Engines, was his famous book
+\citetitle{babbage1832_2009}, which consecrated him as an expert on
+industrial production techniques. As he constructed the Difference Engine,
+Babbage was forced to turn his attention to the study of machinery and
+manufactures because of the precision engineering required to produce the
+tolerance levels of the Engine's pieces. After the death of his wife in
+1827, Babbage embarked on a long tour to study Europe's best methods of
+production. Back in England in late 1828, he began working on his famous
+book on manufactures. The book, published in 1832, discusses de Prony's
+project as if resembling a British cotton or silk-mill, thereby drawing a
+close analogy not only between mental labor and bodily labor, but between
+calculating machine and manufactory.
+
+\begin{displayquote}[{\cite[157]{babbage1832_2009}}]
+When it is stated that the tables thus computed occupy seventeen large
+folio volumes, some idea may perhaps be formed of the labour. From that
+part executed by the third class, which may almost be termed mechanical,
+requiring the least knowledge and by far the greatest labor, the first
+class were entirely exempt. \ldots when the completion of a calculating
+engine shall have produced a substitute for the whole of the third section
+of computers, the attention of analysts will naturally be directed to
+simplifying its application, by a new discussion of the methods of
+converting analytical formulae into numbers.
 \end{displayquote}
 
-Here d'Alembert repeats a commonplace: skill, the knowledge of the hand,
-and habit, the enemy of reflection, had long been opposed to intelligence
-and deliberation, and intimately associated with manual labor. 
+Two years after the book's publication, Babbage began drafting plans for a
+more ambitious calculating machine: the Analytical Engine, the precursor to
+the modern programmable computer.\footnote{Babbage's Engines were forgotten and then rediscovered in the
+middle of the twentieth century, most notably by Howard Aiken, inventor of
+the Harvard Mark I. See \textcite{aiken1946}, Introduction. Nevertheless, the
+influence of Babbage in the development of the twentieth century electronic
+computer is only retrospective. I surmise that despite the long history of
+calculating machines, between Leibniz's \emph{Staffelwalze} in the seventeenth
+century to \textsc{eniac} in the mid-twentieth century, the influence of
+many of these inventions to the development of modern computers is,
+unfortunately, only retrospective historical reconstruction.} Unlike the Difference Engine,
+which was limited to one operation, the Analytical Engine could be
+\emph{programmed} by the use of three types of punched cards---Variable cards,
+Number cards, and Operations cards---to perform any series of the four
+basic arithmetical operations. Maas's claim that the ``Analytical Engine
+incorporates in its design the architecture of a factory'' is not
+rhetorical flourish \autocite[109]{maas2005}, for this new mechanical
+computer was literally modeled after the large scale division of labor of
+English industry and de Prony's project. Specifically, the Analytical
+Engine consisted of several logical sections, the most important of which
+were the memory, the \emph{Store}, and the central processor, the \emph{Mill}. As their
+names imply, the Store was responsible for ``storing'' numbers until they
+were required for calculations (as indicated by the Variable cards) to be
+``milled'' at the Mill. Translated in mechanical terms, this means that the
+Store ``kept'' a number---represented by the positions of the piled up
+toothed wheels in a column---which was transferred to the Mill when called
+upon by a calculation. Every operation, from number input (Number cards),
+to ordering the sequence of operations (Operations cards), to number
+conveyance across the Engine (Variable cards), was controlled by the three
+types of punched cards: These were fed to the Engine as long series of tied
+up cards that activated the various levers, which in turn, turned the
+wheels. What this short description of the \emph{workings} of the Analytical
+Engine tries to show is that Babbage's analogy with a silk mill was not a
+mere pedagogical expedient but a reference to the working principles of one
+object to understand the functioning of another.\footnote{Understanding the history of any science requires the
+identification of the analogies that become ``engines of discovery'' for a
+period of time. These analogies shed light over certain aspects of an
+object, while obscuring others. They may also carry along other habits of
+thought from one discipline into another. In the transition from mechanical
+to electronic calculation, the \emph{human mind} superseded the \emph{factory} as the
+analogy used to understand the workings of the machine. This change of
+analogical referent had profound consequences for twentieth century
+behavioral sciences, which, building on the nineteenth century
+neurophysiological reductionism of mind to brain activity, understood the
+human mind to be a mechanism akin to an electronic computer, and vice versa} In this regard, it
+is noteworthy that Babbage borrowed the idea to use punched cards to
+\emph{command} the Engine from the Jacquard loom: A weaving machine that threaded
+complex patterns in fabrics by following the instructions codified in the
+punched cards. These cards were fed into the loom in long series, which
+activated a system of levers that threaded the codified pattern. It was,
+then, in the context of analogies between factories and calculating
+machines that Babbage's friend Ada Lovelace wrote that ``the Analytical
+Engine \emph{weaves algebraical patterns} just as the Jacquard-loom weaves
+flowers'' \autocite[25]{lovelace1843}.
 
-\begin{displayquote}[{\cite[55]{friedmann1953}}]
-Il est intéressant de faire ici le rapprochement des définitions que donne
-l'Encyclopédie de l'« artisan » et de l'« artiste » (t. I, p. 745) : le
-premier est « le nom par lequel on désigne les ouvriers qui professent ceux
-d'entre les arts mécaniques qui supposent le moins d'intelligence. On dit
-d'un bon Cordonnier que c'est un bon artisan, et d'un habile Horloger que
-c'est un grand artiste ». Par « artiste », on entend les « ouvriers qui
-excellent dans ceux d'entre les arts mécaniques qui supposent
-l'intelligence ; et même à ceux qui, dans certaines Sciences, moitié
-pratiques, moitié spéculatives, en entendent très bien la partie pratique ;
-ainsi on dit d'un Chimiste qui fait exécuter adroitement les procédés que
-d'autres ont inventés, que c'est un bon artiste ; avec cette différence que
-le mot artiste est toujours un éloge dans le premier cas, et que, dans le
-second, c'est presque un reproche de ne posséder que la partie subalterne
-de sa profession ». — On voit que nous sommes encore fort loin des contenus
-et résonances actuels. 
+From the point of view of the social significance of technology, the
+Analytical Engine was important because, if with its predecessor, the
+Difference Engine, thoughts on machine intelligence were blue sky
+speculations, the new machine, with its more sophisticated automated
+systems, elicited discussions on its ability to think---or, at least to
+reproduce those ``lower operations of the human intellect.'' For example,
+whereas one Italian engineer who corresponded with Babbage assured that
+``the machine is not a thinking being, but a simple automaton that
+performed according to the laws that one has traced for it''
+\autocite[358]{menabrea1842},\footnote{My translation.} Ada Lovelace claimed that:
+
+\begin{displayquote}[{\cite[22]{lovelace1843}}]
+It were much to be desired, that when mathematical processes pass through
+the human brain instead of through the medium of inanimate mechanism, it
+were equally a necessity of things that the reasonings connected with
+\emph{operations} should hold the same just place as a clear and well-defined
+branch of the subject of analysis \ldots
 \end{displayquote}
 
-\begin{displayquote}[{\cite[195]{daston1994}}]
-Prony himself remarked upon the social oddity represented by ``the quite
-singular gathering of men who had had such different existences in the
-world'' and upon the intellectual anomaly that the fewest computational
-errors were made by those ``who had the most limited intelligence, an
-automatic existence, so to speak''.
-\end{displayquote}
+Although Lovelace's interpretation was probably rare at the time, her way
+of thinking---identifying intelligence with operations that could be
+carried out in different ``hardware''---proved important for the history of
+intelligence because she drew a parallel between logic, mechanical
+operations, and the operations of the mind. This same idea would surface
+with the publication in 1954 of George Boole's \emph{Laws of Thought}, in which he
+presented Boolean algebra both as an abstract theory of logic and a
+psychological theory of the operations of the mind.
 
-Calculation had up to that point been an intellectual occupation fit for
-the fines minds and the best society. 
-
-Si la démarche de Prony demeure isolee, dans un contexte de production
-encore largement traditionnel, elle marque tout de même l'ouverture d'un
-novueau front. L'organisation du travail devient raient une affaire
-d’ingénieur, même si le cahntier ne suit pas le mouvement, et si
-l'industrialisation se fait encore attendre. 
-
-Les tables du Cadastre prennent une connotation tout aussi politique que
-scientifique. Les méthodes employees pour venir à bout de cette tâche
-gigantesque traduisent qant à elles des enejxy de rationalisation sociale.
-Concrètement, cette divsion du travail se manifaste par une organisation
-hiérarchique des compétences. 
-\section{Conclusion}
-\label{sec:org7fa6574}
-\chapter{Mechanizing Thought}
-\label{sec:org824126d}
-\section{Introduction}
-\label{sec:org03f40e3}
-Indeed, soon afterwards, in a pamphlet of 1822 on 'the application of
-machinery to the purpose of calculating and printing mathematical
-tables'---his main publication for securing governmental support for
-production of the Difference Engine---he gave some account of de Prony's
-project and noted that mechanical methods would speed up the process of
-calculation. Clearly he was struck by de Prony's production of the tables
-following an industrial process, and was hoping to imitate the process by
-mechanical means. In his book on manufactures, he rehearsed some of the
-same material on de Prony's project and on mechanical calculation.
-
-Thus his contribution was to substitute manual labour by engineered
-automation in the construction of tables.
-
-This section describes the reading that Charles Babbage makes of de Prony.
-
-The distinction between the realms of mind and matter, and the appended
-distinction between the ``introspective'' and ``hypothetical'' modes of
-enquiry, will prove to be of fundamental importance to understanding the
-puzzled or straightforwardly dismissive reactions to Jevons' transgression
-of the fields of the natural and moral sciences.
-
-But this did not make the phenomena of the mind suited to be analyzed by
-means of the same tools and methods as those of matter. Mind and matter
-were considered categorically distinct phenomena. To invoke mechanical
-analogies thus at no point forced the political economist to investigate
-the mind with the same tools of research as nature. Indeed, Mill regarded
-mechanical analogies for mental phenomena with distrust. 
-
-Halfway through the nineteenth century, the categorical distinction between
-the phenomena of mind and matter vanished under the influence of
-developments within psychophysiology. This enabled economists such as
-Jevons to transgress the boundaries traditionally set to the tools of the
-natural sciences might be used to disclose the laws of the mind.
-
-De Marchi (1972, 350) refers to this last mode of reasoning as ``mechanical
-reasoning'', a term I consider completely apt to pinpoint Jevons's specific
-contribution to the formation of modern economics. De Marchi apparently
-used it to refer only to Jevons's use of mathematics in economics. 
-
-
-
-
-The index of truth of these experiments was twofold. First, the
-experimental results should ``mimic'' nature's complexity---but this was
-only so for the informed eye that understood the causal mechanism embodied
-in the experimental results. Second, the ultimate criterion of truth was a
-mathematical rendering of the experimental results---that is, a
-mathematical function makes the mechanism explicit of the production of the
-experimental observations.
-
-They all form instantiations of Lord kelvin's dictum (Thomson [1884] 1987,
-111, also 296) that we can only understand something if we can make a
-mechanical model of it. Babbage's Difference Engines and the new formal
-logic developed by Boole, De Morgan, and Jevons were driving forces in the
-development of mechanical reasoning in all these senses. 
-
-\section{Babbage's Engines}
-\label{sec:org257559e}
-
-Babbage's calculating engines project emerged out of a growing need for
-precise and accurate tables by the quickly industrializing British economy.
-These tables were necessary, among other things, for navigation and for
-insurance companies that were rapidly growing in importance. 
-
-There were so many faults that could be made in the production of numerical
-tables, in the computations of the ``avalanche of numbers'' comprised in
-them, in the copying of the outcomes, and in the various stages of the
-printing process that Herschel and Babbage spent many hours checking these
-tables themselves for their own scientific purposes. One one such occasion,
-as the story goes, Babbage exclaimed in exasperation that the wished these
-computations had been made by ``steam'' (see for example, Swade 2000, 15).
-
-Also, the necessity of speeding up the process of calculation was an
-important factor in all of Babbage's endeavors to ``compute by steam''.
-Indeed, in many ways as will be seen, the mastery of time was one of the
-driving motives and major problems in Babbage's engines project. 
-
-Good calculators, in many cases autodidacts extraordinarily gifted with
-calculating capabilities, were valuable and hard to find. 
-
-Precision, accuracy, and time were the important factors posing severe
-constraints on the construction of the requested tables. It is well-known
-how Gaspard de Prony's calculating project, commissioned by the French
-Revolutionary regime to facilitate the conversion to the decimal system,
-gave Babbage the clue in how to solve these problems jointly by the use of
-machinery. Political economy provided the means to solve this seemingly
-impossible task. Accidentally reading Adam Smith's \emph{Wealth of nations}, Prony
-immediately realized the importance of Smith's principle of the division of
-labor and split up the work into three different task levels. In the first,
-``five or six'' eminent mathematicians (including Lagrange and Prony
-himself) were asked to simplify the mathematical formulae to polynomials.
-In the second, a similar group of persons ``of considerable acquaintance
-with mathematics'' adapted these formulae by the method of differences so
-that one could calculate outcomes by simply adding  and subtracting
-numbers. This final task was executed by a large number of unemployed
-hairdressers. The work of this last group of computers or calculators, as
-they were commonly referred to, can be rightly seen as a \emph{reductio and
-absurdum} of manual computation (Grattan-Guinness 1992, 40; see also
-Grattan-Guinness 1990c). 
-
-Prony's approach showed Babbage that it was possible to mechanize not only
-physical, but also mental, labor. His interest in the French project fits
-into his wider perception of algorithmic procedures in ``mathematics,
-science, and other walks of life'' (Grattan-Guinness 1992, 34). Babbage
-emphasized in \emph{Machinery and Manufactures} ([1835] 1963), still one of the
-most fascinating studies on the emerging mechanization of the economy,
-that the lowest task of Prony's project was ``almost'' a form of
-mechanized mental labor. Babbage designed his Difference Engine to
-mechanize this lowest stage of computing. Its method of computation
-ingeniously incorporated the method of differences in its wheels and
-gears, hence its name. Babbage's Difference Engine promised to fulfill all
-requirements Herschel and Babbage had been lamenting about: It saved
-calculation time and produced accurate and precise numbers. The
-computations would be more accurate than when done by a human
-individual---for machines, as opposed to humans, were thought not to make
-unpredictable mistakes. An attached printer would prevent errors in
-transcribing the outcomes. By thus excluding human interference from the
-whole process of computing and printing, all sources of faults---human
-faults---would be prevented, and the numbers would be precise, accurate,
-reliable, and reproducible. All this, of course, was based on the
-assumption that the machine itself operated flawlessly, a matter of great
-concern to Babbage. For all his calculating engines, he designed automatic
-checks and stops to secure its proper working.
-
-Prony's approach affected the traditional view of the hierarchy of mental
-and physical labor, Before Prony started his table project, computations
-were, for the most part, made by mathematicians themselves for their own
-purposes (Warwick 1995, 317--8). The routinisation and then mechanization
-of computing downgraded calculation to the lowest of mental activities,
-thus equating it with the routine labor executed in the emerging factories.
-Babbage exploited the comparison of calculation with routine factory labor
-in straightforwardly paralleling Prony's division of tasks with the
-division of tasks necessary for the construction of a ``cotton or
-silk-mill''. The ``multitude of other persons'' (the calculators or their
-mechanical equivalent) used in their employment the ``lower degree of
-skill'' (Hyman  1989, 143).
-
-The British Government commissioned Babbage in 1823 to construct a
-calculating engine. When the government stopped its funding in 1834, it had
-furnished a total sum of \textsterling 17,470---an astronomical amount of
-money when compared with the costs of a first-class locomotive such as the
-\emph{John Bull}, which only cost \textsterling 784 7s. 
-
-For practical purposes, a much simpler contrivance, the so-called
-arithmometer invented around 1820 by the French army officer Colmar, was of
-much more use. This arithmometer, rather than Babbage's engines, became
-part of the standard inventory of the first mathematics laboratory of
-Whittaker in Edinburgh at the end of the century, where their careful
-routinized use by scientists served the purposes Babbage dreamed of with
-his calculating engines.
-
-This museal arrangement symbolizes a perfect division of head and manual
-labor, of industry and mind, in which are nonetheless embodied the very
-same principles of the lever. 
-
-With Babbage's Difference Engine, thoughts on machine intelligence were
-really only speculations, for it was obvious that the calculating
-capacities of the machine still involved a considerable amount of separate
-mental activity that was not captured in mechanical terms. The development
-of an even more ambitious machine, the Analytical Engine, seemed to
-overcome these limitations. The new contrivance derived its name from its
-ability to perform all ordinary analysis.
-
-In contrast to the Difference Engine, the Analytical Engine could be really
-programmed. In fact, as is well-known, the design showed great similarity
-with von Neumann's computer design a century later (see Swade 2000). The
-comparison Babbage made with a silk mill, in \emph{The Economy of Machinery and
-manufactures}, should be taken literally; the Analytical Engine incorporates
-in its design the architecture of a factory. The Analytical Engine combined
-the calculation of various functions without the interference of human mind
-and hand. This was attained by the use of punched cards, an idea that
-Babbage got when he was working on his book. The idea originated from the
-famous Jacquard loom, in which a complex mechanism of levers regulated the
-lifting of the warp in accordance with the desired pattern. This was done
-by triggering the right set of levers by a role of punched cards. These
-cards activated a system of levers to lift the intended column of gears.
-Lovelace famously wrote that ``the Analytical Engine \emph{weaves algebraical
-patterns}, just as the jacquard-loom weaves flowers and leaves'' (Hyman
-1989, 273).
-\section{The Cogwheel Brain}
-\label{sec:orgba54190}
-Babbage, writing of the project in 1832, was still obliged to admit that his
-claim ``that the division of labor can be applied with equal success to
-mental operations'' would ``appear paradoxical to some of our readers.''
-The labor of mechanicals emptied the task of intelligence; yet the task at
-issue, calculation, had been understood to be the very essence of
-intelligence.
-
-Babbage's reading of Prony's project as akin to setting up a silk mill was
-technically correct, but the metaphorical silk mill was of the sort to be
-found in late eighteenth-century Lyon, not early nineteenth-century
-Manchester. Babbage's misreading of Prony's ``manufacturing'' methods
-paralleled the very different meaning of \emph{manufacturing} in France and in
-England at the time. 
-
-Babbage understood the machines in question to be the legion of artisan
-computers whose undeniable status as ``mechanicals'' served him as an
-existence proof that any mental operations they could execute could also be
-executed by a machine. Prony's division of labor had simply clarified which
-operations those were. In contrast, Prony's machines was the entire system
-of calculation, keeping with the image of the machine as a system of parts
-whose hierarchical organization was governed by the principle of the
-division of labor.
-
-For Babbage, Prony's repeated appeal to ``manufacturing methods, his
-emphasis upon the rapidity with which his calculators produced logarithms,
-his description of their labors as ``purely mechanical operations'' all
-irresistibly suggested an automated factory regimen geared to productivity
-(N, pp. 6, 8n; NTL, p. 9).
-
-\begin{displayquote}[{\cite[198]{daston1994}}]
-Hence Babbage quite naturally undertook to replace the workers who executed
-the mechanical operations with actual machines, to scale down both the
-first and second sections of mathematicians and calculators in order out
-save on the costs of expensive skilled labor and out conceive of these
-automated, more efficient arrangements as an ongoing production of
-calculations, spewing out tables at the pace and in the quantity that the
-spinning jenny spun out thread.
-\end{displayquote}
-
-Jevons's approach to the moral realm only made sense once psychophysiology
-and formal logic gained ground.
-
-Originally, mechanical reasoning referred to the use of simple machines to
-disclose the wonders of the universe. It had its origin in the mixed
-mathematics tradition that went back to Archimedes, and that was very
-important in the scientific revolution of the sixteenth and seventeenth
-centuries. 
-
-In Machamer's reading, mechanical reasoning might equally well be labeled
-the Galilean approach to science. Machamer compares the role of Galileo's
-simple machines to Kuhnian exemplars. An explanation of a natural
-phenomenon can, by analogy, be deduced form the mechanical principles
-embodied in these contrivances, and this is what Galileo consistently
-attempted to attain. without any doubt, in his view, Galileo's training in
-mixed mathematics played an important role in this new approach of how to
-gain knowledge of nature. members of the ``mixed sciences'' (\emph{scientia
-media}) came to denote themselves as mechanical philosophers.
-
-The use of simple contrivances like the balance as a mode of comprehending
-nature---in a similar fashion as a Kuhnian exemplar---also involved
-shifting criteria of proof and evidence. \ldots These ingredients for
-Machamer add up to a ``clear moral'': ``To get at the true cause, you must
-replicate or reproduce the effects by constructing an artificial device, so
-that the effects can be seen'' (69).
-
-In mixed mathematics, geometry was used to understand the working of simple
-machines like the balance, the inclined plane, and the pendulum. 
-Ironically, the Difference Engine was admired more as an edifice of reason
-and engineering than for its practical usefulness. Schaffer and Swade both
-relate how this little fragment showed its ``devil's tricks'' during
-Babbage's popular soirees. It moved Lady Byron, the mother of Ada Lovelace,
-to describe the Difference Engine as a ``thinking machine''.
-
-Babbage was well-aware of the speculative vistas opened up by his machine.
- He never tired of telling his visitors that what seemed so miraculous and
- amazing to them had been programmed by him beforehand. Babbage was so
- content with this that the developed this idea more generally to refute
- Hume's argument against miracles. The regular--irregular output of the
- machine did not fit into Hume's idea of causation as a regular sequence of
- events---the punchline of Hume's argument---and yet this output was
- produced by the actions embodied in the mechanics of the calculating
- engine. Could it not be, so Babbage wondered, that all apparent irregular
- sequences in nature were governed by mechanical laws? God, Babbage argued
- in his unsolicited \emph{Ninth Bridgewater Treatise}, was the programmer of
- nature, who imposed mechanical laws on it, even if we, as limited human
- beings, were not always able to decipher them.
-
-Whewell, as seen previously, retreated from French rational mechanics
-because he considered its mathematics too deductive, too much a storage
-system of knowledge that was not in contact with physical reality and,
-hence, not fit as an inductive instrument of enquiry. But his firm belief
-in the providential order of nature was an important factor as well.
-Induction could, and should, unveil the laws of nature and thus show the
-providential order. This was what taxonomies---like those of Linnaeus, but
-also his own geological taxonomies---produced; the ultimate cause revealed
-in such taxonomies was the superior providential order in nature. 
-
-Babbage found it ``difficult to interpret'' Whewell's thoughts on the
-limits of mechanical enquiry and used his engine to give full force to the
-new French mathematics of Lagrange and Laplace, as the ``theory of
-invention'' he had been looking for from the days of the short-lived
-Analytical Society: Mathematical analysis, in the \emph{Bridgewater Treatise}
-exemplified by Laplace, showed that miracles, probability, and free will
-all could be approached as the same issue. 
-
-Babbage's arguments against Whewell spilled over into the inner province of
-the mind. What reason was there to suppose that the human mind functioned
-in a different way from a calculating machine? Consciousness and freedom of
-the will, to name the two great puzzles of the mind, could be mere specters
-in the machinery of the mind. What the individual perceived as an act of
-free will could basically be governed by the same laws that produced the
-miraculous jump in a string of numbers. Equally, consciousness could be the
-by-product of the invariable mechanical laws of nature. Babbage's work on
-his calculating engines thus ``governed,'' as Schaffer rightly claims, his
-``stories about machine intelligence'' (Schaffer 1996, 62).
-
-Babbage went even further to argue that it would be presumptuous to
-postulate any knowledge over and above what our mathematics and our
-machines showed to us to argue for any non-mechanical insights. 
-
-Babbage's severe blow to traditional categories of natural theology and
-moral philosophy was only convincing, however, on the assumption that the
-caprices of his calculating engines served as analogies to the world at
-large, the natural and the moral, which is more or less a definition of
-mechanical reasoning: to understand the world by means of machines. The
-Difference Engine thus genuinely functioned as an engine of discovery. All
-laws of nature, in the end, might be as mechanical as the laws governing
-the engine itself. To search for these laws was to search for an algorithm
-producing the plethora of concrete events. Such an algorithm is a machine.
-The calculating engine and French rational mechanics proved to Babbage that
-nature and mind were no more than complex computational machines. There was
-no place for Whewellian ``intuition'' here.
-\section{Conclusion}
-\label{sec:orgeba1a18}
-\chapter{Conclusion}
-\label{sec:org40ff2b2}
-\lipsum
+What is curious is that this discourse about machine intelligence is
+contemporaneous to the submission of a whole class of citizens to the
+factory system, the wage form, and the contractualization of labor
+relations. As \textcite{schaffer1994} argues, these concerns were central to
+the manufacture of the Engine's pieces with the right tolerance levels
+because their production required not just more precise tools, but also a
+reconfiguration of the social space of production. Specifically, the
+production of Babbage's Engines accompanied not only the introduction of
+advances in machine tools and engineering techniques, but the disembodiment
+of skills that had been traditionally the property of workers. For example,
+the newly introduced automatic lathes could produce more precise pieces,
+but their operation implied both a re-training of workers to watch over the
+machine and a loss of skill \autocite[214]{schaffer1994}. In this way,
+the automatic tools appropriated and incorporated the skills of the
+workers. Schaffer interprets Babbage's 1832 book on manufactures as a work
+of industrial intelligence to wrest off technical knowledge from workers,
+which was, then, appropriated by Babbage as a kind of proto-manager. This
+knowledge was then mobilized to build the tools and the workshops where the
+Engine's pieces would be produced. As Schaffer mentions, in Babbage's
+London, tool manufacturing followed certain customs regarding production
+techniques, ``intellectual property'', and control and authority over the
+production process. The ``technical'' advances required for producing the
+Engines were not innocent, in Schaffer's interpretation, because both the
+discourse about the organization of work and the social relations of
+production had to be transformed for the construction of the Engines to be
+possible. Schaffer mentions, among other changes, the dispute over the
+property and the rights over the automatic tooling to produce the Engine's
+pieces---these were traditionally owned by master engineers---and the
+relocation, at Babbage's behest, of the workshop to his house to have
+greater control over the surveillance of production. As Schaffer argues,
+the ``philosophers of machinery'' promoted rational valuation of work to
+render the labor process transparent, and skill measurable and thus payable
+according to a wage set in a marketplace. Workers \emph{seemingly} vanished from
+the ``automated'' production process of the new thinking machines because,
+as machines became better at mechanical and mental tasks, workers were
+subordinated as appendices to these machines. But, the workers never
+disappeared; they just became invisible.
 
 \backmatter
 \chapter{Conclusion} 
-\lipsum
 
-\printbibliography
+Even though Adam Smith did not invent the electronic computer, in the sense
+that he had no direct role in its construction, de Prony's interpretation
+of his concept of the division of labor shows that the first large
+\emph{computing} project was both an application of Smith's concept and new form
+of subordination of workers according to a hierarchy of mental skill.
+Likewise, Babbage's interpretation of de Prony's interpretation as embodied
+in his Analytical Engine drew a parallel between the economy---in the sense
+of the regulating principles---of the machine and the economy of the
+factory. These two projects took place at times of major change for the
+laboring classes of France and Great Britain. Indeed, two years before de
+Prony ran his calculation \emph{atelier}, the French Asemblée Nationale had passed
+the law Le Chapelier and the Decree D'Allarde, which eliminated the guilds
+(\emph{corporations}) and prepared the framework for the modern understanding of
+labor as a primarily a contractual relation. In the same way, Babbage's
+project of industrial intelligence to wrest off control of production from
+workers took place at the same time as the proletarianization of the
+British working class, the rise of the factory system, and the beginning of
+discussions about the possibility of intelligent machines. 
+
+By tracing this epistemological history of labor and intelligence in the
+context of Prony's reading of Smith, and Babbage's reading of Prony reading
+Smith, I sought to show by a historical example that the question of the
+influence of automation technology on labor can be told in a different way.
+The technicist view, as one manifestation of a realist epistemology, can
+lead to a dangerous naturalization of the social, which prevents
+discussions about democratic control over the production process.
+Challenging the technicist view is significant for today's discussions on
+artificial intelligence because as certain historians of thought such as
+\textcite{heyck2012} have emphasized, in the twentieth century, claims about
+the (ir)rationality and epistemic ``handicaps'' of humans---our limits to
+process \emph{information}---had important political consequences. Although this
+relation between epistemic doctrines and politics is well known in the case
+of Hayek's criticism of socialism---no one mind could know enough to plan
+the economy---, it has been less discussed in the case of Herbert Simon:
+Nobel prize in economics, prophet of bounded rationality, and founder of
+the discipline of artificial intelligence. Perhaps, the late Simon's
+opposition to industrial democracy should be read in conjunction with his
+ideas on ``simulation'' of human thought and the future possibilities of
+thinking machines \autocite{simon1983b}. After all, if that Italian engineer
+believed Babbage's Analytical Engine could only perform its program, Simon
+thought this was no less true for humans in the sense that ``[they] do only
+what their genes and their cumulative experiences program them to do''
+\autocite[45]{simon1960_1985}.
+
+
+
+\printbibliography[title=References]
 \end{document}
